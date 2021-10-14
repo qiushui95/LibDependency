@@ -1,0 +1,6 @@
+
+rootProject.name = "LibDependency"
+include ':app'
+include ':lib'
+include ':define'
+include ':newest'
