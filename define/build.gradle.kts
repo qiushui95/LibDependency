@@ -1,5 +1,5 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     id("kotlin-android")
     id("kotlin-kapt")
 }
@@ -10,7 +10,6 @@ android {
     defaultConfig {
         minSdk = 24
         targetSdk = 31
-
     }
 
     compileOptions {
