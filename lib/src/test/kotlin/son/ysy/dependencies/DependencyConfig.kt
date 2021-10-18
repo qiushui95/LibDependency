@@ -81,7 +81,7 @@ sealed class DependencyConfig(
         object BasePopup : DependencyConfig(
             group = "io.github.razerdp",
             name = "BasePopup",
-            version = "3.1.8",
+            version = "3.2.0",
             remark = "弹窗",
             link = "https://github.com/razerdp/BasePopup",
             dependencyMethod = DependencyMethod.Implementation,
@@ -502,7 +502,7 @@ sealed class DependencyConfig(
         sealed class Accompanist(name: String) : DependencyConfig(
             group = "com.google.accompanist",
             name = name,
-            version = "0.19.0",
+            version = "0.20.0",
             remark = "",
             link = "https://github.com/google/accompanist",
             dependencyMethod = DependencyMethod.Implementation,

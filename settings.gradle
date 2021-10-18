@@ -1,4 +1,3 @@
-
 rootProject.name = "LibDependency"
 include ':app'
 include ':lib'

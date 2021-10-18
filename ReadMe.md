@@ -1,4 +1,5 @@
-# 三方依赖库版本管理[![](https://jitpack.io/v/qiushui95/AndroidDependencies.svg)](https://jitpack.io/#qiushui95/AndroidDependencies)  
+# 三方依赖库版本管理[![](https://jitpack.io/v/qiushui95/LibDependency.svg)](https://jitpack.io/#qiushui95/LibDependency)
+)  
 <details>  
 <summary>Single</summary>  
   
@@ -18,7 +19,7 @@
 >>implementation(com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.2)  
   
 >[BasePopup](https://github.com/razerdp/BasePopup)(弹窗)  
->>implementation(io.github.razerdp:BasePopup:3.1.8)  
+>>implementation(io.github.razerdp:BasePopup:3.2.0)  
   
 >[ColorKtx](https://github.com/JorgeCastilloPrz/AndroidColorX)(颜色帮助库)  
 >>implementation(me.jorgecastillo:androidcolorx:0.2.0)  
@@ -156,18 +157,18 @@
 >>implementation(androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0-rc01)  
   
 >[Accompanist](https://github.com/google/accompanist)  
->>implementation(com.google.accompanist:accompanist-appcompat-theme:0.19.0)  
->>implementation(com.google.accompanist:accompanist-drawablepainter:0.19.0)  
->>implementation(com.google.accompanist:accompanist-flowlayout:0.19.0)  
->>implementation(com.google.accompanist:accompanist-insets:0.19.0)  
->>implementation(com.google.accompanist:accompanist-navigation-animation:0.19.0)  
->>implementation(com.google.accompanist:accompanist-navigation-material:0.19.0)  
->>implementation(com.google.accompanist:accompanist-pager:0.19.0)  
->>implementation(com.google.accompanist:accompanist-permissions:0.19.0)  
->>implementation(com.google.accompanist:accompanist-placeholder:0.19.0)  
->>implementation(com.google.accompanist:accompanist-placeholder-material:0.19.0)  
->>implementation(com.google.accompanist:accompanist-swiperefresh:0.19.0)  
->>implementation(com.google.accompanist:accompanist-systemuicontroller:0.19.0)  
+>>implementation(com.google.accompanist:accompanist-appcompat-theme:0.20.0)  
+>>implementation(com.google.accompanist:accompanist-drawablepainter:0.20.0)  
+>>implementation(com.google.accompanist:accompanist-flowlayout:0.20.0)  
+>>implementation(com.google.accompanist:accompanist-insets:0.20.0)  
+>>implementation(com.google.accompanist:accompanist-navigation-animation:0.20.0)  
+>>implementation(com.google.accompanist:accompanist-navigation-material:0.20.0)  
+>>implementation(com.google.accompanist:accompanist-pager:0.20.0)  
+>>implementation(com.google.accompanist:accompanist-permissions:0.20.0)  
+>>implementation(com.google.accompanist:accompanist-placeholder:0.20.0)  
+>>implementation(com.google.accompanist:accompanist-placeholder-material:0.20.0)  
+>>implementation(com.google.accompanist:accompanist-swiperefresh:0.20.0)  
+>>implementation(com.google.accompanist:accompanist-systemuicontroller:0.20.0)  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
 >>implementation(androidx.compose.animation:animation:1.1.0-alpha06)  
