@@ -1,11 +1,10 @@
-package son.ysy
+package son.ysy.dependencies
 
 import com.android.build.gradle.BaseExtension
 import com.android.build.gradle.LibraryExtension
 import com.android.build.gradle.internal.dsl.BaseAppModuleExtension
 import org.gradle.api.JavaVersion
 import org.gradle.api.Project
-import son.ysy.dependencies.*
 import java.io.File
 
 fun Project.setupLibraryModule(block: LibraryExtension.() -> Unit = {}) {

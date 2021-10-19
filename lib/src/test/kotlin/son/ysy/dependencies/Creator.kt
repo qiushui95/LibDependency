@@ -6,9 +6,21 @@ import java.io.File
 
 class Creator {
 
+    private val currentDir by lazy {
+        File("").absoluteFile
+    }
+
+    private val parentDir by lazy {
+        currentDir.parentFile
+    }
+
+    private val buildSrcDir by lazy {
+        File(parentDir, "buildSrc")
+    }
+
     private val testDir by lazy {
         File(
-            File("").absoluteFile,
+            currentDir,
             "src/test/kotlin/${LibConstants.PACKAGE_NAME.replace(".", "/")}"
         )
     }
@@ -30,9 +42,6 @@ class Creator {
             createLibPluginIdCode(),
             createDependencyMethodCode(),
         )
-
-        val currentDir = File("").absoluteFile
-        val buildSrcDir = File(currentDir.parentFile, "buildSrc")
 
         listOf(currentDir, buildSrcDir)
             .asSequence()
@@ -203,6 +212,19 @@ class Creator {
             .mapNotNull { it.objectInstance }
             .map { "    set(\"${it.key}\", \"${it.group}:${it.name}:${it.version}\")\n" }
             .forEach(sb::append)
+
+        val configFile = File(parentDir, "gradle.properties")
+
+        var libVersion = "1.0.0"
+
+        for (line in configFile.readLines()) {
+            if (line.startsWith("VERSION_NAME=")) {
+                libVersion = line.replace("VERSION_NAME=", "")
+                break
+            }
+        }
+
+        sb.append("    set(\"libDependency\", \"com.github.qiushui95:LibDependency:${libVersion}\")\n")
 
         sb.append("}")
 

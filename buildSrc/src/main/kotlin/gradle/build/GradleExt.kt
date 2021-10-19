@@ -6,7 +6,10 @@ import son.ysy.dependencies.LibDependencies
 
 fun DependencyHandlerScope.dependency(
     dependency: LibDependencies,
+    group:String=dependency.group,
+    name:String=dependency.name,
+    version:String=dependency.version,
     method: DependencyMethod = dependency.dependencyMethod
 ) {
-    add(method.method, "${dependency.group}:${dependency.name}:${dependency.version}")
+    add(method.method, "${group}:${name}:${version}")
 }
