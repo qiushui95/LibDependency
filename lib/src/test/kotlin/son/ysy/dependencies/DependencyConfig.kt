@@ -26,7 +26,7 @@ sealed class DependencyConfig(
         object AliOss : DependencyConfig(
             group = "com.aliyun.dpa",
             name = "oss-android-sdk",
-            version = "2.9.9",
+            version = "2.9.10",
             remark = "阿里云存储",
             link = "https://help.aliyun.com/document_detail/32043.html",
             dependencyMethod = DependencyMethod.Implementation,
@@ -169,7 +169,7 @@ sealed class DependencyConfig(
         object PermissionX : DependencyConfig(
             group = "com.guolindev.permissionx",
             name = "permissionx",
-            version = "1.6.0",
+            version = "1.6.1",
             remark = "权限请求",
             link = "https://github.com/guolindev/PermissionX",
             dependencyMethod = DependencyMethod.Implementation,
@@ -318,7 +318,7 @@ sealed class DependencyConfig(
         object CornerView : DependencyConfig(
             group = "io.github.csdn-mobile",
             name = "RoundView",
-            version = "1.0.0",
+            version = "1.4.0",
             remark = "圆角控件",
             link = "https://github.com/csdn-mobile/RoundView",
             dependencyMethod = DependencyMethod.Implementation,
@@ -450,7 +450,7 @@ sealed class DependencyConfig(
         object WebX5 : DependencyConfig(
             group = "com.tencent.tbs",
             name = "tbssdk",
-            version = "44085",
+            version = "44115",
             remark = "X5浏览器",
             link = "https://x5.tencent.com/docs/access.html",
             dependencyMethod = DependencyMethod.Implementation,

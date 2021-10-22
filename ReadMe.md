@@ -4,7 +4,7 @@
 <summary>Single</summary>  
   
 >[AliOss](https://help.aliyun.com/document_detail/32043.html)(阿里云存储)  
->>implementation(com.aliyun.dpa:oss-android-sdk:2.9.9)  
+>>implementation(com.aliyun.dpa:oss-android-sdk:2.9.10)  
   
 >[AliPush](https://help.aliyun.com/document_detail/190009.html?spm=a2c4g.11174283.3.2.52eb6d163QVxjG)(阿里推送)  
 >>implementation(com.aliyun.ams:alicloud-android-push:3.5.0)  
@@ -43,7 +43,7 @@
 >>implementation(com.tencent:mmkv-static:1.2.10)  
   
 >[PermissionX](https://github.com/guolindev/PermissionX)(权限请求)  
->>implementation(com.guolindev.permissionx:permissionx:1.6.0)  
+>>implementation(com.guolindev.permissionx:permissionx:1.6.1)  
   
 >[QrScanner](https://github.com/jenly1314/ZXingLite)(二维码扫描)  
 >>implementation(com.github.jenly1314:zxing-lite:2.1.1)  
@@ -87,7 +87,7 @@
 >>implementation(androidx.constraintlayout:constraintlayout:2.1.1)  
   
 >[CornerView](https://github.com/csdn-mobile/RoundView)(圆角控件)  
->>implementation(io.github.csdn-mobile:RoundView:1.0.0)  
+>>implementation(io.github.csdn-mobile:RoundView:1.4.0)  
   
 >[FlexBox](https://github.com/google/flexbox-layout)(流式布局)  
 >>implementation(com.google.android.flexbox:flexbox:3.0.0)  
@@ -123,7 +123,7 @@
 >>implementation(androidx.viewpager2:viewpager2:1.1.0-beta01)  
   
 >[WebX5](https://x5.tencent.com/docs/access.html)(X5浏览器)  
->>implementation(com.tencent.tbs:tbssdk:44085)  
+>>implementation(com.tencent.tbs:tbssdk:44115)  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation(androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0-rc01)  

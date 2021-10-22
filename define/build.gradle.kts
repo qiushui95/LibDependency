@@ -22,7 +22,7 @@ android {
 }
 
 dependencies {
-    implementation("com.aliyun.dpa:oss-android-sdk:2.9.9")
+    implementation("com.aliyun.dpa:oss-android-sdk:2.9.10")
     implementation("com.aliyun.ams:alicloud-android-push:3.5.0")
     implementation("com.blankj:utilcodex:1.30.6")
     implementation("androidx.appcompat:appcompat:1.3.1")
@@ -35,7 +35,7 @@ dependencies {
     implementation("joda-time:joda-time:2.10.12")
     implementation("com.squareup.leakcanary:leakcanary-android:2.7")
     implementation("com.tencent:mmkv-static:1.2.10")
-    implementation("com.guolindev.permissionx:permissionx:1.6.0")
+    implementation("com.guolindev.permissionx:permissionx:1.6.1")
     implementation("com.github.jenly1314:zxing-lite:2.1.1")
     implementation("androidx.startup:startup-runtime:1.1.0")
     implementation("com.dropbox.mobile.store:store4:4.0.2-KT15")
@@ -49,7 +49,7 @@ dependencies {
     implementation("com.eightbitlab:blurview:1.6.6")
     implementation("com.ashokvarma.android:bottom-navigation-bar:2.2.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.1")
-    implementation("io.github.csdn-mobile:RoundView:1.0.0")
+    implementation("io.github.csdn-mobile:RoundView:1.4.0")
     implementation("com.google.android.flexbox:flexbox:3.0.0")
     implementation("com.github.dkzwm:fet-core:0.2.1")
     implementation("com.airbnb.android:lottie:4.2.0")
@@ -61,7 +61,7 @@ dependencies {
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
     implementation("com.kyleduo.switchbutton:library:2.1.0")
     implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")
-    implementation("com.tencent.tbs:tbssdk:44085")
+    implementation("com.tencent.tbs:tbssdk:44115")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0-rc01")
 
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")

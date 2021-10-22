@@ -15,7 +15,7 @@ sealed class LibDependencies(
      * 阿里云存储
      * https://help.aliyun.com/document_detail/32043.html
      */
-    object AliOss : LibDependencies("com.aliyun.dpa", "oss-android-sdk", "2.9.9",
+    object AliOss : LibDependencies("com.aliyun.dpa", "oss-android-sdk", "2.9.10",
         DependencyMethod.Implementation)
 
     /**
@@ -105,7 +105,7 @@ sealed class LibDependencies(
      * 权限请求
      * https://github.com/guolindev/PermissionX
      */
-    object PermissionX : LibDependencies("com.guolindev.permissionx", "permissionx", "1.6.0",
+    object PermissionX : LibDependencies("com.guolindev.permissionx", "permissionx", "1.6.1",
         DependencyMethod.Implementation)
 
     /**
@@ -198,7 +198,7 @@ sealed class LibDependencies(
      * 圆角控件
      * https://github.com/csdn-mobile/RoundView
      */
-    object CornerView : LibDependencies("io.github.csdn-mobile", "RoundView", "1.0.0",
+    object CornerView : LibDependencies("io.github.csdn-mobile", "RoundView", "1.4.0",
         DependencyMethod.Implementation)
 
     /**
@@ -279,7 +279,7 @@ sealed class LibDependencies(
      * X5浏览器
      * https://x5.tencent.com/docs/access.html
      */
-    object WebX5 : LibDependencies("com.tencent.tbs", "tbssdk", "44085",
+    object WebX5 : LibDependencies("com.tencent.tbs", "tbssdk", "44115",
         DependencyMethod.Implementation)
 
     /**
