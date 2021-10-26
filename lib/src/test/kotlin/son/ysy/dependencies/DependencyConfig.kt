@@ -318,7 +318,7 @@ sealed class DependencyConfig(
         object CornerView : DependencyConfig(
             group = "io.github.csdn-mobile",
             name = "RoundView",
-            version = "1.4.0",
+            version = "1.7.0",
             remark = "圆角控件",
             link = "https://github.com/csdn-mobile/RoundView",
             dependencyMethod = DependencyMethod.Implementation,
@@ -450,7 +450,7 @@ sealed class DependencyConfig(
         object WebX5 : DependencyConfig(
             group = "com.tencent.tbs",
             name = "tbssdk",
-            version = "44115",
+            version = "44116",
             remark = "X5浏览器",
             link = "https://x5.tencent.com/docs/access.html",
             dependencyMethod = DependencyMethod.Implementation,

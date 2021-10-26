@@ -49,7 +49,7 @@ dependencies {
     implementation("com.eightbitlab:blurview:1.6.6")
     implementation("com.ashokvarma.android:bottom-navigation-bar:2.2.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.1")
-    implementation("io.github.csdn-mobile:RoundView:1.4.0")
+    implementation("io.github.csdn-mobile:RoundView:1.7.0")
     implementation("com.google.android.flexbox:flexbox:3.0.0")
     implementation("com.github.dkzwm:fet-core:0.2.1")
     implementation("com.airbnb.android:lottie:4.2.0")
@@ -61,7 +61,7 @@ dependencies {
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
     implementation("com.kyleduo.switchbutton:library:2.1.0")
     implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")
-    implementation("com.tencent.tbs:tbssdk:44115")
+    implementation("com.tencent.tbs:tbssdk:44116")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0-rc01")
 
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")

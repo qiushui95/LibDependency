@@ -198,7 +198,7 @@ sealed class LibDependencies(
      * 圆角控件
      * https://github.com/csdn-mobile/RoundView
      */
-    object CornerView : LibDependencies("io.github.csdn-mobile", "RoundView", "1.4.0",
+    object CornerView : LibDependencies("io.github.csdn-mobile", "RoundView", "1.7.0",
         DependencyMethod.Implementation)
 
     /**
@@ -279,7 +279,7 @@ sealed class LibDependencies(
      * X5浏览器
      * https://x5.tencent.com/docs/access.html
      */
-    object WebX5 : LibDependencies("com.tencent.tbs", "tbssdk", "44115",
+    object WebX5 : LibDependencies("com.tencent.tbs", "tbssdk", "44116",
         DependencyMethod.Implementation)
 
     /**

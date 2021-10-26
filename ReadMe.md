@@ -87,7 +87,7 @@
 >>implementation(androidx.constraintlayout:constraintlayout:2.1.1)  
   
 >[CornerView](https://github.com/csdn-mobile/RoundView)(圆角控件)  
->>implementation(io.github.csdn-mobile:RoundView:1.4.0)  
+>>implementation(io.github.csdn-mobile:RoundView:1.7.0)  
   
 >[FlexBox](https://github.com/google/flexbox-layout)(流式布局)  
 >>implementation(com.google.android.flexbox:flexbox:3.0.0)  
@@ -123,7 +123,7 @@
 >>implementation(androidx.viewpager2:viewpager2:1.1.0-beta01)  
   
 >[WebX5](https://x5.tencent.com/docs/access.html)(X5浏览器)  
->>implementation(com.tencent.tbs:tbssdk:44115)  
+>>implementation(com.tencent.tbs:tbssdk:44116)  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation(androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0-rc01)  
