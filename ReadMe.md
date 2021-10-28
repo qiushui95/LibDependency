@@ -1,5 +1,5 @@
 # 三方依赖库版本管理[![](https://jitpack.io/v/qiushui95/LibDependency.svg)](https://jitpack.io/#qiushui95/LibDependency)
-)  
+  
 <details>  
 <summary>Single</summary>  
   
@@ -34,13 +34,13 @@
 >>implementation(com.ypx.yimagepicker:androidx:3.1.4)  
   
 >[JodaTime](https://github.com/JodaOrg/joda-time)(时间处理库)  
->>implementation(joda-time:joda-time:2.10.12)  
+>>implementation(joda-time:joda-time:2.10.13)  
   
 >[LeakCanary](https://square.github.io/leakcanary/getting_started/)(内存泄露监控)  
 >>implementation(com.squareup.leakcanary:leakcanary-android:2.7)  
   
 >[Mmkv](https://github.com/Tencent/MMKV/blob/master/README_CN.md)(持久KV数据存储)  
->>implementation(com.tencent:mmkv-static:1.2.10)  
+>>implementation(com.tencent:mmkv-static:1.2.11)  
   
 >[PermissionX](https://github.com/guolindev/PermissionX)(权限请求)  
 >>implementation(com.guolindev.permissionx:permissionx:1.6.1)  
@@ -87,7 +87,7 @@
 >>implementation(androidx.constraintlayout:constraintlayout:2.1.1)  
   
 >[CornerView](https://github.com/csdn-mobile/RoundView)(圆角控件)  
->>implementation(io.github.csdn-mobile:RoundView:1.7.0)  
+>>implementation(io.github.csdn-mobile:RoundView:1.7.1)  
   
 >[FlexBox](https://github.com/google/flexbox-layout)(流式布局)  
 >>implementation(com.google.android.flexbox:flexbox:3.0.0)  
@@ -126,7 +126,7 @@
 >>implementation(com.tencent.tbs:tbssdk:44116)  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
->>implementation(androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0-rc01)  
+>>implementation(androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0)  
   
 </details>  
   
@@ -154,7 +154,7 @@
 >>implementation(com.github.fornewid:material-motion-compose:0.7.3)  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
->>implementation(androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0-rc01)  
+>>implementation(androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0)  
   
 >[Accompanist](https://github.com/google/accompanist)  
 >>implementation(com.google.accompanist:accompanist-appcompat-theme:0.20.0)  
@@ -171,17 +171,17 @@
 >>implementation(com.google.accompanist:accompanist-systemuicontroller:0.20.0)  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
->>implementation(androidx.compose.animation:animation:1.1.0-alpha06)  
->>implementation(androidx.compose.compiler:compiler:1.1.0-alpha06)  
->>implementation(androidx.compose.foundation:foundation:1.1.0-alpha06)  
->>implementation(androidx.compose.runtime:runtime-livedata:1.1.0-alpha06)  
->>implementation(androidx.compose.material:material:1.1.0-alpha06)  
->>implementation(androidx.compose.material:material-icons-core:1.1.0-alpha06)  
->>implementation(androidx.compose.material:material-icons-extended:1.1.0-alpha06)  
->>implementation(androidx.compose.ui:ui-tooling-preview:1.1.0-alpha06)  
->>androidTestImplementation(androidx.compose.ui:ui-test-junit4:1.1.0-alpha06)  
->>implementation(androidx.compose.ui:ui:1.1.0-alpha06)  
->>implementation(androidx.compose.ui:ui-tooling:1.1.0-alpha06)  
+>>implementation(androidx.compose.animation:animation:1.1.0-beta01)  
+>>implementation(androidx.compose.compiler:compiler:1.1.0-beta01)  
+>>implementation(androidx.compose.foundation:foundation:1.1.0-beta01)  
+>>implementation(androidx.compose.runtime:runtime-livedata:1.1.0-beta01)  
+>>implementation(androidx.compose.material:material:1.1.0-beta01)  
+>>implementation(androidx.compose.material:material-icons-core:1.1.0-beta01)  
+>>implementation(androidx.compose.material:material-icons-extended:1.1.0-beta01)  
+>>implementation(androidx.compose.ui:ui-tooling-preview:1.1.0-beta01)  
+>>androidTestImplementation(androidx.compose.ui:ui-test-junit4:1.1.0-beta01)  
+>>implementation(androidx.compose.ui:ui:1.1.0-beta01)  
+>>implementation(androidx.compose.ui:ui-tooling:1.1.0-beta01)  
   
 </details>  
   
@@ -189,8 +189,8 @@
 <summary>Group</summary>  
   
 >[Activity](https://developer.android.com/jetpack/androidx/releases/activity)  
->>implementation(androidx.activity:activity-ktx:1.3.1)  
->>implementation(androidx.activity:activity-compose:1.3.1)  
+>>implementation(androidx.activity:activity-ktx:1.4.0)  
+>>implementation(androidx.activity:activity-compose:1.4.0)  
   
 >[CameraX](https://developer.android.com/jetpack/androidx/releases/camera)(相机相关)  
 >>implementation(androidx.camera:camera-camera2:1.0.2)  
@@ -208,7 +208,7 @@
 >>implementation(io.coil-kt:coil-compose:1.4.0)  
   
 >[Core](https://developer.android.com/jetpack/androidx/releases/core)  
->>implementation(androidx.core:core-ktx:1.7.0-rc01)  
+>>implementation(androidx.core:core-ktx:1.7.0)  
 >>implementation(androidx.core:core-splashscreen:1.0.0-alpha02)  
   
 >[Coroutines](https://github.com/Kotlin/kotlinx.coroutines)(core)  
@@ -236,13 +236,13 @@
 >>implementation(org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31)  
   
 >[Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
->>implementation(androidx.lifecycle:lifecycle-common:2.4.0-rc01)  
->>implementation(androidx.lifecycle:lifecycle-livedata-ktx:2.4.0-rc01)  
->>implementation(androidx.lifecycle:lifecycle-process:2.4.0-rc01)  
->>implementation(androidx.lifecycle:lifecycle-runtime-ktx:2.4.0-rc01)  
->>implementation(androidx.lifecycle:lifecycle-viewmodel-savedstate:2.4.0-rc01)  
->>implementation(androidx.lifecycle:lifecycle-service:2.4.0-rc01)  
->>implementation(androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0-rc01)  
+>>implementation(androidx.lifecycle:lifecycle-common:2.4.0)  
+>>implementation(androidx.lifecycle:lifecycle-livedata-ktx:2.4.0)  
+>>implementation(androidx.lifecycle:lifecycle-process:2.4.0)  
+>>implementation(androidx.lifecycle:lifecycle-runtime-ktx:2.4.0)  
+>>implementation(androidx.lifecycle:lifecycle-viewmodel-savedstate:2.4.0)  
+>>implementation(androidx.lifecycle:lifecycle-service:2.4.0)  
+>>implementation(androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0)  
   
 >[MoShi](https://github.com/square/moshi)(json解析库)  
 >>implementation(com.squareup.moshi:moshi:1.12.0)  

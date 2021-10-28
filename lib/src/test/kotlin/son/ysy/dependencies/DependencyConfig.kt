@@ -136,7 +136,7 @@ sealed class DependencyConfig(
         object JodaTime : DependencyConfig(
             group = "joda-time",
             name = "joda-time",
-            version = "2.10.12",
+            version = "2.10.13",
             remark = "时间处理库",
             link = "https://github.com/JodaOrg/joda-time",
             dependencyMethod = DependencyMethod.Implementation,
@@ -158,7 +158,7 @@ sealed class DependencyConfig(
         object Mmkv : DependencyConfig(
             group = "com.tencent",
             name = "mmkv-static",
-            version = "1.2.10",
+            version = "1.2.11",
             remark = "持久KV数据存储",
             link = "https://github.com/Tencent/MMKV/blob/master/README_CN.md",
             dependencyMethod = DependencyMethod.Implementation,
@@ -318,7 +318,7 @@ sealed class DependencyConfig(
         object CornerView : DependencyConfig(
             group = "io.github.csdn-mobile",
             name = "RoundView",
-            version = "1.7.0",
+            version = "1.7.1",
             remark = "圆角控件",
             link = "https://github.com/csdn-mobile/RoundView",
             dependencyMethod = DependencyMethod.Implementation,
@@ -552,7 +552,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = group,
             name = name,
-            version = "1.1.0-alpha06",
+            version = "1.1.0-beta01",
             remark = "Compose官方",
             link = "https://developer.android.com/jetpack/androidx/releases/compose",
             dependencyMethod = dependencyMethod,
@@ -629,7 +629,7 @@ sealed class DependencyConfig(
         sealed class Activity(name: String) : DependencyConfig(
             group = "androidx.activity",
             name = name,
-            version = "1.3.1",
+            version = "1.4.0",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/activity",
             dependencyMethod = DependencyMethod.Implementation,
@@ -698,7 +698,7 @@ sealed class DependencyConfig(
             link = "https://developer.android.com/jetpack/androidx/releases/core",
             dependencyMethod = DependencyMethod.Implementation,
         ) {
-            object Ktx : Core("core-ktx", "1.7.0-rc01")
+            object Ktx : Core("core-ktx", "1.7.0")
             object Splash : Core("core-splashscreen", "1.0.0-alpha02")
         }
         //endregion
@@ -800,7 +800,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "androidx.lifecycle",
             name = name,
-            version = "2.4.0-rc01",
+            version = "2.4.0",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/lifecycle",
             dependencyMethod = dependencyMethod,

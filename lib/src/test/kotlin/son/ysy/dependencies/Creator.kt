@@ -319,7 +319,7 @@ class Creator {
     private fun createMd() {
         val list = mutableListOf<String>()
 
-        list.addMdLine("# 三方依赖库版本管理[![](https://jitpack.io/v/qiushui95/LibDependency.svg)](https://jitpack.io/#qiushui95/LibDependency)\n)")
+        list.addMdLine("# 三方依赖库版本管理[![](https://jitpack.io/v/qiushui95/LibDependency.svg)](https://jitpack.io/#qiushui95/LibDependency)\n")
 
         list.buildMdSingle(LibConstants.CLASS_NAME_SINGLE)
         list.buildMdSingle(LibConstants.CLASS_NAME_VIEW)

@@ -84,7 +84,7 @@ sealed class LibDependencies(
      * 时间处理库
      * https://github.com/JodaOrg/joda-time
      */
-    object JodaTime : LibDependencies("joda-time", "joda-time", "2.10.12",
+    object JodaTime : LibDependencies("joda-time", "joda-time", "2.10.13",
         DependencyMethod.Implementation)
 
     /**
@@ -98,7 +98,7 @@ sealed class LibDependencies(
      * 持久KV数据存储
      * https://github.com/Tencent/MMKV/blob/master/README_CN.md
      */
-    object Mmkv : LibDependencies("com.tencent", "mmkv-static", "1.2.10",
+    object Mmkv : LibDependencies("com.tencent", "mmkv-static", "1.2.11",
         DependencyMethod.Implementation)
 
     /**
@@ -198,7 +198,7 @@ sealed class LibDependencies(
      * 圆角控件
      * https://github.com/csdn-mobile/RoundView
      */
-    object CornerView : LibDependencies("io.github.csdn-mobile", "RoundView", "1.7.0",
+    object CornerView : LibDependencies("io.github.csdn-mobile", "RoundView", "1.7.1",
         DependencyMethod.Implementation)
 
     /**
@@ -286,7 +286,7 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/lifecycle
      */
     object ViewModel : LibDependencies("androidx.lifecycle", "lifecycle-viewmodel-compose",
-        "2.4.0-rc01", DependencyMethod.Implementation)
+        "2.4.0", DependencyMethod.Implementation)
   }
 
   interface Test {
@@ -331,7 +331,7 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/lifecycle
      */
     object ViewModel : LibDependencies("androidx.lifecycle", "lifecycle-viewmodel-compose",
-        "2.4.0-rc01", DependencyMethod.Implementation)
+        "2.4.0", DependencyMethod.Implementation)
 
     /**
      * https://github.com/google/accompanist
@@ -380,37 +380,37 @@ sealed class LibDependencies(
      */
     interface Official {
       object Animation : LibDependencies("androidx.compose.animation", "animation",
-          "1.1.0-alpha06", DependencyMethod.Implementation)
+          "1.1.0-beta01", DependencyMethod.Implementation)
 
       object Compiler : LibDependencies("androidx.compose.compiler", "compiler",
-          "1.1.0-alpha06", DependencyMethod.Implementation)
+          "1.1.0-beta01", DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
-          "1.1.0-alpha06", DependencyMethod.Implementation)
+          "1.1.0-beta01", DependencyMethod.Implementation)
 
       object LiveData : LibDependencies("androidx.compose.runtime", "runtime-livedata",
-          "1.1.0-alpha06", DependencyMethod.Implementation)
+          "1.1.0-beta01", DependencyMethod.Implementation)
 
       object Material : LibDependencies("androidx.compose.material", "material",
-          "1.1.0-alpha06", DependencyMethod.Implementation)
+          "1.1.0-beta01", DependencyMethod.Implementation)
 
       object MaterialIcon : LibDependencies("androidx.compose.material",
-          "material-icons-core", "1.1.0-alpha06", DependencyMethod.Implementation)
+          "material-icons-core", "1.1.0-beta01", DependencyMethod.Implementation)
 
       object MaterialIconExtended : LibDependencies("androidx.compose.material",
-          "material-icons-extended", "1.1.0-alpha06", DependencyMethod.Implementation)
+          "material-icons-extended", "1.1.0-beta01", DependencyMethod.Implementation)
 
       object Preview : LibDependencies("androidx.compose.ui", "ui-tooling-preview",
-          "1.1.0-alpha06", DependencyMethod.Implementation)
+          "1.1.0-beta01", DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.1.0-alpha06",
+      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.1.0-beta01",
           DependencyMethod.AndroidTest.Implementation)
 
-      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.1.0-alpha06",
+      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.1.0-beta01",
           DependencyMethod.Implementation)
 
-      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling",
-          "1.1.0-alpha06", DependencyMethod.Implementation)
+      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.1.0-beta01",
+          DependencyMethod.Implementation)
     }
   }
 
@@ -419,10 +419,10 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/activity
      */
     interface Activity {
-      object Core : LibDependencies("androidx.activity", "activity-ktx", "1.3.1",
+      object Core : LibDependencies("androidx.activity", "activity-ktx", "1.4.0",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("androidx.activity", "activity-compose", "1.3.1",
+      object Compose : LibDependencies("androidx.activity", "activity-compose", "1.4.0",
           DependencyMethod.Implementation)
     }
 
@@ -475,7 +475,7 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/core
      */
     interface Core {
-      object Ktx : LibDependencies("androidx.core", "core-ktx", "1.7.0-rc01",
+      object Ktx : LibDependencies("androidx.core", "core-ktx", "1.7.0",
           DependencyMethod.Implementation)
 
       object Splash : LibDependencies("androidx.core", "core-splashscreen", "1.0.0-alpha02",
@@ -556,26 +556,26 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/lifecycle
      */
     interface Lifecycle {
-      object Common : LibDependencies("androidx.lifecycle", "lifecycle-common", "2.4.0-rc01",
+      object Common : LibDependencies("androidx.lifecycle", "lifecycle-common", "2.4.0",
           DependencyMethod.Implementation)
 
       object LiveData : LibDependencies("androidx.lifecycle", "lifecycle-livedata-ktx",
-          "2.4.0-rc01", DependencyMethod.Implementation)
+          "2.4.0", DependencyMethod.Implementation)
 
-      object Process : LibDependencies("androidx.lifecycle", "lifecycle-process",
-          "2.4.0-rc01", DependencyMethod.Implementation)
+      object Process : LibDependencies("androidx.lifecycle", "lifecycle-process", "2.4.0",
+          DependencyMethod.Implementation)
 
       object Runtime : LibDependencies("androidx.lifecycle", "lifecycle-runtime-ktx",
-          "2.4.0-rc01", DependencyMethod.Implementation)
+          "2.4.0", DependencyMethod.Implementation)
 
       object SavedState : LibDependencies("androidx.lifecycle",
-          "lifecycle-viewmodel-savedstate", "2.4.0-rc01", DependencyMethod.Implementation)
+          "lifecycle-viewmodel-savedstate", "2.4.0", DependencyMethod.Implementation)
 
-      object Service : LibDependencies("androidx.lifecycle", "lifecycle-service",
-          "2.4.0-rc01", DependencyMethod.Implementation)
+      object Service : LibDependencies("androidx.lifecycle", "lifecycle-service", "2.4.0",
+          DependencyMethod.Implementation)
 
       object ViewModel : LibDependencies("androidx.lifecycle", "lifecycle-viewmodel-ktx",
-          "2.4.0-rc01", DependencyMethod.Implementation)
+          "2.4.0", DependencyMethod.Implementation)
     }
 
     /**
