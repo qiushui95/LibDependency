@@ -763,7 +763,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "io.insert-koin",
             name = name,
-            version = "3.1.2",
+            version = "3.1.3",
             remark = "依赖注入库",
             link = "https://github.com/InsertKoinIO/koin",
             dependencyMethod = dependencyMethod,

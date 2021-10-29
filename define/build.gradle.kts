@@ -126,10 +126,10 @@ dependencies {
     implementation("androidx.fragment:fragment-ktx:1.3.6")
     testImplementation("androidx.fragment:fragment-testing:1.3.6")
 
-    implementation("io.insert-koin:koin-android:3.1.2")
-    implementation("io.insert-koin:koin-core:3.1.2")
-    implementation("io.insert-koin:koin-androidx-workmanager:3.1.2")
-    testImplementation("io.insert-koin:koin-test-junit5:3.1.2")
+    implementation("io.insert-koin:koin-android:3.1.3")
+    implementation("io.insert-koin:koin-core:3.1.3")
+    implementation("io.insert-koin:koin-androidx-workmanager:3.1.3")
+    testImplementation("io.insert-koin:koin-test-junit5:3.1.3")
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.5.31")
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.5.31")

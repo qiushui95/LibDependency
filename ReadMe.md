@@ -225,10 +225,10 @@
 >>testImplementation(androidx.fragment:fragment-testing:1.3.6)  
   
 >[Koin](https://github.com/InsertKoinIO/koin)(依赖注入库)  
->>implementation(io.insert-koin:koin-android:3.1.2)  
->>implementation(io.insert-koin:koin-core:3.1.2)  
->>implementation(io.insert-koin:koin-androidx-workmanager:3.1.2)  
->>testImplementation(io.insert-koin:koin-test-junit5:3.1.2)  
+>>implementation(io.insert-koin:koin-android:3.1.3)  
+>>implementation(io.insert-koin:koin-core:3.1.3)  
+>>implementation(io.insert-koin:koin-androidx-workmanager:3.1.3)  
+>>testImplementation(io.insert-koin:koin-test-junit5:3.1.3)  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
 >>implementation(org.jetbrains.kotlin:kotlin-stdlib:1.5.31)  
