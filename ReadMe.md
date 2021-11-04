@@ -171,17 +171,17 @@
 >>implementation(com.google.accompanist:accompanist-systemuicontroller:0.20.0)  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
->>implementation(androidx.compose.animation:animation:1.1.0-beta01)  
->>implementation(androidx.compose.compiler:compiler:1.1.0-beta01)  
->>implementation(androidx.compose.foundation:foundation:1.1.0-beta01)  
->>implementation(androidx.compose.runtime:runtime-livedata:1.1.0-beta01)  
->>implementation(androidx.compose.material:material:1.1.0-beta01)  
->>implementation(androidx.compose.material:material-icons-core:1.1.0-beta01)  
->>implementation(androidx.compose.material:material-icons-extended:1.1.0-beta01)  
->>implementation(androidx.compose.ui:ui-tooling-preview:1.1.0-beta01)  
->>androidTestImplementation(androidx.compose.ui:ui-test-junit4:1.1.0-beta01)  
->>implementation(androidx.compose.ui:ui:1.1.0-beta01)  
->>implementation(androidx.compose.ui:ui-tooling:1.1.0-beta01)  
+>>implementation(androidx.compose.animation:animation:1.1.0-beta02)  
+>>implementation(androidx.compose.compiler:compiler:1.1.0-beta02)  
+>>implementation(androidx.compose.foundation:foundation:1.1.0-beta02)  
+>>implementation(androidx.compose.runtime:runtime-livedata:1.1.0-beta02)  
+>>implementation(androidx.compose.material:material:1.1.0-beta02)  
+>>implementation(androidx.compose.material:material-icons-core:1.1.0-beta02)  
+>>implementation(androidx.compose.material:material-icons-extended:1.1.0-beta02)  
+>>implementation(androidx.compose.ui:ui-tooling-preview:1.1.0-beta02)  
+>>androidTestImplementation(androidx.compose.ui:ui-test-junit4:1.1.0-beta02)  
+>>implementation(androidx.compose.ui:ui:1.1.0-beta02)  
+>>implementation(androidx.compose.ui:ui-tooling:1.1.0-beta02)  
   
 </details>  
   
@@ -265,6 +265,12 @@
 >[WorkManager](https://developer.android.com/jetpack/androidx/releases/work)(任务管理器)  
 >>implementation(androidx.work:work-runtime-ktx:2.7.0)  
 >>testImplementation(androidx.work:work-testing:2.7.0)  
+  
+>[Navigation](https://developer.android.com/jetpack/androidx/releases/navigation)(导航库)  
+>>implementation(androidx.navigation:navigation-fragment-ktx:2.4.0-beta02)  
+>>implementation(androidx.navigation:navigation-ui-ktx:2.4.0-beta02)  
+>>implementation(androidx.navigation:navigation-compose:2.4.0-beta02)  
+>>testImplementation(androidx.navigation:navigation-testing:2.4.0-beta02)  
   
 </details>  
   

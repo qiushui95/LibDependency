@@ -380,36 +380,36 @@ sealed class LibDependencies(
      */
     interface Official {
       object Animation : LibDependencies("androidx.compose.animation", "animation",
-          "1.1.0-beta01", DependencyMethod.Implementation)
+          "1.1.0-beta02", DependencyMethod.Implementation)
 
       object Compiler : LibDependencies("androidx.compose.compiler", "compiler",
-          "1.1.0-beta01", DependencyMethod.Implementation)
+          "1.1.0-beta02", DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
-          "1.1.0-beta01", DependencyMethod.Implementation)
+          "1.1.0-beta02", DependencyMethod.Implementation)
 
       object LiveData : LibDependencies("androidx.compose.runtime", "runtime-livedata",
-          "1.1.0-beta01", DependencyMethod.Implementation)
+          "1.1.0-beta02", DependencyMethod.Implementation)
 
       object Material : LibDependencies("androidx.compose.material", "material",
-          "1.1.0-beta01", DependencyMethod.Implementation)
+          "1.1.0-beta02", DependencyMethod.Implementation)
 
       object MaterialIcon : LibDependencies("androidx.compose.material",
-          "material-icons-core", "1.1.0-beta01", DependencyMethod.Implementation)
+          "material-icons-core", "1.1.0-beta02", DependencyMethod.Implementation)
 
       object MaterialIconExtended : LibDependencies("androidx.compose.material",
-          "material-icons-extended", "1.1.0-beta01", DependencyMethod.Implementation)
+          "material-icons-extended", "1.1.0-beta02", DependencyMethod.Implementation)
 
       object Preview : LibDependencies("androidx.compose.ui", "ui-tooling-preview",
-          "1.1.0-beta01", DependencyMethod.Implementation)
+          "1.1.0-beta02", DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.1.0-beta01",
+      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.1.0-beta02",
           DependencyMethod.AndroidTest.Implementation)
 
-      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.1.0-beta01",
+      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.1.0-beta02",
           DependencyMethod.Implementation)
 
-      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.1.0-beta01",
+      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.1.0-beta02",
           DependencyMethod.Implementation)
     }
   }
@@ -641,6 +641,24 @@ sealed class LibDependencies(
 
       object Test : LibDependencies("androidx.work", "work-testing", "2.7.0",
           DependencyMethod.Test.Implementation)
+    }
+
+    /**
+     * 导航库
+     * https://developer.android.com/jetpack/androidx/releases/navigation
+     */
+    interface Navigation {
+      object Fragment : LibDependencies("androidx.navigation", "navigation-fragment-ktx",
+          "2.4.0-beta02", DependencyMethod.Implementation)
+
+      object Ui : LibDependencies("androidx.navigation", "navigation-ui-ktx", "2.4.0-beta02",
+          DependencyMethod.Implementation)
+
+      object Compose : LibDependencies("androidx.navigation", "navigation-compose",
+          "2.4.0-beta02", DependencyMethod.Implementation)
+
+      object Test : LibDependencies("androidx.navigation", "navigation-testing",
+          "2.4.0-beta02", DependencyMethod.Test.Implementation)
     }
   }
 }

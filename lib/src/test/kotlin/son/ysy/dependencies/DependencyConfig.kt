@@ -552,7 +552,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = group,
             name = name,
-            version = "1.1.0-beta01",
+            version = "1.1.0-beta02",
             remark = "Compose官方",
             link = "https://developer.android.com/jetpack/androidx/releases/compose",
             dependencyMethod = dependencyMethod,
@@ -899,6 +899,25 @@ sealed class DependencyConfig(
         ) {
             object Core : WorkManager("work-runtime-ktx")
             object Test : WorkManager("work-testing", DependencyMethod.Test.Implementation)
+        }
+        //endregion
+
+        //region Navigation(导航库)
+        sealed class Navigation(
+            name: String,
+            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
+        ) : DependencyConfig(
+            group = "androidx.navigation",
+            name = name,
+            version = "2.4.0-beta02",
+            remark = "导航库",
+            link = "https://developer.android.com/jetpack/androidx/releases/navigation",
+            dependencyMethod = dependencyMethod,
+        ) {
+            object Fragment : Navigation("navigation-fragment-ktx")
+            object Ui : Navigation("navigation-ui-ktx")
+            object Compose : Navigation("navigation-compose")
+            object Test : Navigation("navigation-testing", DependencyMethod.Test.Implementation)
         }
         //endregion
 

@@ -22,4 +22,9 @@ sealed class LibPlugins(
   object Maven : LibPlugins("com.vanniktech", "gradle-maven-publish-plugin", "0.18.0") {
     object Plugin : LibPluginId("com.vanniktech.maven.publish")
   }
+
+  object Navigation : LibPlugins("androidx.navigation", "navigation-safe-args-gradle-plugin",
+      "2.4.0-beta02") {
+    object Plugin : LibPluginId("androidx.navigation.safeargs.kotlin")
+  }
 }

@@ -160,4 +160,9 @@ dependencies {
     implementation("androidx.work:work-runtime-ktx:+")
     testImplementation("androidx.work:work-testing:+")
 
+    implementation("androidx.navigation:navigation-fragment-ktx:+")
+    implementation("androidx.navigation:navigation-ui-ktx:+")
+    implementation("androidx.navigation:navigation-compose:+")
+    testImplementation("androidx.navigation:navigation-testing:+")
+
 }

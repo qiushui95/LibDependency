@@ -30,4 +30,13 @@ sealed class PluginConfig(
     ) {
         object Plugin : LibPluginId("com.vanniktech.maven.publish")
     }
+
+    object Navigation: PluginConfig(
+        DependencyConfig.Group.Navigation.Fragment.group,
+        "navigation-safe-args-gradle-plugin",
+        DependencyConfig.Group.Navigation.Fragment.version,
+        "navigation"
+    ){
+        object Plugin : LibPluginId("androidx.navigation.safeargs.kotlin")
+    }
 }
