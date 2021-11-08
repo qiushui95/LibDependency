@@ -502,7 +502,7 @@ sealed class DependencyConfig(
         sealed class Accompanist(name: String) : DependencyConfig(
             group = "com.google.accompanist",
             name = name,
-            version = "0.20.0",
+            version = "0.20.2",
             remark = "",
             link = "https://github.com/google/accompanist",
             dependencyMethod = DependencyMethod.Implementation,
