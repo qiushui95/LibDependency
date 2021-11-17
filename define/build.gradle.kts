@@ -52,7 +52,7 @@ dependencies {
     implementation("io.github.csdn-mobile:RoundView:1.7.1")
     implementation("com.google.android.flexbox:flexbox:3.0.0")
     implementation("com.github.dkzwm:fet-core:0.2.1")
-    implementation("com.airbnb.android:lottie:4.2.0")
+    implementation("com.airbnb.android:lottie:4.2.1")
     implementation("com.google.android.material:material:1.4.0")
     implementation("com.github.barteksc:android-pdf-viewer:3.2.0-beta.1")
     implementation("com.github.chrisbanes:PhotoView:2.3.0")
@@ -131,9 +131,9 @@ dependencies {
     implementation("io.insert-koin:koin-androidx-workmanager:3.1.3")
     testImplementation("io.insert-koin:koin-test-junit5:3.1.3")
 
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.5.31")
-    implementation("org.jetbrains.kotlin:kotlin-reflect:1.5.31")
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.0")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.0")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.0")
 
     implementation("androidx.lifecycle:lifecycle-common:2.4.0")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.4.0")

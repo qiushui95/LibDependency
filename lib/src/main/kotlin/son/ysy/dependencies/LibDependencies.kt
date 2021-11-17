@@ -219,7 +219,7 @@ sealed class LibDependencies(
      * 动画框架
      * https://github.com/airbnb/lottie-android
      */
-    object LottieView : LibDependencies("com.airbnb.android", "lottie", "4.2.0",
+    object LottieView : LibDependencies("com.airbnb.android", "lottie", "4.2.1",
         DependencyMethod.Implementation)
 
     /**
@@ -542,14 +542,14 @@ sealed class LibDependencies(
      * https://github.com/JetBrains/kotlin
      */
     interface Kotlin {
-      object Stdlib : LibDependencies("org.jetbrains.kotlin", "kotlin-stdlib", "1.5.31",
+      object Stdlib : LibDependencies("org.jetbrains.kotlin", "kotlin-stdlib", "1.6.0",
           DependencyMethod.Implementation)
 
-      object Reflect : LibDependencies("org.jetbrains.kotlin", "kotlin-reflect", "1.5.31",
+      object Reflect : LibDependencies("org.jetbrains.kotlin", "kotlin-reflect", "1.6.0",
           DependencyMethod.Implementation)
 
       object Plugin : LibDependencies("org.jetbrains.kotlin", "kotlin-gradle-plugin",
-          "1.5.31", DependencyMethod.Implementation)
+          "1.6.0", DependencyMethod.Implementation)
     }
 
     /**

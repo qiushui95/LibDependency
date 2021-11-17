@@ -96,7 +96,7 @@
 >>implementation(com.github.dkzwm:fet-core:0.2.1)  
   
 >[LottieView](https://github.com/airbnb/lottie-android)(动画框架)  
->>implementation(com.airbnb.android:lottie:4.2.0)  
+>>implementation(com.airbnb.android:lottie:4.2.1)  
   
 >[Material](https://github.com/material-components/material-components-android)  
 >>implementation(com.google.android.material:material:1.4.0)  
@@ -231,9 +231,9 @@
 >>testImplementation(io.insert-koin:koin-test-junit5:3.1.3)  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
->>implementation(org.jetbrains.kotlin:kotlin-stdlib:1.5.31)  
->>implementation(org.jetbrains.kotlin:kotlin-reflect:1.5.31)  
->>implementation(org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31)  
+>>implementation(org.jetbrains.kotlin:kotlin-stdlib:1.6.0)  
+>>implementation(org.jetbrains.kotlin:kotlin-reflect:1.6.0)  
+>>implementation(org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.0)  
   
 >[Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation(androidx.lifecycle:lifecycle-common:2.4.0)  

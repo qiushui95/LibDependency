@@ -351,7 +351,7 @@ sealed class DependencyConfig(
         object LottieView : DependencyConfig(
             group = "com.airbnb.android",
             name = "lottie",
-            version = "4.2.0",
+            version = "4.2.1",
             remark = "动画框架",
             link = "https://github.com/airbnb/lottie-android",
             dependencyMethod = DependencyMethod.Implementation,
@@ -782,7 +782,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "org.jetbrains.kotlin",
             name = name,
-            version = "1.5.31",
+            version = "1.6.0",
             remark = "",
             link = "https://github.com/JetBrains/kotlin",
             dependencyMethod = dependencyMethod,
