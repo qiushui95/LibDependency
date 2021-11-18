@@ -25,7 +25,7 @@ dependencies {
     implementation("com.aliyun.dpa:oss-android-sdk:2.9.10")
     implementation("com.aliyun.ams:alicloud-android-push:3.5.0")
     implementation("com.blankj:utilcodex:1.30.6")
-    implementation("androidx.appcompat:appcompat:1.3.1")
+    implementation("androidx.appcompat:appcompat:1.4.0")
     implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.2")
     implementation("io.github.razerdp:BasePopup:3.2.0")
     implementation("me.jorgecastillo:androidcolorx:0.2.0")
@@ -48,7 +48,7 @@ dependencies {
     implementation("com.github.xiaohaibin:XBanner:androidx_v1.2.0")
     implementation("com.eightbitlab:blurview:1.6.6")
     implementation("com.ashokvarma.android:bottom-navigation-bar:2.2.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.1")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.2")
     implementation("io.github.csdn-mobile:RoundView:1.7.1")
     implementation("com.google.android.flexbox:flexbox:3.0.0")
     implementation("com.github.dkzwm:fet-core:0.2.1")
@@ -68,7 +68,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
     testImplementation("androidx.test.ext:junit-ktx:1.1.3")
 
-    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.0-rc01")
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.0-rc02")
     implementation("com.github.fornewid:material-motion-compose:0.7.3")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0")
 
@@ -85,17 +85,17 @@ dependencies {
     implementation("com.google.accompanist:accompanist-swiperefresh:0.20.2")
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.20.2")
 
-    implementation("androidx.compose.animation:animation:1.1.0-beta02")
-    implementation("androidx.compose.compiler:compiler:1.1.0-beta02")
-    implementation("androidx.compose.foundation:foundation:1.1.0-beta02")
-    implementation("androidx.compose.runtime:runtime-livedata:1.1.0-beta02")
-    implementation("androidx.compose.material:material:1.1.0-beta02")
-    implementation("androidx.compose.material:material-icons-core:1.1.0-beta02")
-    implementation("androidx.compose.material:material-icons-extended:1.1.0-beta02")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.1.0-beta02")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.1.0-beta02")
-    implementation("androidx.compose.ui:ui:1.1.0-beta02")
-    implementation("androidx.compose.ui:ui-tooling:1.1.0-beta02")
+    implementation("androidx.compose.animation:animation:1.1.0-beta03")
+    implementation("androidx.compose.compiler:compiler:1.1.0-beta03")
+    implementation("androidx.compose.foundation:foundation:1.1.0-beta03")
+    implementation("androidx.compose.runtime:runtime-livedata:1.1.0-beta03")
+    implementation("androidx.compose.material:material:1.1.0-beta03")
+    implementation("androidx.compose.material:material-icons-core:1.1.0-beta03")
+    implementation("androidx.compose.material:material-icons-extended:1.1.0-beta03")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.1.0-beta03")
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.1.0-beta03")
+    implementation("androidx.compose.ui:ui:1.1.0-beta03")
+    implementation("androidx.compose.ui:ui-tooling:1.1.0-beta03")
 
 
     implementation("androidx.activity:activity-ktx:1.4.0")
@@ -104,8 +104,8 @@ dependencies {
     implementation("androidx.camera:camera-camera2:1.0.2")
     implementation("androidx.camera:camera-core:1.0.2")
     implementation("androidx.camera:camera-lifecycle:1.0.2")
-    implementation("androidx.camera:camera-view:1.0.0-alpha30")
-    implementation("androidx.camera:camera-extensions:1.0.0-alpha30")
+    implementation("androidx.camera:camera-view:1.0.0-alpha31")
+    implementation("androidx.camera:camera-extensions:1.0.0-alpha31")
 
     debugImplementation("com.github.chuckerteam.chucker:library:3.5.2")
     releaseImplementation("com.github.chuckerteam.chucker:library-no-op:3.5.2")
@@ -123,8 +123,8 @@ dependencies {
     kapt("com.airbnb.android:epoxy-processor:4.6.4")
     implementation("com.airbnb.android:epoxy-glide-preloading:4.6.4")
 
-    implementation("androidx.fragment:fragment-ktx:1.3.6")
-    testImplementation("androidx.fragment:fragment-testing:1.3.6")
+    implementation("androidx.fragment:fragment-ktx:1.4.0")
+    testImplementation("androidx.fragment:fragment-testing:1.4.0")
 
     implementation("io.insert-koin:koin-android:3.1.3")
     implementation("io.insert-koin:koin-core:3.1.3")
@@ -157,8 +157,8 @@ dependencies {
     kapt("androidx.room:room-compiler:2.3.0")
     testImplementation("androidx.room:room-testing:2.3.0")
 
-    implementation("androidx.work:work-runtime-ktx:2.7.0")
-    testImplementation("androidx.work:work-testing:2.7.0")
+    implementation("androidx.work:work-runtime-ktx:2.7.1")
+    testImplementation("androidx.work:work-testing:2.7.1")
 
     implementation("androidx.navigation:navigation-fragment-ktx:2.4.0-beta02")
     implementation("androidx.navigation:navigation-ui-ktx:2.4.0-beta02")

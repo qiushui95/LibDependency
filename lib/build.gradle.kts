@@ -16,7 +16,7 @@ dependencies {
 
     dependency(LibDependencies.Test.Junit)
     dependency(LibDependencies.Group.Kotlin.Reflect)
-    testImplementation("com.squareup:kotlinpoet:1.10.1")
+    testImplementation("com.squareup:kotlinpoet:1.10.2")
 }
 
 tasks.withType<Test> {

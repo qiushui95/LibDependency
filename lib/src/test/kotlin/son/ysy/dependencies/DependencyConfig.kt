@@ -59,7 +59,7 @@ sealed class DependencyConfig(
         object Appcompat : DependencyConfig(
             group = "androidx.appcompat",
             name = "appcompat",
-            version = "1.3.1",
+            version = "1.4.0",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/appcompat",
             dependencyMethod = DependencyMethod.Implementation,
@@ -307,7 +307,7 @@ sealed class DependencyConfig(
         object ConstraintLayout : DependencyConfig(
             group = "androidx.constraintlayout",
             name = "constraintlayout",
-            version = "2.1.1",
+            version = "2.1.2",
             remark = "约束布局",
             link = "https://developer.android.com/jetpack/androidx/releases/constraintlayout",
             dependencyMethod = DependencyMethod.Implementation,
@@ -526,7 +526,7 @@ sealed class DependencyConfig(
         object ConstraintLayout : DependencyConfig(
             group = "androidx.constraintlayout",
             name = "constraintlayout-compose",
-            version = "1.0.0-rc01",
+            version = "1.0.0-rc02",
             remark = "Compose约束布局",
             link = "https://developer.android.com/jetpack/androidx/releases/constraintlayout",
             dependencyMethod = DependencyMethod.Implementation,
@@ -552,7 +552,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = group,
             name = name,
-            version = "1.1.0-beta02",
+            version = "1.1.0-beta03",
             remark = "Compose官方",
             link = "https://developer.android.com/jetpack/androidx/releases/compose",
             dependencyMethod = dependencyMethod,
@@ -650,7 +650,7 @@ sealed class DependencyConfig(
         ) {
             sealed class Version(val version: String) {
                 object Core : Version("1.0.2")
-                object Extends : Version("1.0.0-alpha30")
+                object Extends : Version("1.0.0-alpha31")
             }
 
             object Camera2 : CameraX("camera-camera2", Version.Core)
@@ -746,7 +746,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "androidx.fragment",
             name = name,
-            version = "1.3.6",
+            version = "1.4.0",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/fragment",
             dependencyMethod = dependencyMethod,
@@ -892,7 +892,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "androidx.work",
             name = name,
-            version = "2.7.0",
+            version = "2.7.1",
             remark = "任务管理器",
             link = "https://developer.android.com/jetpack/androidx/releases/work",
             dependencyMethod = dependencyMethod,

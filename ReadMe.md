@@ -13,7 +13,7 @@
 >>implementation(com.blankj:utilcodex:1.30.6)  
   
 >[Appcompat](https://developer.android.com/jetpack/androidx/releases/appcompat)  
->>implementation(androidx.appcompat:appcompat:1.3.1)  
+>>implementation(androidx.appcompat:appcompat:1.4.0)  
   
 >[Background](https://github.com/JavaNoober/BackgroundLibrary)(背景生成工具库)  
 >>implementation(com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.2)  
@@ -84,7 +84,7 @@
 >>implementation(com.ashokvarma.android:bottom-navigation-bar:2.2.0)  
   
 >[ConstraintLayout](https://developer.android.com/jetpack/androidx/releases/constraintlayout)(约束布局)  
->>implementation(androidx.constraintlayout:constraintlayout:2.1.1)  
+>>implementation(androidx.constraintlayout:constraintlayout:2.1.2)  
   
 >[CornerView](https://github.com/csdn-mobile/RoundView)(圆角控件)  
 >>implementation(io.github.csdn-mobile:RoundView:1.7.1)  
@@ -148,7 +148,7 @@
 <summary>Compose</summary>  
   
 >[ConstraintLayout](https://developer.android.com/jetpack/androidx/releases/constraintlayout)(Compose约束布局)  
->>implementation(androidx.constraintlayout:constraintlayout-compose:1.0.0-rc01)  
+>>implementation(androidx.constraintlayout:constraintlayout-compose:1.0.0-rc02)  
   
 >[NavigationAnimation](https://github.com/fornewid/material-motion-compose)(Compose导航动画)  
 >>implementation(com.github.fornewid:material-motion-compose:0.7.3)  
@@ -171,17 +171,17 @@
 >>implementation(com.google.accompanist:accompanist-systemuicontroller:0.20.2)  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
->>implementation(androidx.compose.animation:animation:1.1.0-beta02)  
->>implementation(androidx.compose.compiler:compiler:1.1.0-beta02)  
->>implementation(androidx.compose.foundation:foundation:1.1.0-beta02)  
->>implementation(androidx.compose.runtime:runtime-livedata:1.1.0-beta02)  
->>implementation(androidx.compose.material:material:1.1.0-beta02)  
->>implementation(androidx.compose.material:material-icons-core:1.1.0-beta02)  
->>implementation(androidx.compose.material:material-icons-extended:1.1.0-beta02)  
->>implementation(androidx.compose.ui:ui-tooling-preview:1.1.0-beta02)  
->>androidTestImplementation(androidx.compose.ui:ui-test-junit4:1.1.0-beta02)  
->>implementation(androidx.compose.ui:ui:1.1.0-beta02)  
->>implementation(androidx.compose.ui:ui-tooling:1.1.0-beta02)  
+>>implementation(androidx.compose.animation:animation:1.1.0-beta03)  
+>>implementation(androidx.compose.compiler:compiler:1.1.0-beta03)  
+>>implementation(androidx.compose.foundation:foundation:1.1.0-beta03)  
+>>implementation(androidx.compose.runtime:runtime-livedata:1.1.0-beta03)  
+>>implementation(androidx.compose.material:material:1.1.0-beta03)  
+>>implementation(androidx.compose.material:material-icons-core:1.1.0-beta03)  
+>>implementation(androidx.compose.material:material-icons-extended:1.1.0-beta03)  
+>>implementation(androidx.compose.ui:ui-tooling-preview:1.1.0-beta03)  
+>>androidTestImplementation(androidx.compose.ui:ui-test-junit4:1.1.0-beta03)  
+>>implementation(androidx.compose.ui:ui:1.1.0-beta03)  
+>>implementation(androidx.compose.ui:ui-tooling:1.1.0-beta03)  
   
 </details>  
   
@@ -196,8 +196,8 @@
 >>implementation(androidx.camera:camera-camera2:1.0.2)  
 >>implementation(androidx.camera:camera-core:1.0.2)  
 >>implementation(androidx.camera:camera-lifecycle:1.0.2)  
->>implementation(androidx.camera:camera-view:1.0.0-alpha30)  
->>implementation(androidx.camera:camera-extensions:1.0.0-alpha30)  
+>>implementation(androidx.camera:camera-view:1.0.0-alpha31)  
+>>implementation(androidx.camera:camera-extensions:1.0.0-alpha31)  
   
 >[Chucker](https://github.com/ChuckerTeam/chucker)(网络请求监控)  
 >>debugImplementation(com.github.chuckerteam.chucker:library:3.5.2)  
@@ -221,8 +221,8 @@
 >>implementation(com.airbnb.android:epoxy-glide-preloading:4.6.4)  
   
 >[Fragment](https://developer.android.com/jetpack/androidx/releases/fragment)  
->>implementation(androidx.fragment:fragment-ktx:1.3.6)  
->>testImplementation(androidx.fragment:fragment-testing:1.3.6)  
+>>implementation(androidx.fragment:fragment-ktx:1.4.0)  
+>>testImplementation(androidx.fragment:fragment-testing:1.4.0)  
   
 >[Koin](https://github.com/InsertKoinIO/koin)(依赖注入库)  
 >>implementation(io.insert-koin:koin-android:3.1.3)  
@@ -263,8 +263,8 @@
 >>testImplementation(androidx.room:room-testing:2.3.0)  
   
 >[WorkManager](https://developer.android.com/jetpack/androidx/releases/work)(任务管理器)  
->>implementation(androidx.work:work-runtime-ktx:2.7.0)  
->>testImplementation(androidx.work:work-testing:2.7.0)  
+>>implementation(androidx.work:work-runtime-ktx:2.7.1)  
+>>testImplementation(androidx.work:work-testing:2.7.1)  
   
 >[Navigation](https://developer.android.com/jetpack/androidx/releases/navigation)(导航库)  
 >>implementation(androidx.navigation:navigation-fragment-ktx:2.4.0-beta02)  
