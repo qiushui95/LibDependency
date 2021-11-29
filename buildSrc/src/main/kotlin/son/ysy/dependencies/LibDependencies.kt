@@ -64,7 +64,7 @@ sealed class LibDependencies(
      * https://github.com/loperSeven/DateTimePicker
      */
     object DateTimePicker : LibDependencies("com.github.loperSeven", "DateTimePicker",
-        "0.4.1", DependencyMethod.Implementation)
+        "0.5.0", DependencyMethod.Implementation)
 
     /**
      * 悬浮窗
@@ -219,7 +219,7 @@ sealed class LibDependencies(
      * 动画框架
      * https://github.com/airbnb/lottie-android
      */
-    object LottieView : LibDependencies("com.airbnb.android", "lottie", "4.2.1",
+    object LottieView : LibDependencies("com.airbnb.android", "lottie", "4.2.2",
         DependencyMethod.Implementation)
 
     /**
@@ -301,7 +301,7 @@ sealed class LibDependencies(
      * 单元测试
      * https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter
      */
-    object Junit : LibDependencies("org.junit.jupiter", "junit-jupiter", "5.8.1",
+    object Junit : LibDependencies("org.junit.jupiter", "junit-jupiter", "5.8.2",
         DependencyMethod.Test.Implementation)
 
     /**
@@ -525,16 +525,16 @@ sealed class LibDependencies(
      * https://github.com/InsertKoinIO/koin
      */
     interface Koin {
-      object Android : LibDependencies("io.insert-koin", "koin-android", "3.1.3",
+      object Android : LibDependencies("io.insert-koin", "koin-android", "3.1.4",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("io.insert-koin", "koin-core", "3.1.3",
+      object Core : LibDependencies("io.insert-koin", "koin-core", "3.1.4",
           DependencyMethod.Implementation)
 
       object WorkManager : LibDependencies("io.insert-koin", "koin-androidx-workmanager",
-          "3.1.3", DependencyMethod.Implementation)
+          "3.1.4", DependencyMethod.Implementation)
 
-      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.1.3",
+      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.1.4",
           DependencyMethod.Test.Implementation)
     }
 

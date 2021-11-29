@@ -29,7 +29,7 @@ dependencies {
     implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.2")
     implementation("io.github.razerdp:BasePopup:3.2.0")
     implementation("me.jorgecastillo:androidcolorx:0.2.0")
-    implementation("com.github.loperSeven:DateTimePicker:0.4.1")
+    implementation("com.github.loperSeven:DateTimePicker:0.5.0")
     implementation("com.github.princekin-f:EasyFloat:2.0.3")
     implementation("com.ypx.yimagepicker:androidx:3.1.4")
     implementation("joda-time:joda-time:2.10.13")
@@ -52,7 +52,7 @@ dependencies {
     implementation("io.github.csdn-mobile:RoundView:1.7.1")
     implementation("com.google.android.flexbox:flexbox:3.0.0")
     implementation("com.github.dkzwm:fet-core:0.2.1")
-    implementation("com.airbnb.android:lottie:4.2.1")
+    implementation("com.airbnb.android:lottie:4.2.2")
     implementation("com.google.android.material:material:1.4.0")
     implementation("com.github.barteksc:android-pdf-viewer:3.2.0-beta.1")
     implementation("com.github.chrisbanes:PhotoView:2.3.0")
@@ -65,7 +65,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0")
 
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
     testImplementation("androidx.test.ext:junit-ktx:1.1.3")
 
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.0-rc02")
@@ -126,10 +126,10 @@ dependencies {
     implementation("androidx.fragment:fragment-ktx:1.4.0")
     testImplementation("androidx.fragment:fragment-testing:1.4.0")
 
-    implementation("io.insert-koin:koin-android:3.1.3")
-    implementation("io.insert-koin:koin-core:3.1.3")
-    implementation("io.insert-koin:koin-androidx-workmanager:3.1.3")
-    testImplementation("io.insert-koin:koin-test-junit5:3.1.3")
+    implementation("io.insert-koin:koin-android:3.1.4")
+    implementation("io.insert-koin:koin-core:3.1.4")
+    implementation("io.insert-koin:koin-androidx-workmanager:3.1.4")
+    testImplementation("io.insert-koin:koin-test-junit5:3.1.4")
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.0")
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.0")

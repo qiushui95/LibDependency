@@ -25,7 +25,7 @@
 >>implementation(me.jorgecastillo:androidcolorx:0.2.0)  
   
 >[DateTimePicker](https://github.com/loperSeven/DateTimePicker)(时间选择器)  
->>implementation(com.github.loperSeven:DateTimePicker:0.4.1)  
+>>implementation(com.github.loperSeven:DateTimePicker:0.5.0)  
   
 >[EasyFloat](https://github.com/princekin-f/EasyFloat)(悬浮窗)  
 >>implementation(com.github.princekin-f:EasyFloat:2.0.3)  
@@ -96,7 +96,7 @@
 >>implementation(com.github.dkzwm:fet-core:0.2.1)  
   
 >[LottieView](https://github.com/airbnb/lottie-android)(动画框架)  
->>implementation(com.airbnb.android:lottie:4.2.1)  
+>>implementation(com.airbnb.android:lottie:4.2.2)  
   
 >[Material](https://github.com/material-components/material-components-android)  
 >>implementation(com.google.android.material:material:1.4.0)  
@@ -137,7 +137,7 @@
 >>androidTestImplementation(androidx.test.espresso:espresso-core:3.4.0)  
   
 >[Junit](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter)(单元测试)  
->>testImplementation(org.junit.jupiter:junit-jupiter:5.8.1)  
+>>testImplementation(org.junit.jupiter:junit-jupiter:5.8.2)  
   
 >[JunitExt](https://mvnrepository.com/artifact/androidx.test.ext/junit-ktx)(单元测试扩展)  
 >>testImplementation(androidx.test.ext:junit-ktx:1.1.3)  
@@ -225,10 +225,10 @@
 >>testImplementation(androidx.fragment:fragment-testing:1.4.0)  
   
 >[Koin](https://github.com/InsertKoinIO/koin)(依赖注入库)  
->>implementation(io.insert-koin:koin-android:3.1.3)  
->>implementation(io.insert-koin:koin-core:3.1.3)  
->>implementation(io.insert-koin:koin-androidx-workmanager:3.1.3)  
->>testImplementation(io.insert-koin:koin-test-junit5:3.1.3)  
+>>implementation(io.insert-koin:koin-android:3.1.4)  
+>>implementation(io.insert-koin:koin-core:3.1.4)  
+>>implementation(io.insert-koin:koin-androidx-workmanager:3.1.4)  
+>>testImplementation(io.insert-koin:koin-test-junit5:3.1.4)  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
 >>implementation(org.jetbrains.kotlin:kotlin-stdlib:1.6.0)  

@@ -103,7 +103,7 @@ sealed class DependencyConfig(
         object DateTimePicker : DependencyConfig(
             group = "com.github.loperSeven",
             name = "DateTimePicker",
-            version = "0.4.1",
+            version = "0.5.0",
             remark = "时间选择器",
             link = "https://github.com/loperSeven/DateTimePicker",
             dependencyMethod = DependencyMethod.Implementation,
@@ -351,7 +351,7 @@ sealed class DependencyConfig(
         object LottieView : DependencyConfig(
             group = "com.airbnb.android",
             name = "lottie",
-            version = "4.2.1",
+            version = "4.2.2",
             remark = "动画框架",
             link = "https://github.com/airbnb/lottie-android",
             dependencyMethod = DependencyMethod.Implementation,
@@ -476,7 +476,7 @@ sealed class DependencyConfig(
         object Junit : DependencyConfig(
             group = "org.junit.jupiter",
             name = "junit-jupiter",
-            version = "5.8.1",
+            version = "5.8.2",
             remark = "单元测试",
             link = "https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter",
             dependencyMethod = DependencyMethod.Test.Implementation,
@@ -763,7 +763,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "io.insert-koin",
             name = name,
-            version = "3.1.3",
+            version = "3.1.4",
             remark = "依赖注入库",
             link = "https://github.com/InsertKoinIO/koin",
             dependencyMethod = dependencyMethod,
