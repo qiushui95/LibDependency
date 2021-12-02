@@ -114,7 +114,7 @@ sealed class DependencyConfig(
         object EasyFloat : DependencyConfig(
             group = "com.github.princekin-f",
             name = "EasyFloat",
-            version = "2.0.3",
+            version = "2.0.4",
             remark = "悬浮窗",
             link = "https://github.com/princekin-f/EasyFloat",
             dependencyMethod = DependencyMethod.Implementation,
@@ -552,7 +552,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = group,
             name = name,
-            version = "1.1.0-beta03",
+            version = "1.1.0-beta04",
             remark = "Compose官方",
             link = "https://developer.android.com/jetpack/androidx/releases/compose",
             dependencyMethod = dependencyMethod,

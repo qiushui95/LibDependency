@@ -70,7 +70,7 @@ sealed class LibDependencies(
      * 悬浮窗
      * https://github.com/princekin-f/EasyFloat
      */
-    object EasyFloat : LibDependencies("com.github.princekin-f", "EasyFloat", "2.0.3",
+    object EasyFloat : LibDependencies("com.github.princekin-f", "EasyFloat", "2.0.4",
         DependencyMethod.Implementation)
 
     /**
@@ -380,36 +380,36 @@ sealed class LibDependencies(
      */
     interface Official {
       object Animation : LibDependencies("androidx.compose.animation", "animation",
-          "1.1.0-beta03", DependencyMethod.Implementation)
+          "1.1.0-beta04", DependencyMethod.Implementation)
 
       object Compiler : LibDependencies("androidx.compose.compiler", "compiler",
-          "1.1.0-beta03", DependencyMethod.Implementation)
+          "1.1.0-beta04", DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
-          "1.1.0-beta03", DependencyMethod.Implementation)
+          "1.1.0-beta04", DependencyMethod.Implementation)
 
       object LiveData : LibDependencies("androidx.compose.runtime", "runtime-livedata",
-          "1.1.0-beta03", DependencyMethod.Implementation)
+          "1.1.0-beta04", DependencyMethod.Implementation)
 
       object Material : LibDependencies("androidx.compose.material", "material",
-          "1.1.0-beta03", DependencyMethod.Implementation)
+          "1.1.0-beta04", DependencyMethod.Implementation)
 
       object MaterialIcon : LibDependencies("androidx.compose.material",
-          "material-icons-core", "1.1.0-beta03", DependencyMethod.Implementation)
+          "material-icons-core", "1.1.0-beta04", DependencyMethod.Implementation)
 
       object MaterialIconExtended : LibDependencies("androidx.compose.material",
-          "material-icons-extended", "1.1.0-beta03", DependencyMethod.Implementation)
+          "material-icons-extended", "1.1.0-beta04", DependencyMethod.Implementation)
 
       object Preview : LibDependencies("androidx.compose.ui", "ui-tooling-preview",
-          "1.1.0-beta03", DependencyMethod.Implementation)
+          "1.1.0-beta04", DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.1.0-beta03",
+      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.1.0-beta04",
           DependencyMethod.AndroidTest.Implementation)
 
-      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.1.0-beta03",
+      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.1.0-beta04",
           DependencyMethod.Implementation)
 
-      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.1.0-beta03",
+      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.1.0-beta04",
           DependencyMethod.Implementation)
     }
   }

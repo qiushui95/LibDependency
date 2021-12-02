@@ -28,7 +28,7 @@
 >>implementation(com.github.loperSeven:DateTimePicker:0.5.0)  
   
 >[EasyFloat](https://github.com/princekin-f/EasyFloat)(悬浮窗)  
->>implementation(com.github.princekin-f:EasyFloat:2.0.3)  
+>>implementation(com.github.princekin-f:EasyFloat:2.0.4)  
   
 >[ImagePicker](https://github.com/yangpeixing/YImagePicker)(多媒体选择库)  
 >>implementation(com.ypx.yimagepicker:androidx:3.1.4)  
@@ -171,17 +171,17 @@
 >>implementation(com.google.accompanist:accompanist-systemuicontroller:0.20.2)  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
->>implementation(androidx.compose.animation:animation:1.1.0-beta03)  
->>implementation(androidx.compose.compiler:compiler:1.1.0-beta03)  
->>implementation(androidx.compose.foundation:foundation:1.1.0-beta03)  
->>implementation(androidx.compose.runtime:runtime-livedata:1.1.0-beta03)  
->>implementation(androidx.compose.material:material:1.1.0-beta03)  
->>implementation(androidx.compose.material:material-icons-core:1.1.0-beta03)  
->>implementation(androidx.compose.material:material-icons-extended:1.1.0-beta03)  
->>implementation(androidx.compose.ui:ui-tooling-preview:1.1.0-beta03)  
->>androidTestImplementation(androidx.compose.ui:ui-test-junit4:1.1.0-beta03)  
->>implementation(androidx.compose.ui:ui:1.1.0-beta03)  
->>implementation(androidx.compose.ui:ui-tooling:1.1.0-beta03)  
+>>implementation(androidx.compose.animation:animation:1.1.0-beta04)  
+>>implementation(androidx.compose.compiler:compiler:1.1.0-beta04)  
+>>implementation(androidx.compose.foundation:foundation:1.1.0-beta04)  
+>>implementation(androidx.compose.runtime:runtime-livedata:1.1.0-beta04)  
+>>implementation(androidx.compose.material:material:1.1.0-beta04)  
+>>implementation(androidx.compose.material:material-icons-core:1.1.0-beta04)  
+>>implementation(androidx.compose.material:material-icons-extended:1.1.0-beta04)  
+>>implementation(androidx.compose.ui:ui-tooling-preview:1.1.0-beta04)  
+>>androidTestImplementation(androidx.compose.ui:ui-test-junit4:1.1.0-beta04)  
+>>implementation(androidx.compose.ui:ui:1.1.0-beta04)  
+>>implementation(androidx.compose.ui:ui-tooling:1.1.0-beta04)  
   
 </details>  
   
