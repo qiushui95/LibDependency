@@ -4,7 +4,7 @@ name: Publish
 on:
   push:
     branches:
-      - publish
+      - master
 
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
       - name: 设置版本环境变量
         run: echo "LIB_VERSION=$(cat lib/version.properties | grep -Po '\d+\.\d+\.\d+')">> $GITHUB_ENV
       - name: 提交版本修改记录
-        uses: EndBug/add-and-commit@v7.4.0
+        uses: EndBug/add-and-commit@v7.5.0
         with:
           add: "."
           author_name: "YCX-Github"
@@ -39,7 +39,13 @@ jobs:
           author_name: "YCX-Github"
           author_email: "974577817@qq.com"
           message: "生成${{env.LIB_VERSION}}"
-          push: false
-      - name: push to master
-        run: |
-          git push origin publish:master -f
+          push: true
+      - name: Create Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{env.LIB_VERSION}}
+          release_name: Release ${{env.LIB_VERSION}}
+          draft: false
+          prerelease: false
