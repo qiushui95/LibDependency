@@ -29,7 +29,7 @@ sealed class LibDependencies(
      * 多功能工具包
      * https://github.com/Blankj/AndroidUtilCode
      */
-    object AndroidUtil : LibDependencies("com.blankj", "utilcodex", "1.30.6",
+    object AndroidUtil : LibDependencies("com.blankj", "utilcodex", "1.31.0",
         DependencyMethod.Implementation)
 
     /**
@@ -156,6 +156,13 @@ sealed class LibDependencies(
      */
     object MavenPublish : LibDependencies("com.vanniktech", "gradle-maven-publish-plugin",
         "0.18.0", DependencyMethod.Implementation)
+
+    /**
+     * Json序列化
+     * https://github.com/Kotlin/kotlinx.serialization
+     */
+    object Serialization : LibDependencies("org.jetbrains.kotlinx",
+        "kotlinx-serialization-json", "1.3.1", DependencyMethod.Implementation)
   }
 
   interface View {

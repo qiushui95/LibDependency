@@ -1,0 +1,45 @@
+name: Publish
+
+# 触发器
+on:
+  push:
+    branches:
+      - publish
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: 安装JDK 11
+        uses: actions/setup-java@v2
+        with:
+          distribution: adopt
+          java-version: 11
+      - name: 更新打包版本
+        id: update-version
+        run: bash ./gradlew lib:updateVersion
+      - name: 设置版本环境变量
+        run: echo "LIB_VERSION=$(cat lib/version.properties | grep -Po '\d+\.\d+\.\d+')">> $GITHUB_ENV
+      - name: 提交版本修改记录
+        uses: EndBug/add-and-commit@v7.4.0
+        with:
+          add: "."
+          author_name: "YCX-Github"
+          author_email: "974577817@qq.com"
+          message: "更新版本到${{env.LIB_VERSION}}"
+          push: false
+      - name: 生成最新代码
+        run: bash ./gradlew lib:test --tests "son.ysy.dependencies.Creator.testCreateAll"
+      - name: 提交生成结果记录
+        uses: EndBug/add-and-commit@v7.4.0
+        with:
+          add: "."
+          author_name: "YCX-Github"
+          author_email: "974577817@qq.com"
+          message: "生成${{env.LIB_VERSION}}"
+          push: false
+      - name: push to master
+        run: |
+          git push origin publish:master -f

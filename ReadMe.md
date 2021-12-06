@@ -10,7 +10,7 @@
 >>implementation(com.aliyun.ams:alicloud-android-push:3.5.0)  
   
 >[AndroidUtil](https://github.com/Blankj/AndroidUtilCode)(多功能工具包)  
->>implementation(com.blankj:utilcodex:1.30.6)  
+>>implementation(com.blankj:utilcodex:1.31.0)  
   
 >[Appcompat](https://developer.android.com/jetpack/androidx/releases/appcompat)  
 >>implementation(androidx.appcompat:appcompat:1.4.0)  
@@ -65,6 +65,9 @@
   
 >[MavenPublish](https://github.com/vanniktech/gradle-maven-publish-plugin)(Maven上传)  
 >>implementation(com.vanniktech:gradle-maven-publish-plugin:0.18.0)  
+  
+>[Serialization](https://github.com/Kotlin/kotlinx.serialization)(Json序列化)  
+>>implementation(org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.1)  
   
 </details>  
   

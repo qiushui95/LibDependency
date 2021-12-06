@@ -24,7 +24,7 @@ android {
 dependencies {
     implementation("com.aliyun.dpa:oss-android-sdk:2.9.10")
     implementation("com.aliyun.ams:alicloud-android-push:3.5.0")
-    implementation("com.blankj:utilcodex:1.30.6")
+    implementation("com.blankj:utilcodex:1.31.0")
     implementation("androidx.appcompat:appcompat:1.4.0")
     implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.2")
     implementation("io.github.razerdp:BasePopup:3.2.0")
@@ -43,6 +43,7 @@ dependencies {
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.0.0")
     implementation("com.localebro:okhttpprofiler:1.0.8")
     implementation("com.vanniktech:gradle-maven-publish-plugin:0.18.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.1")
 
     implementation("com.github.Justson.AgentWeb:agentweb-core:v4.1.9-androidx")
     implementation("com.github.xiaohaibin:XBanner:androidx_v1.2.0")

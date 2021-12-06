@@ -213,7 +213,7 @@ class Creator {
             .map { "    set(\"${it.key}\", \"${it.group}:${it.name}:${it.version}\")\n" }
             .forEach(sb::append)
 
-        val configFile = File(parentDir, "gradle.properties")
+        val configFile = File(currentDir, "version.properties")
 
         var libVersion = "1.0.0"
 

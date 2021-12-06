@@ -48,7 +48,7 @@ sealed class DependencyConfig(
         object AndroidUtil : DependencyConfig(
             group = "com.blankj",
             name = "utilcodex",
-            version = "1.30.6",
+            version = "1.31.0",
             remark = "多功能工具包",
             link = "https://github.com/Blankj/AndroidUtilCode",
             dependencyMethod = DependencyMethod.Implementation,
@@ -252,6 +252,18 @@ sealed class DependencyConfig(
             dependencyMethod = DependencyMethod.Implementation,
         ) {
             const val PLUGIN_ID = "com.vanniktech.maven.publish"
+        }
+        //endregion
+        //region Json序列化
+        object Serialization : DependencyConfig(
+            group = "org.jetbrains.kotlinx",
+            name = "kotlinx-serialization-json",
+            version = "1.3.1",
+            remark = "Json序列化",
+            link = "https://github.com/Kotlin/kotlinx.serialization",
+            dependencyMethod = DependencyMethod.Implementation,
+        ) {
+            const val PLUGIN_ID = "plugin.serialization"
         }
         //endregion
     }
