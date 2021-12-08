@@ -37,7 +37,7 @@ sealed class DependencyConfig(
         object AliPush : DependencyConfig(
             group = "com.aliyun.ams",
             name = "alicloud-android-push",
-            version = "3.5.0",
+            version = "3.7.1",
             remark = "阿里推送",
             link = "https://help.aliyun.com/document_detail/190009.html?spm=a2c4g.11174283.3.2.52eb6d163QVxjG",
             dependencyMethod = DependencyMethod.Implementation,
@@ -103,7 +103,7 @@ sealed class DependencyConfig(
         object DateTimePicker : DependencyConfig(
             group = "com.github.loperSeven",
             name = "DateTimePicker",
-            version = "0.5.0",
+            version = "0.5.1",
             remark = "时间选择器",
             link = "https://github.com/loperSeven/DateTimePicker",
             dependencyMethod = DependencyMethod.Implementation,
@@ -202,7 +202,7 @@ sealed class DependencyConfig(
         object Store : DependencyConfig(
             group = "com.dropbox.mobile.store",
             name = "store4",
-            version = "4.0.2-KT15",
+            version = "4.0.3-KT15",
             remark = "多数据源",
             link = "https://github.com/dropbox/Store",
             dependencyMethod = DependencyMethod.Implementation,
@@ -253,6 +253,7 @@ sealed class DependencyConfig(
         ) {
             const val PLUGIN_ID = "com.vanniktech.maven.publish"
         }
+
         //endregion
         //region Json序列化
         object Serialization : DependencyConfig(
@@ -261,6 +262,18 @@ sealed class DependencyConfig(
             version = "1.3.1",
             remark = "Json序列化",
             link = "https://github.com/Kotlin/kotlinx.serialization",
+            dependencyMethod = DependencyMethod.Implementation,
+        ) {
+            const val PLUGIN_ID = "plugin.serialization"
+        }
+        //endregion
+        //region Mavericks架构
+        object Mavericks : DependencyConfig(
+            group = "com.airbnb.android",
+            name = "mavericks",
+            version = "2.5.0",
+            remark = "Mavericks架构",
+            link = "https://github.com/airbnb/mavericks",
             dependencyMethod = DependencyMethod.Implementation,
         ) {
             const val PLUGIN_ID = "plugin.serialization"
@@ -286,7 +299,7 @@ sealed class DependencyConfig(
         object BannerView : DependencyConfig(
             group = "com.github.xiaohaibin",
             name = "XBanner",
-            version = "androidx_v1.2.0",
+            version = "androidx_v1.2.1",
             remark = "轮播控件",
             link = "https://github.com/xiaohaibin/XBanner/tree/androidX",
             dependencyMethod = DependencyMethod.Implementation,
@@ -462,7 +475,7 @@ sealed class DependencyConfig(
         object WebX5 : DependencyConfig(
             group = "com.tencent.tbs",
             name = "tbssdk",
-            version = "44116",
+            version = "44132",
             remark = "X5浏览器",
             link = "https://x5.tencent.com/docs/access.html",
             dependencyMethod = DependencyMethod.Implementation,
@@ -514,7 +527,7 @@ sealed class DependencyConfig(
         sealed class Accompanist(name: String) : DependencyConfig(
             group = "com.google.accompanist",
             name = name,
-            version = "0.20.2",
+            version = "0.21.4-beta",
             remark = "",
             link = "https://github.com/google/accompanist",
             dependencyMethod = DependencyMethod.Implementation,
@@ -549,7 +562,7 @@ sealed class DependencyConfig(
         object NavigationAnimation : DependencyConfig(
             group = "com.github.fornewid",
             name = "material-motion-compose",
-            version = "0.7.3",
+            version = "0.7.7",
             remark = "Compose导航动画",
             link = "https://github.com/fornewid/material-motion-compose",
             dependencyMethod = DependencyMethod.Implementation,
@@ -661,13 +674,14 @@ sealed class DependencyConfig(
             dependencyMethod = DependencyMethod.Implementation,
         ) {
             sealed class Version(val version: String) {
-                object Core : Version("1.0.2")
+                object Core : Version("1.1.0-alpha11")
                 object Extends : Version("1.0.0-alpha31")
             }
 
             object Camera2 : CameraX("camera-camera2", Version.Core)
             object Core : CameraX("camera-core", Version.Core)
             object Lifecycle : CameraX("camera-lifecycle", Version.Core)
+            object Video : CameraX("camera-video", Version.Core)
             object View : CameraX("camera-view", Version.Extends)
             object Extensions : CameraX("camera-extensions", Version.Extends)
         }
@@ -720,7 +734,7 @@ sealed class DependencyConfig(
             DependencyConfig(
                 group = "org.jetbrains.kotlinx",
                 name = name,
-                version = "1.5.2",
+                version = "1.6.0-RC",
                 remark = "core",
                 link = "https://github.com/Kotlin/kotlinx.coroutines",
                 dependencyMethod = dependencyMethod,
@@ -738,15 +752,14 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "com.airbnb.android",
             name = name,
-            version = "4.6.4",
+            version = "5.0.0-beta05",
             remark = "core",
             link = "https://github.com/airbnb/epoxy",
             dependencyMethod = dependencyMethod,
         ) {
             object Core : Epoxy("epoxy")
-            object Compiler : Epoxy("epoxy-processor", DependencyMethod.Kapt)
-
-            //            object Compose : Epoxy("epoxy-compose")
+            object Compiler : Epoxy("epoxy-processor", DependencyMethod.Ksp)
+            object Compose : Epoxy("epoxy-compose")
             object Glide : Epoxy("epoxy-glide-preloading")
         }
         //endregion
@@ -851,7 +864,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "com.squareup.okhttp3",
             name = name,
-            version = "4.9.1",
+            version = "4.9.3",
             remark = "",
             link = "https://github.com/square/okhttp",
             dependencyMethod = dependencyMethod,

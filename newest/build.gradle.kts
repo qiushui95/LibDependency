@@ -2,6 +2,7 @@ plugins {
     id("com.android.library")
     id("kotlin-android")
     id("kotlin-kapt")
+    id("com.google.devtools.ksp") version "1.6.0-1.0.1"
 }
 
 android {
@@ -105,6 +106,7 @@ dependencies {
     implementation("androidx.camera:camera-camera2:+")
     implementation("androidx.camera:camera-core:+")
     implementation("androidx.camera:camera-lifecycle:+")
+    implementation("androidx.camera:camera-video:+")
     implementation("androidx.camera:camera-view:+")
     implementation("androidx.camera:camera-extensions:+")
 
@@ -121,7 +123,8 @@ dependencies {
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:+")
 
     implementation("com.airbnb.android:epoxy:+")
-    kapt("com.airbnb.android:epoxy-processor:+")
+    ksp("com.airbnb.android:epoxy-processor:+")
+    implementation("com.airbnb.android:epoxy-compose:+")
     implementation("com.airbnb.android:epoxy-glide-preloading:+")
 
     implementation("androidx.fragment:fragment-ktx:+")

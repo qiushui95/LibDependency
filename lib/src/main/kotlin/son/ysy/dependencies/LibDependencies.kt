@@ -22,7 +22,7 @@ sealed class LibDependencies(
      * 阿里推送
      * https://help.aliyun.com/document_detail/190009.html?spm=a2c4g.11174283.3.2.52eb6d163QVxjG
      */
-    object AliPush : LibDependencies("com.aliyun.ams", "alicloud-android-push", "3.5.0",
+    object AliPush : LibDependencies("com.aliyun.ams", "alicloud-android-push", "3.7.1",
         DependencyMethod.Implementation)
 
     /**
@@ -64,7 +64,7 @@ sealed class LibDependencies(
      * https://github.com/loperSeven/DateTimePicker
      */
     object DateTimePicker : LibDependencies("com.github.loperSeven", "DateTimePicker",
-        "0.5.0", DependencyMethod.Implementation)
+        "0.5.1", DependencyMethod.Implementation)
 
     /**
      * 悬浮窗
@@ -126,7 +126,7 @@ sealed class LibDependencies(
      * 多数据源
      * https://github.com/dropbox/Store
      */
-    object Store : LibDependencies("com.dropbox.mobile.store", "store4", "4.0.2-KT15",
+    object Store : LibDependencies("com.dropbox.mobile.store", "store4", "4.0.3-KT15",
         DependencyMethod.Implementation)
 
     /**
@@ -178,7 +178,7 @@ sealed class LibDependencies(
      * https://github.com/xiaohaibin/XBanner/tree/androidX
      */
     object BannerView : LibDependencies("com.github.xiaohaibin", "XBanner",
-        "androidx_v1.2.0", DependencyMethod.Implementation)
+        "androidx_v1.2.1", DependencyMethod.Implementation)
 
     /**
      * 高斯模糊
@@ -286,7 +286,7 @@ sealed class LibDependencies(
      * X5浏览器
      * https://x5.tencent.com/docs/access.html
      */
-    object WebX5 : LibDependencies("com.tencent.tbs", "tbssdk", "44116",
+    object WebX5 : LibDependencies("com.tencent.tbs", "tbssdk", "44132",
         DependencyMethod.Implementation)
 
     /**
@@ -332,7 +332,7 @@ sealed class LibDependencies(
      * https://github.com/fornewid/material-motion-compose
      */
     object NavigationAnimation : LibDependencies("com.github.fornewid",
-        "material-motion-compose", "0.7.3", DependencyMethod.Implementation)
+        "material-motion-compose", "0.7.7", DependencyMethod.Implementation)
 
     /**
      * https://developer.android.com/jetpack/androidx/releases/lifecycle
@@ -345,40 +345,40 @@ sealed class LibDependencies(
      */
     interface Accompanist {
       object AppcompatTheme : LibDependencies("com.google.accompanist",
-          "accompanist-appcompat-theme", "0.20.2", DependencyMethod.Implementation)
+          "accompanist-appcompat-theme", "0.21.4-beta", DependencyMethod.Implementation)
 
       object DrawablePainter : LibDependencies("com.google.accompanist",
-          "accompanist-drawablepainter", "0.20.2", DependencyMethod.Implementation)
+          "accompanist-drawablepainter", "0.21.4-beta", DependencyMethod.Implementation)
 
       object FlowLayout : LibDependencies("com.google.accompanist", "accompanist-flowlayout",
-          "0.20.2", DependencyMethod.Implementation)
+          "0.21.4-beta", DependencyMethod.Implementation)
 
       object Insets : LibDependencies("com.google.accompanist", "accompanist-insets",
-          "0.20.2", DependencyMethod.Implementation)
+          "0.21.4-beta", DependencyMethod.Implementation)
 
       object NavigationAnimation : LibDependencies("com.google.accompanist",
-          "accompanist-navigation-animation", "0.20.2", DependencyMethod.Implementation)
+          "accompanist-navigation-animation", "0.21.4-beta", DependencyMethod.Implementation)
 
       object NavigationMaterial : LibDependencies("com.google.accompanist",
-          "accompanist-navigation-material", "0.20.2", DependencyMethod.Implementation)
+          "accompanist-navigation-material", "0.21.4-beta", DependencyMethod.Implementation)
 
-      object Pager : LibDependencies("com.google.accompanist", "accompanist-pager", "0.20.2",
-          DependencyMethod.Implementation)
+      object Pager : LibDependencies("com.google.accompanist", "accompanist-pager",
+          "0.21.4-beta", DependencyMethod.Implementation)
 
       object Permissions : LibDependencies("com.google.accompanist",
-          "accompanist-permissions", "0.20.2", DependencyMethod.Implementation)
+          "accompanist-permissions", "0.21.4-beta", DependencyMethod.Implementation)
 
       object PlaceHolder : LibDependencies("com.google.accompanist",
-          "accompanist-placeholder", "0.20.2", DependencyMethod.Implementation)
+          "accompanist-placeholder", "0.21.4-beta", DependencyMethod.Implementation)
 
       object PlaceHolderMaterial : LibDependencies("com.google.accompanist",
-          "accompanist-placeholder-material", "0.20.2", DependencyMethod.Implementation)
+          "accompanist-placeholder-material", "0.21.4-beta", DependencyMethod.Implementation)
 
       object SwipeRefresh : LibDependencies("com.google.accompanist",
-          "accompanist-swiperefresh", "0.20.2", DependencyMethod.Implementation)
+          "accompanist-swiperefresh", "0.21.4-beta", DependencyMethod.Implementation)
 
       object SystemUiController : LibDependencies("com.google.accompanist",
-          "accompanist-systemuicontroller", "0.20.2", DependencyMethod.Implementation)
+          "accompanist-systemuicontroller", "0.21.4-beta", DependencyMethod.Implementation)
     }
 
     /**
@@ -438,13 +438,16 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/camera
      */
     interface CameraX {
-      object Camera2 : LibDependencies("androidx.camera", "camera-camera2", "1.0.2",
+      object Camera2 : LibDependencies("androidx.camera", "camera-camera2", "1.1.0-alpha11",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("androidx.camera", "camera-core", "1.0.2",
+      object Core : LibDependencies("androidx.camera", "camera-core", "1.1.0-alpha11",
           DependencyMethod.Implementation)
 
-      object Lifecycle : LibDependencies("androidx.camera", "camera-lifecycle", "1.0.2",
+      object Lifecycle : LibDependencies("androidx.camera", "camera-lifecycle",
+          "1.1.0-alpha11", DependencyMethod.Implementation)
+
+      object Video : LibDependencies("androidx.camera", "camera-video", "1.1.0-alpha11",
           DependencyMethod.Implementation)
 
       object View : LibDependencies("androidx.camera", "camera-view", "1.0.0-alpha31",
@@ -495,10 +498,10 @@ sealed class LibDependencies(
      */
     interface Coroutines {
       object Core : LibDependencies("org.jetbrains.kotlinx", "kotlinx-coroutines-android",
-          "1.5.2", DependencyMethod.Implementation)
+          "1.6.0-RC", DependencyMethod.Implementation)
 
       object Test : LibDependencies("org.jetbrains.kotlinx", "kotlinx-coroutines-test",
-          "1.5.2", DependencyMethod.Test.Implementation)
+          "1.6.0-RC", DependencyMethod.Test.Implementation)
     }
 
     /**
@@ -506,14 +509,17 @@ sealed class LibDependencies(
      * https://github.com/airbnb/epoxy
      */
     interface Epoxy {
-      object Core : LibDependencies("com.airbnb.android", "epoxy", "4.6.4",
+      object Core : LibDependencies("com.airbnb.android", "epoxy", "5.0.0-beta05",
           DependencyMethod.Implementation)
 
-      object Compiler : LibDependencies("com.airbnb.android", "epoxy-processor", "4.6.4",
-          DependencyMethod.Kapt)
+      object Compiler : LibDependencies("com.airbnb.android", "epoxy-processor",
+          "5.0.0-beta05", DependencyMethod.Ksp)
 
-      object Glide : LibDependencies("com.airbnb.android", "epoxy-glide-preloading", "4.6.4",
+      object Compose : LibDependencies("com.airbnb.android", "epoxy-compose", "5.0.0-beta05",
           DependencyMethod.Implementation)
+
+      object Glide : LibDependencies("com.airbnb.android", "epoxy-glide-preloading",
+          "5.0.0-beta05", DependencyMethod.Implementation)
     }
 
     /**
@@ -601,10 +607,10 @@ sealed class LibDependencies(
      * https://github.com/square/okhttp
      */
     interface OkHttp {
-      object Core : LibDependencies("com.squareup.okhttp3", "okhttp", "4.9.1",
+      object Core : LibDependencies("com.squareup.okhttp3", "okhttp", "4.9.3",
           DependencyMethod.Implementation)
 
-      object Mock : LibDependencies("com.squareup.okhttp3", "mockwebserver", "4.9.1",
+      object Mock : LibDependencies("com.squareup.okhttp3", "mockwebserver", "4.9.3",
           DependencyMethod.AndroidTest.Implementation)
     }
 

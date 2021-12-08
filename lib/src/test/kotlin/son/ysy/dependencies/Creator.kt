@@ -376,7 +376,7 @@ class Creator {
         buildMdTitle(title) {
             DependencyConfig::class
                 .sealedSubclasses
-                .filter { it.qualifiedName?.contains(title) == true }
+                .filter { it.java.canonicalName.split(".").dropLast(1).last() == title }
                 .mapNotNull { it.objectInstance }
                 .sortedBy { it.sort }
                 .forEach { config ->
@@ -445,6 +445,7 @@ class Creator {
     id("com.android.library")
     id("kotlin-android")
     id("kotlin-kapt")
+    id("com.google.devtools.ksp") version "1.6.0-1.0.1"
 }
 
 android {

@@ -7,7 +7,7 @@
 >>implementation(com.aliyun.dpa:oss-android-sdk:2.9.10)  
   
 >[AliPush](https://help.aliyun.com/document_detail/190009.html?spm=a2c4g.11174283.3.2.52eb6d163QVxjG)(阿里推送)  
->>implementation(com.aliyun.ams:alicloud-android-push:3.5.0)  
+>>implementation(com.aliyun.ams:alicloud-android-push:3.7.1)  
   
 >[AndroidUtil](https://github.com/Blankj/AndroidUtilCode)(多功能工具包)  
 >>implementation(com.blankj:utilcodex:1.31.0)  
@@ -25,7 +25,7 @@
 >>implementation(me.jorgecastillo:androidcolorx:0.2.0)  
   
 >[DateTimePicker](https://github.com/loperSeven/DateTimePicker)(时间选择器)  
->>implementation(com.github.loperSeven:DateTimePicker:0.5.0)  
+>>implementation(com.github.loperSeven:DateTimePicker:0.5.1)  
   
 >[EasyFloat](https://github.com/princekin-f/EasyFloat)(悬浮窗)  
 >>implementation(com.github.princekin-f:EasyFloat:2.0.4)  
@@ -52,7 +52,7 @@
 >>implementation(androidx.startup:startup-runtime:1.1.0)  
   
 >[Store](https://github.com/dropbox/Store)(多数据源)  
->>implementation(com.dropbox.mobile.store:store4:4.0.2-KT15)  
+>>implementation(com.dropbox.mobile.store:store4:4.0.3-KT15)  
   
 >[WeChat](https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Resource_Center_Homepage.html)(微信开发Sdk)  
 >>implementation(com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0)  
@@ -78,7 +78,7 @@
 >>implementation(com.github.Justson.AgentWeb:agentweb-core:v4.1.9-androidx)  
   
 >[BannerView](https://github.com/xiaohaibin/XBanner/tree/androidX)(轮播控件)  
->>implementation(com.github.xiaohaibin:XBanner:androidx_v1.2.0)  
+>>implementation(com.github.xiaohaibin:XBanner:androidx_v1.2.1)  
   
 >[BlurView](https://github.com/Dimezis/BlurView)(高斯模糊)  
 >>implementation(com.eightbitlab:blurview:1.6.6)  
@@ -126,10 +126,7 @@
 >>implementation(androidx.viewpager2:viewpager2:1.1.0-beta01)  
   
 >[WebX5](https://x5.tencent.com/docs/access.html)(X5浏览器)  
->>implementation(com.tencent.tbs:tbssdk:44116)  
-  
->[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
->>implementation(androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0)  
+>>implementation(com.tencent.tbs:tbssdk:44132)  
   
 </details>  
   
@@ -154,24 +151,24 @@
 >>implementation(androidx.constraintlayout:constraintlayout-compose:1.0.0-rc02)  
   
 >[NavigationAnimation](https://github.com/fornewid/material-motion-compose)(Compose导航动画)  
->>implementation(com.github.fornewid:material-motion-compose:0.7.3)  
+>>implementation(com.github.fornewid:material-motion-compose:0.7.7)  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation(androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0)  
   
 >[Accompanist](https://github.com/google/accompanist)  
->>implementation(com.google.accompanist:accompanist-appcompat-theme:0.20.2)  
->>implementation(com.google.accompanist:accompanist-drawablepainter:0.20.2)  
->>implementation(com.google.accompanist:accompanist-flowlayout:0.20.2)  
->>implementation(com.google.accompanist:accompanist-insets:0.20.2)  
->>implementation(com.google.accompanist:accompanist-navigation-animation:0.20.2)  
->>implementation(com.google.accompanist:accompanist-navigation-material:0.20.2)  
->>implementation(com.google.accompanist:accompanist-pager:0.20.2)  
->>implementation(com.google.accompanist:accompanist-permissions:0.20.2)  
->>implementation(com.google.accompanist:accompanist-placeholder:0.20.2)  
->>implementation(com.google.accompanist:accompanist-placeholder-material:0.20.2)  
->>implementation(com.google.accompanist:accompanist-swiperefresh:0.20.2)  
->>implementation(com.google.accompanist:accompanist-systemuicontroller:0.20.2)  
+>>implementation(com.google.accompanist:accompanist-appcompat-theme:0.21.4-beta)  
+>>implementation(com.google.accompanist:accompanist-drawablepainter:0.21.4-beta)  
+>>implementation(com.google.accompanist:accompanist-flowlayout:0.21.4-beta)  
+>>implementation(com.google.accompanist:accompanist-insets:0.21.4-beta)  
+>>implementation(com.google.accompanist:accompanist-navigation-animation:0.21.4-beta)  
+>>implementation(com.google.accompanist:accompanist-navigation-material:0.21.4-beta)  
+>>implementation(com.google.accompanist:accompanist-pager:0.21.4-beta)  
+>>implementation(com.google.accompanist:accompanist-permissions:0.21.4-beta)  
+>>implementation(com.google.accompanist:accompanist-placeholder:0.21.4-beta)  
+>>implementation(com.google.accompanist:accompanist-placeholder-material:0.21.4-beta)  
+>>implementation(com.google.accompanist:accompanist-swiperefresh:0.21.4-beta)  
+>>implementation(com.google.accompanist:accompanist-systemuicontroller:0.21.4-beta)  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
 >>implementation(androidx.compose.animation:animation:1.1.0-beta04)  
@@ -196,9 +193,10 @@
 >>implementation(androidx.activity:activity-compose:1.4.0)  
   
 >[CameraX](https://developer.android.com/jetpack/androidx/releases/camera)(相机相关)  
->>implementation(androidx.camera:camera-camera2:1.0.2)  
->>implementation(androidx.camera:camera-core:1.0.2)  
->>implementation(androidx.camera:camera-lifecycle:1.0.2)  
+>>implementation(androidx.camera:camera-camera2:1.1.0-alpha11)  
+>>implementation(androidx.camera:camera-core:1.1.0-alpha11)  
+>>implementation(androidx.camera:camera-lifecycle:1.1.0-alpha11)  
+>>implementation(androidx.camera:camera-video:1.1.0-alpha11)  
 >>implementation(androidx.camera:camera-view:1.0.0-alpha31)  
 >>implementation(androidx.camera:camera-extensions:1.0.0-alpha31)  
   
@@ -215,13 +213,14 @@
 >>implementation(androidx.core:core-splashscreen:1.0.0-alpha02)  
   
 >[Coroutines](https://github.com/Kotlin/kotlinx.coroutines)(core)  
->>implementation(org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2)  
->>testImplementation(org.jetbrains.kotlinx:kotlinx-coroutines-test:1.5.2)  
+>>implementation(org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0-RC)  
+>>testImplementation(org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0-RC)  
   
 >[Epoxy](https://github.com/airbnb/epoxy)(core)  
->>implementation(com.airbnb.android:epoxy:4.6.4)  
->>kapt(com.airbnb.android:epoxy-processor:4.6.4)  
->>implementation(com.airbnb.android:epoxy-glide-preloading:4.6.4)  
+>>implementation(com.airbnb.android:epoxy:5.0.0-beta05)  
+>>ksp(com.airbnb.android:epoxy-processor:5.0.0-beta05)  
+>>implementation(com.airbnb.android:epoxy-compose:5.0.0-beta05)  
+>>implementation(com.airbnb.android:epoxy-glide-preloading:5.0.0-beta05)  
   
 >[Fragment](https://developer.android.com/jetpack/androidx/releases/fragment)  
 >>implementation(androidx.fragment:fragment-ktx:1.4.0)  
@@ -252,8 +251,8 @@
 >>kapt(com.squareup.moshi:moshi-kotlin-codegen:1.12.0)  
   
 >[OkHttp](https://github.com/square/okhttp)  
->>implementation(com.squareup.okhttp3:okhttp:4.9.1)  
->>androidTestImplementation(com.squareup.okhttp3:mockwebserver:4.9.1)  
+>>implementation(com.squareup.okhttp3:okhttp:4.9.3)  
+>>androidTestImplementation(com.squareup.okhttp3:mockwebserver:4.9.3)  
   
 >[Retrofit](https://github.com/square/retrofit)(网络请求)  
 >>implementation(com.squareup.retrofit2:retrofit:2.9.0)  
