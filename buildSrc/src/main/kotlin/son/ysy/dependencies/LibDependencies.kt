@@ -680,5 +680,23 @@ sealed class LibDependencies(
       object Test : LibDependencies("androidx.navigation", "navigation-testing",
           "2.4.0-beta02", DependencyMethod.Test.Implementation)
     }
+
+    /**
+     * Mavericks架构
+     * https://github.com/airbnb/mavericks
+     */
+    interface Mavericks {
+      object Core : LibDependencies("com.airbnb.android", "mavericks", "2.5.0",
+          DependencyMethod.Implementation)
+
+      object Compose : LibDependencies("com.airbnb.android", "mavericks-compose", "2.5.0",
+          DependencyMethod.Implementation)
+
+      object Navigation : LibDependencies("com.airbnb.android", "mavericks-navigation",
+          "2.5.0", DependencyMethod.Implementation)
+
+      object Launcher : LibDependencies("com.airbnb.android", "mavericks-launcher", "2.5.0",
+          DependencyMethod.Implementation)
+    }
   }
 }

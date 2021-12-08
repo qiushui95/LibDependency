@@ -267,18 +267,6 @@ sealed class DependencyConfig(
             const val PLUGIN_ID = "plugin.serialization"
         }
         //endregion
-        //region Mavericks架构
-        object Mavericks : DependencyConfig(
-            group = "com.airbnb.android",
-            name = "mavericks",
-            version = "2.5.0",
-            remark = "Mavericks架构",
-            link = "https://github.com/airbnb/mavericks",
-            dependencyMethod = DependencyMethod.Implementation,
-        ) {
-            const val PLUGIN_ID = "plugin.serialization"
-        }
-        //endregion
     }
     //endregion
 
@@ -946,6 +934,21 @@ sealed class DependencyConfig(
         }
         //endregion
 
+        //region Mavericks架构
+        sealed class Mavericks(name: String) : DependencyConfig(
+            group = "com.airbnb.android",
+            name = name,
+            version = "2.5.0",
+            remark = "Mavericks架构",
+            link = "https://github.com/airbnb/mavericks",
+            dependencyMethod = DependencyMethod.Implementation,
+        ) {
+            object Core : Mavericks("mavericks")
+            object Compose : Mavericks("mavericks-compose")
+            object Navigation : Mavericks("mavericks-navigation")
+            object Launcher : Mavericks("mavericks-launcher")
+        }
+        //endregion
     }
     //endregion
 }

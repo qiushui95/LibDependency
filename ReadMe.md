@@ -277,5 +277,11 @@
 >>implementation(androidx.navigation:navigation-compose:2.4.0-beta02)  
 >>testImplementation(androidx.navigation:navigation-testing:2.4.0-beta02)  
   
+>[Mavericks](https://github.com/airbnb/mavericks)(Mavericks架构)  
+>>implementation(com.airbnb.android:mavericks:2.5.0)  
+>>implementation(com.airbnb.android:mavericks-compose:2.5.0)  
+>>implementation(com.airbnb.android:mavericks-navigation:2.5.0)  
+>>implementation(com.airbnb.android:mavericks-launcher:2.5.0)  
+  
 </details>  
   
