@@ -69,9 +69,6 @@
 >[Serialization](https://github.com/Kotlin/kotlinx.serialization)(Json序列化)  
 >>implementation(org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.1)  
   
->[Mavericks](https://github.com/airbnb/mavericks)(Mavericks架构)  
->>implementation(com.airbnb.android:mavericks:2.5.0)  
-  
 </details>  
   
 <details>  

@@ -163,13 +163,6 @@ sealed class LibDependencies(
      */
     object Serialization : LibDependencies("org.jetbrains.kotlinx",
         "kotlinx-serialization-json", "1.3.1", DependencyMethod.Implementation)
-
-    /**
-     * Mavericks架构
-     * https://github.com/airbnb/mavericks
-     */
-    object Mavericks : LibDependencies("com.airbnb.android", "mavericks", "2.5.0",
-        DependencyMethod.Implementation)
   }
 
   interface View {
