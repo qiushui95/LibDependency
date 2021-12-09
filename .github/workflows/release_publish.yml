@@ -45,12 +45,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: 设置版本环境变量
+        run: echo "LIB_VERSION=$(cat lib/version.properties | grep -Po '\d+\.\d+\.\d+')">> $GITHUB_ENV
       - name: Create Release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{create_code.env.LIB_VERSION}}
+          tag_name: ${{env.LIB_VERSION}}
           release_name: Release ${{env.LIB_VERSION}}
           draft: false
           prerelease: false
