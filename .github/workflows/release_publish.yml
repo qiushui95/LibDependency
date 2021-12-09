@@ -40,6 +40,7 @@ jobs:
           author_email: "974577817@qq.com"
           message: "生成${{env.LIB_VERSION}}"
           push: true
+      - uses: actions/checkout@v2
       - name: Create Release
         uses: actions/create-release@v1
         env:
