@@ -876,6 +876,7 @@ sealed class DependencyConfig(
         ) {
             object Core : Retrofit("retrofit")
             object MoShi : Retrofit("converter-moshi")
+            object Scalars : Retrofit("converter-scalars")
         }
         //endregion
 
