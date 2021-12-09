@@ -133,6 +133,13 @@ class Creator {
                                 )
                             )
                             .addSuperclassConstructorParameter("%S", pluginId.id)
+                            .run {
+                                if (pluginId.version != null) {
+                                    addSuperclassConstructorParameter("%S", pluginId.version)
+                                } else {
+                                    this
+                                }
+                            }
                             .build()
                     }.forEach(pluginBuilder::addType)
 

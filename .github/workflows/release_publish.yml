@@ -45,6 +45,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          repository: "qiushui95/LibDependency"
+          ref: "master"
       - name: 设置版本环境变量
         run: echo "LIB_VERSION=$(cat lib/version.properties | grep -Po '\d+\.\d+\.\d+')">> $GITHUB_ENV
       - name: Create Release

@@ -148,7 +148,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:+")
 
     implementation("com.squareup.moshi:moshi:+")
-    kapt("com.squareup.moshi:moshi-kotlin-codegen:+")
+    ksp("com.squareup.moshi:moshi-kotlin-codegen:+")
 
     implementation("com.squareup.okhttp3:okhttp:+")
     androidTestImplementation("com.squareup.okhttp3:mockwebserver:+")

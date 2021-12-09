@@ -20,6 +20,7 @@ sealed class PluginConfig(
         object Reflect : LibPluginId("kotlin-reflect")
 
         object Kapt : LibPluginId("kotlin-kapt")
+        object Ksp : LibPluginId("com.google.devtools.ksp", "1.6.0-1.0.1")
     }
 
     object Maven : PluginConfig(
@@ -31,19 +32,20 @@ sealed class PluginConfig(
         object Plugin : LibPluginId("com.vanniktech.maven.publish")
     }
 
-    object Navigation: PluginConfig(
+    object Navigation : PluginConfig(
         DependencyConfig.Group.Navigation.Fragment.group,
         "navigation-safe-args-gradle-plugin",
         DependencyConfig.Group.Navigation.Fragment.version,
         "navigation"
-    ){
+    ) {
         object Plugin : LibPluginId("androidx.navigation.safeargs.kotlin")
     }
 
-    object RocketX: PluginConfig(
+    object RocketX : PluginConfig(
         "io.github.trycatchx",
         "rocketx",
         "1.0.5",
         "rocketX"
     )
+
 }

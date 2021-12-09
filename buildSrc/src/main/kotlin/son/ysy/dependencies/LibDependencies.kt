@@ -596,11 +596,11 @@ sealed class LibDependencies(
      * https://github.com/square/moshi
      */
     interface MoShi {
-      object Core : LibDependencies("com.squareup.moshi", "moshi", "1.12.0",
+      object Core : LibDependencies("com.squareup.moshi", "moshi", "1.13.0",
           DependencyMethod.Implementation)
 
       object Compiler : LibDependencies("com.squareup.moshi", "moshi-kotlin-codegen",
-          "1.12.0", DependencyMethod.Kapt)
+          "1.13.0", DependencyMethod.Ksp)
     }
 
     /**

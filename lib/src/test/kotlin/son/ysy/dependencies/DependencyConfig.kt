@@ -835,13 +835,13 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "com.squareup.moshi",
             name = name,
-            version = "1.12.0",
+            version = "1.13.0",
             remark = "json解析库",
             link = "https://github.com/square/moshi",
             dependencyMethod = dependencyMethod,
         ) {
             object Core : MoShi("moshi")
-            object Compiler : MoShi("moshi-kotlin-codegen", DependencyMethod.Kapt)
+            object Compiler : MoShi("moshi-kotlin-codegen", DependencyMethod.Ksp)
         }
         //endregion
 
