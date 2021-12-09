@@ -8,7 +8,6 @@ on:
 
 jobs:
   create_code:
-    name: CreateCode
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -42,7 +41,7 @@ jobs:
           push: true
   release:
     needs:
-      - CreateCode
+      - create_code
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
