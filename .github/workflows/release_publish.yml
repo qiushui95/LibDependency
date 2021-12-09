@@ -1,4 +1,4 @@
-name: Publish
+name: Create And Release
 
 # 触发器
 on:
@@ -7,8 +7,8 @@ on:
       - master
 
 jobs:
-  build:
-
+  create_code:
+    name: CreateCode
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -40,6 +40,11 @@ jobs:
           author_email: "974577817@qq.com"
           message: "生成${{env.LIB_VERSION}}"
           push: true
+  release:
+    needs:
+      - CreateCode
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v2
       - name: Create Release
         uses: actions/create-release@v1
