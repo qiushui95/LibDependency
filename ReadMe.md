@@ -257,6 +257,7 @@
 >[Retrofit](https://github.com/square/retrofit)(网络请求)  
 >>implementation(com.squareup.retrofit2:retrofit:2.9.0)  
 >>implementation(com.squareup.retrofit2:converter-moshi:2.9.0)  
+>>implementation(com.squareup.retrofit2:converter-scalars:2.9.0)  
   
 >[Room](https://developer.android.com/jetpack/androidx/releases/room)(Sqlite数据库)  
 >>implementation(androidx.room:room-runtime:2.3.0)  

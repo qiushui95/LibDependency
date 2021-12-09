@@ -155,6 +155,7 @@ dependencies {
 
     implementation("com.squareup.retrofit2:retrofit:+")
     implementation("com.squareup.retrofit2:converter-moshi:+")
+    implementation("com.squareup.retrofit2:converter-scalars:+")
 
     implementation("androidx.room:room-runtime:+")
     implementation("androidx.room:room-ktx:+")

@@ -624,6 +624,9 @@ sealed class LibDependencies(
 
       object MoShi : LibDependencies("com.squareup.retrofit2", "converter-moshi", "2.9.0",
           DependencyMethod.Implementation)
+
+      object Scalars : LibDependencies("com.squareup.retrofit2", "converter-scalars",
+          "2.9.0", DependencyMethod.Implementation)
     }
 
     /**
