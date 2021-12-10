@@ -51,6 +51,9 @@
 >[Startup](https://developer.android.com/topic/libraries/app-startup)(app启动初始化)  
 >>implementation(androidx.startup:startup-runtime:1.1.0)  
   
+>[AndroidStartup](https://github.com/idisfkj/android-startup)(android启动初始化)  
+>>implementation(io.github.idisfkj:android-startup:1.0.7)  
+  
 >[Store](https://github.com/dropbox/Store)(多数据源)  
 >>implementation(com.dropbox.mobile.store:store4:4.0.3-KT15)  
   

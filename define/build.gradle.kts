@@ -39,6 +39,7 @@ dependencies {
     implementation("com.guolindev.permissionx:permissionx:1.6.1")
     implementation("com.github.jenly1314:zxing-lite:2.1.1")
     implementation("androidx.startup:startup-runtime:1.1.0")
+    implementation("io.github.idisfkj:android-startup:1.0.7")
     implementation("com.dropbox.mobile.store:store4:4.0.3-KT15")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.0.0")

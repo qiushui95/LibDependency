@@ -196,6 +196,15 @@ sealed class DependencyConfig(
             link = "https://developer.android.com/topic/libraries/app-startup",
             dependencyMethod = DependencyMethod.Implementation,
         )
+        //region Startup(android启动初始化)
+        object AndroidStartup : DependencyConfig(
+            group = "io.github.idisfkj",
+            name = "android-startup",
+            version = "1.0.7",
+            remark = "android启动初始化",
+            link = "https://github.com/idisfkj/android-startup",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
 
         //endregion
         //region Store(多数据源)

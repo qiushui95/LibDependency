@@ -123,6 +123,13 @@ sealed class LibDependencies(
         DependencyMethod.Implementation)
 
     /**
+     * android启动初始化
+     * https://github.com/idisfkj/android-startup
+     */
+    object AndroidStartup : LibDependencies("io.github.idisfkj", "android-startup", "1.0.7",
+        DependencyMethod.Implementation)
+
+    /**
      * 多数据源
      * https://github.com/dropbox/Store
      */
