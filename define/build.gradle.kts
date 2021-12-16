@@ -38,7 +38,7 @@ dependencies {
     implementation("com.tencent:mmkv-static:1.2.11")
     implementation("com.guolindev.permissionx:permissionx:1.6.1")
     implementation("com.github.jenly1314:zxing-lite:2.1.1")
-    implementation("com.github.qiushui95:AndroidInitializer:1.0.1")
+    implementation("com.github.qiushui95:AndroidInitializer:1.0.2")
     implementation("com.dropbox.mobile.store:store4:4.0.3-KT15")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.0.0")
