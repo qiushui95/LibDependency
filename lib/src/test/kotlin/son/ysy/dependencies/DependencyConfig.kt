@@ -189,23 +189,13 @@ sealed class DependencyConfig(
         //endregion
         //region Startup(app启动初始化)
         object Startup : DependencyConfig(
-            group = "androidx.startup",
-            name = "startup-runtime",
-            version = "1.1.0",
+            group = "com.github.qiushui95",
+            name = "AndroidInitializer",
+            version = "1.0.1",
             remark = "app启动初始化",
-            link = "https://developer.android.com/topic/libraries/app-startup",
+            link = "https://github.com/qiushui95/AndroidInitializer",
             dependencyMethod = DependencyMethod.Implementation,
         )
-        //region Startup(android启动初始化)
-        object AndroidStartup : DependencyConfig(
-            group = "io.github.idisfkj",
-            name = "android-startup",
-            version = "1.0.7",
-            remark = "android启动初始化",
-            link = "https://github.com/idisfkj/android-startup",
-            dependencyMethod = DependencyMethod.Implementation,
-        )
-
         //endregion
         //region Store(多数据源)
         object Store : DependencyConfig(
@@ -574,7 +564,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = group,
             name = name,
-            version = "1.1.0-beta04",
+            version = "1.1.0-rc01",
             remark = "Compose官方",
             link = "https://developer.android.com/jetpack/androidx/releases/compose",
             dependencyMethod = dependencyMethod,
@@ -671,8 +661,8 @@ sealed class DependencyConfig(
             dependencyMethod = DependencyMethod.Implementation,
         ) {
             sealed class Version(val version: String) {
-                object Core : Version("1.1.0-alpha11")
-                object Extends : Version("1.0.0-alpha31")
+                object Core : Version("1.1.0-alpha12")
+                object Extends : Version("1.0.0-alpha32")
             }
 
             object Camera2 : CameraX("camera-camera2", Version.Core)
@@ -804,7 +794,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "org.jetbrains.kotlin",
             name = name,
-            version = "1.6.0",
+            version = "1.6.10",
             remark = "",
             link = "https://github.com/JetBrains/kotlin",
             dependencyMethod = dependencyMethod,
@@ -896,7 +886,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "androidx.room",
             name = name,
-            version = "2.3.0",
+            version = "2.4.0",
             remark = "Sqlite数据库",
             link = "https://developer.android.com/jetpack/androidx/releases/room",
             dependencyMethod = dependencyMethod,
@@ -932,7 +922,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "androidx.navigation",
             name = name,
-            version = "2.4.0-beta02",
+            version = "2.4.0-rc01",
             remark = "导航库",
             link = "https://developer.android.com/jetpack/androidx/releases/navigation",
             dependencyMethod = dependencyMethod,

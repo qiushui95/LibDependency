@@ -2,7 +2,7 @@ plugins {
     id("com.android.library")
     id("kotlin-android")
     id("kotlin-kapt")
-    id("com.google.devtools.ksp") version "1.6.0-1.0.1"
+    id("com.google.devtools.ksp") version "1.6.10-1.0.2"
 }
 
 android {
@@ -38,8 +38,7 @@ dependencies {
     implementation("com.tencent:mmkv-static:+")
     implementation("com.guolindev.permissionx:permissionx:+")
     implementation("com.github.jenly1314:zxing-lite:+")
-    implementation("androidx.startup:startup-runtime:+")
-    implementation("io.github.idisfkj:android-startup:+")
+    implementation("com.github.qiushui95:AndroidInitializer:+")
     implementation("com.dropbox.mobile.store:store4:+")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:+")

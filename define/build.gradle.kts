@@ -2,7 +2,7 @@ plugins {
     id("com.android.library")
     id("kotlin-android")
     id("kotlin-kapt")
-    id("com.google.devtools.ksp") version "1.6.0-1.0.1"
+    id("com.google.devtools.ksp") version "1.6.10-1.0.2"
 }
 
 android {
@@ -38,8 +38,7 @@ dependencies {
     implementation("com.tencent:mmkv-static:1.2.11")
     implementation("com.guolindev.permissionx:permissionx:1.6.1")
     implementation("com.github.jenly1314:zxing-lite:2.1.1")
-    implementation("androidx.startup:startup-runtime:1.1.0")
-    implementation("io.github.idisfkj:android-startup:1.0.7")
+    implementation("com.github.qiushui95:AndroidInitializer:1.0.1")
     implementation("com.dropbox.mobile.store:store4:4.0.3-KT15")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.0.0")
@@ -88,28 +87,28 @@ dependencies {
     implementation("com.google.accompanist:accompanist-swiperefresh:0.21.4-beta")
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.21.4-beta")
 
-    implementation("androidx.compose.animation:animation:1.1.0-beta04")
-    implementation("androidx.compose.compiler:compiler:1.1.0-beta04")
-    implementation("androidx.compose.foundation:foundation:1.1.0-beta04")
-    implementation("androidx.compose.runtime:runtime-livedata:1.1.0-beta04")
-    implementation("androidx.compose.material:material:1.1.0-beta04")
-    implementation("androidx.compose.material:material-icons-core:1.1.0-beta04")
-    implementation("androidx.compose.material:material-icons-extended:1.1.0-beta04")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.1.0-beta04")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.1.0-beta04")
-    implementation("androidx.compose.ui:ui:1.1.0-beta04")
-    implementation("androidx.compose.ui:ui-tooling:1.1.0-beta04")
+    implementation("androidx.compose.animation:animation:1.1.0-rc01")
+    implementation("androidx.compose.compiler:compiler:1.1.0-rc01")
+    implementation("androidx.compose.foundation:foundation:1.1.0-rc01")
+    implementation("androidx.compose.runtime:runtime-livedata:1.1.0-rc01")
+    implementation("androidx.compose.material:material:1.1.0-rc01")
+    implementation("androidx.compose.material:material-icons-core:1.1.0-rc01")
+    implementation("androidx.compose.material:material-icons-extended:1.1.0-rc01")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.1.0-rc01")
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.1.0-rc01")
+    implementation("androidx.compose.ui:ui:1.1.0-rc01")
+    implementation("androidx.compose.ui:ui-tooling:1.1.0-rc01")
 
 
     implementation("androidx.activity:activity-ktx:1.4.0")
     implementation("androidx.activity:activity-compose:1.4.0")
 
-    implementation("androidx.camera:camera-camera2:1.1.0-alpha11")
-    implementation("androidx.camera:camera-core:1.1.0-alpha11")
-    implementation("androidx.camera:camera-lifecycle:1.1.0-alpha11")
-    implementation("androidx.camera:camera-video:1.1.0-alpha11")
-    implementation("androidx.camera:camera-view:1.0.0-alpha31")
-    implementation("androidx.camera:camera-extensions:1.0.0-alpha31")
+    implementation("androidx.camera:camera-camera2:1.1.0-alpha12")
+    implementation("androidx.camera:camera-core:1.1.0-alpha12")
+    implementation("androidx.camera:camera-lifecycle:1.1.0-alpha12")
+    implementation("androidx.camera:camera-video:1.1.0-alpha12")
+    implementation("androidx.camera:camera-view:1.0.0-alpha32")
+    implementation("androidx.camera:camera-extensions:1.0.0-alpha32")
 
     debugImplementation("com.github.chuckerteam.chucker:library:3.5.2")
     releaseImplementation("com.github.chuckerteam.chucker:library-no-op:3.5.2")
@@ -136,9 +135,9 @@ dependencies {
     implementation("io.insert-koin:koin-androidx-workmanager:3.1.4")
     testImplementation("io.insert-koin:koin-test-junit5:3.1.4")
 
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.0")
-    implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.0")
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.0")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.10")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.10")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10")
 
     implementation("androidx.lifecycle:lifecycle-common:2.4.0")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.4.0")
@@ -158,18 +157,18 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
     implementation("com.squareup.retrofit2:converter-scalars:2.9.0")
 
-    implementation("androidx.room:room-runtime:2.3.0")
-    implementation("androidx.room:room-ktx:2.3.0")
-    kapt("androidx.room:room-compiler:2.3.0")
-    testImplementation("androidx.room:room-testing:2.3.0")
+    implementation("androidx.room:room-runtime:2.4.0")
+    implementation("androidx.room:room-ktx:2.4.0")
+    kapt("androidx.room:room-compiler:2.4.0")
+    testImplementation("androidx.room:room-testing:2.4.0")
 
     implementation("androidx.work:work-runtime-ktx:2.7.1")
     testImplementation("androidx.work:work-testing:2.7.1")
 
-    implementation("androidx.navigation:navigation-fragment-ktx:2.4.0-beta02")
-    implementation("androidx.navigation:navigation-ui-ktx:2.4.0-beta02")
-    implementation("androidx.navigation:navigation-compose:2.4.0-beta02")
-    testImplementation("androidx.navigation:navigation-testing:2.4.0-beta02")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.4.0-rc01")
+    implementation("androidx.navigation:navigation-ui-ktx:2.4.0-rc01")
+    implementation("androidx.navigation:navigation-compose:2.4.0-rc01")
+    testImplementation("androidx.navigation:navigation-testing:2.4.0-rc01")
 
     implementation("com.airbnb.android:mavericks:2.5.0")
     implementation("com.airbnb.android:mavericks-compose:2.5.0")

@@ -48,11 +48,8 @@
 >[QrScanner](https://github.com/jenly1314/ZXingLite)(二维码扫描)  
 >>implementation(com.github.jenly1314:zxing-lite:2.1.1)  
   
->[Startup](https://developer.android.com/topic/libraries/app-startup)(app启动初始化)  
->>implementation(androidx.startup:startup-runtime:1.1.0)  
-  
->[AndroidStartup](https://github.com/idisfkj/android-startup)(android启动初始化)  
->>implementation(io.github.idisfkj:android-startup:1.0.7)  
+>[Startup](https://github.com/qiushui95/AndroidInitializer)(app启动初始化)  
+>>implementation(com.github.qiushui95:AndroidInitializer:1.0.1)  
   
 >[Store](https://github.com/dropbox/Store)(多数据源)  
 >>implementation(com.dropbox.mobile.store:store4:4.0.3-KT15)  
@@ -174,17 +171,17 @@
 >>implementation(com.google.accompanist:accompanist-systemuicontroller:0.21.4-beta)  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
->>implementation(androidx.compose.animation:animation:1.1.0-beta04)  
->>implementation(androidx.compose.compiler:compiler:1.1.0-beta04)  
->>implementation(androidx.compose.foundation:foundation:1.1.0-beta04)  
->>implementation(androidx.compose.runtime:runtime-livedata:1.1.0-beta04)  
->>implementation(androidx.compose.material:material:1.1.0-beta04)  
->>implementation(androidx.compose.material:material-icons-core:1.1.0-beta04)  
->>implementation(androidx.compose.material:material-icons-extended:1.1.0-beta04)  
->>implementation(androidx.compose.ui:ui-tooling-preview:1.1.0-beta04)  
->>androidTestImplementation(androidx.compose.ui:ui-test-junit4:1.1.0-beta04)  
->>implementation(androidx.compose.ui:ui:1.1.0-beta04)  
->>implementation(androidx.compose.ui:ui-tooling:1.1.0-beta04)  
+>>implementation(androidx.compose.animation:animation:1.1.0-rc01)  
+>>implementation(androidx.compose.compiler:compiler:1.1.0-rc01)  
+>>implementation(androidx.compose.foundation:foundation:1.1.0-rc01)  
+>>implementation(androidx.compose.runtime:runtime-livedata:1.1.0-rc01)  
+>>implementation(androidx.compose.material:material:1.1.0-rc01)  
+>>implementation(androidx.compose.material:material-icons-core:1.1.0-rc01)  
+>>implementation(androidx.compose.material:material-icons-extended:1.1.0-rc01)  
+>>implementation(androidx.compose.ui:ui-tooling-preview:1.1.0-rc01)  
+>>androidTestImplementation(androidx.compose.ui:ui-test-junit4:1.1.0-rc01)  
+>>implementation(androidx.compose.ui:ui:1.1.0-rc01)  
+>>implementation(androidx.compose.ui:ui-tooling:1.1.0-rc01)  
   
 </details>  
   
@@ -196,12 +193,12 @@
 >>implementation(androidx.activity:activity-compose:1.4.0)  
   
 >[CameraX](https://developer.android.com/jetpack/androidx/releases/camera)(相机相关)  
->>implementation(androidx.camera:camera-camera2:1.1.0-alpha11)  
->>implementation(androidx.camera:camera-core:1.1.0-alpha11)  
->>implementation(androidx.camera:camera-lifecycle:1.1.0-alpha11)  
->>implementation(androidx.camera:camera-video:1.1.0-alpha11)  
->>implementation(androidx.camera:camera-view:1.0.0-alpha31)  
->>implementation(androidx.camera:camera-extensions:1.0.0-alpha31)  
+>>implementation(androidx.camera:camera-camera2:1.1.0-alpha12)  
+>>implementation(androidx.camera:camera-core:1.1.0-alpha12)  
+>>implementation(androidx.camera:camera-lifecycle:1.1.0-alpha12)  
+>>implementation(androidx.camera:camera-video:1.1.0-alpha12)  
+>>implementation(androidx.camera:camera-view:1.0.0-alpha32)  
+>>implementation(androidx.camera:camera-extensions:1.0.0-alpha32)  
   
 >[Chucker](https://github.com/ChuckerTeam/chucker)(网络请求监控)  
 >>debugImplementation(com.github.chuckerteam.chucker:library:3.5.2)  
@@ -236,9 +233,9 @@
 >>testImplementation(io.insert-koin:koin-test-junit5:3.1.4)  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
->>implementation(org.jetbrains.kotlin:kotlin-stdlib:1.6.0)  
->>implementation(org.jetbrains.kotlin:kotlin-reflect:1.6.0)  
->>implementation(org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.0)  
+>>implementation(org.jetbrains.kotlin:kotlin-stdlib:1.6.10)  
+>>implementation(org.jetbrains.kotlin:kotlin-reflect:1.6.10)  
+>>implementation(org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10)  
   
 >[Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation(androidx.lifecycle:lifecycle-common:2.4.0)  
@@ -263,20 +260,20 @@
 >>implementation(com.squareup.retrofit2:converter-scalars:2.9.0)  
   
 >[Room](https://developer.android.com/jetpack/androidx/releases/room)(Sqlite数据库)  
->>implementation(androidx.room:room-runtime:2.3.0)  
->>implementation(androidx.room:room-ktx:2.3.0)  
->>kapt(androidx.room:room-compiler:2.3.0)  
->>testImplementation(androidx.room:room-testing:2.3.0)  
+>>implementation(androidx.room:room-runtime:2.4.0)  
+>>implementation(androidx.room:room-ktx:2.4.0)  
+>>kapt(androidx.room:room-compiler:2.4.0)  
+>>testImplementation(androidx.room:room-testing:2.4.0)  
   
 >[WorkManager](https://developer.android.com/jetpack/androidx/releases/work)(任务管理器)  
 >>implementation(androidx.work:work-runtime-ktx:2.7.1)  
 >>testImplementation(androidx.work:work-testing:2.7.1)  
   
 >[Navigation](https://developer.android.com/jetpack/androidx/releases/navigation)(导航库)  
->>implementation(androidx.navigation:navigation-fragment-ktx:2.4.0-beta02)  
->>implementation(androidx.navigation:navigation-ui-ktx:2.4.0-beta02)  
->>implementation(androidx.navigation:navigation-compose:2.4.0-beta02)  
->>testImplementation(androidx.navigation:navigation-testing:2.4.0-beta02)  
+>>implementation(androidx.navigation:navigation-fragment-ktx:2.4.0-rc01)  
+>>implementation(androidx.navigation:navigation-ui-ktx:2.4.0-rc01)  
+>>implementation(androidx.navigation:navigation-compose:2.4.0-rc01)  
+>>testImplementation(androidx.navigation:navigation-testing:2.4.0-rc01)  
   
 >[Mavericks](https://github.com/airbnb/mavericks)(Mavericks架构)  
 >>implementation(com.airbnb.android:mavericks:2.5.0)  
