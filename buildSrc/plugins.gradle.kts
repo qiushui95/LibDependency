@@ -4,5 +4,5 @@ rootProject.extra.apply {
     set("mavenPlugin", "com.vanniktech:gradle-maven-publish-plugin:0.18.0")
     set("navigation", "androidx.navigation:navigation-safe-args-gradle-plugin:2.4.0-rc01")
     set("rocketX", "io.github.trycatchx:rocketx:1.0.9")
-    set("libDependency", "com.github.qiushui95:LibDependency:1.0.18")
+    set("libDependency", "com.github.qiushui95:LibDependency:1.0.19")
 }
