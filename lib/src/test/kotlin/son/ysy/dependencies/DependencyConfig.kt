@@ -191,7 +191,7 @@ sealed class DependencyConfig(
         object Startup : DependencyConfig(
             group = "com.github.qiushui95",
             name = "AndroidInitializer",
-            version = "1.0.2",
+            version = "1.0.3",
             remark = "app启动初始化",
             link = "https://github.com/qiushui95/AndroidInitializer",
             dependencyMethod = DependencyMethod.Implementation,
