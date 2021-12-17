@@ -390,7 +390,7 @@ sealed class LibDependencies(
           "1.1.0-rc01", DependencyMethod.Implementation)
 
       object Compiler : LibDependencies("androidx.compose.compiler", "compiler",
-          "1.1.0-rc01", DependencyMethod.Implementation)
+          "1.1.0-rc02", DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
           "1.1.0-rc01", DependencyMethod.Implementation)
