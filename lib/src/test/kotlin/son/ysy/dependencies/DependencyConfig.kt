@@ -196,6 +196,7 @@ sealed class DependencyConfig(
             link = "https://github.com/qiushui95/AndroidInitializer",
             dependencyMethod = DependencyMethod.Implementation,
         )
+
         //endregion
         //region Store(多数据源)
         object Store : DependencyConfig(
@@ -560,11 +561,12 @@ sealed class DependencyConfig(
         sealed class Official(
             group: String,
             name: String,
+            version: String = "1.1.0-rc01",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : DependencyConfig(
             group = group,
             name = name,
-            version = "1.1.0-rc01",
+            version = version,
             remark = "Compose官方",
             link = "https://developer.android.com/jetpack/androidx/releases/compose",
             dependencyMethod = dependencyMethod,
@@ -574,7 +576,11 @@ sealed class DependencyConfig(
             //endregion
 
             //region Compiler
-            object Compiler : Official(group = "androidx.compose.compiler", name = "compiler")
+            object Compiler : Official(
+                group = "androidx.compose.compiler",
+                name = "compiler",
+                version = "1.1.0-rc02"
+            )
             //endregion
 
             //region Foundation

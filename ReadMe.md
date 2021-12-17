@@ -172,7 +172,7 @@
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
 >>implementation(androidx.compose.animation:animation:1.1.0-rc01)  
->>implementation(androidx.compose.compiler:compiler:1.1.0-rc01)  
+>>implementation(androidx.compose.compiler:compiler:1.1.0-rc02)  
 >>implementation(androidx.compose.foundation:foundation:1.1.0-rc01)  
 >>implementation(androidx.compose.runtime:runtime-livedata:1.1.0-rc01)  
 >>implementation(androidx.compose.material:material:1.1.0-rc01)  

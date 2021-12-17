@@ -88,7 +88,7 @@ dependencies {
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.21.4-beta")
 
     implementation("androidx.compose.animation:animation:1.1.0-rc01")
-    implementation("androidx.compose.compiler:compiler:1.1.0-rc01")
+    implementation("androidx.compose.compiler:compiler:1.1.0-rc02")
     implementation("androidx.compose.foundation:foundation:1.1.0-rc01")
     implementation("androidx.compose.runtime:runtime-livedata:1.1.0-rc01")
     implementation("androidx.compose.material:material:1.1.0-rc01")
