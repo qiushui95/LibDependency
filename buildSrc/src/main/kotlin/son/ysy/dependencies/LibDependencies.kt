@@ -119,7 +119,7 @@ sealed class LibDependencies(
      * app启动初始化
      * https://github.com/qiushui95/AndroidInitializer
      */
-    object Startup : LibDependencies("com.github.qiushui95", "AndroidInitializer", "1.0.4",
+    object Startup : LibDependencies("com.github.qiushui95", "AndroidInitializer", "1.0.5",
         DependencyMethod.Implementation)
 
     /**

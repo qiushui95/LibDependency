@@ -49,7 +49,7 @@
 >>implementation(com.github.jenly1314:zxing-lite:2.1.1)  
   
 >[Startup](https://github.com/qiushui95/AndroidInitializer)(app启动初始化)  
->>implementation(com.github.qiushui95:AndroidInitializer:1.0.4)  
+>>implementation(com.github.qiushui95:AndroidInitializer:1.0.5)  
   
 >[Store](https://github.com/dropbox/Store)(多数据源)  
 >>implementation(com.dropbox.mobile.store:store4:4.0.3-KT15)  
