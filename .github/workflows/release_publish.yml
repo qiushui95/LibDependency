@@ -11,13 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        with:
+          repository: qiushui95/GithubActionShell
+          path: "sh"
       - name: 安装JDK 11
         uses: actions/setup-java@v2
         with:
           distribution: adopt
           java-version: 11
       - name: 设置版本环境变量
-        run: bash ./sh/env_version.sh lib/version.properties
+        run: bash ./sh/env_version.sh lib/version.properties LIB_VERSION
       - name: 生成最新代码
         run: bash ./gradlew lib:test --tests "son.ysy.dependencies.Creator.testCreateAll"
       - name: 提交生成结果记录
@@ -37,8 +41,12 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: master
+      - uses: actions/checkout@v2
+        with:
+          repository: qiushui95/GithubActionShell
+          path: "sh"
       - name: 设置版本环境变量
-        run: bash ./sh/env_version.sh lib/version.properties
+        run: bash ./sh/env_version.sh lib/version.properties LIB_VERSION
       - name: Create Release
         uses: actions/create-release@v1
         env:
@@ -56,11 +64,15 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: master
+      - uses: actions/checkout@v2
+        with:
+          repository: qiushui95/GithubActionShell
+          path: "sh"
       - name: 更新打包版本
         run: bash ./sh/update_version.sh lib/version.properties
 
       - name: 设置版本环境变量
-        run: bash ./sh/env_version.sh lib/version.properties
+        run: bash ./sh/env_version.sh lib/version.properties LIB_VERSION
       - name: 提交版本修改记录
         uses: EndBug/add-and-commit@v7.5.0
         with:
