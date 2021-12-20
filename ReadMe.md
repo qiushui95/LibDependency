@@ -16,7 +16,7 @@
 >>implementation(androidx.appcompat:appcompat:1.4.0)  
   
 >[Background](https://github.com/JavaNoober/BackgroundLibrary)(背景生成工具库)  
->>implementation(com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.2)  
+>>implementation(com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.3)  
   
 >[BasePopup](https://github.com/razerdp/BasePopup)(弹窗)  
 >>implementation(io.github.razerdp:BasePopup:3.2.0)  
@@ -157,18 +157,18 @@
 >>implementation(androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0)  
   
 >[Accompanist](https://github.com/google/accompanist)  
->>implementation(com.google.accompanist:accompanist-appcompat-theme:0.21.4-beta)  
->>implementation(com.google.accompanist:accompanist-drawablepainter:0.21.4-beta)  
->>implementation(com.google.accompanist:accompanist-flowlayout:0.21.4-beta)  
->>implementation(com.google.accompanist:accompanist-insets:0.21.4-beta)  
->>implementation(com.google.accompanist:accompanist-navigation-animation:0.21.4-beta)  
->>implementation(com.google.accompanist:accompanist-navigation-material:0.21.4-beta)  
->>implementation(com.google.accompanist:accompanist-pager:0.21.4-beta)  
->>implementation(com.google.accompanist:accompanist-permissions:0.21.4-beta)  
->>implementation(com.google.accompanist:accompanist-placeholder:0.21.4-beta)  
->>implementation(com.google.accompanist:accompanist-placeholder-material:0.21.4-beta)  
->>implementation(com.google.accompanist:accompanist-swiperefresh:0.21.4-beta)  
->>implementation(com.google.accompanist:accompanist-systemuicontroller:0.21.4-beta)  
+>>implementation(com.google.accompanist:accompanist-appcompat-theme:0.21.5-rc)  
+>>implementation(com.google.accompanist:accompanist-drawablepainter:0.21.5-rc)  
+>>implementation(com.google.accompanist:accompanist-flowlayout:0.21.5-rc)  
+>>implementation(com.google.accompanist:accompanist-insets:0.21.5-rc)  
+>>implementation(com.google.accompanist:accompanist-navigation-animation:0.21.5-rc)  
+>>implementation(com.google.accompanist:accompanist-navigation-material:0.21.5-rc)  
+>>implementation(com.google.accompanist:accompanist-pager:0.21.5-rc)  
+>>implementation(com.google.accompanist:accompanist-permissions:0.21.5-rc)  
+>>implementation(com.google.accompanist:accompanist-placeholder:0.21.5-rc)  
+>>implementation(com.google.accompanist:accompanist-placeholder-material:0.21.5-rc)  
+>>implementation(com.google.accompanist:accompanist-swiperefresh:0.21.5-rc)  
+>>implementation(com.google.accompanist:accompanist-systemuicontroller:0.21.5-rc)  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
 >>implementation(androidx.compose.animation:animation:1.1.0-rc01)  
@@ -276,10 +276,10 @@
 >>testImplementation(androidx.navigation:navigation-testing:2.4.0-rc01)  
   
 >[Mavericks](https://github.com/airbnb/mavericks)(Mavericks架构)  
->>implementation(com.airbnb.android:mavericks:2.5.0)  
->>implementation(com.airbnb.android:mavericks-compose:2.5.0)  
->>implementation(com.airbnb.android:mavericks-navigation:2.5.0)  
->>implementation(com.airbnb.android:mavericks-launcher:2.5.0)  
+>>implementation(com.airbnb.android:mavericks:2.5.1)  
+>>implementation(com.airbnb.android:mavericks-compose:2.5.1)  
+>>implementation(com.airbnb.android:mavericks-navigation:2.5.1)  
+>>implementation(com.airbnb.android:mavericks-launcher:2.5.1)  
   
 </details>  
   
