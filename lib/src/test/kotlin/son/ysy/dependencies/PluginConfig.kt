@@ -48,4 +48,13 @@ sealed class PluginConfig(
         "rocketX"
     )
 
+    sealed class Asm(name: String, key: String) : PluginConfig(
+        "org.ow2.asm",
+        name,
+        "9.2",
+        "asm.$key"
+    ) {
+        object Common : Asm("asm-commons", "common")
+        object Util : Asm("asm-util", "util")
+    }
 }

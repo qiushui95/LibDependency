@@ -3,6 +3,7 @@ package son.ysy.dependencies
 import com.squareup.kotlinpoet.*
 import org.junit.jupiter.api.Test
 import java.io.File
+import kotlin.reflect.KClass
 
 class Creator {
 
@@ -216,9 +217,9 @@ class Creator {
         sb.append("rootProject.extra.apply {\n")
 
         PluginConfig::class.sealedSubclasses
-            .mapNotNull { it.objectInstance }
-            .map { "    set(\"${it.key}\", \"${it.group}:${it.name}:${it.version}\")\n" }
-            .forEach(sb::append)
+            .forEach {
+                sb.createPluginGradle(it)
+            }
 
         val configFile = File(currentDir, "version.properties")
 
@@ -236,6 +237,19 @@ class Creator {
         sb.append("}")
 
         return sb.toString()
+    }
+
+    private fun StringBuilder.createPluginGradle(clz: KClass<out PluginConfig>) {
+        if (clz.isFinal) {
+            clz.objectInstance?.let {
+                "    set(\"${it.key}\", \"${it.group}:${it.name}:${it.version}\")\n"
+            }?.apply(::append)
+        } else {
+            clz.sealedSubclasses
+                .forEach {
+                    createPluginGradle(it)
+                }
+        }
     }
 
     private fun TypeSpec.Builder.addKdoc(config: DependencyConfig): TypeSpec.Builder {

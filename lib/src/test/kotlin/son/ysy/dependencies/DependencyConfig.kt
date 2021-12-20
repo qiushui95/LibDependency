@@ -70,7 +70,7 @@ sealed class DependencyConfig(
         object Background : DependencyConfig(
             group = "com.github.JavaNoober.BackgroundLibrary",
             name = "libraryx",
-            version = "1.7.2",
+            version = "1.7.3",
             remark = "背景生成工具库",
             link = "https://github.com/JavaNoober/BackgroundLibrary",
             dependencyMethod = DependencyMethod.Implementation,
@@ -515,7 +515,7 @@ sealed class DependencyConfig(
         sealed class Accompanist(name: String) : DependencyConfig(
             group = "com.google.accompanist",
             name = name,
-            version = "0.21.4-beta",
+            version = "0.21.5-rc",
             remark = "",
             link = "https://github.com/google/accompanist",
             dependencyMethod = DependencyMethod.Implementation,
@@ -944,7 +944,7 @@ sealed class DependencyConfig(
         sealed class Mavericks(name: String) : DependencyConfig(
             group = "com.airbnb.android",
             name = name,
-            version = "2.5.0",
+            version = "2.5.1",
             remark = "Mavericks架构",
             link = "https://github.com/airbnb/mavericks",
             dependencyMethod = DependencyMethod.Implementation,
