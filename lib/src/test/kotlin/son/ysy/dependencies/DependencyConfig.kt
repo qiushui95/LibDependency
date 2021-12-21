@@ -191,7 +191,7 @@ sealed class DependencyConfig(
         object Startup : DependencyConfig(
             group = "com.github.qiushui95",
             name = "AndroidInitializer",
-            version = "1.0.6",
+            version = "1.0.7",
             remark = "app启动初始化",
             link = "https://github.com/qiushui95/AndroidInitializer",
             dependencyMethod = DependencyMethod.Implementation,
@@ -727,7 +727,7 @@ sealed class DependencyConfig(
             DependencyConfig(
                 group = "org.jetbrains.kotlinx",
                 name = name,
-                version = "1.6.0-RC",
+                version = "1.6.0-RC3",
                 remark = "core",
                 link = "https://github.com/Kotlin/kotlinx.coroutines",
                 dependencyMethod = dependencyMethod,
