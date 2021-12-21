@@ -53,6 +53,17 @@ sealed class DependencyConfig(
             link = "https://github.com/Blankj/AndroidUtilCode",
             dependencyMethod = DependencyMethod.Implementation,
         )
+        //endregion
+
+        //region Annotation
+        object Annotation : DependencyConfig(
+            group = "androidx.annotation",
+            name = "annotation",
+            version = "1.3.0",
+            remark = "Annotation",
+            link = "https://developer.android.com/jetpack/androidx/releases/annotation",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
 
         //endregion
         //region Appcompat
