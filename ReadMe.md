@@ -12,6 +12,9 @@
 >[AndroidUtil](https://github.com/Blankj/AndroidUtilCode)(多功能工具包)  
 >>implementation(com.blankj:utilcodex:1.31.0)  
   
+>[Annotation](https://developer.android.com/jetpack/androidx/releases/annotation)(Annotation)  
+>>implementation(androidx.annotation:annotation:1.3.0)  
+  
 >[Appcompat](https://developer.android.com/jetpack/androidx/releases/appcompat)  
 >>implementation(androidx.appcompat:appcompat:1.4.0)  
   

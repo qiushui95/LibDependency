@@ -33,6 +33,13 @@ sealed class LibDependencies(
         DependencyMethod.Implementation)
 
     /**
+     * Annotation
+     * https://developer.android.com/jetpack/androidx/releases/annotation
+     */
+    object Annotation : LibDependencies("androidx.annotation", "annotation", "1.3.0",
+        DependencyMethod.Implementation)
+
+    /**
      * https://developer.android.com/jetpack/androidx/releases/appcompat
      */
     object Appcompat : LibDependencies("androidx.appcompat", "appcompat", "1.4.0",

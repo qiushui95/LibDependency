@@ -26,6 +26,7 @@ dependencies {
     implementation("com.aliyun.dpa:oss-android-sdk:2.9.10")
     implementation("com.aliyun.ams:alicloud-android-push:3.7.1")
     implementation("com.blankj:utilcodex:1.31.0")
+    implementation("androidx.annotation:annotation:1.3.0")
     implementation("androidx.appcompat:appcompat:1.4.0")
     implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.3")
     implementation("io.github.razerdp:BasePopup:3.2.0")
