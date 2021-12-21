@@ -119,7 +119,7 @@ sealed class LibDependencies(
      * app启动初始化
      * https://github.com/qiushui95/AndroidInitializer
      */
-    object Startup : LibDependencies("com.github.qiushui95", "AndroidInitializer", "1.0.6",
+    object Startup : LibDependencies("com.github.qiushui95", "AndroidInitializer", "1.0.7",
         DependencyMethod.Implementation)
 
     /**
@@ -498,10 +498,10 @@ sealed class LibDependencies(
      */
     interface Coroutines {
       object Core : LibDependencies("org.jetbrains.kotlinx", "kotlinx-coroutines-android",
-          "1.6.0-RC", DependencyMethod.Implementation)
+          "1.6.0-RC3", DependencyMethod.Implementation)
 
       object Test : LibDependencies("org.jetbrains.kotlinx", "kotlinx-coroutines-test",
-          "1.6.0-RC", DependencyMethod.Test.Implementation)
+          "1.6.0-RC3", DependencyMethod.Test.Implementation)
     }
 
     /**

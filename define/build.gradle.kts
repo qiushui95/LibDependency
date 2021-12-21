@@ -38,7 +38,7 @@ dependencies {
     implementation("com.tencent:mmkv-static:1.2.11")
     implementation("com.guolindev.permissionx:permissionx:1.6.1")
     implementation("com.github.jenly1314:zxing-lite:2.1.1")
-    implementation("com.github.qiushui95:AndroidInitializer:1.0.6")
+    implementation("com.github.qiushui95:AndroidInitializer:1.0.7")
     implementation("com.dropbox.mobile.store:store4:4.0.3-KT15")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.0.0")
@@ -119,8 +119,8 @@ dependencies {
     implementation("androidx.core:core-ktx:1.7.0")
     implementation("androidx.core:core-splashscreen:1.0.0-alpha02")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0-RC")
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0-RC")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0-RC3")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0-RC3")
 
     implementation("com.airbnb.android:epoxy:5.0.0-beta05")
     ksp("com.airbnb.android:epoxy-processor:5.0.0-beta05")
