@@ -352,40 +352,40 @@ sealed class LibDependencies(
      */
     interface Accompanist {
       object AppcompatTheme : LibDependencies("com.google.accompanist",
-          "accompanist-appcompat-theme", "0.21.5-rc", DependencyMethod.Implementation)
+          "accompanist-appcompat-theme", "0.22.0-rc", DependencyMethod.Implementation)
 
       object DrawablePainter : LibDependencies("com.google.accompanist",
-          "accompanist-drawablepainter", "0.21.5-rc", DependencyMethod.Implementation)
+          "accompanist-drawablepainter", "0.22.0-rc", DependencyMethod.Implementation)
 
       object FlowLayout : LibDependencies("com.google.accompanist", "accompanist-flowlayout",
-          "0.21.5-rc", DependencyMethod.Implementation)
+          "0.22.0-rc", DependencyMethod.Implementation)
 
       object Insets : LibDependencies("com.google.accompanist", "accompanist-insets",
-          "0.21.5-rc", DependencyMethod.Implementation)
+          "0.22.0-rc", DependencyMethod.Implementation)
 
       object NavigationAnimation : LibDependencies("com.google.accompanist",
-          "accompanist-navigation-animation", "0.21.5-rc", DependencyMethod.Implementation)
+          "accompanist-navigation-animation", "0.22.0-rc", DependencyMethod.Implementation)
 
       object NavigationMaterial : LibDependencies("com.google.accompanist",
-          "accompanist-navigation-material", "0.21.5-rc", DependencyMethod.Implementation)
+          "accompanist-navigation-material", "0.22.0-rc", DependencyMethod.Implementation)
 
       object Pager : LibDependencies("com.google.accompanist", "accompanist-pager",
-          "0.21.5-rc", DependencyMethod.Implementation)
+          "0.22.0-rc", DependencyMethod.Implementation)
 
       object Permissions : LibDependencies("com.google.accompanist",
-          "accompanist-permissions", "0.21.5-rc", DependencyMethod.Implementation)
+          "accompanist-permissions", "0.22.0-rc", DependencyMethod.Implementation)
 
       object PlaceHolder : LibDependencies("com.google.accompanist",
-          "accompanist-placeholder", "0.21.5-rc", DependencyMethod.Implementation)
+          "accompanist-placeholder", "0.22.0-rc", DependencyMethod.Implementation)
 
       object PlaceHolderMaterial : LibDependencies("com.google.accompanist",
-          "accompanist-placeholder-material", "0.21.5-rc", DependencyMethod.Implementation)
+          "accompanist-placeholder-material", "0.22.0-rc", DependencyMethod.Implementation)
 
       object SwipeRefresh : LibDependencies("com.google.accompanist",
-          "accompanist-swiperefresh", "0.21.5-rc", DependencyMethod.Implementation)
+          "accompanist-swiperefresh", "0.22.0-rc", DependencyMethod.Implementation)
 
       object SystemUiController : LibDependencies("com.google.accompanist",
-          "accompanist-systemuicontroller", "0.21.5-rc", DependencyMethod.Implementation)
+          "accompanist-systemuicontroller", "0.22.0-rc", DependencyMethod.Implementation)
     }
 
     /**
