@@ -22,7 +22,7 @@ sealed class LibDependencies(
      * 阿里推送
      * https://help.aliyun.com/document_detail/190009.html?spm=a2c4g.11174283.3.2.52eb6d163QVxjG
      */
-    object AliPush : LibDependencies("com.aliyun.ams", "alicloud-android-push", "3.7.1",
+    object AliPush : LibDependencies("com.aliyun.ams", "alicloud-android-push", "3.7.2",
         DependencyMethod.Implementation)
 
     /**
@@ -293,7 +293,7 @@ sealed class LibDependencies(
      * X5浏览器
      * https://x5.tencent.com/docs/access.html
      */
-    object WebX5 : LibDependencies("com.tencent.tbs", "tbssdk", "44132",
+    object WebX5 : LibDependencies("com.tencent.tbs", "tbssdk", "44136",
         DependencyMethod.Implementation)
 
     /**
@@ -505,10 +505,10 @@ sealed class LibDependencies(
      */
     interface Coroutines {
       object Core : LibDependencies("org.jetbrains.kotlinx", "kotlinx-coroutines-android",
-          "1.6.0-RC3", DependencyMethod.Implementation)
+          "1.6.0", DependencyMethod.Implementation)
 
       object Test : LibDependencies("org.jetbrains.kotlinx", "kotlinx-coroutines-test",
-          "1.6.0-RC3", DependencyMethod.Test.Implementation)
+          "1.6.0", DependencyMethod.Test.Implementation)
     }
 
     /**

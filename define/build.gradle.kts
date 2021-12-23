@@ -24,7 +24,7 @@ android {
 
 dependencies {
     implementation("com.aliyun.dpa:oss-android-sdk:2.9.10")
-    implementation("com.aliyun.ams:alicloud-android-push:3.7.1")
+    implementation("com.aliyun.ams:alicloud-android-push:3.7.2")
     implementation("com.blankj:utilcodex:1.31.0")
     implementation("androidx.annotation:annotation:1.3.0")
     implementation("androidx.appcompat:appcompat:1.4.0")
@@ -64,7 +64,7 @@ dependencies {
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
     implementation("com.kyleduo.switchbutton:library:2.1.0")
     implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")
-    implementation("com.tencent.tbs:tbssdk:44132")
+    implementation("com.tencent.tbs:tbssdk:44136")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0")
 
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
@@ -120,8 +120,8 @@ dependencies {
     implementation("androidx.core:core-ktx:1.7.0")
     implementation("androidx.core:core-splashscreen:1.0.0-alpha02")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0-RC3")
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0-RC3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")
 
     implementation("com.airbnb.android:epoxy:5.0.0-beta05")
     ksp("com.airbnb.android:epoxy-processor:5.0.0-beta05")

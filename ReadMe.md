@@ -7,7 +7,7 @@
 >>implementation(com.aliyun.dpa:oss-android-sdk:2.9.10)  
   
 >[AliPush](https://help.aliyun.com/document_detail/190009.html?spm=a2c4g.11174283.3.2.52eb6d163QVxjG)(阿里推送)  
->>implementation(com.aliyun.ams:alicloud-android-push:3.7.1)  
+>>implementation(com.aliyun.ams:alicloud-android-push:3.7.2)  
   
 >[AndroidUtil](https://github.com/Blankj/AndroidUtilCode)(多功能工具包)  
 >>implementation(com.blankj:utilcodex:1.31.0)  
@@ -129,7 +129,7 @@
 >>implementation(androidx.viewpager2:viewpager2:1.1.0-beta01)  
   
 >[WebX5](https://x5.tencent.com/docs/access.html)(X5浏览器)  
->>implementation(com.tencent.tbs:tbssdk:44132)  
+>>implementation(com.tencent.tbs:tbssdk:44136)  
   
 </details>  
   
@@ -216,8 +216,8 @@
 >>implementation(androidx.core:core-splashscreen:1.0.0-alpha02)  
   
 >[Coroutines](https://github.com/Kotlin/kotlinx.coroutines)(core)  
->>implementation(org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0-RC3)  
->>testImplementation(org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0-RC3)  
+>>implementation(org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0)  
+>>testImplementation(org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0)  
   
 >[Epoxy](https://github.com/airbnb/epoxy)(core)  
 >>implementation(com.airbnb.android:epoxy:5.0.0-beta05)  
