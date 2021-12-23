@@ -37,7 +37,7 @@ sealed class DependencyConfig(
         object AliPush : DependencyConfig(
             group = "com.aliyun.ams",
             name = "alicloud-android-push",
-            version = "3.7.1",
+            version = "3.7.2",
             remark = "阿里推送",
             link = "https://help.aliyun.com/document_detail/190009.html?spm=a2c4g.11174283.3.2.52eb6d163QVxjG",
             dependencyMethod = DependencyMethod.Implementation,
@@ -474,7 +474,7 @@ sealed class DependencyConfig(
         object WebX5 : DependencyConfig(
             group = "com.tencent.tbs",
             name = "tbssdk",
-            version = "44132",
+            version = "44136",
             remark = "X5浏览器",
             link = "https://x5.tencent.com/docs/access.html",
             dependencyMethod = DependencyMethod.Implementation,
@@ -738,7 +738,7 @@ sealed class DependencyConfig(
             DependencyConfig(
                 group = "org.jetbrains.kotlinx",
                 name = name,
-                version = "1.6.0-RC3",
+                version = "1.6.0",
                 remark = "core",
                 link = "https://github.com/Kotlin/kotlinx.coroutines",
                 dependencyMethod = dependencyMethod,
