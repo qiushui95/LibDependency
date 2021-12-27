@@ -270,7 +270,7 @@ sealed class DependencyConfig(
         object Serialization : DependencyConfig(
             group = "org.jetbrains.kotlinx",
             name = "kotlinx-serialization-json",
-            version = "1.3.1",
+            version = "1.3.2",
             remark = "Json序列化",
             link = "https://github.com/Kotlin/kotlinx.serialization",
             dependencyMethod = DependencyMethod.Implementation,
