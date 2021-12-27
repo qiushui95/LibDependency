@@ -45,7 +45,7 @@ dependencies {
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.0.0")
     implementation("com.localebro:okhttpprofiler:1.0.8")
     implementation("com.vanniktech:gradle-maven-publish-plugin:0.18.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
 
     implementation("com.github.Justson.AgentWeb:agentweb-core:v4.1.9-androidx")
     implementation("com.github.xiaohaibin:XBanner:androidx_v1.2.1")

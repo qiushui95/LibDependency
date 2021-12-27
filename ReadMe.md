@@ -70,7 +70,7 @@
 >>implementation(com.vanniktech:gradle-maven-publish-plugin:0.18.0)  
   
 >[Serialization](https://github.com/Kotlin/kotlinx.serialization)(Json序列化)  
->>implementation(org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.1)  
+>>implementation(org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2)  
   
 </details>  
   

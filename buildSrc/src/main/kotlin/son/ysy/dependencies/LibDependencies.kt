@@ -169,7 +169,7 @@ sealed class LibDependencies(
      * https://github.com/Kotlin/kotlinx.serialization
      */
     object Serialization : LibDependencies("org.jetbrains.kotlinx",
-        "kotlinx-serialization-json", "1.3.1", DependencyMethod.Implementation)
+        "kotlinx-serialization-json", "1.3.2", DependencyMethod.Implementation)
   }
 
   interface View {
