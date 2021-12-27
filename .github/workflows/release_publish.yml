@@ -4,7 +4,7 @@ name: Create And Release
 on:
   push:
     branches:
-      - master
+      - rel
 
 jobs:
   create_code:
@@ -40,7 +40,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: master
+          ref: rel
       - uses: actions/checkout@v2
         with:
           repository: qiushui95/GithubActionShell
@@ -63,7 +63,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: master
+          ref: rel
       - uses: actions/checkout@v2
         with:
           repository: qiushui95/GithubActionShell
@@ -80,4 +80,4 @@ jobs:
           author_name: "YCX-Github"
           author_email: "ycx974577817@gmail.com"
           message: "更新下次发布版本为${{env.LIB_VERSION}}"
-          push: true
+          push: "origin rel:master -f"
