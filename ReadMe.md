@@ -4,7 +4,7 @@
 <summary>Single</summary>  
   
 >[AliOss](https://help.aliyun.com/document_detail/32043.html)(阿里云存储)  
->>implementation(com.aliyun.dpa:oss-android-sdk:2.9.10)  
+>>implementation(com.aliyun.dpa:oss-android-sdk:2.9.11)  
   
 >[AliPush](https://help.aliyun.com/document_detail/190009.html?spm=a2c4g.11174283.3.2.52eb6d163QVxjG)(阿里推送)  
 >>implementation(com.aliyun.ams:alicloud-android-push:3.7.2)  
@@ -28,7 +28,7 @@
 >>implementation(me.jorgecastillo:androidcolorx:0.2.0)  
   
 >[DateTimePicker](https://github.com/loperSeven/DateTimePicker)(时间选择器)  
->>implementation(com.github.loperSeven:DateTimePicker:0.5.1)  
+>>implementation(com.github.loperSeven:DateTimePicker:0.5.2)  
   
 >[EasyFloat](https://github.com/princekin-f/EasyFloat)(悬浮窗)  
 >>implementation(com.github.princekin-f:EasyFloat:2.0.4)  
@@ -40,7 +40,7 @@
 >>implementation(joda-time:joda-time:2.10.13)  
   
 >[LeakCanary](https://square.github.io/leakcanary/getting_started/)(内存泄露监控)  
->>implementation(com.squareup.leakcanary:leakcanary-android:2.7)  
+>>implementation(com.squareup.leakcanary:leakcanary-android:2.8.1)  
   
 >[Mmkv](https://github.com/Tencent/MMKV/blob/master/README_CN.md)(持久KV数据存储)  
 >>implementation(com.tencent:mmkv-static:1.2.11)  

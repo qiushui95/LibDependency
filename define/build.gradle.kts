@@ -23,7 +23,7 @@ android {
 }
 
 dependencies {
-    implementation("com.aliyun.dpa:oss-android-sdk:2.9.10")
+    implementation("com.aliyun.dpa:oss-android-sdk:2.9.11")
     implementation("com.aliyun.ams:alicloud-android-push:3.7.2")
     implementation("com.blankj:utilcodex:1.31.0")
     implementation("androidx.annotation:annotation:1.3.0")
@@ -31,11 +31,11 @@ dependencies {
     implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.3")
     implementation("io.github.razerdp:BasePopup:3.2.0")
     implementation("me.jorgecastillo:androidcolorx:0.2.0")
-    implementation("com.github.loperSeven:DateTimePicker:0.5.1")
+    implementation("com.github.loperSeven:DateTimePicker:0.5.2")
     implementation("com.github.princekin-f:EasyFloat:2.0.4")
     implementation("com.ypx.yimagepicker:androidx:3.1.4")
     implementation("joda-time:joda-time:2.10.13")
-    implementation("com.squareup.leakcanary:leakcanary-android:2.7")
+    implementation("com.squareup.leakcanary:leakcanary-android:2.8.1")
     implementation("com.tencent:mmkv-static:1.2.11")
     implementation("com.guolindev.permissionx:permissionx:1.6.1")
     implementation("com.github.jenly1314:zxing-lite:2.1.1")

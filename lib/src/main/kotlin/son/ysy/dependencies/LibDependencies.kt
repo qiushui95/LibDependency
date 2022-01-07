@@ -15,7 +15,7 @@ sealed class LibDependencies(
      * 阿里云存储
      * https://help.aliyun.com/document_detail/32043.html
      */
-    object AliOss : LibDependencies("com.aliyun.dpa", "oss-android-sdk", "2.9.10",
+    object AliOss : LibDependencies("com.aliyun.dpa", "oss-android-sdk", "2.9.11",
         DependencyMethod.Implementation)
 
     /**
@@ -71,7 +71,7 @@ sealed class LibDependencies(
      * https://github.com/loperSeven/DateTimePicker
      */
     object DateTimePicker : LibDependencies("com.github.loperSeven", "DateTimePicker",
-        "0.5.1", DependencyMethod.Implementation)
+        "0.5.2", DependencyMethod.Implementation)
 
     /**
      * 悬浮窗
@@ -99,7 +99,7 @@ sealed class LibDependencies(
      * https://square.github.io/leakcanary/getting_started/
      */
     object LeakCanary : LibDependencies("com.squareup.leakcanary", "leakcanary-android",
-        "2.7", DependencyMethod.Implementation)
+        "2.8.1", DependencyMethod.Implementation)
 
     /**
      * 持久KV数据存储
