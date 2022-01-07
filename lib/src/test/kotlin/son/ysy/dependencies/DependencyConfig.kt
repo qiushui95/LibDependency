@@ -26,7 +26,7 @@ sealed class DependencyConfig(
         object AliOss : DependencyConfig(
             group = "com.aliyun.dpa",
             name = "oss-android-sdk",
-            version = "2.9.10",
+            version = "2.9.11",
             remark = "阿里云存储",
             link = "https://help.aliyun.com/document_detail/32043.html",
             dependencyMethod = DependencyMethod.Implementation,
@@ -54,7 +54,6 @@ sealed class DependencyConfig(
             dependencyMethod = DependencyMethod.Implementation,
         )
         //endregion
-
         //region Annotation
         object Annotation : DependencyConfig(
             group = "androidx.annotation",
@@ -114,7 +113,7 @@ sealed class DependencyConfig(
         object DateTimePicker : DependencyConfig(
             group = "com.github.loperSeven",
             name = "DateTimePicker",
-            version = "0.5.1",
+            version = "0.5.2",
             remark = "时间选择器",
             link = "https://github.com/loperSeven/DateTimePicker",
             dependencyMethod = DependencyMethod.Implementation,
@@ -158,7 +157,7 @@ sealed class DependencyConfig(
         object LeakCanary : DependencyConfig(
             group = "com.squareup.leakcanary",
             name = "leakcanary-android",
-            version = "2.7",
+            version = "2.8.1",
             remark = "内存泄露监控",
             link = "https://square.github.io/leakcanary/getting_started/",
             dependencyMethod = DependencyMethod.Implementation,

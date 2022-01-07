@@ -1,0 +1,40 @@
+name: Release And Update Next Version
+
+# 触发器
+on:
+  push:
+    branches:
+      - rel
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{secrets.PUSH_ACTION_TOKEN}}
+          fetch-depth: 0
+      - uses: actions/checkout@v2
+        with:
+          repository: qiushui95/GithubActionShell
+          path: "sh"
+      - name: 设置版本环境变量
+        run: bash ./sh/env_version.sh lib/version.properties LIB_VERSION
+      - name: Create Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{env.LIB_VERSION}}
+          release_name: Release ${{env.LIB_VERSION}}
+          draft: false
+          prerelease: false
+      - name: 更新打包版本
+        run: bash ./sh/update_version.sh lib/version.properties
+      - name: 配置git
+        run: bash ./sh/git_config.sh
+      - name: 提交生成代码
+        run: |
+          git add lib/version.properties
+          git commit -m "更新下次发布版本为${{env.LIB_VERSION}}"
+          git push origin rel:master

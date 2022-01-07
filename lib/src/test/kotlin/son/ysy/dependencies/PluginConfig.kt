@@ -44,9 +44,11 @@ sealed class PluginConfig(
     object RocketX : PluginConfig(
         "io.github.trycatchx",
         "rocketx",
-        "1.0.9",
+        "1.0.17",
         "rocketX"
-    )
+    ){
+        object Plugin : LibPluginId("com.rocketx")
+    }
 
     sealed class Asm(name: String, key: String) : PluginConfig(
         "org.ow2.asm",
