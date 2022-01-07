@@ -31,6 +31,8 @@ jobs:
           prerelease: false
       - name: 更新打包版本
         run: bash ./sh/update_version.sh lib/version.properties
+      - name: 更新版本环境变量
+        run: bash ./sh/env_version.sh lib/version.properties LIB_VERSION
       - name: 配置git
         run: bash ./sh/git_config.sh
       - name: 提交生成代码
