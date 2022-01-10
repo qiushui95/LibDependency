@@ -53,6 +53,7 @@ sealed class DependencyConfig(
             link = "https://github.com/Blankj/AndroidUtilCode",
             dependencyMethod = DependencyMethod.Implementation,
         )
+
         //endregion
         //region Annotation
         object Annotation : DependencyConfig(
@@ -278,8 +279,8 @@ sealed class DependencyConfig(
         }
         //endregion
     }
-    //endregion
 
+    //endregion
     //region View
     interface View {
         //region AgentWeb(浏览器)
@@ -480,8 +481,8 @@ sealed class DependencyConfig(
         )
         //endregion
     }
-    //endregion
 
+    //endregion
     //region Test
     interface Test {
         //region Espresso(UI自动化测试)
@@ -517,8 +518,8 @@ sealed class DependencyConfig(
         )
         //endregion
     }
-    //endregion
 
+    //endregion
     //region Compose
     interface Compose {
         //region Accompanist
@@ -649,8 +650,8 @@ sealed class DependencyConfig(
         )
         //endregion
     }
-    //endregion
 
+    //endregion
     //region Group
     interface Group {
         //region Activity
@@ -665,8 +666,8 @@ sealed class DependencyConfig(
             object Core : Activity("activity-ktx")
             object Compose : Activity("activity-compose")
         }
-        //endregion
 
+        //endregion
         //region CameraX(相机相关)
         sealed class CameraX(name: String, version: Version) : DependencyConfig(
             group = "androidx.camera",
@@ -688,8 +689,8 @@ sealed class DependencyConfig(
             object View : CameraX("camera-view", Version.Extends)
             object Extensions : CameraX("camera-extensions", Version.Extends)
         }
-        //endregion
 
+        //endregion
         //region Chucker(网络请求监控)
         sealed class Chucker(name: String, dependencyMethod: DependencyMethod) : DependencyConfig(
             group = "com.github.chuckerteam.chucker",
@@ -702,8 +703,8 @@ sealed class DependencyConfig(
             object Debug : Chucker("library", DependencyMethod.Debug.Implementation)
             object Release : Chucker("library-no-op", DependencyMethod.Release.Implementation)
         }
-        //endregion
 
+        //endregion
         //region Coil(图片加载)
         sealed class Coil(name: String) : DependencyConfig(
             group = "io.coil-kt",
@@ -715,9 +716,12 @@ sealed class DependencyConfig(
         ) {
             object Core : Coil("coil")
             object Compose : Coil("coil-compose")
+            object Svg : Coil("coil-svg")
+            object Gif : Coil("coil-gif")
+            object Video : Coil("coil-video")
         }
-        //endregion
 
+        //endregion
         //region Core
         sealed class Core(name: String, version: String) : DependencyConfig(
             group = "androidx.core",
@@ -730,8 +734,8 @@ sealed class DependencyConfig(
             object Ktx : Core("core-ktx", "1.7.0")
             object Splash : Core("core-splashscreen", "1.0.0-alpha02")
         }
-        //endregion
 
+        //endregion
         //region Coroutines(协程)
         sealed class Coroutines(name: String, dependencyMethod: DependencyMethod) :
             DependencyConfig(
@@ -746,8 +750,8 @@ sealed class DependencyConfig(
             object Test :
                 Coroutines("kotlinx-coroutines-test", DependencyMethod.Test.Implementation)
         }
-        //endregion
 
+        //endregion
         //region Epoxy(RecyclerView适配库)
         sealed class Epoxy(
             name: String,
@@ -765,8 +769,8 @@ sealed class DependencyConfig(
             object Compose : Epoxy("epoxy-compose")
             object Glide : Epoxy("epoxy-glide-preloading")
         }
-        //endregion
 
+        //endregion
         //region Fragment
         sealed class Fragment(
             name: String,
@@ -782,8 +786,8 @@ sealed class DependencyConfig(
             object Core : Fragment("fragment-ktx")
             object Test : Fragment("fragment-testing", DependencyMethod.Test.Implementation)
         }
-        //endregion
 
+        //endregion
         //region Koin(依赖注入库)
         sealed class Koin(
             name: String,
@@ -791,7 +795,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "io.insert-koin",
             name = name,
-            version = "3.1.4",
+            version = "3.1.5",
             remark = "依赖注入库",
             link = "https://github.com/InsertKoinIO/koin",
             dependencyMethod = dependencyMethod,
@@ -801,8 +805,8 @@ sealed class DependencyConfig(
             object WorkManager : Koin("koin-androidx-workmanager")
             object Test : Koin("koin-test-junit5", DependencyMethod.Test.Implementation)
         }
-        //endregion
 
+        //endregion
         //region Kotlin
         sealed class Kotlin(
             name: String,
@@ -819,8 +823,8 @@ sealed class DependencyConfig(
             object Reflect : Kotlin("kotlin-reflect")
             object Plugin : Kotlin("kotlin-gradle-plugin")
         }
-        //endregion
 
+        //endregion
         //region Lifecycle
         sealed class Lifecycle(
             name: String,
@@ -841,8 +845,8 @@ sealed class DependencyConfig(
             object Service : Lifecycle("lifecycle-service")
             object ViewModel : Lifecycle("lifecycle-viewmodel-ktx")
         }
-        //endregion
 
+        //endregion
         //region MoShi(json解析库)
         sealed class MoShi(
             name: String,
@@ -858,8 +862,8 @@ sealed class DependencyConfig(
             object Core : MoShi("moshi")
             object Compiler : MoShi("moshi-kotlin-codegen", DependencyMethod.Ksp)
         }
-        //endregion
 
+        //endregion
         //region OkHttp
         sealed class OkHttp(
             name: String,
@@ -875,8 +879,8 @@ sealed class DependencyConfig(
             object Core : OkHttp("okhttp")
             object Mock : OkHttp("mockwebserver", DependencyMethod.AndroidTest.Implementation)
         }
-        //endregion
 
+        //endregion
         //region Retrofit(网络请求)
         sealed class Retrofit(
             name: String,
@@ -893,8 +897,8 @@ sealed class DependencyConfig(
             object MoShi : Retrofit("converter-moshi")
             object Scalars : Retrofit("converter-scalars")
         }
-        //endregion
 
+        //endregion
         //region Room(Sqlite数据库)
         sealed class Room(
             name: String,
@@ -912,8 +916,8 @@ sealed class DependencyConfig(
             object Compiler : Room("room-compiler", DependencyMethod.Kapt)
             object Test : Room("room-testing", DependencyMethod.Test.Implementation)
         }
-        //endregion
 
+        //endregion
         //region WorkManager(任务管理器)
         sealed class WorkManager(
             name: String,
@@ -929,8 +933,8 @@ sealed class DependencyConfig(
             object Core : WorkManager("work-runtime-ktx")
             object Test : WorkManager("work-testing", DependencyMethod.Test.Implementation)
         }
-        //endregion
 
+        //endregion
         //region Navigation(导航库)
         sealed class Navigation(
             name: String,
@@ -948,8 +952,8 @@ sealed class DependencyConfig(
             object Compose : Navigation("navigation-compose")
             object Test : Navigation("navigation-testing", DependencyMethod.Test.Implementation)
         }
-        //endregion
 
+        //endregion
         //region Mavericks架构
         sealed class Mavericks(name: String) : DependencyConfig(
             group = "com.airbnb.android",

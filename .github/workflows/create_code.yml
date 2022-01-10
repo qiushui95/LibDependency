@@ -1,10 +1,10 @@
-name: Create Code
+name: Create Code And Update Next Version
 
 # 触发器
 on:
   push:
     branches:
-      - create
+      - rel
 
 jobs:
   create_code:
@@ -14,6 +14,10 @@ jobs:
         with:
           token: ${{secrets.PUSH_ACTION_TOKEN}}
           fetch-depth: 0
+      - name: 切换到master分支
+        run: |
+          git checkout master
+          git rebase rel
       - uses: actions/checkout@v2
         with:
           repository: qiushui95/GithubActionShell
@@ -33,5 +37,15 @@ jobs:
         run: |
           git add .
           git commit -m "生成${{env.LIB_VERSION}}"
-          git push origin create:rel
-          git push origin -d create
+          git tag "v${{env.LIB_VERSION}}"
+      - name: 更新打包版本
+        run: bash ./sh/update_version.sh lib/version.properties
+      - name: 更新版本环境变量
+        run: bash ./sh/env_version.sh lib/version.properties LIB_NEXT_VERSION
+      - name: 提交生成代码
+        run: |
+          git add lib/version.properties
+          git commit -m "更新下次发布版本为${{env.LIB_NEXT_VERSION}}"
+          git push origin master
+          git push origin "v${{env.LIB_VERSION}}"
+          git push origin -d rel
