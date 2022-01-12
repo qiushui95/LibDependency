@@ -486,6 +486,15 @@ sealed class LibDependencies(
 
       object Compose : LibDependencies("io.coil-kt", "coil-compose", "1.4.0",
           DependencyMethod.Implementation)
+
+      object Svg : LibDependencies("io.coil-kt", "coil-svg", "1.4.0",
+          DependencyMethod.Implementation)
+
+      object Gif : LibDependencies("io.coil-kt", "coil-gif", "1.4.0",
+          DependencyMethod.Implementation)
+
+      object Video : LibDependencies("io.coil-kt", "coil-video", "1.4.0",
+          DependencyMethod.Implementation)
     }
 
     /**
@@ -545,16 +554,16 @@ sealed class LibDependencies(
      * https://github.com/InsertKoinIO/koin
      */
     interface Koin {
-      object Android : LibDependencies("io.insert-koin", "koin-android", "3.1.4",
+      object Android : LibDependencies("io.insert-koin", "koin-android", "3.1.5",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("io.insert-koin", "koin-core", "3.1.4",
+      object Core : LibDependencies("io.insert-koin", "koin-core", "3.1.5",
           DependencyMethod.Implementation)
 
       object WorkManager : LibDependencies("io.insert-koin", "koin-androidx-workmanager",
-          "3.1.4", DependencyMethod.Implementation)
+          "3.1.5", DependencyMethod.Implementation)
 
-      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.1.4",
+      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.1.5",
           DependencyMethod.Test.Implementation)
     }
 

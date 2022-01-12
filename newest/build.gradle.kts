@@ -116,6 +116,9 @@ dependencies {
 
     implementation("io.coil-kt:coil:+")
     implementation("io.coil-kt:coil-compose:+")
+    implementation("io.coil-kt:coil-svg:+")
+    implementation("io.coil-kt:coil-gif:+")
+    implementation("io.coil-kt:coil-video:+")
 
     implementation("androidx.core:core-ktx:+")
     implementation("androidx.core:core-splashscreen:+")

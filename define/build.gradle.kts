@@ -116,6 +116,9 @@ dependencies {
 
     implementation("io.coil-kt:coil:1.4.0")
     implementation("io.coil-kt:coil-compose:1.4.0")
+    implementation("io.coil-kt:coil-svg:1.4.0")
+    implementation("io.coil-kt:coil-gif:1.4.0")
+    implementation("io.coil-kt:coil-video:1.4.0")
 
     implementation("androidx.core:core-ktx:1.7.0")
     implementation("androidx.core:core-splashscreen:1.0.0-alpha02")
@@ -131,10 +134,10 @@ dependencies {
     implementation("androidx.fragment:fragment-ktx:1.4.0")
     testImplementation("androidx.fragment:fragment-testing:1.4.0")
 
-    implementation("io.insert-koin:koin-android:3.1.4")
-    implementation("io.insert-koin:koin-core:3.1.4")
-    implementation("io.insert-koin:koin-androidx-workmanager:3.1.4")
-    testImplementation("io.insert-koin:koin-test-junit5:3.1.4")
+    implementation("io.insert-koin:koin-android:3.1.5")
+    implementation("io.insert-koin:koin-core:3.1.5")
+    implementation("io.insert-koin:koin-androidx-workmanager:3.1.5")
+    testImplementation("io.insert-koin:koin-test-junit5:3.1.5")
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.10")
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.10")

@@ -210,6 +210,9 @@
 >[Coil](https://coil-kt.github.io/coil/README-zh/)(图片加载)  
 >>implementation(io.coil-kt:coil:1.4.0)  
 >>implementation(io.coil-kt:coil-compose:1.4.0)  
+>>implementation(io.coil-kt:coil-svg:1.4.0)  
+>>implementation(io.coil-kt:coil-gif:1.4.0)  
+>>implementation(io.coil-kt:coil-video:1.4.0)  
   
 >[Core](https://developer.android.com/jetpack/androidx/releases/core)  
 >>implementation(androidx.core:core-ktx:1.7.0)  
@@ -230,10 +233,10 @@
 >>testImplementation(androidx.fragment:fragment-testing:1.4.0)  
   
 >[Koin](https://github.com/InsertKoinIO/koin)(依赖注入库)  
->>implementation(io.insert-koin:koin-android:3.1.4)  
->>implementation(io.insert-koin:koin-core:3.1.4)  
->>implementation(io.insert-koin:koin-androidx-workmanager:3.1.4)  
->>testImplementation(io.insert-koin:koin-test-junit5:3.1.4)  
+>>implementation(io.insert-koin:koin-android:3.1.5)  
+>>implementation(io.insert-koin:koin-core:3.1.5)  
+>>implementation(io.insert-koin:koin-androidx-workmanager:3.1.5)  
+>>testImplementation(io.insert-koin:koin-test-junit5:3.1.5)  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
 >>implementation(org.jetbrains.kotlin:kotlin-stdlib:1.6.10)  
