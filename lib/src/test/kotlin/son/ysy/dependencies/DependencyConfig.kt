@@ -70,7 +70,7 @@ sealed class DependencyConfig(
         object Appcompat : DependencyConfig(
             group = "androidx.appcompat",
             name = "appcompat",
-            version = "1.4.0",
+            version = "1.4.1",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/appcompat",
             dependencyMethod = DependencyMethod.Implementation,
@@ -331,7 +331,7 @@ sealed class DependencyConfig(
         object ConstraintLayout : DependencyConfig(
             group = "androidx.constraintlayout",
             name = "constraintlayout",
-            version = "2.1.2",
+            version = "2.1.3",
             remark = "约束布局",
             link = "https://developer.android.com/jetpack/androidx/releases/constraintlayout",
             dependencyMethod = DependencyMethod.Implementation,
@@ -386,7 +386,7 @@ sealed class DependencyConfig(
         object Material : DependencyConfig(
             group = "com.google.android.material",
             name = "material",
-            version = "1.4.0",
+            version = "1.5.0",
             remark = "",
             link = "https://github.com/material-components/material-components-android",
             dependencyMethod = DependencyMethod.Implementation,
@@ -550,7 +550,7 @@ sealed class DependencyConfig(
         object ConstraintLayout : DependencyConfig(
             group = "androidx.constraintlayout",
             name = "constraintlayout-compose",
-            version = "1.0.0-rc02",
+            version = "1.0.0",
             remark = "Compose约束布局",
             link = "https://developer.android.com/jetpack/androidx/releases/constraintlayout",
             dependencyMethod = DependencyMethod.Implementation,
@@ -732,7 +732,7 @@ sealed class DependencyConfig(
             dependencyMethod = DependencyMethod.Implementation,
         ) {
             object Ktx : Core("core-ktx", "1.7.0")
-            object Splash : Core("core-splashscreen", "1.0.0-alpha02")
+            object Splash : Core("core-splashscreen", "1.0.0-beta01")
         }
 
         //endregion
@@ -906,7 +906,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "androidx.room",
             name = name,
-            version = "2.4.0",
+            version = "2.4.1",
             remark = "Sqlite数据库",
             link = "https://developer.android.com/jetpack/androidx/releases/room",
             dependencyMethod = dependencyMethod,
