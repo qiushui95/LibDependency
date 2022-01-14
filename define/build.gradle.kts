@@ -27,7 +27,7 @@ dependencies {
     implementation("com.aliyun.ams:alicloud-android-push:3.7.2")
     implementation("com.blankj:utilcodex:1.31.0")
     implementation("androidx.annotation:annotation:1.3.0")
-    implementation("androidx.appcompat:appcompat:1.4.0")
+    implementation("androidx.appcompat:appcompat:1.4.1")
     implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.3")
     implementation("io.github.razerdp:BasePopup:3.2.0")
     implementation("me.jorgecastillo:androidcolorx:0.2.0")
@@ -51,12 +51,12 @@ dependencies {
     implementation("com.github.xiaohaibin:XBanner:androidx_v1.2.1")
     implementation("com.eightbitlab:blurview:1.6.6")
     implementation("com.ashokvarma.android:bottom-navigation-bar:2.2.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.2")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.3")
     implementation("io.github.csdn-mobile:RoundView:1.7.1")
     implementation("com.google.android.flexbox:flexbox:3.0.0")
     implementation("com.github.dkzwm:fet-core:0.2.1")
     implementation("com.airbnb.android:lottie:4.2.2")
-    implementation("com.google.android.material:material:1.4.0")
+    implementation("com.google.android.material:material:1.5.0")
     implementation("com.github.barteksc:android-pdf-viewer:3.2.0-beta.1")
     implementation("com.github.chrisbanes:PhotoView:2.3.0")
     implementation("io.github.chaosleung:pinview:1.4.4")
@@ -71,7 +71,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
     testImplementation("androidx.test.ext:junit-ktx:1.1.3")
 
-    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.0-rc02")
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.0")
     implementation("com.github.fornewid:material-motion-compose:0.7.7")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0")
 
@@ -121,7 +121,7 @@ dependencies {
     implementation("io.coil-kt:coil-video:1.4.0")
 
     implementation("androidx.core:core-ktx:1.7.0")
-    implementation("androidx.core:core-splashscreen:1.0.0-alpha02")
+    implementation("androidx.core:core-splashscreen:1.0.0-beta01")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")
@@ -161,10 +161,10 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
     implementation("com.squareup.retrofit2:converter-scalars:2.9.0")
 
-    implementation("androidx.room:room-runtime:2.4.0")
-    implementation("androidx.room:room-ktx:2.4.0")
-    kapt("androidx.room:room-compiler:2.4.0")
-    testImplementation("androidx.room:room-testing:2.4.0")
+    implementation("androidx.room:room-runtime:2.4.1")
+    implementation("androidx.room:room-ktx:2.4.1")
+    kapt("androidx.room:room-compiler:2.4.1")
+    testImplementation("androidx.room:room-testing:2.4.1")
 
     implementation("androidx.work:work-runtime-ktx:2.7.1")
     testImplementation("androidx.work:work-testing:2.7.1")

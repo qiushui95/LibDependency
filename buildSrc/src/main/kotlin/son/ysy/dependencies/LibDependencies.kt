@@ -42,7 +42,7 @@ sealed class LibDependencies(
     /**
      * https://developer.android.com/jetpack/androidx/releases/appcompat
      */
-    object Appcompat : LibDependencies("androidx.appcompat", "appcompat", "1.4.0",
+    object Appcompat : LibDependencies("androidx.appcompat", "appcompat", "1.4.1",
         DependencyMethod.Implementation)
 
     /**
@@ -206,7 +206,7 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/constraintlayout
      */
     object ConstraintLayout : LibDependencies("androidx.constraintlayout",
-        "constraintlayout", "2.1.2", DependencyMethod.Implementation)
+        "constraintlayout", "2.1.3", DependencyMethod.Implementation)
 
     /**
      * 圆角控件
@@ -239,7 +239,7 @@ sealed class LibDependencies(
     /**
      * https://github.com/material-components/material-components-android
      */
-    object Material : LibDependencies("com.google.android.material", "material", "1.4.0",
+    object Material : LibDependencies("com.google.android.material", "material", "1.5.0",
         DependencyMethod.Implementation)
 
     /**
@@ -332,7 +332,7 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/constraintlayout
      */
     object ConstraintLayout : LibDependencies("androidx.constraintlayout",
-        "constraintlayout-compose", "1.0.0-rc02", DependencyMethod.Implementation)
+        "constraintlayout-compose", "1.0.0", DependencyMethod.Implementation)
 
     /**
      * Compose导航动画
@@ -504,7 +504,7 @@ sealed class LibDependencies(
       object Ktx : LibDependencies("androidx.core", "core-ktx", "1.7.0",
           DependencyMethod.Implementation)
 
-      object Splash : LibDependencies("androidx.core", "core-splashscreen", "1.0.0-alpha02",
+      object Splash : LibDependencies("androidx.core", "core-splashscreen", "1.0.0-beta01",
           DependencyMethod.Implementation)
     }
 
@@ -650,16 +650,16 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/room
      */
     interface Room {
-      object Core : LibDependencies("androidx.room", "room-runtime", "2.4.0",
+      object Core : LibDependencies("androidx.room", "room-runtime", "2.4.1",
           DependencyMethod.Implementation)
 
-      object Ktx : LibDependencies("androidx.room", "room-ktx", "2.4.0",
+      object Ktx : LibDependencies("androidx.room", "room-ktx", "2.4.1",
           DependencyMethod.Implementation)
 
-      object Compiler : LibDependencies("androidx.room", "room-compiler", "2.4.0",
+      object Compiler : LibDependencies("androidx.room", "room-compiler", "2.4.1",
           DependencyMethod.Kapt)
 
-      object Test : LibDependencies("androidx.room", "room-testing", "2.4.0",
+      object Test : LibDependencies("androidx.room", "room-testing", "2.4.1",
           DependencyMethod.Test.Implementation)
     }
 

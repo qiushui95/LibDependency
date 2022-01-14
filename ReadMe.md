@@ -16,7 +16,7 @@
 >>implementation(androidx.annotation:annotation:1.3.0)  
   
 >[Appcompat](https://developer.android.com/jetpack/androidx/releases/appcompat)  
->>implementation(androidx.appcompat:appcompat:1.4.0)  
+>>implementation(androidx.appcompat:appcompat:1.4.1)  
   
 >[Background](https://github.com/JavaNoober/BackgroundLibrary)(背景生成工具库)  
 >>implementation(com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.3)  
@@ -90,7 +90,7 @@
 >>implementation(com.ashokvarma.android:bottom-navigation-bar:2.2.0)  
   
 >[ConstraintLayout](https://developer.android.com/jetpack/androidx/releases/constraintlayout)(约束布局)  
->>implementation(androidx.constraintlayout:constraintlayout:2.1.2)  
+>>implementation(androidx.constraintlayout:constraintlayout:2.1.3)  
   
 >[CornerView](https://github.com/csdn-mobile/RoundView)(圆角控件)  
 >>implementation(io.github.csdn-mobile:RoundView:1.7.1)  
@@ -105,7 +105,7 @@
 >>implementation(com.airbnb.android:lottie:4.2.2)  
   
 >[Material](https://github.com/material-components/material-components-android)  
->>implementation(com.google.android.material:material:1.4.0)  
+>>implementation(com.google.android.material:material:1.5.0)  
   
 >[PdfViewer](https://github.com/barteksc/AndroidPdfViewer)(pdf查看)  
 >>implementation(com.github.barteksc:android-pdf-viewer:3.2.0-beta.1)  
@@ -151,7 +151,7 @@
 <summary>Compose</summary>  
   
 >[ConstraintLayout](https://developer.android.com/jetpack/androidx/releases/constraintlayout)(Compose约束布局)  
->>implementation(androidx.constraintlayout:constraintlayout-compose:1.0.0-rc02)  
+>>implementation(androidx.constraintlayout:constraintlayout-compose:1.0.0)  
   
 >[NavigationAnimation](https://github.com/fornewid/material-motion-compose)(Compose导航动画)  
 >>implementation(com.github.fornewid:material-motion-compose:0.7.7)  
@@ -216,7 +216,7 @@
   
 >[Core](https://developer.android.com/jetpack/androidx/releases/core)  
 >>implementation(androidx.core:core-ktx:1.7.0)  
->>implementation(androidx.core:core-splashscreen:1.0.0-alpha02)  
+>>implementation(androidx.core:core-splashscreen:1.0.0-beta01)  
   
 >[Coroutines](https://github.com/Kotlin/kotlinx.coroutines)(core)  
 >>implementation(org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0)  
@@ -266,10 +266,10 @@
 >>implementation(com.squareup.retrofit2:converter-scalars:2.9.0)  
   
 >[Room](https://developer.android.com/jetpack/androidx/releases/room)(Sqlite数据库)  
->>implementation(androidx.room:room-runtime:2.4.0)  
->>implementation(androidx.room:room-ktx:2.4.0)  
->>kapt(androidx.room:room-compiler:2.4.0)  
->>testImplementation(androidx.room:room-testing:2.4.0)  
+>>implementation(androidx.room:room-runtime:2.4.1)  
+>>implementation(androidx.room:room-ktx:2.4.1)  
+>>kapt(androidx.room:room-compiler:2.4.1)  
+>>testImplementation(androidx.room:room-testing:2.4.1)  
   
 >[WorkManager](https://developer.android.com/jetpack/androidx/releases/work)(任务管理器)  
 >>implementation(androidx.work:work-runtime-ktx:2.7.1)  
