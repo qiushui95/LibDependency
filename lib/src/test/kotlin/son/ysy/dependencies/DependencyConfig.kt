@@ -169,7 +169,7 @@ sealed class DependencyConfig(
         object Mmkv : DependencyConfig(
             group = "com.tencent",
             name = "mmkv-static",
-            version = "1.2.11",
+            version = "1.2.12",
             remark = "持久KV数据存储",
             link = "https://github.com/Tencent/MMKV/blob/master/README_CN.md",
             dependencyMethod = DependencyMethod.Implementation,
@@ -395,9 +395,9 @@ sealed class DependencyConfig(
         //endregion
         //region PdfViewer(pdf查看)
         object PdfViewer : DependencyConfig(
-            group = "com.github.barteksc",
+            group = "com.github.mhiew",
             name = "android-pdf-viewer",
-            version = "3.2.0-beta.1",
+            version = "3.2.0-beta.2",
             remark = "pdf查看",
             link = "https://github.com/barteksc/AndroidPdfViewer",
             dependencyMethod = DependencyMethod.Implementation,
@@ -966,7 +966,7 @@ sealed class DependencyConfig(
             object Core : Mavericks("mavericks")
             object Compose : Mavericks("mavericks-compose")
             object Navigation : Mavericks("mavericks-navigation")
-            object Launcher : Mavericks("mavericks-launcher")
+//            object Launcher : Mavericks("mavericks-launcher")
         }
         //endregion
     }
