@@ -105,7 +105,7 @@ sealed class LibDependencies(
      * 持久KV数据存储
      * https://github.com/Tencent/MMKV/blob/master/README_CN.md
      */
-    object Mmkv : LibDependencies("com.tencent", "mmkv-static", "1.2.11",
+    object Mmkv : LibDependencies("com.tencent", "mmkv-static", "1.2.12",
         DependencyMethod.Implementation)
 
     /**
@@ -246,8 +246,8 @@ sealed class LibDependencies(
      * pdf查看
      * https://github.com/barteksc/AndroidPdfViewer
      */
-    object PdfViewer : LibDependencies("com.github.barteksc", "android-pdf-viewer",
-        "3.2.0-beta.1", DependencyMethod.Implementation)
+    object PdfViewer : LibDependencies("com.github.mhiew", "android-pdf-viewer",
+        "3.2.0-beta.2", DependencyMethod.Implementation)
 
     /**
      * 图片预览
@@ -706,9 +706,6 @@ sealed class LibDependencies(
 
       object Navigation : LibDependencies("com.airbnb.android", "mavericks-navigation",
           "2.5.1", DependencyMethod.Implementation)
-
-      object Launcher : LibDependencies("com.airbnb.android", "mavericks-launcher", "2.5.1",
-          DependencyMethod.Implementation)
     }
   }
 }

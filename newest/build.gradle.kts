@@ -57,7 +57,7 @@ dependencies {
     implementation("com.github.dkzwm:fet-core:+")
     implementation("com.airbnb.android:lottie:+")
     implementation("com.google.android.material:material:+")
-    implementation("com.github.barteksc:android-pdf-viewer:+")
+    implementation("com.github.mhiew:android-pdf-viewer:+")
     implementation("com.github.chrisbanes:PhotoView:+")
     implementation("io.github.chaosleung:pinview:+")
     implementation("androidx.recyclerview:recyclerview:+")
@@ -177,6 +177,5 @@ dependencies {
     implementation("com.airbnb.android:mavericks:+")
     implementation("com.airbnb.android:mavericks-compose:+")
     implementation("com.airbnb.android:mavericks-navigation:+")
-    implementation("com.airbnb.android:mavericks-launcher:+")
 
 }

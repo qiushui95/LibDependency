@@ -43,7 +43,7 @@
 >>implementation(com.squareup.leakcanary:leakcanary-android:2.8.1)  
   
 >[Mmkv](https://github.com/Tencent/MMKV/blob/master/README_CN.md)(持久KV数据存储)  
->>implementation(com.tencent:mmkv-static:1.2.11)  
+>>implementation(com.tencent:mmkv-static:1.2.12)  
   
 >[PermissionX](https://github.com/guolindev/PermissionX)(权限请求)  
 >>implementation(com.guolindev.permissionx:permissionx:1.6.1)  
@@ -108,7 +108,7 @@
 >>implementation(com.google.android.material:material:1.5.0)  
   
 >[PdfViewer](https://github.com/barteksc/AndroidPdfViewer)(pdf查看)  
->>implementation(com.github.barteksc:android-pdf-viewer:3.2.0-beta.1)  
+>>implementation(com.github.mhiew:android-pdf-viewer:3.2.0-beta.2)  
   
 >[PhotoView](https://github.com/Baseflow/PhotoView)(图片预览)  
 >>implementation(com.github.chrisbanes:PhotoView:2.3.0)  
@@ -285,7 +285,6 @@
 >>implementation(com.airbnb.android:mavericks:2.5.1)  
 >>implementation(com.airbnb.android:mavericks-compose:2.5.1)  
 >>implementation(com.airbnb.android:mavericks-navigation:2.5.1)  
->>implementation(com.airbnb.android:mavericks-launcher:2.5.1)  
   
 </details>  
   

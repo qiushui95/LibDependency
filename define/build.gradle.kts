@@ -36,7 +36,7 @@ dependencies {
     implementation("com.ypx.yimagepicker:androidx:3.1.4")
     implementation("joda-time:joda-time:2.10.13")
     implementation("com.squareup.leakcanary:leakcanary-android:2.8.1")
-    implementation("com.tencent:mmkv-static:1.2.11")
+    implementation("com.tencent:mmkv-static:1.2.12")
     implementation("com.guolindev.permissionx:permissionx:1.6.1")
     implementation("com.github.jenly1314:zxing-lite:2.1.1")
     implementation("com.github.qiushui95:AndroidInitializer:1.0.7")
@@ -57,7 +57,7 @@ dependencies {
     implementation("com.github.dkzwm:fet-core:0.2.1")
     implementation("com.airbnb.android:lottie:4.2.2")
     implementation("com.google.android.material:material:1.5.0")
-    implementation("com.github.barteksc:android-pdf-viewer:3.2.0-beta.1")
+    implementation("com.github.mhiew:android-pdf-viewer:3.2.0-beta.2")
     implementation("com.github.chrisbanes:PhotoView:2.3.0")
     implementation("io.github.chaosleung:pinview:1.4.4")
     implementation("androidx.recyclerview:recyclerview:1.2.1")
@@ -177,6 +177,5 @@ dependencies {
     implementation("com.airbnb.android:mavericks:2.5.1")
     implementation("com.airbnb.android:mavericks-compose:2.5.1")
     implementation("com.airbnb.android:mavericks-navigation:2.5.1")
-    implementation("com.airbnb.android:mavericks-launcher:2.5.1")
 
 }
