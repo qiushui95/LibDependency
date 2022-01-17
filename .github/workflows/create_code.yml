@@ -14,14 +14,19 @@ jobs:
         with:
           token: ${{secrets.PUSH_ACTION_TOKEN}}
           fetch-depth: 0
-      - name: 切换到master分支
-        run: |
-          git checkout master
-          git rebase rel
       - uses: actions/checkout@v2
         with:
           repository: qiushui95/GithubActionShell
           path: "sh"
+      - name: 配置git
+        run: bash ./sh/git_config.sh
+      - name: 切换到master分支
+        run: |
+          git checkout master
+          git checkout rel
+          git rebase master
+          git checkout rel
+          git merge rel
       - name: 安装JDK 11
         uses: actions/setup-java@v2
         with:
@@ -31,8 +36,6 @@ jobs:
         run: bash ./gradlew lib:test --tests "son.ysy.dependencies.Creator.testCreateAll"
       - name: 设置版本环境变量
         run: bash ./sh/env_version.sh lib/version.properties LIB_VERSION
-      - name: 配置git
-        run: bash ./sh/git_config.sh
       - name: 提交生成代码
         run: |
           git add .
