@@ -71,7 +71,7 @@ sealed class LibDependencies(
      * https://github.com/loperSeven/DateTimePicker
      */
     object DateTimePicker : LibDependencies("com.github.loperSeven", "DateTimePicker",
-        "0.5.2", DependencyMethod.Implementation)
+        "0.5.3", DependencyMethod.Implementation)
 
     /**
      * 悬浮窗

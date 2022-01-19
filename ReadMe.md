@@ -28,7 +28,7 @@
 >>implementation(me.jorgecastillo:androidcolorx:0.2.0)  
   
 >[DateTimePicker](https://github.com/loperSeven/DateTimePicker)(时间选择器)  
->>implementation(com.github.loperSeven:DateTimePicker:0.5.2)  
+>>implementation(com.github.loperSeven:DateTimePicker:0.5.3)  
   
 >[EasyFloat](https://github.com/princekin-f/EasyFloat)(悬浮窗)  
 >>implementation(com.github.princekin-f:EasyFloat:2.0.4)  

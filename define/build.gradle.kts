@@ -31,7 +31,7 @@ dependencies {
     implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.3")
     implementation("io.github.razerdp:BasePopup:3.2.0")
     implementation("me.jorgecastillo:androidcolorx:0.2.0")
-    implementation("com.github.loperSeven:DateTimePicker:0.5.2")
+    implementation("com.github.loperSeven:DateTimePicker:0.5.3")
     implementation("com.github.princekin-f:EasyFloat:2.0.4")
     implementation("com.ypx.yimagepicker:androidx:3.1.4")
     implementation("joda-time:joda-time:2.10.13")
