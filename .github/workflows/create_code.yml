@@ -23,9 +23,9 @@ jobs:
       - name: 切换到master分支
         run: |
           git checkout master
-          git checkout rel
+          git checkout -
           git rebase master
-          git checkout rel
+          git checkout -
           git merge rel
       - name: 安装JDK 11
         uses: actions/setup-java@v2
