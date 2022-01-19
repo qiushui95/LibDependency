@@ -114,7 +114,7 @@ sealed class DependencyConfig(
         object DateTimePicker : DependencyConfig(
             group = "com.github.loperSeven",
             name = "DateTimePicker",
-            version = "0.5.2",
+            version = "0.5.3",
             remark = "时间选择器",
             link = "https://github.com/loperSeven/DateTimePicker",
             dependencyMethod = DependencyMethod.Implementation,
