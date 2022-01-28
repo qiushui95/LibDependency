@@ -28,7 +28,7 @@
 >>implementation(me.jorgecastillo:androidcolorx:0.2.0)  
   
 >[DateTimePicker](https://github.com/loperSeven/DateTimePicker)(时间选择器)  
->>implementation(com.github.loperSeven:DateTimePicker:0.5.3)  
+>>implementation(com.github.loperSeven:DateTimePicker:0.5.4)  
   
 >[EasyFloat](https://github.com/princekin-f/EasyFloat)(悬浮窗)  
 >>implementation(com.github.princekin-f:EasyFloat:2.0.4)  
@@ -61,7 +61,7 @@
 >>implementation(com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0)  
   
 >[XCrash](https://github.com/iqiyi/xCrash/blob/master/README.zh-CN.md)(奔溃日志收集)  
->>implementation(com.iqiyi.xcrash:xcrash-android-lib:3.0.0)  
+>>implementation(com.iqiyi.xcrash:xcrash-android-lib:3.1.0)  
   
 >[Profiler](https://github.com/itkacher/OkHttpProfiler)(AS OkHttp 拦截器)  
 >>implementation(com.localebro:okhttpprofiler:1.0.8)  
@@ -174,17 +174,17 @@
 >>implementation(com.google.accompanist:accompanist-systemuicontroller:0.22.0-rc)  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
->>implementation(androidx.compose.animation:animation:1.1.0-rc01)  
->>implementation(androidx.compose.compiler:compiler:1.1.0-rc02)  
->>implementation(androidx.compose.foundation:foundation:1.1.0-rc01)  
->>implementation(androidx.compose.runtime:runtime-livedata:1.1.0-rc01)  
->>implementation(androidx.compose.material:material:1.1.0-rc01)  
->>implementation(androidx.compose.material:material-icons-core:1.1.0-rc01)  
->>implementation(androidx.compose.material:material-icons-extended:1.1.0-rc01)  
->>implementation(androidx.compose.ui:ui-tooling-preview:1.1.0-rc01)  
->>androidTestImplementation(androidx.compose.ui:ui-test-junit4:1.1.0-rc01)  
->>implementation(androidx.compose.ui:ui:1.1.0-rc01)  
->>implementation(androidx.compose.ui:ui-tooling:1.1.0-rc01)  
+>>implementation(androidx.compose.animation:animation:1.1.0-rc03)  
+>>implementation(androidx.compose.compiler:compiler:1.1.0-rc03)  
+>>implementation(androidx.compose.foundation:foundation:1.1.0-rc03)  
+>>implementation(androidx.compose.runtime:runtime-livedata:1.1.0-rc03)  
+>>implementation(androidx.compose.material:material:1.1.0-rc03)  
+>>implementation(androidx.compose.material:material-icons-core:1.1.0-rc03)  
+>>implementation(androidx.compose.material:material-icons-extended:1.1.0-rc03)  
+>>implementation(androidx.compose.ui:ui-tooling-preview:1.1.0-rc03)  
+>>androidTestImplementation(androidx.compose.ui:ui-test-junit4:1.1.0-rc03)  
+>>implementation(androidx.compose.ui:ui:1.1.0-rc03)  
+>>implementation(androidx.compose.ui:ui-tooling:1.1.0-rc03)  
   
 </details>  
   
@@ -196,12 +196,12 @@
 >>implementation(androidx.activity:activity-compose:1.4.0)  
   
 >[CameraX](https://developer.android.com/jetpack/androidx/releases/camera)(相机相关)  
->>implementation(androidx.camera:camera-camera2:1.1.0-alpha12)  
->>implementation(androidx.camera:camera-core:1.1.0-alpha12)  
->>implementation(androidx.camera:camera-lifecycle:1.1.0-alpha12)  
->>implementation(androidx.camera:camera-video:1.1.0-alpha12)  
->>implementation(androidx.camera:camera-view:1.0.0-alpha32)  
->>implementation(androidx.camera:camera-extensions:1.0.0-alpha32)  
+>>implementation(androidx.camera:camera-camera2:1.1.0-beta01)  
+>>implementation(androidx.camera:camera-core:1.1.0-beta01)  
+>>implementation(androidx.camera:camera-lifecycle:1.1.0-beta01)  
+>>implementation(androidx.camera:camera-video:1.1.0-beta01)  
+>>implementation(androidx.camera:camera-view:1.1.0-beta01)  
+>>implementation(androidx.camera:camera-extensions:1.1.0-beta01)  
   
 >[Chucker](https://github.com/ChuckerTeam/chucker)(网络请求监控)  
 >>debugImplementation(com.github.chuckerteam.chucker:library:3.5.2)  
@@ -229,8 +229,8 @@
 >>implementation(com.airbnb.android:epoxy-glide-preloading:5.0.0-beta05)  
   
 >[Fragment](https://developer.android.com/jetpack/androidx/releases/fragment)  
->>implementation(androidx.fragment:fragment-ktx:1.4.0)  
->>testImplementation(androidx.fragment:fragment-testing:1.4.0)  
+>>implementation(androidx.fragment:fragment-ktx:1.4.1)  
+>>testImplementation(androidx.fragment:fragment-testing:1.4.1)  
   
 >[Koin](https://github.com/InsertKoinIO/koin)(依赖注入库)  
 >>implementation(io.insert-koin:koin-android:3.1.5)  

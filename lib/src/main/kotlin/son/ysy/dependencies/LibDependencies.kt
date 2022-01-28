@@ -71,7 +71,7 @@ sealed class LibDependencies(
      * https://github.com/loperSeven/DateTimePicker
      */
     object DateTimePicker : LibDependencies("com.github.loperSeven", "DateTimePicker",
-        "0.5.3", DependencyMethod.Implementation)
+        "0.5.4", DependencyMethod.Implementation)
 
     /**
      * 悬浮窗
@@ -147,7 +147,7 @@ sealed class LibDependencies(
      * 奔溃日志收集
      * https://github.com/iqiyi/xCrash/blob/master/README.zh-CN.md
      */
-    object XCrash : LibDependencies("com.iqiyi.xcrash", "xcrash-android-lib", "3.0.0",
+    object XCrash : LibDependencies("com.iqiyi.xcrash", "xcrash-android-lib", "3.1.0",
         DependencyMethod.Implementation)
 
     /**
@@ -394,36 +394,36 @@ sealed class LibDependencies(
      */
     interface Official {
       object Animation : LibDependencies("androidx.compose.animation", "animation",
-          "1.1.0-rc01", DependencyMethod.Implementation)
+          "1.1.0-rc03", DependencyMethod.Implementation)
 
       object Compiler : LibDependencies("androidx.compose.compiler", "compiler",
-          "1.1.0-rc02", DependencyMethod.Implementation)
+          "1.1.0-rc03", DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
-          "1.1.0-rc01", DependencyMethod.Implementation)
+          "1.1.0-rc03", DependencyMethod.Implementation)
 
       object LiveData : LibDependencies("androidx.compose.runtime", "runtime-livedata",
-          "1.1.0-rc01", DependencyMethod.Implementation)
+          "1.1.0-rc03", DependencyMethod.Implementation)
 
       object Material : LibDependencies("androidx.compose.material", "material",
-          "1.1.0-rc01", DependencyMethod.Implementation)
+          "1.1.0-rc03", DependencyMethod.Implementation)
 
       object MaterialIcon : LibDependencies("androidx.compose.material",
-          "material-icons-core", "1.1.0-rc01", DependencyMethod.Implementation)
+          "material-icons-core", "1.1.0-rc03", DependencyMethod.Implementation)
 
       object MaterialIconExtended : LibDependencies("androidx.compose.material",
-          "material-icons-extended", "1.1.0-rc01", DependencyMethod.Implementation)
+          "material-icons-extended", "1.1.0-rc03", DependencyMethod.Implementation)
 
       object Preview : LibDependencies("androidx.compose.ui", "ui-tooling-preview",
-          "1.1.0-rc01", DependencyMethod.Implementation)
+          "1.1.0-rc03", DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.1.0-rc01",
+      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.1.0-rc03",
           DependencyMethod.AndroidTest.Implementation)
 
-      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.1.0-rc01",
+      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.1.0-rc03",
           DependencyMethod.Implementation)
 
-      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.1.0-rc01",
+      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.1.0-rc03",
           DependencyMethod.Implementation)
     }
   }
@@ -445,23 +445,23 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/camera
      */
     interface CameraX {
-      object Camera2 : LibDependencies("androidx.camera", "camera-camera2", "1.1.0-alpha12",
+      object Camera2 : LibDependencies("androidx.camera", "camera-camera2", "1.1.0-beta01",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("androidx.camera", "camera-core", "1.1.0-alpha12",
+      object Core : LibDependencies("androidx.camera", "camera-core", "1.1.0-beta01",
           DependencyMethod.Implementation)
 
       object Lifecycle : LibDependencies("androidx.camera", "camera-lifecycle",
-          "1.1.0-alpha12", DependencyMethod.Implementation)
+          "1.1.0-beta01", DependencyMethod.Implementation)
 
-      object Video : LibDependencies("androidx.camera", "camera-video", "1.1.0-alpha12",
+      object Video : LibDependencies("androidx.camera", "camera-video", "1.1.0-beta01",
           DependencyMethod.Implementation)
 
-      object View : LibDependencies("androidx.camera", "camera-view", "1.0.0-alpha32",
+      object View : LibDependencies("androidx.camera", "camera-view", "1.1.0-beta01",
           DependencyMethod.Implementation)
 
       object Extensions : LibDependencies("androidx.camera", "camera-extensions",
-          "1.0.0-alpha32", DependencyMethod.Implementation)
+          "1.1.0-beta01", DependencyMethod.Implementation)
     }
 
     /**
@@ -542,10 +542,10 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/fragment
      */
     interface Fragment {
-      object Core : LibDependencies("androidx.fragment", "fragment-ktx", "1.4.0",
+      object Core : LibDependencies("androidx.fragment", "fragment-ktx", "1.4.1",
           DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.fragment", "fragment-testing", "1.4.0",
+      object Test : LibDependencies("androidx.fragment", "fragment-testing", "1.4.1",
           DependencyMethod.Test.Implementation)
     }
 
