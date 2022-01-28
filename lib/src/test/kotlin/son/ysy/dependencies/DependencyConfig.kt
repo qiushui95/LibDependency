@@ -114,7 +114,7 @@ sealed class DependencyConfig(
         object DateTimePicker : DependencyConfig(
             group = "com.github.loperSeven",
             name = "DateTimePicker",
-            version = "0.5.3",
+            version = "0.5.4",
             remark = "时间选择器",
             link = "https://github.com/loperSeven/DateTimePicker",
             dependencyMethod = DependencyMethod.Implementation,
@@ -235,7 +235,7 @@ sealed class DependencyConfig(
         object XCrash : DependencyConfig(
             group = "com.iqiyi.xcrash",
             name = "xcrash-android-lib",
-            version = "3.0.0",
+            version = "3.1.0",
             remark = "奔溃日志收集",
             link = "https://github.com/iqiyi/xCrash/blob/master/README.zh-CN.md",
             dependencyMethod = DependencyMethod.Implementation,
@@ -572,7 +572,7 @@ sealed class DependencyConfig(
         sealed class Official(
             group: String,
             name: String,
-            version: String = "1.1.0-rc01",
+            version: String = "1.1.0-rc03",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : DependencyConfig(
             group = group,
@@ -590,7 +590,6 @@ sealed class DependencyConfig(
             object Compiler : Official(
                 group = "androidx.compose.compiler",
                 name = "compiler",
-                version = "1.1.0-rc02"
             )
             //endregion
 
@@ -678,8 +677,8 @@ sealed class DependencyConfig(
             dependencyMethod = DependencyMethod.Implementation,
         ) {
             sealed class Version(val version: String) {
-                object Core : Version("1.1.0-alpha12")
-                object Extends : Version("1.0.0-alpha32")
+                object Core : Version("1.1.0-beta01")
+                object Extends : Version("1.1.0-beta01")
             }
 
             object Camera2 : CameraX("camera-camera2", Version.Core)
@@ -778,7 +777,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "androidx.fragment",
             name = name,
-            version = "1.4.0",
+            version = "1.4.1",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/fragment",
             dependencyMethod = dependencyMethod,

@@ -7,7 +7,7 @@ sealed class PluginConfig(
     val key: String
 ) {
 
-    object Android : PluginConfig("com.android.tools.build", "gradle", "7.0.4", "androidPlugin")
+    object Android : PluginConfig("com.android.tools.build", "gradle", "7.1.0", "androidPlugin")
 
     object Kotlin : PluginConfig(
         DependencyConfig.Group.Kotlin.Stdlib.group,
