@@ -177,5 +177,6 @@ dependencies {
     implementation("com.airbnb.android:mavericks:+")
     implementation("com.airbnb.android:mavericks-compose:+")
     implementation("com.airbnb.android:mavericks-navigation:+")
+    implementation("com.airbnb.android:mavericks-launcher:+")
 
 }

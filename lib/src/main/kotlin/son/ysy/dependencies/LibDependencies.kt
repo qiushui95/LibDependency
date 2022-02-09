@@ -698,14 +698,17 @@ sealed class LibDependencies(
      * https://github.com/airbnb/mavericks
      */
     interface Mavericks {
-      object Core : LibDependencies("com.airbnb.android", "mavericks", "2.5.1",
+      object Core : LibDependencies("com.airbnb.android", "mavericks", "2.6.0",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("com.airbnb.android", "mavericks-compose", "2.5.1",
+      object Compose : LibDependencies("com.airbnb.android", "mavericks-compose", "2.6.0",
           DependencyMethod.Implementation)
 
       object Navigation : LibDependencies("com.airbnb.android", "mavericks-navigation",
-          "2.5.1", DependencyMethod.Implementation)
+          "2.6.0", DependencyMethod.Implementation)
+
+      object Launcher : LibDependencies("com.airbnb.android", "mavericks-launcher", "2.6.0",
+          DependencyMethod.Implementation)
     }
   }
 }
