@@ -957,7 +957,7 @@ sealed class DependencyConfig(
         sealed class Mavericks(name: String) : DependencyConfig(
             group = "com.airbnb.android",
             name = name,
-            version = "2.5.1",
+            version = "2.6.0",
             remark = "Mavericks架构",
             link = "https://github.com/airbnb/mavericks",
             dependencyMethod = DependencyMethod.Implementation,
@@ -965,7 +965,7 @@ sealed class DependencyConfig(
             object Core : Mavericks("mavericks")
             object Compose : Mavericks("mavericks-compose")
             object Navigation : Mavericks("mavericks-navigation")
-//            object Launcher : Mavericks("mavericks-launcher")
+            object Launcher : Mavericks("mavericks-launcher")
         }
         //endregion
     }
