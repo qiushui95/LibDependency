@@ -300,7 +300,7 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/lifecycle
      */
     object ViewModel : LibDependencies("androidx.lifecycle", "lifecycle-viewmodel-compose",
-        "2.4.0", DependencyMethod.Implementation)
+        "2.4.1", DependencyMethod.Implementation)
   }
 
   interface Test {
@@ -345,47 +345,47 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/lifecycle
      */
     object ViewModel : LibDependencies("androidx.lifecycle", "lifecycle-viewmodel-compose",
-        "2.4.0", DependencyMethod.Implementation)
+        "2.4.1", DependencyMethod.Implementation)
 
     /**
      * https://github.com/google/accompanist
      */
     interface Accompanist {
       object AppcompatTheme : LibDependencies("com.google.accompanist",
-          "accompanist-appcompat-theme", "0.22.0-rc", DependencyMethod.Implementation)
+          "accompanist-appcompat-theme", "0.23.0", DependencyMethod.Implementation)
 
       object DrawablePainter : LibDependencies("com.google.accompanist",
-          "accompanist-drawablepainter", "0.22.0-rc", DependencyMethod.Implementation)
+          "accompanist-drawablepainter", "0.23.0", DependencyMethod.Implementation)
 
       object FlowLayout : LibDependencies("com.google.accompanist", "accompanist-flowlayout",
-          "0.22.0-rc", DependencyMethod.Implementation)
+          "0.23.0", DependencyMethod.Implementation)
 
       object Insets : LibDependencies("com.google.accompanist", "accompanist-insets",
-          "0.22.0-rc", DependencyMethod.Implementation)
+          "0.23.0", DependencyMethod.Implementation)
 
       object NavigationAnimation : LibDependencies("com.google.accompanist",
-          "accompanist-navigation-animation", "0.22.0-rc", DependencyMethod.Implementation)
+          "accompanist-navigation-animation", "0.23.0", DependencyMethod.Implementation)
 
       object NavigationMaterial : LibDependencies("com.google.accompanist",
-          "accompanist-navigation-material", "0.22.0-rc", DependencyMethod.Implementation)
+          "accompanist-navigation-material", "0.23.0", DependencyMethod.Implementation)
 
-      object Pager : LibDependencies("com.google.accompanist", "accompanist-pager",
-          "0.22.0-rc", DependencyMethod.Implementation)
+      object Pager : LibDependencies("com.google.accompanist", "accompanist-pager", "0.23.0",
+          DependencyMethod.Implementation)
 
       object Permissions : LibDependencies("com.google.accompanist",
-          "accompanist-permissions", "0.22.0-rc", DependencyMethod.Implementation)
+          "accompanist-permissions", "0.23.0", DependencyMethod.Implementation)
 
       object PlaceHolder : LibDependencies("com.google.accompanist",
-          "accompanist-placeholder", "0.22.0-rc", DependencyMethod.Implementation)
+          "accompanist-placeholder", "0.23.0", DependencyMethod.Implementation)
 
       object PlaceHolderMaterial : LibDependencies("com.google.accompanist",
-          "accompanist-placeholder-material", "0.22.0-rc", DependencyMethod.Implementation)
+          "accompanist-placeholder-material", "0.23.0", DependencyMethod.Implementation)
 
       object SwipeRefresh : LibDependencies("com.google.accompanist",
-          "accompanist-swiperefresh", "0.22.0-rc", DependencyMethod.Implementation)
+          "accompanist-swiperefresh", "0.23.0", DependencyMethod.Implementation)
 
       object SystemUiController : LibDependencies("com.google.accompanist",
-          "accompanist-systemuicontroller", "0.22.0-rc", DependencyMethod.Implementation)
+          "accompanist-systemuicontroller", "0.23.0", DependencyMethod.Implementation)
     }
 
     /**
@@ -393,37 +393,37 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/compose
      */
     interface Official {
-      object Animation : LibDependencies("androidx.compose.animation", "animation",
-          "1.1.0-rc03", DependencyMethod.Implementation)
-
-      object Compiler : LibDependencies("androidx.compose.compiler", "compiler",
-          "1.1.0-rc03", DependencyMethod.Implementation)
-
-      object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
-          "1.1.0-rc03", DependencyMethod.Implementation)
-
-      object LiveData : LibDependencies("androidx.compose.runtime", "runtime-livedata",
-          "1.1.0-rc03", DependencyMethod.Implementation)
-
-      object Material : LibDependencies("androidx.compose.material", "material",
-          "1.1.0-rc03", DependencyMethod.Implementation)
-
-      object MaterialIcon : LibDependencies("androidx.compose.material",
-          "material-icons-core", "1.1.0-rc03", DependencyMethod.Implementation)
-
-      object MaterialIconExtended : LibDependencies("androidx.compose.material",
-          "material-icons-extended", "1.1.0-rc03", DependencyMethod.Implementation)
-
-      object Preview : LibDependencies("androidx.compose.ui", "ui-tooling-preview",
-          "1.1.0-rc03", DependencyMethod.Implementation)
-
-      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.1.0-rc03",
-          DependencyMethod.AndroidTest.Implementation)
-
-      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.1.0-rc03",
+      object Animation : LibDependencies("androidx.compose.animation", "animation", "1.1.0",
           DependencyMethod.Implementation)
 
-      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.1.0-rc03",
+      object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.1.0",
+          DependencyMethod.Implementation)
+
+      object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
+          "1.1.0", DependencyMethod.Implementation)
+
+      object LiveData : LibDependencies("androidx.compose.runtime", "runtime-livedata",
+          "1.1.0", DependencyMethod.Implementation)
+
+      object Material : LibDependencies("androidx.compose.material", "material", "1.1.0",
+          DependencyMethod.Implementation)
+
+      object MaterialIcon : LibDependencies("androidx.compose.material",
+          "material-icons-core", "1.1.0", DependencyMethod.Implementation)
+
+      object MaterialIconExtended : LibDependencies("androidx.compose.material",
+          "material-icons-extended", "1.1.0", DependencyMethod.Implementation)
+
+      object Preview : LibDependencies("androidx.compose.ui", "ui-tooling-preview", "1.1.0",
+          DependencyMethod.Implementation)
+
+      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.1.0",
+          DependencyMethod.AndroidTest.Implementation)
+
+      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.1.0",
+          DependencyMethod.Implementation)
+
+      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.1.0",
           DependencyMethod.Implementation)
     }
   }
@@ -585,26 +585,26 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/lifecycle
      */
     interface Lifecycle {
-      object Common : LibDependencies("androidx.lifecycle", "lifecycle-common", "2.4.0",
+      object Common : LibDependencies("androidx.lifecycle", "lifecycle-common", "2.4.1",
           DependencyMethod.Implementation)
 
       object LiveData : LibDependencies("androidx.lifecycle", "lifecycle-livedata-ktx",
-          "2.4.0", DependencyMethod.Implementation)
+          "2.4.1", DependencyMethod.Implementation)
 
-      object Process : LibDependencies("androidx.lifecycle", "lifecycle-process", "2.4.0",
+      object Process : LibDependencies("androidx.lifecycle", "lifecycle-process", "2.4.1",
           DependencyMethod.Implementation)
 
       object Runtime : LibDependencies("androidx.lifecycle", "lifecycle-runtime-ktx",
-          "2.4.0", DependencyMethod.Implementation)
+          "2.4.1", DependencyMethod.Implementation)
 
       object SavedState : LibDependencies("androidx.lifecycle",
-          "lifecycle-viewmodel-savedstate", "2.4.0", DependencyMethod.Implementation)
+          "lifecycle-viewmodel-savedstate", "2.4.1", DependencyMethod.Implementation)
 
-      object Service : LibDependencies("androidx.lifecycle", "lifecycle-service", "2.4.0",
+      object Service : LibDependencies("androidx.lifecycle", "lifecycle-service", "2.4.1",
           DependencyMethod.Implementation)
 
       object ViewModel : LibDependencies("androidx.lifecycle", "lifecycle-viewmodel-ktx",
-          "2.4.0", DependencyMethod.Implementation)
+          "2.4.1", DependencyMethod.Implementation)
     }
 
     /**
@@ -681,16 +681,16 @@ sealed class LibDependencies(
      */
     interface Navigation {
       object Fragment : LibDependencies("androidx.navigation", "navigation-fragment-ktx",
-          "2.4.0-rc01", DependencyMethod.Implementation)
+          "2.4.1", DependencyMethod.Implementation)
 
-      object Ui : LibDependencies("androidx.navigation", "navigation-ui-ktx", "2.4.0-rc01",
+      object Ui : LibDependencies("androidx.navigation", "navigation-ui-ktx", "2.4.1",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("androidx.navigation", "navigation-compose",
-          "2.4.0-rc01", DependencyMethod.Implementation)
+      object Compose : LibDependencies("androidx.navigation", "navigation-compose", "2.4.1",
+          DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.navigation", "navigation-testing",
-          "2.4.0-rc01", DependencyMethod.Test.Implementation)
+      object Test : LibDependencies("androidx.navigation", "navigation-testing", "2.4.1",
+          DependencyMethod.Test.Implementation)
     }
 
     /**
