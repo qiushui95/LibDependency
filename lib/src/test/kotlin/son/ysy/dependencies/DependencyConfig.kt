@@ -526,7 +526,7 @@ sealed class DependencyConfig(
         sealed class Accompanist(name: String) : DependencyConfig(
             group = "com.google.accompanist",
             name = name,
-            version = "0.22.0-rc",
+            version = "0.23.0",
             remark = "",
             link = "https://github.com/google/accompanist",
             dependencyMethod = DependencyMethod.Implementation,
@@ -572,7 +572,7 @@ sealed class DependencyConfig(
         sealed class Official(
             group: String,
             name: String,
-            version: String = "1.1.0-rc03",
+            version: String = "1.1.0",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : DependencyConfig(
             group = group,
@@ -831,7 +831,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "androidx.lifecycle",
             name = name,
-            version = "2.4.0",
+            version = "2.4.1",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/lifecycle",
             dependencyMethod = dependencyMethod,
@@ -941,7 +941,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "androidx.navigation",
             name = name,
-            version = "2.4.0-rc01",
+            version = "2.4.1",
             remark = "导航库",
             link = "https://developer.android.com/jetpack/androidx/releases/navigation",
             dependencyMethod = dependencyMethod,
