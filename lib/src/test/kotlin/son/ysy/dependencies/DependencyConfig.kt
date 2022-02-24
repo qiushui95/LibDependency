@@ -375,7 +375,7 @@ sealed class DependencyConfig(
         object LottieView : DependencyConfig(
             group = "com.airbnb.android",
             name = "lottie",
-            version = "4.2.2",
+            version = "5.0.1",
             remark = "动画框架",
             link = "https://github.com/airbnb/lottie-android",
             dependencyMethod = DependencyMethod.Implementation,
@@ -572,7 +572,7 @@ sealed class DependencyConfig(
         sealed class Official(
             group: String,
             name: String,
-            version: String = "1.1.0",
+            version: String = "1.1.1",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : DependencyConfig(
             group = group,
@@ -677,8 +677,8 @@ sealed class DependencyConfig(
             dependencyMethod = DependencyMethod.Implementation,
         ) {
             sealed class Version(val version: String) {
-                object Core : Version("1.1.0-beta01")
-                object Extends : Version("1.1.0-beta01")
+                object Core : Version("1.1.0-beta02")
+                object Extends : Version("1.1.0-beta02")
             }
 
             object Camera2 : CameraX("camera-camera2", Version.Core)
@@ -905,7 +905,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "androidx.room",
             name = name,
-            version = "2.4.1",
+            version = "2.4.2",
             remark = "Sqlite数据库",
             link = "https://developer.android.com/jetpack/androidx/releases/room",
             dependencyMethod = dependencyMethod,
