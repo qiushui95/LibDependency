@@ -257,7 +257,7 @@ sealed class DependencyConfig(
         object MavenPublish : DependencyConfig(
             group = "com.vanniktech",
             name = "gradle-maven-publish-plugin",
-            version = "0.18.0",
+            version = "0.19.0",
             remark = "Maven上传",
             link = "https://github.com/vanniktech/gradle-maven-publish-plugin",
             dependencyMethod = DependencyMethod.Implementation,
@@ -526,7 +526,7 @@ sealed class DependencyConfig(
         sealed class Accompanist(name: String) : DependencyConfig(
             group = "com.google.accompanist",
             name = name,
-            version = "0.23.0",
+            version = "0.23.1",
             remark = "",
             link = "https://github.com/google/accompanist",
             dependencyMethod = DependencyMethod.Implementation,

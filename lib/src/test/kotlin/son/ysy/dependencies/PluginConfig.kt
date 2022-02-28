@@ -20,7 +20,8 @@ sealed class PluginConfig(
         object Reflect : LibPluginId("kotlin-reflect")
 
         object Kapt : LibPluginId("kotlin-kapt")
-        object Ksp : LibPluginId("com.google.devtools.ksp", "1.6.10-1.0.2")
+
+        object Ksp : LibPluginId("com.google.devtools.ksp", "1.6.10-1.0.4")
     }
 
     object Maven : PluginConfig(
@@ -44,7 +45,7 @@ sealed class PluginConfig(
     object RocketX : PluginConfig(
         "io.github.trycatchx",
         "rocketx",
-        "1.0.17",
+        "1.0.18",
         "rocketX"
     ){
         object Plugin : LibPluginId("com.rocketx")
