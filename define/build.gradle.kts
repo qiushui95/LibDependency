@@ -2,7 +2,7 @@ plugins {
     id("com.android.library")
     id("kotlin-android")
     id("kotlin-kapt")
-    id("com.google.devtools.ksp") version "1.6.10-1.0.2"
+    id("com.google.devtools.ksp") version "1.6.10-1.0.4"
 }
 
 android {
@@ -44,7 +44,7 @@ dependencies {
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")
     implementation("com.localebro:okhttpprofiler:1.0.8")
-    implementation("com.vanniktech:gradle-maven-publish-plugin:0.18.0")
+    implementation("com.vanniktech:gradle-maven-publish-plugin:0.19.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
 
     implementation("com.github.Justson.AgentWeb:agentweb-core:v4.1.9-androidx")
@@ -75,18 +75,18 @@ dependencies {
     implementation("com.github.fornewid:material-motion-compose:0.7.7")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1")
 
-    implementation("com.google.accompanist:accompanist-appcompat-theme:0.23.0")
-    implementation("com.google.accompanist:accompanist-drawablepainter:0.23.0")
-    implementation("com.google.accompanist:accompanist-flowlayout:0.23.0")
-    implementation("com.google.accompanist:accompanist-insets:0.23.0")
-    implementation("com.google.accompanist:accompanist-navigation-animation:0.23.0")
-    implementation("com.google.accompanist:accompanist-navigation-material:0.23.0")
-    implementation("com.google.accompanist:accompanist-pager:0.23.0")
-    implementation("com.google.accompanist:accompanist-permissions:0.23.0")
-    implementation("com.google.accompanist:accompanist-placeholder:0.23.0")
-    implementation("com.google.accompanist:accompanist-placeholder-material:0.23.0")
-    implementation("com.google.accompanist:accompanist-swiperefresh:0.23.0")
-    implementation("com.google.accompanist:accompanist-systemuicontroller:0.23.0")
+    implementation("com.google.accompanist:accompanist-appcompat-theme:0.23.1")
+    implementation("com.google.accompanist:accompanist-drawablepainter:0.23.1")
+    implementation("com.google.accompanist:accompanist-flowlayout:0.23.1")
+    implementation("com.google.accompanist:accompanist-insets:0.23.1")
+    implementation("com.google.accompanist:accompanist-navigation-animation:0.23.1")
+    implementation("com.google.accompanist:accompanist-navigation-material:0.23.1")
+    implementation("com.google.accompanist:accompanist-pager:0.23.1")
+    implementation("com.google.accompanist:accompanist-permissions:0.23.1")
+    implementation("com.google.accompanist:accompanist-placeholder:0.23.1")
+    implementation("com.google.accompanist:accompanist-placeholder-material:0.23.1")
+    implementation("com.google.accompanist:accompanist-swiperefresh:0.23.1")
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.23.1")
 
     implementation("androidx.compose.animation:animation:1.1.1")
     implementation("androidx.compose.compiler:compiler:1.1.1")

@@ -16,12 +16,12 @@ sealed class LibPlugins(
 
     object Kapt : LibPluginId("kotlin-kapt")
 
-    object Ksp : LibPluginId("com.google.devtools.ksp", "1.6.10-1.0.2")
+    object Ksp : LibPluginId("com.google.devtools.ksp", "1.6.10-1.0.4")
 
     object Reflect : LibPluginId("kotlin-reflect")
   }
 
-  object Maven : LibPlugins("com.vanniktech", "gradle-maven-publish-plugin", "0.18.0") {
+  object Maven : LibPlugins("com.vanniktech", "gradle-maven-publish-plugin", "0.19.0") {
     object Plugin : LibPluginId("com.vanniktech.maven.publish")
   }
 
@@ -30,7 +30,7 @@ sealed class LibPlugins(
     object Plugin : LibPluginId("androidx.navigation.safeargs.kotlin")
   }
 
-  object RocketX : LibPlugins("io.github.trycatchx", "rocketx", "1.0.17") {
+  object RocketX : LibPlugins("io.github.trycatchx", "rocketx", "1.0.18") {
     object Plugin : LibPluginId("com.rocketx")
   }
 }
