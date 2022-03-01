@@ -375,7 +375,7 @@ sealed class DependencyConfig(
         object LottieView : DependencyConfig(
             group = "com.airbnb.android",
             name = "lottie",
-            version = "5.0.1",
+            version = "5.0.2",
             remark = "动画框架",
             link = "https://github.com/airbnb/lottie-android",
             dependencyMethod = DependencyMethod.Implementation,

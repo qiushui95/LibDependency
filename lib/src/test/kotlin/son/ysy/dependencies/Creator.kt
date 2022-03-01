@@ -35,7 +35,8 @@ class Creator {
         createGradle()
     }
 
-    private fun createKt() {
+    @Test
+    fun createKt() {
 
         val codeList = listOf(
             createLibPluginIdBaseClass(),
@@ -337,7 +338,8 @@ class Creator {
         return interfaceBuilder.build()
     }
 
-    private fun createMd() {
+    @Test
+    fun createMd() {
         val list = mutableListOf<String>()
 
         list.addMdLine("# 三方依赖库版本管理[![](https://jitpack.io/v/qiushui95/LibDependency.svg)](https://jitpack.io/#qiushui95/LibDependency)\n")
@@ -402,7 +404,7 @@ class Creator {
                 .sortedBy { it.sort }
                 .forEach { config ->
                     buildMdTitle(config)
-                    addMdLine(">>${config.dependencyMethod.method}(${config.group}:${config.name}:${config.version})")
+                    addMdLine(">>${config.dependencyMethod.method}(\"${config.group}:${config.name}:${config.version}\")")
                     addMdLine("")
                 }
         }
@@ -439,7 +441,8 @@ class Creator {
         }
     }
 
-    private fun createGradle() {
+    @Test
+    fun createGradle() {
 
 
         val groups = listOf(
