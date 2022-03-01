@@ -233,7 +233,7 @@ sealed class LibDependencies(
      * 动画框架
      * https://github.com/airbnb/lottie-android
      */
-    object LottieView : LibDependencies("com.airbnb.android", "lottie", "5.0.1",
+    object LottieView : LibDependencies("com.airbnb.android", "lottie", "5.0.2",
         DependencyMethod.Implementation)
 
     /**

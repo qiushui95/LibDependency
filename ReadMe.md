@@ -4,73 +4,73 @@
 <summary>Single</summary>  
   
 >[AliOss](https://help.aliyun.com/document_detail/32043.html)(阿里云存储)  
->>implementation(com.aliyun.dpa:oss-android-sdk:2.9.11)  
+>>implementation("com.aliyun.dpa:oss-android-sdk:2.9.11")  
   
 >[AliPush](https://help.aliyun.com/document_detail/190009.html?spm=a2c4g.11174283.3.2.52eb6d163QVxjG)(阿里推送)  
->>implementation(com.aliyun.ams:alicloud-android-push:3.7.2)  
+>>implementation("com.aliyun.ams:alicloud-android-push:3.7.2")  
   
 >[AndroidUtil](https://github.com/Blankj/AndroidUtilCode)(多功能工具包)  
->>implementation(com.blankj:utilcodex:1.31.0)  
+>>implementation("com.blankj:utilcodex:1.31.0")  
   
 >[Annotation](https://developer.android.com/jetpack/androidx/releases/annotation)(Annotation)  
->>implementation(androidx.annotation:annotation:1.3.0)  
+>>implementation("androidx.annotation:annotation:1.3.0")  
   
 >[Appcompat](https://developer.android.com/jetpack/androidx/releases/appcompat)  
->>implementation(androidx.appcompat:appcompat:1.4.1)  
+>>implementation("androidx.appcompat:appcompat:1.4.1")  
   
 >[Background](https://github.com/JavaNoober/BackgroundLibrary)(背景生成工具库)  
->>implementation(com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.3)  
+>>implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.3")  
   
 >[BasePopup](https://github.com/razerdp/BasePopup)(弹窗)  
->>implementation(io.github.razerdp:BasePopup:3.2.0)  
+>>implementation("io.github.razerdp:BasePopup:3.2.0")  
   
 >[ColorKtx](https://github.com/JorgeCastilloPrz/AndroidColorX)(颜色帮助库)  
->>implementation(me.jorgecastillo:androidcolorx:0.2.0)  
+>>implementation("me.jorgecastillo:androidcolorx:0.2.0")  
   
 >[DateTimePicker](https://github.com/loperSeven/DateTimePicker)(时间选择器)  
->>implementation(com.github.loperSeven:DateTimePicker:0.5.4)  
+>>implementation("com.github.loperSeven:DateTimePicker:0.5.4")  
   
 >[EasyFloat](https://github.com/princekin-f/EasyFloat)(悬浮窗)  
->>implementation(com.github.princekin-f:EasyFloat:2.0.4)  
+>>implementation("com.github.princekin-f:EasyFloat:2.0.4")  
   
 >[ImagePicker](https://github.com/yangpeixing/YImagePicker)(多媒体选择库)  
->>implementation(com.ypx.yimagepicker:androidx:3.1.4)  
+>>implementation("com.ypx.yimagepicker:androidx:3.1.4")  
   
 >[JodaTime](https://github.com/JodaOrg/joda-time)(时间处理库)  
->>implementation(joda-time:joda-time:2.10.13)  
+>>implementation("joda-time:joda-time:2.10.13")  
   
 >[LeakCanary](https://square.github.io/leakcanary/getting_started/)(内存泄露监控)  
->>implementation(com.squareup.leakcanary:leakcanary-android:2.8.1)  
+>>implementation("com.squareup.leakcanary:leakcanary-android:2.8.1")  
   
 >[Mmkv](https://github.com/Tencent/MMKV/blob/master/README_CN.md)(持久KV数据存储)  
->>implementation(com.tencent:mmkv-static:1.2.12)  
+>>implementation("com.tencent:mmkv-static:1.2.12")  
   
 >[PermissionX](https://github.com/guolindev/PermissionX)(权限请求)  
->>implementation(com.guolindev.permissionx:permissionx:1.6.1)  
+>>implementation("com.guolindev.permissionx:permissionx:1.6.1")  
   
 >[QrScanner](https://github.com/jenly1314/ZXingLite)(二维码扫描)  
->>implementation(com.github.jenly1314:zxing-lite:2.1.1)  
+>>implementation("com.github.jenly1314:zxing-lite:2.1.1")  
   
 >[Startup](https://github.com/qiushui95/AndroidInitializer)(app启动初始化)  
->>implementation(com.github.qiushui95:AndroidInitializer:1.0.7)  
+>>implementation("com.github.qiushui95:AndroidInitializer:1.0.7")  
   
 >[Store](https://github.com/dropbox/Store)(多数据源)  
->>implementation(com.dropbox.mobile.store:store4:4.0.3-KT15)  
+>>implementation("com.dropbox.mobile.store:store4:4.0.3-KT15")  
   
 >[WeChat](https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Resource_Center_Homepage.html)(微信开发Sdk)  
->>implementation(com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0)  
+>>implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")  
   
 >[XCrash](https://github.com/iqiyi/xCrash/blob/master/README.zh-CN.md)(奔溃日志收集)  
->>implementation(com.iqiyi.xcrash:xcrash-android-lib:3.1.0)  
+>>implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")  
   
 >[Profiler](https://github.com/itkacher/OkHttpProfiler)(AS OkHttp 拦截器)  
->>implementation(com.localebro:okhttpprofiler:1.0.8)  
+>>implementation("com.localebro:okhttpprofiler:1.0.8")  
   
 >[MavenPublish](https://github.com/vanniktech/gradle-maven-publish-plugin)(Maven上传)  
->>implementation(com.vanniktech:gradle-maven-publish-plugin:0.19.0)  
+>>implementation("com.vanniktech:gradle-maven-publish-plugin:0.19.0")  
   
 >[Serialization](https://github.com/Kotlin/kotlinx.serialization)(Json序列化)  
->>implementation(org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2)  
+>>implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")  
   
 </details>  
   
@@ -78,58 +78,58 @@
 <summary>View</summary>  
   
 >[AgentWeb](https://github.com/Justson/AgentWeb)(浏览器)  
->>implementation(com.github.Justson.AgentWeb:agentweb-core:v4.1.9-androidx)  
+>>implementation("com.github.Justson.AgentWeb:agentweb-core:v4.1.9-androidx")  
   
 >[BannerView](https://github.com/xiaohaibin/XBanner/tree/androidX)(轮播控件)  
->>implementation(com.github.xiaohaibin:XBanner:androidx_v1.2.1)  
+>>implementation("com.github.xiaohaibin:XBanner:androidx_v1.2.1")  
   
 >[BlurView](https://github.com/Dimezis/BlurView)(高斯模糊)  
->>implementation(com.eightbitlab:blurview:1.6.6)  
+>>implementation("com.eightbitlab:blurview:1.6.6")  
   
 >[BottomNavigation](https://github.com/Ashok-Varma/BottomNavigation)(底部导航)  
->>implementation(com.ashokvarma.android:bottom-navigation-bar:2.2.0)  
+>>implementation("com.ashokvarma.android:bottom-navigation-bar:2.2.0")  
   
 >[ConstraintLayout](https://developer.android.com/jetpack/androidx/releases/constraintlayout)(约束布局)  
->>implementation(androidx.constraintlayout:constraintlayout:2.1.3)  
+>>implementation("androidx.constraintlayout:constraintlayout:2.1.3")  
   
 >[CornerView](https://github.com/csdn-mobile/RoundView)(圆角控件)  
->>implementation(io.github.csdn-mobile:RoundView:1.7.1)  
+>>implementation("io.github.csdn-mobile:RoundView:1.7.1")  
   
 >[FlexBox](https://github.com/google/flexbox-layout)(流式布局)  
->>implementation(com.google.android.flexbox:flexbox:3.0.0)  
+>>implementation("com.google.android.flexbox:flexbox:3.0.0")  
   
 >[FormatterEdit](https://github.com/dkzwm/FormatEditText)(输入格式化控件)  
->>implementation(com.github.dkzwm:fet-core:0.2.1)  
+>>implementation("com.github.dkzwm:fet-core:0.2.1")  
   
 >[LottieView](https://github.com/airbnb/lottie-android)(动画框架)  
->>implementation(com.airbnb.android:lottie:5.0.1)  
+>>implementation("com.airbnb.android:lottie:5.0.2")  
   
 >[Material](https://github.com/material-components/material-components-android)  
->>implementation(com.google.android.material:material:1.5.0)  
+>>implementation("com.google.android.material:material:1.5.0")  
   
 >[PdfViewer](https://github.com/barteksc/AndroidPdfViewer)(pdf查看)  
->>implementation(com.github.mhiew:android-pdf-viewer:3.2.0-beta.2)  
+>>implementation("com.github.mhiew:android-pdf-viewer:3.2.0-beta.2")  
   
 >[PhotoView](https://github.com/Baseflow/PhotoView)(图片预览)  
->>implementation(com.github.chrisbanes:PhotoView:2.3.0)  
+>>implementation("com.github.chrisbanes:PhotoView:2.3.0")  
   
 >[PinView](https://github.com/ChaosLeung/PinView)(密码输入框)  
->>implementation(io.github.chaosleung:pinview:1.4.4)  
+>>implementation("io.github.chaosleung:pinview:1.4.4")  
   
 >[RecyclerView](https://developer.android.com/jetpack/androidx/releases/recyclerview)  
->>implementation(androidx.recyclerview:recyclerview:1.2.1)  
+>>implementation("androidx.recyclerview:recyclerview:1.2.1")  
   
 >[SwipeRefreshLayout](https://developer.android.com/jetpack/androidx/releases/swiperefreshlayout)(下拉刷新控件)  
->>implementation(androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01)  
+>>implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")  
   
 >[SwitchButton](https://github.com/kyleduo/SwitchButton)(开关按钮)  
->>implementation(com.kyleduo.switchbutton:library:2.1.0)  
+>>implementation("com.kyleduo.switchbutton:library:2.1.0")  
   
 >[ViewPager2](https://developer.android.com/jetpack/androidx/releases/viewpager2)  
->>implementation(androidx.viewpager2:viewpager2:1.1.0-beta01)  
+>>implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")  
   
 >[WebX5](https://x5.tencent.com/docs/access.html)(X5浏览器)  
->>implementation(com.tencent.tbs:tbssdk:44136)  
+>>implementation("com.tencent.tbs:tbssdk:44136")  
   
 </details>  
   
@@ -137,13 +137,13 @@
 <summary>Test</summary>  
   
 >[Espresso](https://mvnrepository.com/artifact/androidx.test.espresso/espresso-core)(UI自动化测试)  
->>androidTestImplementation(androidx.test.espresso:espresso-core:3.4.0)  
+>>androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")  
   
 >[Junit](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter)(单元测试)  
->>testImplementation(org.junit.jupiter:junit-jupiter:5.8.2)  
+>>testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")  
   
 >[JunitExt](https://mvnrepository.com/artifact/androidx.test.ext/junit-ktx)(单元测试扩展)  
->>testImplementation(androidx.test.ext:junit-ktx:1.1.3)  
+>>testImplementation("androidx.test.ext:junit-ktx:1.1.3")  
   
 </details>  
   

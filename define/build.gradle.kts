@@ -55,7 +55,7 @@ dependencies {
     implementation("io.github.csdn-mobile:RoundView:1.7.1")
     implementation("com.google.android.flexbox:flexbox:3.0.0")
     implementation("com.github.dkzwm:fet-core:0.2.1")
-    implementation("com.airbnb.android:lottie:5.0.1")
+    implementation("com.airbnb.android:lottie:5.0.2")
     implementation("com.google.android.material:material:1.5.0")
     implementation("com.github.mhiew:android-pdf-viewer:3.2.0-beta.2")
     implementation("com.github.chrisbanes:PhotoView:2.3.0")
