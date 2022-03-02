@@ -24,6 +24,9 @@
 >[BasePopup](https://github.com/razerdp/BasePopup)(弹窗)  
 >>implementation("io.github.razerdp:BasePopup:3.2.0")  
   
+>[BaiduStatistics](https://mtj.baidu.com/static/userguide/book/android/sdk/gradle.html)(百度统计)  
+>>implementation("com.baidu.mobstat:mtj-sdk:4.0.7.6")  
+  
 >[ColorKtx](https://github.com/JorgeCastilloPrz/AndroidColorX)(颜色帮助库)  
 >>implementation("me.jorgecastillo:androidcolorx:0.2.0")  
   

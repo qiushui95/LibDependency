@@ -60,6 +60,13 @@ sealed class LibDependencies(
         DependencyMethod.Implementation)
 
     /**
+     * 百度统计
+     * https://mtj.baidu.com/static/userguide/book/android/sdk/gradle.html
+     */
+    object BaiduStatistics : LibDependencies("com.baidu.mobstat", "mtj-sdk", "4.0.7.6",
+        DependencyMethod.Implementation)
+
+    /**
      * 颜色帮助库
      * https://github.com/JorgeCastilloPrz/AndroidColorX
      */

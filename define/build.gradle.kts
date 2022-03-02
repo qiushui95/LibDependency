@@ -30,6 +30,7 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.4.1")
     implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.3")
     implementation("io.github.razerdp:BasePopup:3.2.0")
+    implementation("com.baidu.mobstat:mtj-sdk:4.0.7.6")
     implementation("me.jorgecastillo:androidcolorx:0.2.0")
     implementation("com.github.loperSeven:DateTimePicker:0.5.4")
     implementation("com.github.princekin-f:EasyFloat:2.0.4")
