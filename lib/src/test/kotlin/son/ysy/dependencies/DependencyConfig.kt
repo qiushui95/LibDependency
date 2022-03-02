@@ -97,6 +97,15 @@ sealed class DependencyConfig(
             link = "https://github.com/razerdp/BasePopup",
             dependencyMethod = DependencyMethod.Implementation,
         )
+        //region 百度统计
+        object BaiduStatistics : DependencyConfig(
+            group = "com.baidu.mobstat",
+            name = "mtj-sdk",
+            version = "4.0.7.6",
+            remark = "百度统计",
+            link = "https://mtj.baidu.com/static/userguide/book/android/sdk/gradle.html",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
 
         //endregion
         //region ColorKtx(颜色帮助库)
