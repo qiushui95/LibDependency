@@ -529,6 +529,27 @@ sealed class LibDependencies(
 
     /**
      * core
+     * https://github.com/AriaLyy/Aria
+     */
+    interface Download {
+      object Core : LibDependencies("me.laoyuyu.aria", "core", "3.8.16",
+          DependencyMethod.Implementation)
+
+      object Ftp : LibDependencies("me.laoyuyu.aria", "ftp", "3.8.16",
+          DependencyMethod.Implementation)
+
+      object Sftp : LibDependencies("me.laoyuyu.aria", "sftp", "3.8.16",
+          DependencyMethod.Implementation)
+
+      object M3u8 : LibDependencies("me.laoyuyu.aria", "m3u8", "3.8.16",
+          DependencyMethod.Implementation)
+
+      object Compiler : LibDependencies("me.laoyuyu.aria", "compiler", "3.8.16",
+          DependencyMethod.Test.Kapt)
+    }
+
+    /**
+     * core
      * https://github.com/airbnb/epoxy
      */
     interface Epoxy {

@@ -127,6 +127,12 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:+")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:+")
 
+    implementation("me.laoyuyu.aria:core:+")
+    implementation("me.laoyuyu.aria:ftp:+")
+    implementation("me.laoyuyu.aria:sftp:+")
+    implementation("me.laoyuyu.aria:m3u8:+")
+    testKapt("me.laoyuyu.aria:compiler:+")
+
     implementation("com.airbnb.android:epoxy:+")
     ksp("com.airbnb.android:epoxy-processor:+")
     implementation("com.airbnb.android:epoxy-compose:+")

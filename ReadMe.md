@@ -225,6 +225,13 @@
 >>implementation(org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0)  
 >>testImplementation(org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0)  
   
+>[Download](https://github.com/AriaLyy/Aria)(core)  
+>>implementation(me.laoyuyu.aria:core:3.8.16)  
+>>implementation(me.laoyuyu.aria:ftp:3.8.16)  
+>>implementation(me.laoyuyu.aria:sftp:3.8.16)  
+>>implementation(me.laoyuyu.aria:m3u8:3.8.16)  
+>>testKapt(me.laoyuyu.aria:compiler:3.8.16)  
+  
 >[Epoxy](https://github.com/airbnb/epoxy)(core)  
 >>implementation(com.airbnb.android:epoxy:5.0.0-beta05)  
 >>ksp(com.airbnb.android:epoxy-processor:5.0.0-beta05)  
