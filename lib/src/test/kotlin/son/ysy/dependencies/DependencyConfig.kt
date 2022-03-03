@@ -777,7 +777,7 @@ sealed class DependencyConfig(
             object M3u8 : Download("m3u8", DependencyMethod.Implementation)
             object Compiler : Download(
                 "compiler",
-                DependencyMethod.Test.Kapt
+                DependencyMethod.Kapt
             )
         }
 
