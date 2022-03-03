@@ -97,6 +97,7 @@ sealed class DependencyConfig(
             link = "https://github.com/razerdp/BasePopup",
             dependencyMethod = DependencyMethod.Implementation,
         )
+
         //region 百度统计
         object BaiduStatistics : DependencyConfig(
             group = "com.baidu.mobstat",
@@ -757,6 +758,27 @@ sealed class DependencyConfig(
             object Core : Coroutines("kotlinx-coroutines-android", DependencyMethod.Implementation)
             object Test :
                 Coroutines("kotlinx-coroutines-test", DependencyMethod.Test.Implementation)
+        }
+
+        //endregion
+        //region 下载
+        sealed class Download(name: String, dependencyMethod: DependencyMethod) :
+            DependencyConfig(
+                group = "me.laoyuyu.aria",
+                name = name,
+                version = "3.8.16",
+                remark = "core",
+                link = "https://github.com/AriaLyy/Aria",
+                dependencyMethod = dependencyMethod,
+            ) {
+            object Core : Download("core", DependencyMethod.Implementation)
+            object Ftp : Download("ftp", DependencyMethod.Implementation)
+            object Sftp : Download("sftp", DependencyMethod.Implementation)
+            object M3u8 : Download("m3u8", DependencyMethod.Implementation)
+            object Compiler : Download(
+                "compiler",
+                DependencyMethod.Test.Kapt
+            )
         }
 
         //endregion
