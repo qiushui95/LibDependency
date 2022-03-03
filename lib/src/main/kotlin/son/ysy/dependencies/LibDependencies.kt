@@ -545,7 +545,7 @@ sealed class LibDependencies(
           DependencyMethod.Implementation)
 
       object Compiler : LibDependencies("me.laoyuyu.aria", "compiler", "3.8.16",
-          DependencyMethod.Test.Kapt)
+          DependencyMethod.Kapt)
     }
 
     /**

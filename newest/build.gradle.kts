@@ -131,7 +131,7 @@ dependencies {
     implementation("me.laoyuyu.aria:ftp:+")
     implementation("me.laoyuyu.aria:sftp:+")
     implementation("me.laoyuyu.aria:m3u8:+")
-    testKapt("me.laoyuyu.aria:compiler:+")
+    kapt("me.laoyuyu.aria:compiler:+")
 
     implementation("com.airbnb.android:epoxy:+")
     ksp("com.airbnb.android:epoxy-processor:+")
