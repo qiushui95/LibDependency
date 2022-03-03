@@ -40,7 +40,7 @@ dependencies {
     implementation("com.tencent:mmkv-static:1.2.12")
     implementation("com.guolindev.permissionx:permissionx:1.6.1")
     implementation("com.github.jenly1314:zxing-lite:2.1.1")
-    implementation("com.github.qiushui95:AndroidInitializer:1.0.7")
+    implementation("com.github.qiushui95:AndroidInitializer:1.0.8")
     implementation("com.dropbox.mobile.store:store4:4.0.3-KT15")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")
@@ -175,9 +175,8 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.4.1")
     testImplementation("androidx.navigation:navigation-testing:2.4.1")
 
-    implementation("com.airbnb.android:mavericks:2.6.0")
-    implementation("com.airbnb.android:mavericks-compose:2.6.0")
-    implementation("com.airbnb.android:mavericks-navigation:2.6.0")
-    implementation("com.airbnb.android:mavericks-launcher:2.6.0")
+    implementation("com.airbnb.android:mavericks:2.6.1")
+    implementation("com.airbnb.android:mavericks-compose:2.6.1")
+    implementation("com.airbnb.android:mavericks-navigation:2.6.1")
 
 }

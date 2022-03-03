@@ -55,7 +55,7 @@
 >>implementation("com.github.jenly1314:zxing-lite:2.1.1")  
   
 >[Startup](https://github.com/qiushui95/AndroidInitializer)(app启动初始化)  
->>implementation("com.github.qiushui95:AndroidInitializer:1.0.7")  
+>>implementation("com.github.qiushui95:AndroidInitializer:1.0.8")  
   
 >[Store](https://github.com/dropbox/Store)(多数据源)  
 >>implementation("com.dropbox.mobile.store:store4:4.0.3-KT15")  
@@ -285,10 +285,9 @@
 >>testImplementation(androidx.navigation:navigation-testing:2.4.1)  
   
 >[Mavericks](https://github.com/airbnb/mavericks)(Mavericks架构)  
->>implementation(com.airbnb.android:mavericks:2.6.0)  
->>implementation(com.airbnb.android:mavericks-compose:2.6.0)  
->>implementation(com.airbnb.android:mavericks-navigation:2.6.0)  
->>implementation(com.airbnb.android:mavericks-launcher:2.6.0)  
+>>implementation(com.airbnb.android:mavericks:2.6.1)  
+>>implementation(com.airbnb.android:mavericks-compose:2.6.1)  
+>>implementation(com.airbnb.android:mavericks-navigation:2.6.1)  
   
 </details>  
   

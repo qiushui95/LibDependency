@@ -133,7 +133,7 @@ sealed class LibDependencies(
      * app启动初始化
      * https://github.com/qiushui95/AndroidInitializer
      */
-    object Startup : LibDependencies("com.github.qiushui95", "AndroidInitializer", "1.0.7",
+    object Startup : LibDependencies("com.github.qiushui95", "AndroidInitializer", "1.0.8",
         DependencyMethod.Implementation)
 
     /**
@@ -705,17 +705,14 @@ sealed class LibDependencies(
      * https://github.com/airbnb/mavericks
      */
     interface Mavericks {
-      object Core : LibDependencies("com.airbnb.android", "mavericks", "2.6.0",
+      object Core : LibDependencies("com.airbnb.android", "mavericks", "2.6.1",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("com.airbnb.android", "mavericks-compose", "2.6.0",
+      object Compose : LibDependencies("com.airbnb.android", "mavericks-compose", "2.6.1",
           DependencyMethod.Implementation)
 
       object Navigation : LibDependencies("com.airbnb.android", "mavericks-navigation",
-          "2.6.0", DependencyMethod.Implementation)
-
-      object Launcher : LibDependencies("com.airbnb.android", "mavericks-launcher", "2.6.0",
-          DependencyMethod.Implementation)
+          "2.6.1", DependencyMethod.Implementation)
     }
   }
 }
