@@ -211,7 +211,7 @@ sealed class DependencyConfig(
         object Startup : DependencyConfig(
             group = "com.github.qiushui95",
             name = "AndroidInitializer",
-            version = "1.0.7",
+            version = "1.0.8",
             remark = "app启动初始化",
             link = "https://github.com/qiushui95/AndroidInitializer",
             dependencyMethod = DependencyMethod.Implementation,
@@ -966,7 +966,7 @@ sealed class DependencyConfig(
         sealed class Mavericks(name: String) : DependencyConfig(
             group = "com.airbnb.android",
             name = name,
-            version = "2.6.0",
+            version = "2.6.1",
             remark = "Mavericks架构",
             link = "https://github.com/airbnb/mavericks",
             dependencyMethod = DependencyMethod.Implementation,
@@ -974,7 +974,6 @@ sealed class DependencyConfig(
             object Core : Mavericks("mavericks")
             object Compose : Mavericks("mavericks-compose")
             object Navigation : Mavericks("mavericks-navigation")
-            object Launcher : Mavericks("mavericks-launcher")
         }
         //endregion
     }
