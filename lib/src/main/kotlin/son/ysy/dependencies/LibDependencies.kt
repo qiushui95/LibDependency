@@ -22,7 +22,7 @@ sealed class LibDependencies(
      * 阿里推送
      * https://help.aliyun.com/document_detail/190009.html?spm=a2c4g.11174283.3.2.52eb6d163QVxjG
      */
-    object AliPush : LibDependencies("com.aliyun.ams", "alicloud-android-push", "3.7.2",
+    object AliPush : LibDependencies("com.aliyun.ams", "alicloud-android-push", "3.7.4",
         DependencyMethod.Implementation)
 
     /**
@@ -78,7 +78,7 @@ sealed class LibDependencies(
      * https://github.com/loperSeven/DateTimePicker
      */
     object DateTimePicker : LibDependencies("com.github.loperSeven", "DateTimePicker",
-        "0.5.4", DependencyMethod.Implementation)
+        "0.5.7", DependencyMethod.Implementation)
 
     /**
      * 悬浮窗
@@ -140,7 +140,7 @@ sealed class LibDependencies(
      * 多数据源
      * https://github.com/dropbox/Store
      */
-    object Store : LibDependencies("com.dropbox.mobile.store", "store4", "4.0.3-KT15",
+    object Store : LibDependencies("com.dropbox.mobile.store", "store4", "4.0.4-KT15",
         DependencyMethod.Implementation)
 
     /**
@@ -192,7 +192,7 @@ sealed class LibDependencies(
      * https://github.com/xiaohaibin/XBanner/tree/androidX
      */
     object BannerView : LibDependencies("com.github.xiaohaibin", "XBanner",
-        "androidx_v1.2.1", DependencyMethod.Implementation)
+        "androidx_v1.2.8", DependencyMethod.Implementation)
 
     /**
      * 高斯模糊
@@ -240,7 +240,7 @@ sealed class LibDependencies(
      * 动画框架
      * https://github.com/airbnb/lottie-android
      */
-    object LottieView : LibDependencies("com.airbnb.android", "lottie", "5.0.2",
+    object LottieView : LibDependencies("com.airbnb.android", "lottie", "5.0.3",
         DependencyMethod.Implementation)
 
     /**
@@ -300,7 +300,7 @@ sealed class LibDependencies(
      * X5浏览器
      * https://x5.tencent.com/docs/access.html
      */
-    object WebX5 : LibDependencies("com.tencent.tbs", "tbssdk", "44136",
+    object WebX5 : LibDependencies("com.tencent.tbs", "tbssdk", "44165",
         DependencyMethod.Implementation)
 
     /**
@@ -346,7 +346,7 @@ sealed class LibDependencies(
      * https://github.com/fornewid/material-motion-compose
      */
     object NavigationAnimation : LibDependencies("com.github.fornewid",
-        "material-motion-compose", "0.7.7", DependencyMethod.Implementation)
+        "material-motion-compose", "0.8.1", DependencyMethod.Implementation)
 
     /**
      * https://developer.android.com/jetpack/androidx/releases/lifecycle
@@ -516,7 +516,7 @@ sealed class LibDependencies(
     }
 
     /**
-     * core
+     * 协程
      * https://github.com/Kotlin/kotlinx.coroutines
      */
     interface Coroutines {
@@ -528,7 +528,7 @@ sealed class LibDependencies(
     }
 
     /**
-     * core
+     * 下载
      * https://github.com/AriaLyy/Aria
      */
     interface Download {
@@ -549,7 +549,6 @@ sealed class LibDependencies(
     }
 
     /**
-     * core
      * https://github.com/airbnb/epoxy
      */
     interface Epoxy {

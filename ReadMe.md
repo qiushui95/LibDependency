@@ -7,7 +7,7 @@
 >>implementation("com.aliyun.dpa:oss-android-sdk:2.9.11")  
   
 >[AliPush](https://help.aliyun.com/document_detail/190009.html?spm=a2c4g.11174283.3.2.52eb6d163QVxjG)(阿里推送)  
->>implementation("com.aliyun.ams:alicloud-android-push:3.7.2")  
+>>implementation("com.aliyun.ams:alicloud-android-push:3.7.4")  
   
 >[AndroidUtil](https://github.com/Blankj/AndroidUtilCode)(多功能工具包)  
 >>implementation("com.blankj:utilcodex:1.31.0")  
@@ -31,7 +31,7 @@
 >>implementation("me.jorgecastillo:androidcolorx:0.2.0")  
   
 >[DateTimePicker](https://github.com/loperSeven/DateTimePicker)(时间选择器)  
->>implementation("com.github.loperSeven:DateTimePicker:0.5.4")  
+>>implementation("com.github.loperSeven:DateTimePicker:0.5.7")  
   
 >[EasyFloat](https://github.com/princekin-f/EasyFloat)(悬浮窗)  
 >>implementation("com.github.princekin-f:EasyFloat:2.0.4")  
@@ -58,7 +58,7 @@
 >>implementation("com.github.qiushui95:AndroidInitializer:1.0.8")  
   
 >[Store](https://github.com/dropbox/Store)(多数据源)  
->>implementation("com.dropbox.mobile.store:store4:4.0.3-KT15")  
+>>implementation("com.dropbox.mobile.store:store4:4.0.4-KT15")  
   
 >[WeChat](https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Resource_Center_Homepage.html)(微信开发Sdk)  
 >>implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")  
@@ -84,7 +84,7 @@
 >>implementation("com.github.Justson.AgentWeb:agentweb-core:v4.1.9-androidx")  
   
 >[BannerView](https://github.com/xiaohaibin/XBanner/tree/androidX)(轮播控件)  
->>implementation("com.github.xiaohaibin:XBanner:androidx_v1.2.1")  
+>>implementation("com.github.xiaohaibin:XBanner:androidx_v1.2.8")  
   
 >[BlurView](https://github.com/Dimezis/BlurView)(高斯模糊)  
 >>implementation("com.eightbitlab:blurview:1.6.6")  
@@ -105,7 +105,7 @@
 >>implementation("com.github.dkzwm:fet-core:0.2.1")  
   
 >[LottieView](https://github.com/airbnb/lottie-android)(动画框架)  
->>implementation("com.airbnb.android:lottie:5.0.2")  
+>>implementation("com.airbnb.android:lottie:5.0.3")  
   
 >[Material](https://github.com/material-components/material-components-android)  
 >>implementation("com.google.android.material:material:1.5.0")  
@@ -132,7 +132,7 @@
 >>implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")  
   
 >[WebX5](https://x5.tencent.com/docs/access.html)(X5浏览器)  
->>implementation("com.tencent.tbs:tbssdk:44136")  
+>>implementation("com.tencent.tbs:tbssdk:44165")  
   
 </details>  
   
@@ -157,7 +157,7 @@
 >>implementation(androidx.constraintlayout:constraintlayout-compose:1.0.0)  
   
 >[NavigationAnimation](https://github.com/fornewid/material-motion-compose)(Compose导航动画)  
->>implementation(com.github.fornewid:material-motion-compose:0.7.7)  
+>>implementation(com.github.fornewid:material-motion-compose:0.8.1)  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation(androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1)  
@@ -221,18 +221,18 @@
 >>implementation(androidx.core:core-ktx:1.7.0)  
 >>implementation(androidx.core:core-splashscreen:1.0.0-beta01)  
   
->[Coroutines](https://github.com/Kotlin/kotlinx.coroutines)(core)  
+>[Coroutines](https://github.com/Kotlin/kotlinx.coroutines)(协程)  
 >>implementation(org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0)  
 >>testImplementation(org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0)  
   
->[Download](https://github.com/AriaLyy/Aria)(core)  
+>[Download](https://github.com/AriaLyy/Aria)(下载)  
 >>implementation(me.laoyuyu.aria:core:3.8.16)  
 >>implementation(me.laoyuyu.aria:ftp:3.8.16)  
 >>implementation(me.laoyuyu.aria:sftp:3.8.16)  
 >>implementation(me.laoyuyu.aria:m3u8:3.8.16)  
 >>kapt(me.laoyuyu.aria:compiler:3.8.16)  
   
->[Epoxy](https://github.com/airbnb/epoxy)(core)  
+>[Epoxy](https://github.com/airbnb/epoxy)  
 >>implementation(com.airbnb.android:epoxy:5.0.0-beta05)  
 >>ksp(com.airbnb.android:epoxy-processor:5.0.0-beta05)  
 >>implementation(com.airbnb.android:epoxy-compose:5.0.0-beta05)  
