@@ -47,6 +47,7 @@ dependencies {
     implementation("com.localebro:okhttpprofiler:1.0.8")
     implementation("com.vanniktech:gradle-maven-publish-plugin:0.19.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
+    implementation("net.lingala.zip4j:zip4j:2.9.1")
 
     implementation("com.github.Justson.AgentWeb:agentweb-core:v4.1.9-androidx")
     implementation("com.github.xiaohaibin:XBanner:androidx_v1.2.8")

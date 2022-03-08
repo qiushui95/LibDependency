@@ -177,6 +177,13 @@ sealed class LibDependencies(
      */
     object Serialization : LibDependencies("org.jetbrains.kotlinx",
         "kotlinx-serialization-json", "1.3.2", DependencyMethod.Implementation)
+
+    /**
+     * zip压缩相关
+     * https://github.com/srikanth-lingala/zip4j
+     */
+    object Zip4J : LibDependencies("net.lingala.zip4j", "zip4j", "2.9.1",
+        DependencyMethod.Implementation)
   }
 
   interface View {

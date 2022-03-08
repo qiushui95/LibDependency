@@ -75,6 +75,9 @@
 >[Serialization](https://github.com/Kotlin/kotlinx.serialization)(Json序列化)  
 >>implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")  
   
+>[Zip4J](https://github.com/srikanth-lingala/zip4j)(zip压缩相关)  
+>>implementation("net.lingala.zip4j:zip4j:2.9.1")  
+  
 </details>  
   
 <details>  
