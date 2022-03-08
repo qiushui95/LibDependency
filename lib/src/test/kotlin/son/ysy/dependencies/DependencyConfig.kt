@@ -288,6 +288,17 @@ sealed class DependencyConfig(
         ) {
             const val PLUGIN_ID = "plugin.serialization"
         }
+
+        //endregion
+        //region zip压缩相关
+        object Zip4J : DependencyConfig(
+            group = "net.lingala.zip4j",
+            name = "zip4j",
+            version = "2.9.1",
+            remark = "zip压缩相关",
+            link = "https://github.com/srikanth-lingala/zip4j",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
         //endregion
     }
 
