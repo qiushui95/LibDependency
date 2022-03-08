@@ -37,7 +37,7 @@ sealed class DependencyConfig(
         object AliPush : DependencyConfig(
             group = "com.aliyun.ams",
             name = "alicloud-android-push",
-            version = "3.7.2",
+            version = "3.7.4",
             remark = "阿里推送",
             link = "https://help.aliyun.com/document_detail/190009.html?spm=a2c4g.11174283.3.2.52eb6d163QVxjG",
             dependencyMethod = DependencyMethod.Implementation,
@@ -98,6 +98,7 @@ sealed class DependencyConfig(
             dependencyMethod = DependencyMethod.Implementation,
         )
 
+        //endregion
         //region 百度统计
         object BaiduStatistics : DependencyConfig(
             group = "com.baidu.mobstat",
@@ -124,7 +125,7 @@ sealed class DependencyConfig(
         object DateTimePicker : DependencyConfig(
             group = "com.github.loperSeven",
             name = "DateTimePicker",
-            version = "0.5.4",
+            version = "0.5.7",
             remark = "时间选择器",
             link = "https://github.com/loperSeven/DateTimePicker",
             dependencyMethod = DependencyMethod.Implementation,
@@ -223,7 +224,7 @@ sealed class DependencyConfig(
         object Store : DependencyConfig(
             group = "com.dropbox.mobile.store",
             name = "store4",
-            version = "4.0.3-KT15",
+            version = "4.0.4-KT15",
             remark = "多数据源",
             link = "https://github.com/dropbox/Store",
             dependencyMethod = DependencyMethod.Implementation,
@@ -308,7 +309,7 @@ sealed class DependencyConfig(
         object BannerView : DependencyConfig(
             group = "com.github.xiaohaibin",
             name = "XBanner",
-            version = "androidx_v1.2.1",
+            version = "androidx_v1.2.8",
             remark = "轮播控件",
             link = "https://github.com/xiaohaibin/XBanner/tree/androidX",
             dependencyMethod = DependencyMethod.Implementation,
@@ -385,7 +386,7 @@ sealed class DependencyConfig(
         object LottieView : DependencyConfig(
             group = "com.airbnb.android",
             name = "lottie",
-            version = "5.0.2",
+            version = "5.0.3",
             remark = "动画框架",
             link = "https://github.com/airbnb/lottie-android",
             dependencyMethod = DependencyMethod.Implementation,
@@ -484,7 +485,7 @@ sealed class DependencyConfig(
         object WebX5 : DependencyConfig(
             group = "com.tencent.tbs",
             name = "tbssdk",
-            version = "44136",
+            version = "44165",
             remark = "X5浏览器",
             link = "https://x5.tencent.com/docs/access.html",
             dependencyMethod = DependencyMethod.Implementation,
@@ -571,7 +572,7 @@ sealed class DependencyConfig(
         object NavigationAnimation : DependencyConfig(
             group = "com.github.fornewid",
             name = "material-motion-compose",
-            version = "0.7.7",
+            version = "0.8.1",
             remark = "Compose导航动画",
             link = "https://github.com/fornewid/material-motion-compose",
             dependencyMethod = DependencyMethod.Implementation,
@@ -751,7 +752,7 @@ sealed class DependencyConfig(
                 group = "org.jetbrains.kotlinx",
                 name = name,
                 version = "1.6.0",
-                remark = "core",
+                remark = "协程",
                 link = "https://github.com/Kotlin/kotlinx.coroutines",
                 dependencyMethod = dependencyMethod,
             ) {
@@ -767,7 +768,7 @@ sealed class DependencyConfig(
                 group = "me.laoyuyu.aria",
                 name = name,
                 version = "3.8.16",
-                remark = "core",
+                remark = "下载",
                 link = "https://github.com/AriaLyy/Aria",
                 dependencyMethod = dependencyMethod,
             ) {
@@ -790,7 +791,7 @@ sealed class DependencyConfig(
             group = "com.airbnb.android",
             name = name,
             version = "5.0.0-beta05",
-            remark = "core",
+            remark = "",
             link = "https://github.com/airbnb/epoxy",
             dependencyMethod = dependencyMethod,
         ) {
