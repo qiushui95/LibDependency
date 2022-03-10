@@ -158,6 +158,10 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-service:+")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:+")
 
+    implementation("com.airbnb.android:mavericks:+")
+    implementation("com.airbnb.android:mavericks-compose:+")
+    implementation("com.airbnb.android:mavericks-navigation:+")
+
     implementation("com.squareup.moshi:moshi:+")
     ksp("com.squareup.moshi:moshi-kotlin-codegen:+")
 
