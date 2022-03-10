@@ -99,17 +99,6 @@ sealed class DependencyConfig(
         )
 
         //endregion
-        //region 百度统计
-        object BaiduStatistics : DependencyConfig(
-            group = "com.baidu.mobstat",
-            name = "mtj-sdk",
-            version = "4.0.7.6",
-            remark = "百度统计",
-            link = "https://mtj.baidu.com/static/userguide/book/android/sdk/gradle.html",
-            dependencyMethod = DependencyMethod.Implementation,
-        )
-
-        //endregion
         //region ColorKtx(颜色帮助库)
         object ColorKtx : DependencyConfig(
             group = "me.jorgecastillo",
@@ -194,6 +183,17 @@ sealed class DependencyConfig(
             version = "1.6.1",
             remark = "权限请求",
             link = "https://github.com/guolindev/PermissionX",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
+
+        //endregion
+        //region Paging(分页请求)
+        object Paging : DependencyConfig(
+            group = "androidx.paging",
+            name = "paging-runtime",
+            version = "3.1.1",
+            remark = "分页请求",
+            link = "https://developer.android.com/jetpack/androidx/releases/paging",
             dependencyMethod = DependencyMethod.Implementation,
         )
 
@@ -490,17 +490,6 @@ sealed class DependencyConfig(
             link = "https://developer.android.com/jetpack/androidx/releases/viewpager2",
             dependencyMethod = DependencyMethod.Implementation,
         )
-
-        //endregion
-        //region WebX5(X5浏览器)
-        object WebX5 : DependencyConfig(
-            group = "com.tencent.tbs",
-            name = "tbssdk",
-            version = "44165",
-            remark = "X5浏览器",
-            link = "https://x5.tencent.com/docs/access.html",
-            dependencyMethod = DependencyMethod.Implementation,
-        )
         //endregion
     }
 
@@ -773,7 +762,7 @@ sealed class DependencyConfig(
         }
 
         //endregion
-        //region 下载
+        //region Download(下载)
         sealed class Download(name: String, dependencyMethod: DependencyMethod) :
             DependencyConfig(
                 group = "me.laoyuyu.aria",
@@ -906,6 +895,25 @@ sealed class DependencyConfig(
         }
 
         //endregion
+        //region Navigation(导航库)
+        sealed class Navigation(
+            name: String,
+            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
+        ) : DependencyConfig(
+            group = "androidx.navigation",
+            name = name,
+            version = "2.4.1",
+            remark = "导航库",
+            link = "https://developer.android.com/jetpack/androidx/releases/navigation",
+            dependencyMethod = dependencyMethod,
+        ) {
+            object Fragment : Navigation("navigation-fragment-ktx")
+            object Ui : Navigation("navigation-ui-ktx")
+            object Compose : Navigation("navigation-compose")
+            object Test : Navigation("navigation-testing", DependencyMethod.Test.Implementation)
+        }
+
+        //endregion
         //region OkHttp
         sealed class OkHttp(
             name: String,
@@ -960,6 +968,24 @@ sealed class DependencyConfig(
         }
 
         //endregion
+        //region Transformer(图片裁剪器)
+        sealed class Transformer(
+            name: String,
+            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
+        ) : DependencyConfig(
+            group = "jp.wasabeef.transformers",
+            name = name,
+            version = "1.0.5",
+            remark = "图片裁剪器",
+            link = "https://github.com/wasabeef/transformers",
+            dependencyMethod = dependencyMethod,
+        ) {
+            object Coil : Transformer("coil")
+            object CoilGpu : Transformer("coil-gpu")
+            object Glide : Transformer("glide")
+            object GlideGpu : Transformer("glide-gpu")
+        }
+        //endregion
         //region WorkManager(任务管理器)
         sealed class WorkManager(
             name: String,
@@ -976,39 +1002,6 @@ sealed class DependencyConfig(
             object Test : WorkManager("work-testing", DependencyMethod.Test.Implementation)
         }
 
-        //endregion
-        //region Navigation(导航库)
-        sealed class Navigation(
-            name: String,
-            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
-            group = "androidx.navigation",
-            name = name,
-            version = "2.4.1",
-            remark = "导航库",
-            link = "https://developer.android.com/jetpack/androidx/releases/navigation",
-            dependencyMethod = dependencyMethod,
-        ) {
-            object Fragment : Navigation("navigation-fragment-ktx")
-            object Ui : Navigation("navigation-ui-ktx")
-            object Compose : Navigation("navigation-compose")
-            object Test : Navigation("navigation-testing", DependencyMethod.Test.Implementation)
-        }
-
-        //endregion
-        //region Mavericks架构
-        sealed class Mavericks(name: String) : DependencyConfig(
-            group = "com.airbnb.android",
-            name = name,
-            version = "2.6.1",
-            remark = "Mavericks架构",
-            link = "https://github.com/airbnb/mavericks",
-            dependencyMethod = DependencyMethod.Implementation,
-        ) {
-            object Core : Mavericks("mavericks")
-            object Compose : Mavericks("mavericks-compose")
-            object Navigation : Mavericks("mavericks-navigation")
-        }
         //endregion
     }
     //endregion

@@ -45,7 +45,7 @@ sealed class PluginConfig(
     object RocketX : PluginConfig(
         "io.github.trycatchx",
         "rocketx",
-        "1.0.18",
+        "1.0.20",
         "rocketX"
     ){
         object Plugin : LibPluginId("com.rocketx")
