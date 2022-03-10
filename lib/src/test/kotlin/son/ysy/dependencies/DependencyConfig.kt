@@ -878,6 +878,21 @@ sealed class DependencyConfig(
         }
 
         //endregion
+        //region Mavericks架构
+        sealed class Mavericks(name: String) : DependencyConfig(
+            group = "com.airbnb.android",
+            name = name,
+            version = "2.6.1",
+            remark = "Mavericks架构",
+            link = "https://github.com/airbnb/mavericks",
+            dependencyMethod = DependencyMethod.Implementation,
+        ) {
+            object Core : Mavericks("mavericks")
+            object Compose : Mavericks("mavericks-compose")
+            object Navigation : Mavericks("mavericks-navigation")
+        }
+
+        //endregion
         //region MoShi(json解析库)
         sealed class MoShi(
             name: String,
@@ -985,6 +1000,7 @@ sealed class DependencyConfig(
             object Glide : Transformer("glide")
             object GlideGpu : Transformer("glide-gpu")
         }
+
         //endregion
         //region WorkManager(任务管理器)
         sealed class WorkManager(
