@@ -60,13 +60,6 @@ sealed class LibDependencies(
         DependencyMethod.Implementation)
 
     /**
-     * 百度统计
-     * https://mtj.baidu.com/static/userguide/book/android/sdk/gradle.html
-     */
-    object BaiduStatistics : LibDependencies("com.baidu.mobstat", "mtj-sdk", "4.0.7.6",
-        DependencyMethod.Implementation)
-
-    /**
      * 颜色帮助库
      * https://github.com/JorgeCastilloPrz/AndroidColorX
      */
@@ -120,6 +113,13 @@ sealed class LibDependencies(
      * https://github.com/guolindev/PermissionX
      */
     object PermissionX : LibDependencies("com.guolindev.permissionx", "permissionx", "1.6.1",
+        DependencyMethod.Implementation)
+
+    /**
+     * 分页请求
+     * https://developer.android.com/jetpack/androidx/releases/paging
+     */
+    object Paging : LibDependencies("androidx.paging", "paging-runtime", "3.1.1",
         DependencyMethod.Implementation)
 
     /**
@@ -301,13 +301,6 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/viewpager2
      */
     object ViewPager2 : LibDependencies("androidx.viewpager2", "viewpager2", "1.1.0-beta01",
-        DependencyMethod.Implementation)
-
-    /**
-     * X5浏览器
-     * https://x5.tencent.com/docs/access.html
-     */
-    object WebX5 : LibDependencies("com.tencent.tbs", "tbssdk", "44165",
         DependencyMethod.Implementation)
 
     /**
@@ -654,6 +647,24 @@ sealed class LibDependencies(
     }
 
     /**
+     * 导航库
+     * https://developer.android.com/jetpack/androidx/releases/navigation
+     */
+    interface Navigation {
+      object Fragment : LibDependencies("androidx.navigation", "navigation-fragment-ktx",
+          "2.4.1", DependencyMethod.Implementation)
+
+      object Ui : LibDependencies("androidx.navigation", "navigation-ui-ktx", "2.4.1",
+          DependencyMethod.Implementation)
+
+      object Compose : LibDependencies("androidx.navigation", "navigation-compose", "2.4.1",
+          DependencyMethod.Implementation)
+
+      object Test : LibDependencies("androidx.navigation", "navigation-testing", "2.4.1",
+          DependencyMethod.Test.Implementation)
+    }
+
+    /**
      * https://github.com/square/okhttp
      */
     interface OkHttp {
@@ -698,6 +709,24 @@ sealed class LibDependencies(
     }
 
     /**
+     * 图片裁剪器
+     * https://github.com/wasabeef/transformers
+     */
+    interface Transformer {
+      object Coil : LibDependencies("jp.wasabeef.transformers", "coil", "1.0.5",
+          DependencyMethod.Implementation)
+
+      object CoilGpu : LibDependencies("jp.wasabeef.transformers", "coil-gpu", "1.0.5",
+          DependencyMethod.Implementation)
+
+      object Glide : LibDependencies("jp.wasabeef.transformers", "glide", "1.0.5",
+          DependencyMethod.Implementation)
+
+      object GlideGpu : LibDependencies("jp.wasabeef.transformers", "glide-gpu", "1.0.5",
+          DependencyMethod.Implementation)
+    }
+
+    /**
      * 任务管理器
      * https://developer.android.com/jetpack/androidx/releases/work
      */
@@ -707,39 +736,6 @@ sealed class LibDependencies(
 
       object Test : LibDependencies("androidx.work", "work-testing", "2.7.1",
           DependencyMethod.Test.Implementation)
-    }
-
-    /**
-     * 导航库
-     * https://developer.android.com/jetpack/androidx/releases/navigation
-     */
-    interface Navigation {
-      object Fragment : LibDependencies("androidx.navigation", "navigation-fragment-ktx",
-          "2.4.1", DependencyMethod.Implementation)
-
-      object Ui : LibDependencies("androidx.navigation", "navigation-ui-ktx", "2.4.1",
-          DependencyMethod.Implementation)
-
-      object Compose : LibDependencies("androidx.navigation", "navigation-compose", "2.4.1",
-          DependencyMethod.Implementation)
-
-      object Test : LibDependencies("androidx.navigation", "navigation-testing", "2.4.1",
-          DependencyMethod.Test.Implementation)
-    }
-
-    /**
-     * Mavericks架构
-     * https://github.com/airbnb/mavericks
-     */
-    interface Mavericks {
-      object Core : LibDependencies("com.airbnb.android", "mavericks", "2.6.1",
-          DependencyMethod.Implementation)
-
-      object Compose : LibDependencies("com.airbnb.android", "mavericks-compose", "2.6.1",
-          DependencyMethod.Implementation)
-
-      object Navigation : LibDependencies("com.airbnb.android", "mavericks-navigation",
-          "2.6.1", DependencyMethod.Implementation)
     }
   }
 }

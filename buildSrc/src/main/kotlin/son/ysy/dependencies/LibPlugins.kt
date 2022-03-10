@@ -30,7 +30,7 @@ sealed class LibPlugins(
     object Plugin : LibPluginId("androidx.navigation.safeargs.kotlin")
   }
 
-  object RocketX : LibPlugins("io.github.trycatchx", "rocketx", "1.0.18") {
+  object RocketX : LibPlugins("io.github.trycatchx", "rocketx", "1.0.20") {
     object Plugin : LibPluginId("com.rocketx")
   }
 }

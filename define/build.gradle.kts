@@ -30,7 +30,6 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.4.1")
     implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.3")
     implementation("io.github.razerdp:BasePopup:3.2.0")
-    implementation("com.baidu.mobstat:mtj-sdk:4.0.7.6")
     implementation("me.jorgecastillo:androidcolorx:0.2.0")
     implementation("com.github.loperSeven:DateTimePicker:0.5.7")
     implementation("com.github.princekin-f:EasyFloat:2.0.4")
@@ -39,6 +38,7 @@ dependencies {
     implementation("com.squareup.leakcanary:leakcanary-android:2.8.1")
     implementation("com.tencent:mmkv-static:1.2.12")
     implementation("com.guolindev.permissionx:permissionx:1.6.1")
+    implementation("androidx.paging:paging-runtime:3.1.1")
     implementation("com.github.jenly1314:zxing-lite:2.1.1")
     implementation("com.github.qiushui95:AndroidInitializer:1.0.8")
     implementation("com.dropbox.mobile.store:store4:4.0.4-KT15")
@@ -66,7 +66,6 @@ dependencies {
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
     implementation("com.kyleduo.switchbutton:library:2.1.0")
     implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")
-    implementation("com.tencent.tbs:tbssdk:44165")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1")
 
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
@@ -162,6 +161,11 @@ dependencies {
     implementation("com.squareup.moshi:moshi:1.13.0")
     ksp("com.squareup.moshi:moshi-kotlin-codegen:1.13.0")
 
+    implementation("androidx.navigation:navigation-fragment-ktx:2.4.1")
+    implementation("androidx.navigation:navigation-ui-ktx:2.4.1")
+    implementation("androidx.navigation:navigation-compose:2.4.1")
+    testImplementation("androidx.navigation:navigation-testing:2.4.1")
+
     implementation("com.squareup.okhttp3:okhttp:4.9.3")
     androidTestImplementation("com.squareup.okhttp3:mockwebserver:4.9.3")
 
@@ -174,16 +178,12 @@ dependencies {
     kapt("androidx.room:room-compiler:2.4.2")
     testImplementation("androidx.room:room-testing:2.4.2")
 
+    implementation("jp.wasabeef.transformers:coil:1.0.5")
+    implementation("jp.wasabeef.transformers:coil-gpu:1.0.5")
+    implementation("jp.wasabeef.transformers:glide:1.0.5")
+    implementation("jp.wasabeef.transformers:glide-gpu:1.0.5")
+
     implementation("androidx.work:work-runtime-ktx:2.7.1")
     testImplementation("androidx.work:work-testing:2.7.1")
-
-    implementation("androidx.navigation:navigation-fragment-ktx:2.4.1")
-    implementation("androidx.navigation:navigation-ui-ktx:2.4.1")
-    implementation("androidx.navigation:navigation-compose:2.4.1")
-    testImplementation("androidx.navigation:navigation-testing:2.4.1")
-
-    implementation("com.airbnb.android:mavericks:2.6.1")
-    implementation("com.airbnb.android:mavericks-compose:2.6.1")
-    implementation("com.airbnb.android:mavericks-navigation:2.6.1")
 
 }

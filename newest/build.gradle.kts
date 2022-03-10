@@ -30,7 +30,6 @@ dependencies {
     implementation("androidx.appcompat:appcompat:+")
     implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:+")
     implementation("io.github.razerdp:BasePopup:+")
-    implementation("com.baidu.mobstat:mtj-sdk:+")
     implementation("me.jorgecastillo:androidcolorx:+")
     implementation("com.github.loperSeven:DateTimePicker:+")
     implementation("com.github.princekin-f:EasyFloat:+")
@@ -39,6 +38,7 @@ dependencies {
     implementation("com.squareup.leakcanary:leakcanary-android:+")
     implementation("com.tencent:mmkv-static:+")
     implementation("com.guolindev.permissionx:permissionx:+")
+    implementation("androidx.paging:paging-runtime:+")
     implementation("com.github.jenly1314:zxing-lite:+")
     implementation("com.github.qiushui95:AndroidInitializer:+")
     implementation("com.dropbox.mobile.store:store4:+")
@@ -66,7 +66,6 @@ dependencies {
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:+")
     implementation("com.kyleduo.switchbutton:library:+")
     implementation("androidx.viewpager2:viewpager2:+")
-    implementation("com.tencent.tbs:tbssdk:+")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:+")
 
     androidTestImplementation("androidx.test.espresso:espresso-core:+")
@@ -162,6 +161,11 @@ dependencies {
     implementation("com.squareup.moshi:moshi:+")
     ksp("com.squareup.moshi:moshi-kotlin-codegen:+")
 
+    implementation("androidx.navigation:navigation-fragment-ktx:+")
+    implementation("androidx.navigation:navigation-ui-ktx:+")
+    implementation("androidx.navigation:navigation-compose:+")
+    testImplementation("androidx.navigation:navigation-testing:+")
+
     implementation("com.squareup.okhttp3:okhttp:+")
     androidTestImplementation("com.squareup.okhttp3:mockwebserver:+")
 
@@ -174,16 +178,12 @@ dependencies {
     kapt("androidx.room:room-compiler:+")
     testImplementation("androidx.room:room-testing:+")
 
+    implementation("jp.wasabeef.transformers:coil:+")
+    implementation("jp.wasabeef.transformers:coil-gpu:+")
+    implementation("jp.wasabeef.transformers:glide:+")
+    implementation("jp.wasabeef.transformers:glide-gpu:+")
+
     implementation("androidx.work:work-runtime-ktx:+")
     testImplementation("androidx.work:work-testing:+")
-
-    implementation("androidx.navigation:navigation-fragment-ktx:+")
-    implementation("androidx.navigation:navigation-ui-ktx:+")
-    implementation("androidx.navigation:navigation-compose:+")
-    testImplementation("androidx.navigation:navigation-testing:+")
-
-    implementation("com.airbnb.android:mavericks:+")
-    implementation("com.airbnb.android:mavericks-compose:+")
-    implementation("com.airbnb.android:mavericks-navigation:+")
 
 }
