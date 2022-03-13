@@ -49,7 +49,7 @@
 >>implementation("com.guolindev.permissionx:permissionx:1.6.1")  
   
 >[Paging](https://developer.android.com/jetpack/androidx/releases/paging)(分页请求)  
->>implementation("androidx.paging:paging-runtime:3.1.1")  
+>>implementation("androidx.paging:paging-runtime-ktx:3.1.1")  
   
 >[QrScanner](https://github.com/jenly1314/ZXingLite)(二维码扫描)  
 >>implementation("com.github.jenly1314:zxing-lite:2.1.1")  
@@ -211,11 +211,11 @@
 >>releaseImplementation(com.github.chuckerteam.chucker:library-no-op:3.5.2)  
   
 >[Coil](https://coil-kt.github.io/coil/README-zh/)(图片加载)  
->>implementation(io.coil-kt:coil:1.4.0)  
->>implementation(io.coil-kt:coil-compose:1.4.0)  
->>implementation(io.coil-kt:coil-svg:1.4.0)  
->>implementation(io.coil-kt:coil-gif:1.4.0)  
->>implementation(io.coil-kt:coil-video:1.4.0)  
+>>implementation(io.coil-kt:coil:2.0.0-rc01)  
+>>implementation(io.coil-kt:coil-compose:2.0.0-rc01)  
+>>implementation(io.coil-kt:coil-svg:2.0.0-rc01)  
+>>implementation(io.coil-kt:coil-gif:2.0.0-rc01)  
+>>implementation(io.coil-kt:coil-video:2.0.0-rc01)  
   
 >[Core](https://developer.android.com/jetpack/androidx/releases/core)  
 >>implementation(androidx.core:core-ktx:1.7.0)  
@@ -293,10 +293,11 @@
 >>testImplementation(androidx.room:room-testing:2.4.2)  
   
 >[Transformer](https://github.com/wasabeef/transformers)(图片裁剪器)  
->>implementation(jp.wasabeef.transformers:coil:1.0.5)  
->>implementation(jp.wasabeef.transformers:coil-gpu:1.0.5)  
->>implementation(jp.wasabeef.transformers:glide:1.0.5)  
->>implementation(jp.wasabeef.transformers:glide-gpu:1.0.5)  
+>>implementation(jp.wasabeef.transformers:core:1.0.6)  
+>>implementation(jp.wasabeef.transformers:coil:1.0.6)  
+>>implementation(jp.wasabeef.transformers:coil-gpu:1.0.6)  
+>>implementation(jp.wasabeef.transformers:glide:1.0.6)  
+>>implementation(jp.wasabeef.transformers:glide-gpu:1.0.6)  
   
 >[WorkManager](https://developer.android.com/jetpack/androidx/releases/work)(任务管理器)  
 >>implementation(androidx.work:work-runtime-ktx:2.7.1)  

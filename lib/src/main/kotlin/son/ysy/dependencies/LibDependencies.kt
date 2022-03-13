@@ -119,7 +119,7 @@ sealed class LibDependencies(
      * 分页请求
      * https://developer.android.com/jetpack/androidx/releases/paging
      */
-    object Paging : LibDependencies("androidx.paging", "paging-runtime", "3.1.1",
+    object Paging : LibDependencies("androidx.paging", "paging-runtime-ktx", "3.1.1",
         DependencyMethod.Implementation)
 
     /**
@@ -488,19 +488,19 @@ sealed class LibDependencies(
      * https://coil-kt.github.io/coil/README-zh/
      */
     interface Coil {
-      object Core : LibDependencies("io.coil-kt", "coil", "1.4.0",
+      object Core : LibDependencies("io.coil-kt", "coil", "2.0.0-rc01",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("io.coil-kt", "coil-compose", "1.4.0",
+      object Compose : LibDependencies("io.coil-kt", "coil-compose", "2.0.0-rc01",
           DependencyMethod.Implementation)
 
-      object Svg : LibDependencies("io.coil-kt", "coil-svg", "1.4.0",
+      object Svg : LibDependencies("io.coil-kt", "coil-svg", "2.0.0-rc01",
           DependencyMethod.Implementation)
 
-      object Gif : LibDependencies("io.coil-kt", "coil-gif", "1.4.0",
+      object Gif : LibDependencies("io.coil-kt", "coil-gif", "2.0.0-rc01",
           DependencyMethod.Implementation)
 
-      object Video : LibDependencies("io.coil-kt", "coil-video", "1.4.0",
+      object Video : LibDependencies("io.coil-kt", "coil-video", "2.0.0-rc01",
           DependencyMethod.Implementation)
     }
 
@@ -728,16 +728,19 @@ sealed class LibDependencies(
      * https://github.com/wasabeef/transformers
      */
     interface Transformer {
-      object Coil : LibDependencies("jp.wasabeef.transformers", "coil", "1.0.5",
+      object Core : LibDependencies("jp.wasabeef.transformers", "core", "1.0.6",
           DependencyMethod.Implementation)
 
-      object CoilGpu : LibDependencies("jp.wasabeef.transformers", "coil-gpu", "1.0.5",
+      object Coil : LibDependencies("jp.wasabeef.transformers", "coil", "1.0.6",
           DependencyMethod.Implementation)
 
-      object Glide : LibDependencies("jp.wasabeef.transformers", "glide", "1.0.5",
+      object CoilGpu : LibDependencies("jp.wasabeef.transformers", "coil-gpu", "1.0.6",
           DependencyMethod.Implementation)
 
-      object GlideGpu : LibDependencies("jp.wasabeef.transformers", "glide-gpu", "1.0.5",
+      object Glide : LibDependencies("jp.wasabeef.transformers", "glide", "1.0.6",
+          DependencyMethod.Implementation)
+
+      object GlideGpu : LibDependencies("jp.wasabeef.transformers", "glide-gpu", "1.0.6",
           DependencyMethod.Implementation)
     }
 
