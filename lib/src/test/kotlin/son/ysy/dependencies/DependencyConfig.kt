@@ -190,7 +190,7 @@ sealed class DependencyConfig(
         //region Paging(分页请求)
         object Paging : DependencyConfig(
             group = "androidx.paging",
-            name = "paging-runtime",
+            name = "paging-runtime-ktx",
             version = "3.1.1",
             remark = "分页请求",
             link = "https://developer.android.com/jetpack/androidx/releases/paging",
@@ -719,7 +719,7 @@ sealed class DependencyConfig(
         sealed class Coil(name: String) : DependencyConfig(
             group = "io.coil-kt",
             name = name,
-            version = "1.4.0",
+            version = "2.0.0-rc01",
             remark = "图片加载",
             link = "https://coil-kt.github.io/coil/README-zh/",
             dependencyMethod = DependencyMethod.Implementation,
@@ -990,11 +990,12 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "jp.wasabeef.transformers",
             name = name,
-            version = "1.0.5",
+            version = "1.0.6",
             remark = "图片裁剪器",
             link = "https://github.com/wasabeef/transformers",
             dependencyMethod = dependencyMethod,
         ) {
+            object Core : Transformer("core")
             object Coil : Transformer("coil")
             object CoilGpu : Transformer("coil-gpu")
             object Glide : Transformer("glide")
