@@ -66,6 +66,8 @@ dependencies {
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:+")
     implementation("com.kyleduo.switchbutton:library:+")
     implementation("androidx.viewpager2:viewpager2:+")
+    implementation("com.github.angcyo.DslTablayout:TabLayout:+")
+    implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:+")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:+")
 
     androidTestImplementation("androidx.test.espresso:espresso-core:+")

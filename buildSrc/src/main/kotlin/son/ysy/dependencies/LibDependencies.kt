@@ -304,6 +304,18 @@ sealed class LibDependencies(
         DependencyMethod.Implementation)
 
     /**
+     * https://github.com/angcyo/DslTabLayout
+     */
+    object TabLayout : LibDependencies("com.github.angcyo.DslTablayout", "TabLayout",
+        "3.2.1", DependencyMethod.Implementation)
+
+    /**
+     * https://github.com/angcyo/DslTabLayout
+     */
+    object TabLayoutVp2 : LibDependencies("com.github.angcyo.DslTablayout",
+        "ViewPager2Delegate", "3.2.1", DependencyMethod.Implementation)
+
+    /**
      * https://developer.android.com/jetpack/androidx/releases/lifecycle
      */
     object ViewModel : LibDependencies("androidx.lifecycle", "lifecycle-viewmodel-compose",
