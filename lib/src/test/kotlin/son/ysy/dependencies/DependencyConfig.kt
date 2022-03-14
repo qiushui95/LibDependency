@@ -839,7 +839,6 @@ sealed class DependencyConfig(
         }
 
         //endregion
-        //endregion
         //region Koin(依赖注入库)
         sealed class Koin(
             name: String,
@@ -856,6 +855,39 @@ sealed class DependencyConfig(
             object Core : Koin("koin-core")
             object WorkManager : Koin("koin-androidx-workmanager")
             object Test : Koin("koin-test-junit5", DependencyMethod.Test.Implementation)
+        }
+
+        //endregion
+        //region Koin(依赖注入库)
+        sealed class KoinBeta(
+            name: String,
+            version: Version,
+            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
+        ) : DependencyConfig(
+            group = "io.insert-koin",
+            name = name,
+            version = version.value,
+            remark = "依赖注入库",
+            link = "https://github.com/InsertKoinIO/koin",
+            dependencyMethod = dependencyMethod,
+        ) {
+            sealed class Version(val value: String) {
+                object Version1 : Version("1.0.0-beta-1")
+                object Version2 : Version("3.2.0-beta-1")
+            }
+
+            object Android : KoinBeta("koin-android", Version.Version2)
+            object Core : KoinBeta("koin-core", Version.Version2)
+            object WorkManager : KoinBeta("koin-androidx-workmanager", Version.Version2)
+            object Navigation : KoinBeta("koin-androidx-navigation", Version.Version2)
+            object Compose : KoinBeta("koin-androidx-compose", Version.Version2)
+            object Test : KoinBeta(
+                "koin-test-junit5",
+                Version.Version2, DependencyMethod.Test.Implementation
+            )
+
+            object Annotations : KoinBeta("koin-annotations", Version.Version1)
+            object Compiler : KoinBeta("koin-ksp-compiler", Version.Version1)
         }
 
         //endregion
