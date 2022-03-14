@@ -254,6 +254,16 @@
 >>implementation("io.insert-koin:koin-androidx-workmanager:3.1.5")  
 >>testImplementation("io.insert-koin:koin-test-junit5:3.1.5")  
   
+>[KoinBeta](https://github.com/InsertKoinIO/koin)(依赖注入库)  
+>>implementation("io.insert-koin:koin-android:3.2.0-beta-1")  
+>>implementation("io.insert-koin:koin-core:3.2.0-beta-1")  
+>>implementation("io.insert-koin:koin-androidx-workmanager:3.2.0-beta-1")  
+>>implementation("io.insert-koin:koin-androidx-navigation:3.2.0-beta-1")  
+>>implementation("io.insert-koin:koin-androidx-compose:3.2.0-beta-1")  
+>>testImplementation("io.insert-koin:koin-test-junit5:3.2.0-beta-1")  
+>>implementation("io.insert-koin:koin-annotations:1.0.0-beta-1")  
+>>implementation("io.insert-koin:koin-ksp-compiler:1.0.0-beta-1")  
+  
 >[Kotlin](https://github.com/JetBrains/kotlin)  
 >>implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.10")  
 >>implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.10")  

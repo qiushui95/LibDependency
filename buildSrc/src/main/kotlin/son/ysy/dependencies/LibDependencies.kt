@@ -607,6 +607,36 @@ sealed class LibDependencies(
     }
 
     /**
+     * 依赖注入库
+     * https://github.com/InsertKoinIO/koin
+     */
+    interface KoinBeta {
+      object Android : LibDependencies("io.insert-koin", "koin-android", "3.2.0-beta-1",
+          DependencyMethod.Implementation)
+
+      object Core : LibDependencies("io.insert-koin", "koin-core", "3.2.0-beta-1",
+          DependencyMethod.Implementation)
+
+      object WorkManager : LibDependencies("io.insert-koin", "koin-androidx-workmanager",
+          "3.2.0-beta-1", DependencyMethod.Implementation)
+
+      object Navigation : LibDependencies("io.insert-koin", "koin-androidx-navigation",
+          "3.2.0-beta-1", DependencyMethod.Implementation)
+
+      object Compose : LibDependencies("io.insert-koin", "koin-androidx-compose",
+          "3.2.0-beta-1", DependencyMethod.Implementation)
+
+      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.2.0-beta-1",
+          DependencyMethod.Test.Implementation)
+
+      object Annotations : LibDependencies("io.insert-koin", "koin-annotations",
+          "1.0.0-beta-1", DependencyMethod.Implementation)
+
+      object Compiler : LibDependencies("io.insert-koin", "koin-ksp-compiler",
+          "1.0.0-beta-1", DependencyMethod.Implementation)
+    }
+
+    /**
      * https://github.com/JetBrains/kotlin
      */
     interface Kotlin {

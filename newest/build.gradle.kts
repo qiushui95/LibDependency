@@ -148,6 +148,15 @@ dependencies {
     implementation("io.insert-koin:koin-androidx-workmanager:+")
     testImplementation("io.insert-koin:koin-test-junit5:+")
 
+    implementation("io.insert-koin:koin-android:+")
+    implementation("io.insert-koin:koin-core:+")
+    implementation("io.insert-koin:koin-androidx-workmanager:+")
+    implementation("io.insert-koin:koin-androidx-navigation:+")
+    implementation("io.insert-koin:koin-androidx-compose:+")
+    testImplementation("io.insert-koin:koin-test-junit5:+")
+    implementation("io.insert-koin:koin-annotations:+")
+    implementation("io.insert-koin:koin-ksp-compiler:+")
+
     implementation("org.jetbrains.kotlin:kotlin-stdlib:+")
     implementation("org.jetbrains.kotlin:kotlin-reflect:+")
     implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:+")
