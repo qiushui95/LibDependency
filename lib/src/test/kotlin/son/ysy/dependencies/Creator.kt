@@ -434,7 +434,7 @@ class Creator {
                     buildMdTitle(subObjects.first(), parentClz.java.simpleName)
 
                     subObjects.forEach { config ->
-                        addMdLine(">>${config.dependencyMethod.method}(${config.group}:${config.name}:${config.version})")
+                        addMdLine(">>${config.dependencyMethod.method}(\"${config.group}:${config.name}:${config.version}\")")
                     }
                     addMdLine("")
                 }

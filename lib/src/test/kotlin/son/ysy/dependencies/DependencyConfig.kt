@@ -490,6 +490,26 @@ sealed class DependencyConfig(
             link = "https://developer.android.com/jetpack/androidx/releases/viewpager2",
             dependencyMethod = DependencyMethod.Implementation,
         )
+
+        //endregion
+        //region TabLayout
+        object TabLayout : DependencyConfig(
+            group = "com.github.angcyo.DslTablayout",
+            name = "TabLayout",
+            version = "3.2.1",
+            remark = "",
+            link = "https://github.com/angcyo/DslTabLayout",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
+
+        object TabLayoutVp2 : DependencyConfig(
+            group = "com.github.angcyo.DslTablayout",
+            name = "ViewPager2Delegate",
+            version = "3.2.1",
+            remark = "",
+            link = "https://github.com/angcyo/DslTabLayout",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
         //endregion
     }
 
@@ -818,6 +838,7 @@ sealed class DependencyConfig(
             object Test : Fragment("fragment-testing", DependencyMethod.Test.Implementation)
         }
 
+        //endregion
         //endregion
         //region Koin(依赖注入库)
         sealed class Koin(
