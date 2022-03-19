@@ -63,6 +63,8 @@ dependencies {
     implementation("com.github.chrisbanes:PhotoView:2.3.0")
     implementation("io.github.chaosleung:pinview:1.4.4")
     implementation("androidx.recyclerview:recyclerview:1.2.1")
+    implementation("com.github.fondesa:recycler-view-divider:3.5.0")
+    implementation("com.github.rubensousa:gravitysnaphelper:2.2.2")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
     implementation("com.kyleduo.switchbutton:library:2.1.0")
     implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")
@@ -183,6 +185,9 @@ dependencies {
 
     implementation("com.squareup.okhttp3:okhttp:4.9.3")
     androidTestImplementation("com.squareup.okhttp3:mockwebserver:4.9.3")
+
+    implementation("com.airbnb.android:paris:2.0.1")
+    ksp("com.airbnb.android:paris-processor:2.0.1")
 
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-moshi:2.9.0")

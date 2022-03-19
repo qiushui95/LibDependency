@@ -284,6 +284,20 @@ sealed class LibDependencies(
         DependencyMethod.Implementation)
 
     /**
+     * RecyclerView分割线
+     * https://github.com/fondesa/recycler-view-divider
+     */
+    object RecyclerViewDivider : LibDependencies("com.github.fondesa",
+        "recycler-view-divider", "3.5.0", DependencyMethod.Implementation)
+
+    /**
+     * RecyclerView分割线
+     * https://github.com/rubensousa/GravitySnapHelper
+     */
+    object RecyclerViewSnap : LibDependencies("com.github.rubensousa", "gravitysnaphelper",
+        "2.2.2", DependencyMethod.Implementation)
+
+    /**
      * 下拉刷新控件
      * https://developer.android.com/jetpack/androidx/releases/swiperefreshlayout
      */
@@ -730,6 +744,17 @@ sealed class LibDependencies(
 
       object Mock : LibDependencies("com.squareup.okhttp3", "mockwebserver", "4.9.3",
           DependencyMethod.AndroidTest.Implementation)
+    }
+
+    /**
+     * https://github.com/airbnb/paris
+     */
+    interface Paris {
+      object Core : LibDependencies("com.airbnb.android", "paris", "2.0.1",
+          DependencyMethod.Implementation)
+
+      object Compiler : LibDependencies("com.airbnb.android", "paris-processor", "2.0.1",
+          DependencyMethod.Ksp)
     }
 
     /**

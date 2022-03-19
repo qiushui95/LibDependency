@@ -125,6 +125,12 @@
 >[RecyclerView](https://developer.android.com/jetpack/androidx/releases/recyclerview)  
 >>implementation("androidx.recyclerview:recyclerview:1.2.1")  
   
+>[RecyclerViewDivider](https://github.com/fondesa/recycler-view-divider)(RecyclerView分割线)  
+>>implementation("com.github.fondesa:recycler-view-divider:3.5.0")  
+  
+>[RecyclerViewSnap](https://github.com/rubensousa/GravitySnapHelper)(RecyclerView分割线)  
+>>implementation("com.github.rubensousa:gravitysnaphelper:2.2.2")  
+  
 >[SwipeRefreshLayout](https://developer.android.com/jetpack/androidx/releases/swiperefreshlayout)(下拉刷新控件)  
 >>implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")  
   
@@ -296,6 +302,10 @@
 >[OkHttp](https://github.com/square/okhttp)  
 >>implementation("com.squareup.okhttp3:okhttp:4.9.3")  
 >>androidTestImplementation("com.squareup.okhttp3:mockwebserver:4.9.3")  
+  
+>[Paris](https://github.com/airbnb/paris)  
+>>implementation("com.airbnb.android:paris:2.0.1")  
+>>ksp("com.airbnb.android:paris-processor:2.0.1")  
   
 >[Retrofit](https://github.com/square/retrofit)(网络请求)  
 >>implementation("com.squareup.retrofit2:retrofit:2.9.0")  
