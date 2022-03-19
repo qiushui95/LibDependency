@@ -459,6 +459,28 @@ sealed class DependencyConfig(
         )
 
         //endregion
+        //region RecyclerView分割线
+        object RecyclerViewDivider : DependencyConfig(
+            group = "com.github.fondesa",
+            name = "recycler-view-divider",
+            version = "3.5.0",
+            remark = "RecyclerView分割线",
+            link = "https://github.com/fondesa/recycler-view-divider",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
+
+        //endregion
+        //region RecyclerView页面滑动效果
+        object RecyclerViewSnap : DependencyConfig(
+            group = "com.github.rubensousa",
+            name = "gravitysnaphelper",
+            version = "2.2.2",
+            remark = "RecyclerView分割线",
+            link = "https://github.com/rubensousa/GravitySnapHelper",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
+
+        //endregion
         //region SwipeRefreshLayout(下拉刷新控件)
         object SwipeRefreshLayout : DependencyConfig(
             group = "androidx.swiperefreshlayout",
@@ -996,6 +1018,23 @@ sealed class DependencyConfig(
         ) {
             object Core : OkHttp("okhttp")
             object Mock : OkHttp("mockwebserver", DependencyMethod.AndroidTest.Implementation)
+        }
+
+        //endregion
+        //region Paris
+        sealed class Paris(
+            name: String,
+            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
+        ) : DependencyConfig(
+            group = "com.airbnb.android",
+            name = name,
+            version = "2.0.1",
+            remark = "",
+            link = "https://github.com/airbnb/paris",
+            dependencyMethod = dependencyMethod,
+        ) {
+            object Core : Paris("paris")
+            object Compiler : Paris("paris-processor", DependencyMethod.Ksp)
         }
 
         //endregion
