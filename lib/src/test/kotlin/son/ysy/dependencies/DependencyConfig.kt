@@ -81,7 +81,7 @@ sealed class DependencyConfig(
         object Background : DependencyConfig(
             group = "com.github.JavaNoober.BackgroundLibrary",
             name = "libraryx",
-            version = "1.7.3",
+            version = "1.7.4",
             remark = "背景生成工具库",
             link = "https://github.com/JavaNoober/BackgroundLibrary",
             dependencyMethod = DependencyMethod.Implementation,
@@ -147,7 +147,7 @@ sealed class DependencyConfig(
         object JodaTime : DependencyConfig(
             group = "joda-time",
             name = "joda-time",
-            version = "2.10.13",
+            version = "2.10.14",
             remark = "时间处理库",
             link = "https://github.com/JodaOrg/joda-time",
             dependencyMethod = DependencyMethod.Implementation,
@@ -345,6 +345,17 @@ sealed class DependencyConfig(
             version = "2.2.0",
             remark = "底部导航",
             link = "https://github.com/Ashok-Varma/BottomNavigation",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
+
+        //endregion
+        //region BottomTab(底部导航)
+        object BottomTab : DependencyConfig(
+            group = "me.majiajie",
+            name = "pager-bottom-tab-strip",
+            version = "2.4.0",
+            remark = "底部导航",
+            link = "https://github.com/tyzlmjj/PagerBottomTabStrip",
             dependencyMethod = DependencyMethod.Implementation,
         )
 
@@ -761,7 +772,7 @@ sealed class DependencyConfig(
         sealed class Coil(name: String) : DependencyConfig(
             group = "io.coil-kt",
             name = name,
-            version = "2.0.0-rc01",
+            version = "2.0.0-rc02",
             remark = "图片加载",
             link = "https://coil-kt.github.io/coil/README-zh/",
             dependencyMethod = DependencyMethod.Implementation,
@@ -784,7 +795,7 @@ sealed class DependencyConfig(
             dependencyMethod = DependencyMethod.Implementation,
         ) {
             object Ktx : Core("core-ktx", "1.7.0")
-            object Splash : Core("core-splashscreen", "1.0.0-beta01")
+            object Splash : Core("core-splashscreen", "1.0.0-beta02")
         }
 
         //endregion
