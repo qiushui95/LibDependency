@@ -53,6 +53,7 @@ dependencies {
     implementation("com.github.xiaohaibin:XBanner:+")
     implementation("com.eightbitlab:blurview:+")
     implementation("com.ashokvarma.android:bottom-navigation-bar:+")
+    implementation("me.majiajie:pager-bottom-tab-strip:+")
     implementation("androidx.constraintlayout:constraintlayout:+")
     implementation("io.github.csdn-mobile:RoundView:+")
     implementation("com.google.android.flexbox:flexbox:+")

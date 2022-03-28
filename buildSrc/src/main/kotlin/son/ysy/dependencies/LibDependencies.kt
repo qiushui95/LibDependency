@@ -50,7 +50,7 @@ sealed class LibDependencies(
      * https://github.com/JavaNoober/BackgroundLibrary
      */
     object Background : LibDependencies("com.github.JavaNoober.BackgroundLibrary",
-        "libraryx", "1.7.3", DependencyMethod.Implementation)
+        "libraryx", "1.7.4", DependencyMethod.Implementation)
 
     /**
      * 弹窗
@@ -91,7 +91,7 @@ sealed class LibDependencies(
      * 时间处理库
      * https://github.com/JodaOrg/joda-time
      */
-    object JodaTime : LibDependencies("joda-time", "joda-time", "2.10.13",
+    object JodaTime : LibDependencies("joda-time", "joda-time", "2.10.14",
         DependencyMethod.Implementation)
 
     /**
@@ -214,6 +214,13 @@ sealed class LibDependencies(
      */
     object BottomNavigation : LibDependencies("com.ashokvarma.android",
         "bottom-navigation-bar", "2.2.0", DependencyMethod.Implementation)
+
+    /**
+     * 底部导航
+     * https://github.com/tyzlmjj/PagerBottomTabStrip
+     */
+    object BottomTab : LibDependencies("me.majiajie", "pager-bottom-tab-strip", "2.4.0",
+        DependencyMethod.Implementation)
 
     /**
      * 约束布局
@@ -514,19 +521,19 @@ sealed class LibDependencies(
      * https://coil-kt.github.io/coil/README-zh/
      */
     interface Coil {
-      object Core : LibDependencies("io.coil-kt", "coil", "2.0.0-rc01",
+      object Core : LibDependencies("io.coil-kt", "coil", "2.0.0-rc02",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("io.coil-kt", "coil-compose", "2.0.0-rc01",
+      object Compose : LibDependencies("io.coil-kt", "coil-compose", "2.0.0-rc02",
           DependencyMethod.Implementation)
 
-      object Svg : LibDependencies("io.coil-kt", "coil-svg", "2.0.0-rc01",
+      object Svg : LibDependencies("io.coil-kt", "coil-svg", "2.0.0-rc02",
           DependencyMethod.Implementation)
 
-      object Gif : LibDependencies("io.coil-kt", "coil-gif", "2.0.0-rc01",
+      object Gif : LibDependencies("io.coil-kt", "coil-gif", "2.0.0-rc02",
           DependencyMethod.Implementation)
 
-      object Video : LibDependencies("io.coil-kt", "coil-video", "2.0.0-rc01",
+      object Video : LibDependencies("io.coil-kt", "coil-video", "2.0.0-rc02",
           DependencyMethod.Implementation)
     }
 
@@ -537,7 +544,7 @@ sealed class LibDependencies(
       object Ktx : LibDependencies("androidx.core", "core-ktx", "1.7.0",
           DependencyMethod.Implementation)
 
-      object Splash : LibDependencies("androidx.core", "core-splashscreen", "1.0.0-beta01",
+      object Splash : LibDependencies("androidx.core", "core-splashscreen", "1.0.0-beta02",
           DependencyMethod.Implementation)
     }
 

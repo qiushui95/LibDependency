@@ -19,7 +19,7 @@
 >>implementation("androidx.appcompat:appcompat:1.4.1")  
   
 >[Background](https://github.com/JavaNoober/BackgroundLibrary)(背景生成工具库)  
->>implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.3")  
+>>implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.4")  
   
 >[BasePopup](https://github.com/razerdp/BasePopup)(弹窗)  
 >>implementation("io.github.razerdp:BasePopup:3.2.0")  
@@ -37,7 +37,7 @@
 >>implementation("com.ypx.yimagepicker:androidx:3.1.4")  
   
 >[JodaTime](https://github.com/JodaOrg/joda-time)(时间处理库)  
->>implementation("joda-time:joda-time:2.10.13")  
+>>implementation("joda-time:joda-time:2.10.14")  
   
 >[LeakCanary](https://square.github.io/leakcanary/getting_started/)(内存泄露监控)  
 >>implementation("com.squareup.leakcanary:leakcanary-android:2.8.1")  
@@ -94,6 +94,9 @@
   
 >[BottomNavigation](https://github.com/Ashok-Varma/BottomNavigation)(底部导航)  
 >>implementation("com.ashokvarma.android:bottom-navigation-bar:2.2.0")  
+  
+>[BottomTab](https://github.com/tyzlmjj/PagerBottomTabStrip)(底部导航)  
+>>implementation("me.majiajie:pager-bottom-tab-strip:2.4.0")  
   
 >[ConstraintLayout](https://developer.android.com/jetpack/androidx/releases/constraintlayout)(约束布局)  
 >>implementation("androidx.constraintlayout:constraintlayout:2.1.3")  
@@ -223,15 +226,15 @@
 >>releaseImplementation("com.github.chuckerteam.chucker:library-no-op:3.5.2")  
   
 >[Coil](https://coil-kt.github.io/coil/README-zh/)(图片加载)  
->>implementation("io.coil-kt:coil:2.0.0-rc01")  
->>implementation("io.coil-kt:coil-compose:2.0.0-rc01")  
->>implementation("io.coil-kt:coil-svg:2.0.0-rc01")  
->>implementation("io.coil-kt:coil-gif:2.0.0-rc01")  
->>implementation("io.coil-kt:coil-video:2.0.0-rc01")  
+>>implementation("io.coil-kt:coil:2.0.0-rc02")  
+>>implementation("io.coil-kt:coil-compose:2.0.0-rc02")  
+>>implementation("io.coil-kt:coil-svg:2.0.0-rc02")  
+>>implementation("io.coil-kt:coil-gif:2.0.0-rc02")  
+>>implementation("io.coil-kt:coil-video:2.0.0-rc02")  
   
 >[Core](https://developer.android.com/jetpack/androidx/releases/core)  
 >>implementation("androidx.core:core-ktx:1.7.0")  
->>implementation("androidx.core:core-splashscreen:1.0.0-beta01")  
+>>implementation("androidx.core:core-splashscreen:1.0.0-beta02")  
   
 >[Coroutines](https://github.com/Kotlin/kotlinx.coroutines)(协程)  
 >>implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0")  
