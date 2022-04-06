@@ -143,6 +143,17 @@ sealed class DependencyConfig(
         )
 
         //endregion
+        //region ImageWatcher(图片预览框架)
+        object ImageWatcher : DependencyConfig(
+            group = "com.github.iielse",
+            name = "imageviewer",
+            version = "2.1.1",
+            remark = "图片预览框架",
+            link = "https://github.com/iielse/imageviewer",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
+
+        //endregion
         //region JodaTime(时间处理库)
         object JodaTime : DependencyConfig(
             group = "joda-time",
