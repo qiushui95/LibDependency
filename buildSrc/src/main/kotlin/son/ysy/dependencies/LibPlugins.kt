@@ -11,12 +11,12 @@ sealed class LibPlugins(
 ) {
   object Android : LibPlugins("com.android.tools.build", "gradle", "7.1.2")
 
-  object Kotlin : LibPlugins("org.jetbrains.kotlin", "kotlin-gradle-plugin", "1.6.10") {
+  object Kotlin : LibPlugins("org.jetbrains.kotlin", "kotlin-gradle-plugin", "1.6.20") {
     object Android : LibPluginId("kotlin-android")
 
     object Kapt : LibPluginId("kotlin-kapt")
 
-    object Ksp : LibPluginId("com.google.devtools.ksp", "1.6.10-1.0.4")
+    object Ksp : LibPluginId("com.google.devtools.ksp", "1.6.20-1.0.4")
 
     object Reflect : LibPluginId("kotlin-reflect")
   }

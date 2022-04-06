@@ -88,6 +88,13 @@ sealed class LibDependencies(
         DependencyMethod.Implementation)
 
     /**
+     * 图片预览框架
+     * https://github.com/iielse/imageviewer
+     */
+    object ImageWatcher : LibDependencies("com.github.iielse", "imageviewer", "2.1.1",
+        DependencyMethod.Implementation)
+
+    /**
      * 时间处理库
      * https://github.com/JodaOrg/joda-time
      */
@@ -105,7 +112,7 @@ sealed class LibDependencies(
      * 持久KV数据存储
      * https://github.com/Tencent/MMKV/blob/master/README_CN.md
      */
-    object Mmkv : LibDependencies("com.tencent", "mmkv-static", "1.2.12",
+    object Mmkv : LibDependencies("com.tencent", "mmkv-static", "1.2.13",
         DependencyMethod.Implementation)
 
     /**
@@ -140,7 +147,7 @@ sealed class LibDependencies(
      * 多数据源
      * https://github.com/dropbox/Store
      */
-    object Store : LibDependencies("com.dropbox.mobile.store", "store4", "4.0.4-KT15",
+    object Store : LibDependencies("com.dropbox.mobile.store", "store4", "4.0.5",
         DependencyMethod.Implementation)
 
     /**
@@ -182,7 +189,7 @@ sealed class LibDependencies(
      * zip压缩相关
      * https://github.com/srikanth-lingala/zip4j
      */
-    object Zip4J : LibDependencies("net.lingala.zip4j", "zip4j", "2.9.1",
+    object Zip4J : LibDependencies("net.lingala.zip4j", "zip4j", "2.10.0",
         DependencyMethod.Implementation)
   }
 
@@ -205,7 +212,7 @@ sealed class LibDependencies(
      * 高斯模糊
      * https://github.com/Dimezis/BlurView
      */
-    object BlurView : LibDependencies("com.eightbitlab", "blurview", "1.6.6",
+    object BlurView : LibDependencies("com.eightbitlab", "blurview", "2.0.0",
         DependencyMethod.Implementation)
 
     /**
@@ -554,10 +561,10 @@ sealed class LibDependencies(
      */
     interface Coroutines {
       object Core : LibDependencies("org.jetbrains.kotlinx", "kotlinx-coroutines-android",
-          "1.6.0", DependencyMethod.Implementation)
+          "1.6.1", DependencyMethod.Implementation)
 
       object Test : LibDependencies("org.jetbrains.kotlinx", "kotlinx-coroutines-test",
-          "1.6.0", DependencyMethod.Test.Implementation)
+          "1.6.1", DependencyMethod.Test.Implementation)
     }
 
     /**
@@ -661,14 +668,14 @@ sealed class LibDependencies(
      * https://github.com/JetBrains/kotlin
      */
     interface Kotlin {
-      object Stdlib : LibDependencies("org.jetbrains.kotlin", "kotlin-stdlib", "1.6.10",
+      object Stdlib : LibDependencies("org.jetbrains.kotlin", "kotlin-stdlib", "1.6.20",
           DependencyMethod.Implementation)
 
-      object Reflect : LibDependencies("org.jetbrains.kotlin", "kotlin-reflect", "1.6.10",
+      object Reflect : LibDependencies("org.jetbrains.kotlin", "kotlin-reflect", "1.6.20",
           DependencyMethod.Implementation)
 
       object Plugin : LibDependencies("org.jetbrains.kotlin", "kotlin-gradle-plugin",
-          "1.6.10", DependencyMethod.Implementation)
+          "1.6.20", DependencyMethod.Implementation)
     }
 
     /**

@@ -2,7 +2,7 @@ plugins {
     id("com.android.library")
     id("kotlin-android")
     id("kotlin-kapt")
-    id("com.google.devtools.ksp") version "1.6.10-1.0.4"
+    id("com.google.devtools.ksp") version "1.6.20-1.0.4"
 }
 
 android {
@@ -34,24 +34,25 @@ dependencies {
     implementation("com.github.loperSeven:DateTimePicker:0.5.7")
     implementation("com.github.princekin-f:EasyFloat:2.0.4")
     implementation("com.ypx.yimagepicker:androidx:3.1.4")
+    implementation("com.github.iielse:imageviewer:2.1.1")
     implementation("joda-time:joda-time:2.10.14")
     implementation("com.squareup.leakcanary:leakcanary-android:2.8.1")
-    implementation("com.tencent:mmkv-static:1.2.12")
+    implementation("com.tencent:mmkv-static:1.2.13")
     implementation("com.guolindev.permissionx:permissionx:1.6.1")
     implementation("androidx.paging:paging-runtime-ktx:3.1.1")
     implementation("com.github.jenly1314:zxing-lite:2.1.1")
     implementation("com.github.qiushui95:AndroidInitializer:1.0.9")
-    implementation("com.dropbox.mobile.store:store4:4.0.4-KT15")
+    implementation("com.dropbox.mobile.store:store4:4.0.5")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")
     implementation("com.localebro:okhttpprofiler:1.0.8")
     implementation("com.vanniktech:gradle-maven-publish-plugin:0.19.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
-    implementation("net.lingala.zip4j:zip4j:2.9.1")
+    implementation("net.lingala.zip4j:zip4j:2.10.0")
 
     implementation("com.github.Justson.AgentWeb:agentweb-core:v4.1.9-androidx")
     implementation("com.github.xiaohaibin:XBanner:androidx_v1.2.8")
-    implementation("com.eightbitlab:blurview:1.6.6")
+    implementation("com.eightbitlab:blurview:2.0.0")
     implementation("com.ashokvarma.android:bottom-navigation-bar:2.2.0")
     implementation("me.majiajie:pager-bottom-tab-strip:2.4.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.3")
@@ -129,8 +130,8 @@ dependencies {
     implementation("androidx.core:core-ktx:1.7.0")
     implementation("androidx.core:core-splashscreen:1.0.0-beta02")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0")
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.1")
 
     implementation("me.laoyuyu.aria:core:3.8.16")
     implementation("me.laoyuyu.aria:ftp:3.8.16")
@@ -160,9 +161,9 @@ dependencies {
     implementation("io.insert-koin:koin-annotations:1.0.0-beta-1")
     implementation("io.insert-koin:koin-ksp-compiler:1.0.0-beta-1")
 
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.10")
-    implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.10")
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.20")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.20")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.20")
 
     implementation("androidx.lifecycle:lifecycle-common:2.4.1")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.4.1")

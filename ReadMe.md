@@ -36,6 +36,9 @@
 >[ImagePicker](https://github.com/yangpeixing/YImagePicker)(多媒体选择库)  
 >>implementation("com.ypx.yimagepicker:androidx:3.1.4")  
   
+>[ImageWatcher](https://github.com/iielse/imageviewer)(图片预览框架)  
+>>implementation("com.github.iielse:imageviewer:2.1.1")  
+  
 >[JodaTime](https://github.com/JodaOrg/joda-time)(时间处理库)  
 >>implementation("joda-time:joda-time:2.10.14")  
   
@@ -43,7 +46,7 @@
 >>implementation("com.squareup.leakcanary:leakcanary-android:2.8.1")  
   
 >[Mmkv](https://github.com/Tencent/MMKV/blob/master/README_CN.md)(持久KV数据存储)  
->>implementation("com.tencent:mmkv-static:1.2.12")  
+>>implementation("com.tencent:mmkv-static:1.2.13")  
   
 >[PermissionX](https://github.com/guolindev/PermissionX)(权限请求)  
 >>implementation("com.guolindev.permissionx:permissionx:1.6.1")  
@@ -58,7 +61,7 @@
 >>implementation("com.github.qiushui95:AndroidInitializer:1.0.9")  
   
 >[Store](https://github.com/dropbox/Store)(多数据源)  
->>implementation("com.dropbox.mobile.store:store4:4.0.4-KT15")  
+>>implementation("com.dropbox.mobile.store:store4:4.0.5")  
   
 >[WeChat](https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Resource_Center_Homepage.html)(微信开发Sdk)  
 >>implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")  
@@ -76,7 +79,7 @@
 >>implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")  
   
 >[Zip4J](https://github.com/srikanth-lingala/zip4j)(zip压缩相关)  
->>implementation("net.lingala.zip4j:zip4j:2.9.1")  
+>>implementation("net.lingala.zip4j:zip4j:2.10.0")  
   
 </details>  
   
@@ -90,7 +93,7 @@
 >>implementation("com.github.xiaohaibin:XBanner:androidx_v1.2.8")  
   
 >[BlurView](https://github.com/Dimezis/BlurView)(高斯模糊)  
->>implementation("com.eightbitlab:blurview:1.6.6")  
+>>implementation("com.eightbitlab:blurview:2.0.0")  
   
 >[BottomNavigation](https://github.com/Ashok-Varma/BottomNavigation)(底部导航)  
 >>implementation("com.ashokvarma.android:bottom-navigation-bar:2.2.0")  
@@ -237,8 +240,8 @@
 >>implementation("androidx.core:core-splashscreen:1.0.0-beta02")  
   
 >[Coroutines](https://github.com/Kotlin/kotlinx.coroutines)(协程)  
->>implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0")  
->>testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")  
+>>implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1")  
+>>testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.1")  
   
 >[Download](https://github.com/AriaLyy/Aria)(下载)  
 >>implementation("me.laoyuyu.aria:core:3.8.16")  
@@ -274,9 +277,9 @@
 >>implementation("io.insert-koin:koin-ksp-compiler:1.0.0-beta-1")  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
->>implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.10")  
->>implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.10")  
->>implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10")  
+>>implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.20")  
+>>implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.20")  
+>>implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.20")  
   
 >[Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation("androidx.lifecycle:lifecycle-common:2.4.1")  
