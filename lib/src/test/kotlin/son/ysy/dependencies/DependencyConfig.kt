@@ -180,7 +180,7 @@ sealed class DependencyConfig(
         object Mmkv : DependencyConfig(
             group = "com.tencent",
             name = "mmkv-static",
-            version = "1.2.12",
+            version = "1.2.13",
             remark = "持久KV数据存储",
             link = "https://github.com/Tencent/MMKV/blob/master/README_CN.md",
             dependencyMethod = DependencyMethod.Implementation,
@@ -235,7 +235,7 @@ sealed class DependencyConfig(
         object Store : DependencyConfig(
             group = "com.dropbox.mobile.store",
             name = "store4",
-            version = "4.0.4-KT15",
+            version = "4.0.5",
             remark = "多数据源",
             link = "https://github.com/dropbox/Store",
             dependencyMethod = DependencyMethod.Implementation,
@@ -305,7 +305,7 @@ sealed class DependencyConfig(
         object Zip4J : DependencyConfig(
             group = "net.lingala.zip4j",
             name = "zip4j",
-            version = "2.9.1",
+            version = "2.10.0",
             remark = "zip压缩相关",
             link = "https://github.com/srikanth-lingala/zip4j",
             dependencyMethod = DependencyMethod.Implementation,
@@ -342,7 +342,7 @@ sealed class DependencyConfig(
         object BlurView : DependencyConfig(
             group = "com.eightbitlab",
             name = "blurview",
-            version = "1.6.6",
+            version = "2.0.0",
             remark = "高斯模糊",
             link = "https://github.com/Dimezis/BlurView",
             dependencyMethod = DependencyMethod.Implementation,
@@ -815,7 +815,7 @@ sealed class DependencyConfig(
             DependencyConfig(
                 group = "org.jetbrains.kotlinx",
                 name = name,
-                version = "1.6.0",
+                version = "1.6.1",
                 remark = "协程",
                 link = "https://github.com/Kotlin/kotlinx.coroutines",
                 dependencyMethod = dependencyMethod,
@@ -942,7 +942,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "org.jetbrains.kotlin",
             name = name,
-            version = "1.6.10",
+            version = "1.6.20",
             remark = "",
             link = "https://github.com/JetBrains/kotlin",
             dependencyMethod = dependencyMethod,
