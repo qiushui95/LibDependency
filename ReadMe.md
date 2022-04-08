@@ -37,7 +37,7 @@
 >>implementation("com.ypx.yimagepicker:androidx:3.1.4")  
   
 >[ImageWatcher](https://github.com/iielse/imageviewer)(图片预览框架)  
->>implementation("com.github.iielse:imageviewer:2.1.1")  
+>>implementation("com.github.iielse:imageviewer:2.1.11")  
   
 >[JodaTime](https://github.com/JodaOrg/joda-time)(时间处理库)  
 >>implementation("joda-time:joda-time:2.10.14")  
@@ -93,7 +93,7 @@
 >>implementation("com.github.xiaohaibin:XBanner:androidx_v1.2.8")  
   
 >[BlurView](https://github.com/Dimezis/BlurView)(高斯模糊)  
->>implementation("com.eightbitlab:blurview:2.0.0")  
+>>implementation("com.github.Dimezis:BlurView:version-2.0.0")  
   
 >[BottomNavigation](https://github.com/Ashok-Varma/BottomNavigation)(底部导航)  
 >>implementation("com.ashokvarma.android:bottom-navigation-bar:2.2.0")  
@@ -217,12 +217,12 @@
 >>implementation("androidx.activity:activity-compose:1.4.0")  
   
 >[CameraX](https://developer.android.com/jetpack/androidx/releases/camera)(相机相关)  
->>implementation("androidx.camera:camera-camera2:1.1.0-beta02")  
->>implementation("androidx.camera:camera-core:1.1.0-beta02")  
->>implementation("androidx.camera:camera-lifecycle:1.1.0-beta02")  
->>implementation("androidx.camera:camera-video:1.1.0-beta02")  
->>implementation("androidx.camera:camera-view:1.1.0-beta02")  
->>implementation("androidx.camera:camera-extensions:1.1.0-beta02")  
+>>implementation("androidx.camera:camera-camera2:1.1.0-beta03")  
+>>implementation("androidx.camera:camera-core:1.1.0-beta03")  
+>>implementation("androidx.camera:camera-lifecycle:1.1.0-beta03")  
+>>implementation("androidx.camera:camera-video:1.1.0-beta03")  
+>>implementation("androidx.camera:camera-view:1.1.0-beta03")  
+>>implementation("androidx.camera:camera-extensions:1.1.0-beta03")  
   
 >[Chucker](https://github.com/ChuckerTeam/chucker)(网络请求监控)  
 >>debugImplementation("com.github.chuckerteam.chucker:library:3.5.2")  
@@ -300,10 +300,10 @@
 >>ksp("com.squareup.moshi:moshi-kotlin-codegen:1.13.0")  
   
 >[Navigation](https://developer.android.com/jetpack/androidx/releases/navigation)(导航库)  
->>implementation("androidx.navigation:navigation-fragment-ktx:2.4.1")  
->>implementation("androidx.navigation:navigation-ui-ktx:2.4.1")  
->>implementation("androidx.navigation:navigation-compose:2.4.1")  
->>testImplementation("androidx.navigation:navigation-testing:2.4.1")  
+>>implementation("androidx.navigation:navigation-fragment-ktx:2.4.2")  
+>>implementation("androidx.navigation:navigation-ui-ktx:2.4.2")  
+>>implementation("androidx.navigation:navigation-compose:2.4.2")  
+>>testImplementation("androidx.navigation:navigation-testing:2.4.2")  
   
 >[OkHttp](https://github.com/square/okhttp)  
 >>implementation("com.squareup.okhttp3:okhttp:4.9.3")  

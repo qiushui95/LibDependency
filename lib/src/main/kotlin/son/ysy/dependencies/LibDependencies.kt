@@ -91,7 +91,7 @@ sealed class LibDependencies(
      * 图片预览框架
      * https://github.com/iielse/imageviewer
      */
-    object ImageWatcher : LibDependencies("com.github.iielse", "imageviewer", "2.1.1",
+    object ImageWatcher : LibDependencies("com.github.iielse", "imageviewer", "2.1.11",
         DependencyMethod.Implementation)
 
     /**
@@ -212,7 +212,7 @@ sealed class LibDependencies(
      * 高斯模糊
      * https://github.com/Dimezis/BlurView
      */
-    object BlurView : LibDependencies("com.eightbitlab", "blurview", "2.0.0",
+    object BlurView : LibDependencies("com.github.Dimezis", "BlurView", "version-2.0.0",
         DependencyMethod.Implementation)
 
     /**
@@ -492,23 +492,23 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/camera
      */
     interface CameraX {
-      object Camera2 : LibDependencies("androidx.camera", "camera-camera2", "1.1.0-beta02",
+      object Camera2 : LibDependencies("androidx.camera", "camera-camera2", "1.1.0-beta03",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("androidx.camera", "camera-core", "1.1.0-beta02",
+      object Core : LibDependencies("androidx.camera", "camera-core", "1.1.0-beta03",
           DependencyMethod.Implementation)
 
       object Lifecycle : LibDependencies("androidx.camera", "camera-lifecycle",
-          "1.1.0-beta02", DependencyMethod.Implementation)
+          "1.1.0-beta03", DependencyMethod.Implementation)
 
-      object Video : LibDependencies("androidx.camera", "camera-video", "1.1.0-beta02",
+      object Video : LibDependencies("androidx.camera", "camera-video", "1.1.0-beta03",
           DependencyMethod.Implementation)
 
-      object View : LibDependencies("androidx.camera", "camera-view", "1.1.0-beta02",
+      object View : LibDependencies("androidx.camera", "camera-view", "1.1.0-beta03",
           DependencyMethod.Implementation)
 
       object Extensions : LibDependencies("androidx.camera", "camera-extensions",
-          "1.1.0-beta02", DependencyMethod.Implementation)
+          "1.1.0-beta03", DependencyMethod.Implementation)
     }
 
     /**
@@ -737,15 +737,15 @@ sealed class LibDependencies(
      */
     interface Navigation {
       object Fragment : LibDependencies("androidx.navigation", "navigation-fragment-ktx",
-          "2.4.1", DependencyMethod.Implementation)
+          "2.4.2", DependencyMethod.Implementation)
 
-      object Ui : LibDependencies("androidx.navigation", "navigation-ui-ktx", "2.4.1",
+      object Ui : LibDependencies("androidx.navigation", "navigation-ui-ktx", "2.4.2",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("androidx.navigation", "navigation-compose", "2.4.1",
+      object Compose : LibDependencies("androidx.navigation", "navigation-compose", "2.4.2",
           DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.navigation", "navigation-testing", "2.4.1",
+      object Test : LibDependencies("androidx.navigation", "navigation-testing", "2.4.2",
           DependencyMethod.Test.Implementation)
     }
 

@@ -9,7 +9,7 @@ sealed class LibPlugins(
   val name: String,
   val version: String
 ) {
-  object Android : LibPlugins("com.android.tools.build", "gradle", "7.1.2")
+  object Android : LibPlugins("com.android.tools.build", "gradle", "7.1.3")
 
   object Kotlin : LibPlugins("org.jetbrains.kotlin", "kotlin-gradle-plugin", "1.6.20") {
     object Android : LibPluginId("kotlin-android")
@@ -26,7 +26,7 @@ sealed class LibPlugins(
   }
 
   object Navigation : LibPlugins("androidx.navigation", "navigation-safe-args-gradle-plugin",
-      "2.4.1") {
+      "2.4.2") {
     object Plugin : LibPluginId("androidx.navigation.safeargs.kotlin")
   }
 

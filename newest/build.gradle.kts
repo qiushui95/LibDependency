@@ -52,7 +52,7 @@ dependencies {
 
     implementation("com.github.Justson.AgentWeb:agentweb-core:+")
     implementation("com.github.xiaohaibin:XBanner:+")
-    implementation("com.eightbitlab:blurview:+")
+    implementation("com.github.Dimezis:BlurView:+")
     implementation("com.ashokvarma.android:bottom-navigation-bar:+")
     implementation("me.majiajie:pager-bottom-tab-strip:+")
     implementation("androidx.constraintlayout:constraintlayout:+")
