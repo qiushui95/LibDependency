@@ -147,7 +147,7 @@ sealed class DependencyConfig(
         object ImageWatcher : DependencyConfig(
             group = "com.github.iielse",
             name = "imageviewer",
-            version = "2.1.1",
+            version = "2.1.11",
             remark = "图片预览框架",
             link = "https://github.com/iielse/imageviewer",
             dependencyMethod = DependencyMethod.Implementation,
@@ -340,9 +340,9 @@ sealed class DependencyConfig(
         //endregion
         //region BlurView(高斯模糊)
         object BlurView : DependencyConfig(
-            group = "com.eightbitlab",
-            name = "blurview",
-            version = "2.0.0",
+            group = "com.github.Dimezis",
+            name = "BlurView",
+            version = "version-2.0.0",
             remark = "高斯模糊",
             link = "https://github.com/Dimezis/BlurView",
             dependencyMethod = DependencyMethod.Implementation,
@@ -752,8 +752,8 @@ sealed class DependencyConfig(
             dependencyMethod = DependencyMethod.Implementation,
         ) {
             sealed class Version(val version: String) {
-                object Core : Version("1.1.0-beta02")
-                object Extends : Version("1.1.0-beta02")
+                object Core : Version("1.1.0-beta03")
+                object Extends : Version("1.1.0-beta03")
             }
 
             object Camera2 : CameraX("camera-camera2", Version.Core)
@@ -1014,7 +1014,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "androidx.navigation",
             name = name,
-            version = "2.4.1",
+            version = "2.4.2",
             remark = "导航库",
             link = "https://developer.android.com/jetpack/androidx/releases/navigation",
             dependencyMethod = dependencyMethod,
