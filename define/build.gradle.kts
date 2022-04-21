@@ -2,7 +2,7 @@ plugins {
     id("com.android.library")
     id("kotlin-android")
     id("kotlin-kapt")
-    id("com.google.devtools.ksp") version "1.6.20-1.0.4"
+    id("com.google.devtools.ksp") version "1.6.21-1.0.5"
 }
 
 android {
@@ -36,9 +36,9 @@ dependencies {
     implementation("com.ypx.yimagepicker:androidx:3.1.4")
     implementation("com.github.iielse:imageviewer:2.1.11")
     implementation("joda-time:joda-time:2.10.14")
-    implementation("com.squareup.leakcanary:leakcanary-android:2.8.1")
+    implementation("com.squareup.leakcanary:leakcanary-android:2.9.1")
     implementation("com.tencent:mmkv-static:1.2.13")
-    implementation("com.guolindev.permissionx:permissionx:1.6.1")
+    implementation("com.guolindev.permissionx:permissionx:1.6.2")
     implementation("androidx.paging:paging-runtime-ktx:3.1.1")
     implementation("com.github.jenly1314:zxing-lite:2.1.1")
     implementation("com.github.qiushui95:AndroidInitializer:1.0.9")
@@ -72,7 +72,7 @@ dependencies {
     implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")
     implementation("com.github.angcyo.DslTablayout:TabLayout:3.2.1")
     implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.2.1")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.0-beta01")
 
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
@@ -80,7 +80,7 @@ dependencies {
 
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.0")
     implementation("com.github.fornewid:material-motion-compose:0.8.1")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.0-beta01")
 
     implementation("com.google.accompanist:accompanist-appcompat-theme:0.23.1")
     implementation("com.google.accompanist:accompanist-drawablepainter:0.23.1")
@@ -108,8 +108,8 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling:1.1.1")
 
 
-    implementation("androidx.activity:activity-ktx:1.4.0")
-    implementation("androidx.activity:activity-compose:1.4.0")
+    implementation("androidx.activity:activity-ktx:1.5.0-beta01")
+    implementation("androidx.activity:activity-compose:1.5.0-beta01")
 
     implementation("androidx.camera:camera-camera2:1.1.0-beta03")
     implementation("androidx.camera:camera-core:1.1.0-beta03")
@@ -121,13 +121,13 @@ dependencies {
     debugImplementation("com.github.chuckerteam.chucker:library:3.5.2")
     releaseImplementation("com.github.chuckerteam.chucker:library-no-op:3.5.2")
 
-    implementation("io.coil-kt:coil:2.0.0-rc02")
-    implementation("io.coil-kt:coil-compose:2.0.0-rc02")
-    implementation("io.coil-kt:coil-svg:2.0.0-rc02")
-    implementation("io.coil-kt:coil-gif:2.0.0-rc02")
-    implementation("io.coil-kt:coil-video:2.0.0-rc02")
+    implementation("io.coil-kt:coil:2.0.0-rc03")
+    implementation("io.coil-kt:coil-compose:2.0.0-rc03")
+    implementation("io.coil-kt:coil-svg:2.0.0-rc03")
+    implementation("io.coil-kt:coil-gif:2.0.0-rc03")
+    implementation("io.coil-kt:coil-video:2.0.0-rc03")
 
-    implementation("androidx.core:core-ktx:1.7.0")
+    implementation("androidx.core:core-ktx:1.8.0-beta01")
     implementation("androidx.core:core-splashscreen:1.0.0-beta02")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1")
@@ -144,8 +144,8 @@ dependencies {
     implementation("com.airbnb.android:epoxy-compose:5.0.0-beta05")
     implementation("com.airbnb.android:epoxy-glide-preloading:5.0.0-beta05")
 
-    implementation("androidx.fragment:fragment-ktx:1.4.1")
-    testImplementation("androidx.fragment:fragment-testing:1.4.1")
+    implementation("androidx.fragment:fragment-ktx:1.5.0-beta01")
+    testImplementation("androidx.fragment:fragment-testing:1.5.0-beta01")
 
     implementation("io.insert-koin:koin-android:3.1.5")
     implementation("io.insert-koin:koin-core:3.1.5")
@@ -161,17 +161,17 @@ dependencies {
     implementation("io.insert-koin:koin-annotations:1.0.0-beta-1")
     implementation("io.insert-koin:koin-ksp-compiler:1.0.0-beta-1")
 
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.20")
-    implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.20")
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.20")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.21")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.21")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21")
 
-    implementation("androidx.lifecycle:lifecycle-common:2.4.1")
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.4.1")
-    implementation("androidx.lifecycle:lifecycle-process:2.4.1")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.1")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.4.1")
-    implementation("androidx.lifecycle:lifecycle-service:2.4.1")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1")
+    implementation("androidx.lifecycle:lifecycle-common:2.5.0-beta01")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.0-beta01")
+    implementation("androidx.lifecycle:lifecycle-process:2.5.0-beta01")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.0-beta01")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.0-beta01")
+    implementation("androidx.lifecycle:lifecycle-service:2.5.0-beta01")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-beta01")
 
     implementation("com.airbnb.android:mavericks:2.6.1")
     implementation("com.airbnb.android:mavericks-compose:2.6.1")
@@ -180,10 +180,10 @@ dependencies {
     implementation("com.squareup.moshi:moshi:1.13.0")
     ksp("com.squareup.moshi:moshi-kotlin-codegen:1.13.0")
 
-    implementation("androidx.navigation:navigation-fragment-ktx:2.4.2")
-    implementation("androidx.navigation:navigation-ui-ktx:2.4.2")
-    implementation("androidx.navigation:navigation-compose:2.4.2")
-    testImplementation("androidx.navigation:navigation-testing:2.4.2")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.0-beta01")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.0-beta01")
+    implementation("androidx.navigation:navigation-compose:2.5.0-beta01")
+    testImplementation("androidx.navigation:navigation-testing:2.5.0-beta01")
 
     implementation("com.squareup.okhttp3:okhttp:4.9.3")
     androidTestImplementation("com.squareup.okhttp3:mockwebserver:4.9.3")

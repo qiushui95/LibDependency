@@ -43,13 +43,13 @@
 >>implementation("joda-time:joda-time:2.10.14")  
   
 >[LeakCanary](https://square.github.io/leakcanary/getting_started/)(内存泄露监控)  
->>implementation("com.squareup.leakcanary:leakcanary-android:2.8.1")  
+>>implementation("com.squareup.leakcanary:leakcanary-android:2.9.1")  
   
 >[Mmkv](https://github.com/Tencent/MMKV/blob/master/README_CN.md)(持久KV数据存储)  
 >>implementation("com.tencent:mmkv-static:1.2.13")  
   
 >[PermissionX](https://github.com/guolindev/PermissionX)(权限请求)  
->>implementation("com.guolindev.permissionx:permissionx:1.6.1")  
+>>implementation("com.guolindev.permissionx:permissionx:1.6.2")  
   
 >[Paging](https://developer.android.com/jetpack/androidx/releases/paging)(分页请求)  
 >>implementation("androidx.paging:paging-runtime-ktx:3.1.1")  
@@ -178,7 +178,7 @@
 >>implementation(com.github.fornewid:material-motion-compose:0.8.1)  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
->>implementation(androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1)  
+>>implementation(androidx.lifecycle:lifecycle-viewmodel-compose:2.5.0-beta01)  
   
 >[Accompanist](https://github.com/google/accompanist)  
 >>implementation("com.google.accompanist:accompanist-appcompat-theme:0.23.1")  
@@ -213,8 +213,8 @@
 <summary>Group</summary>  
   
 >[Activity](https://developer.android.com/jetpack/androidx/releases/activity)  
->>implementation("androidx.activity:activity-ktx:1.4.0")  
->>implementation("androidx.activity:activity-compose:1.4.0")  
+>>implementation("androidx.activity:activity-ktx:1.5.0-beta01")  
+>>implementation("androidx.activity:activity-compose:1.5.0-beta01")  
   
 >[CameraX](https://developer.android.com/jetpack/androidx/releases/camera)(相机相关)  
 >>implementation("androidx.camera:camera-camera2:1.1.0-beta03")  
@@ -229,14 +229,14 @@
 >>releaseImplementation("com.github.chuckerteam.chucker:library-no-op:3.5.2")  
   
 >[Coil](https://coil-kt.github.io/coil/README-zh/)(图片加载)  
->>implementation("io.coil-kt:coil:2.0.0-rc02")  
->>implementation("io.coil-kt:coil-compose:2.0.0-rc02")  
->>implementation("io.coil-kt:coil-svg:2.0.0-rc02")  
->>implementation("io.coil-kt:coil-gif:2.0.0-rc02")  
->>implementation("io.coil-kt:coil-video:2.0.0-rc02")  
+>>implementation("io.coil-kt:coil:2.0.0-rc03")  
+>>implementation("io.coil-kt:coil-compose:2.0.0-rc03")  
+>>implementation("io.coil-kt:coil-svg:2.0.0-rc03")  
+>>implementation("io.coil-kt:coil-gif:2.0.0-rc03")  
+>>implementation("io.coil-kt:coil-video:2.0.0-rc03")  
   
 >[Core](https://developer.android.com/jetpack/androidx/releases/core)  
->>implementation("androidx.core:core-ktx:1.7.0")  
+>>implementation("androidx.core:core-ktx:1.8.0-beta01")  
 >>implementation("androidx.core:core-splashscreen:1.0.0-beta02")  
   
 >[Coroutines](https://github.com/Kotlin/kotlinx.coroutines)(协程)  
@@ -257,8 +257,8 @@
 >>implementation("com.airbnb.android:epoxy-glide-preloading:5.0.0-beta05")  
   
 >[Fragment](https://developer.android.com/jetpack/androidx/releases/fragment)  
->>implementation("androidx.fragment:fragment-ktx:1.4.1")  
->>testImplementation("androidx.fragment:fragment-testing:1.4.1")  
+>>implementation("androidx.fragment:fragment-ktx:1.5.0-beta01")  
+>>testImplementation("androidx.fragment:fragment-testing:1.5.0-beta01")  
   
 >[Koin](https://github.com/InsertKoinIO/koin)(依赖注入库)  
 >>implementation("io.insert-koin:koin-android:3.1.5")  
@@ -277,18 +277,18 @@
 >>implementation("io.insert-koin:koin-ksp-compiler:1.0.0-beta-1")  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
->>implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.20")  
->>implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.20")  
->>implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.20")  
+>>implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.21")  
+>>implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.21")  
+>>implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21")  
   
 >[Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
->>implementation("androidx.lifecycle:lifecycle-common:2.4.1")  
->>implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.4.1")  
->>implementation("androidx.lifecycle:lifecycle-process:2.4.1")  
->>implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.1")  
->>implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.4.1")  
->>implementation("androidx.lifecycle:lifecycle-service:2.4.1")  
->>implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1")  
+>>implementation("androidx.lifecycle:lifecycle-common:2.5.0-beta01")  
+>>implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.0-beta01")  
+>>implementation("androidx.lifecycle:lifecycle-process:2.5.0-beta01")  
+>>implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.0-beta01")  
+>>implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.0-beta01")  
+>>implementation("androidx.lifecycle:lifecycle-service:2.5.0-beta01")  
+>>implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-beta01")  
   
 >[Mavericks](https://github.com/airbnb/mavericks)(Mavericks架构)  
 >>implementation("com.airbnb.android:mavericks:2.6.1")  
@@ -300,10 +300,10 @@
 >>ksp("com.squareup.moshi:moshi-kotlin-codegen:1.13.0")  
   
 >[Navigation](https://developer.android.com/jetpack/androidx/releases/navigation)(导航库)  
->>implementation("androidx.navigation:navigation-fragment-ktx:2.4.2")  
->>implementation("androidx.navigation:navigation-ui-ktx:2.4.2")  
->>implementation("androidx.navigation:navigation-compose:2.4.2")  
->>testImplementation("androidx.navigation:navigation-testing:2.4.2")  
+>>implementation("androidx.navigation:navigation-fragment-ktx:2.5.0-beta01")  
+>>implementation("androidx.navigation:navigation-ui-ktx:2.5.0-beta01")  
+>>implementation("androidx.navigation:navigation-compose:2.5.0-beta01")  
+>>testImplementation("androidx.navigation:navigation-testing:2.5.0-beta01")  
   
 >[OkHttp](https://github.com/square/okhttp)  
 >>implementation("com.squareup.okhttp3:okhttp:4.9.3")  
