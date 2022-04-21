@@ -169,7 +169,7 @@ sealed class DependencyConfig(
         object LeakCanary : DependencyConfig(
             group = "com.squareup.leakcanary",
             name = "leakcanary-android",
-            version = "2.8.1",
+            version = "2.9.1",
             remark = "内存泄露监控",
             link = "https://square.github.io/leakcanary/getting_started/",
             dependencyMethod = DependencyMethod.Implementation,
@@ -191,7 +191,7 @@ sealed class DependencyConfig(
         object PermissionX : DependencyConfig(
             group = "com.guolindev.permissionx",
             name = "permissionx",
-            version = "1.6.1",
+            version = "1.6.2",
             remark = "权限请求",
             link = "https://github.com/guolindev/PermissionX",
             dependencyMethod = DependencyMethod.Implementation,
@@ -732,7 +732,7 @@ sealed class DependencyConfig(
         sealed class Activity(name: String) : DependencyConfig(
             group = "androidx.activity",
             name = name,
-            version = "1.4.0",
+            version = "1.5.0-beta01",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/activity",
             dependencyMethod = DependencyMethod.Implementation,
@@ -783,7 +783,7 @@ sealed class DependencyConfig(
         sealed class Coil(name: String) : DependencyConfig(
             group = "io.coil-kt",
             name = name,
-            version = "2.0.0-rc02",
+            version = "2.0.0-rc03",
             remark = "图片加载",
             link = "https://coil-kt.github.io/coil/README-zh/",
             dependencyMethod = DependencyMethod.Implementation,
@@ -805,7 +805,7 @@ sealed class DependencyConfig(
             link = "https://developer.android.com/jetpack/androidx/releases/core",
             dependencyMethod = DependencyMethod.Implementation,
         ) {
-            object Ktx : Core("core-ktx", "1.7.0")
+            object Ktx : Core("core-ktx", "1.8.0-beta01")
             object Splash : Core("core-splashscreen", "1.0.0-beta02")
         }
 
@@ -873,7 +873,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "androidx.fragment",
             name = name,
-            version = "1.4.1",
+            version = "1.5.0-beta01",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/fragment",
             dependencyMethod = dependencyMethod,
@@ -942,7 +942,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "org.jetbrains.kotlin",
             name = name,
-            version = "1.6.20",
+            version = "1.6.21",
             remark = "",
             link = "https://github.com/JetBrains/kotlin",
             dependencyMethod = dependencyMethod,
@@ -960,7 +960,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "androidx.lifecycle",
             name = name,
-            version = "2.4.1",
+            version = "2.5.0-beta01",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/lifecycle",
             dependencyMethod = dependencyMethod,
@@ -1014,7 +1014,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "androidx.navigation",
             name = name,
-            version = "2.4.2",
+            version = "2.5.0-beta01",
             remark = "导航库",
             link = "https://developer.android.com/jetpack/androidx/releases/navigation",
             dependencyMethod = dependencyMethod,
