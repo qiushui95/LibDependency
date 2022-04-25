@@ -191,7 +191,7 @@ sealed class DependencyConfig(
         object PermissionX : DependencyConfig(
             group = "com.guolindev.permissionx",
             name = "permissionx",
-            version = "1.6.2",
+            version = "1.6.3",
             remark = "权限请求",
             link = "https://github.com/guolindev/PermissionX",
             dependencyMethod = DependencyMethod.Implementation,
@@ -419,7 +419,7 @@ sealed class DependencyConfig(
         object LottieView : DependencyConfig(
             group = "com.airbnb.android",
             name = "lottie",
-            version = "5.0.3",
+            version = "5.1.1",
             remark = "动画框架",
             link = "https://github.com/airbnb/lottie-android",
             dependencyMethod = DependencyMethod.Implementation,
