@@ -49,7 +49,7 @@
 >>implementation("com.tencent:mmkv-static:1.2.13")  
   
 >[PermissionX](https://github.com/guolindev/PermissionX)(权限请求)  
->>implementation("com.guolindev.permissionx:permissionx:1.6.2")  
+>>implementation("com.guolindev.permissionx:permissionx:1.6.3")  
   
 >[Paging](https://developer.android.com/jetpack/androidx/releases/paging)(分页请求)  
 >>implementation("androidx.paging:paging-runtime-ktx:3.1.1")  
@@ -114,7 +114,7 @@
 >>implementation("com.github.dkzwm:fet-core:0.2.1")  
   
 >[LottieView](https://github.com/airbnb/lottie-android)(动画框架)  
->>implementation("com.airbnb.android:lottie:5.0.3")  
+>>implementation("com.airbnb.android:lottie:5.1.1")  
   
 >[Material](https://github.com/material-components/material-components-android)  
 >>implementation("com.google.android.material:material:1.5.0")  

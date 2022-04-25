@@ -119,7 +119,7 @@ sealed class LibDependencies(
      * 权限请求
      * https://github.com/guolindev/PermissionX
      */
-    object PermissionX : LibDependencies("com.guolindev.permissionx", "permissionx", "1.6.2",
+    object PermissionX : LibDependencies("com.guolindev.permissionx", "permissionx", "1.6.3",
         DependencyMethod.Implementation)
 
     /**
@@ -261,7 +261,7 @@ sealed class LibDependencies(
      * 动画框架
      * https://github.com/airbnb/lottie-android
      */
-    object LottieView : LibDependencies("com.airbnb.android", "lottie", "5.0.3",
+    object LottieView : LibDependencies("com.airbnb.android", "lottie", "5.1.1",
         DependencyMethod.Implementation)
 
     /**
