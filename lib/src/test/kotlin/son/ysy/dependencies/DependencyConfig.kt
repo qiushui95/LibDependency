@@ -430,7 +430,7 @@ sealed class DependencyConfig(
         object Material : DependencyConfig(
             group = "com.google.android.material",
             name = "material",
-            version = "1.5.0",
+            version = "1.6.0",
             remark = "",
             link = "https://github.com/material-components/material-components-android",
             dependencyMethod = DependencyMethod.Implementation,
