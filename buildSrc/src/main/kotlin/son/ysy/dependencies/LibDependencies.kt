@@ -119,7 +119,7 @@ sealed class LibDependencies(
      * 权限请求
      * https://github.com/guolindev/PermissionX
      */
-    object PermissionX : LibDependencies("com.guolindev.permissionx", "permissionx", "1.6.3",
+    object PermissionX : LibDependencies("com.guolindev.permissionx", "permissionx", "1.6.4",
         DependencyMethod.Implementation)
 
     /**
@@ -335,7 +335,7 @@ sealed class LibDependencies(
      * https://github.com/angcyo/DslTabLayout
      */
     object TabLayout : LibDependencies("com.github.angcyo.DslTablayout", "TabLayout",
-        "3.2.1", DependencyMethod.Implementation)
+        "3.2.3", DependencyMethod.Implementation)
 
     /**
      * https://github.com/angcyo/DslTabLayout

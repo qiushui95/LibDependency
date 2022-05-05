@@ -38,7 +38,7 @@ dependencies {
     implementation("joda-time:joda-time:2.10.14")
     implementation("com.squareup.leakcanary:leakcanary-android:2.9.1")
     implementation("com.tencent:mmkv-static:1.2.13")
-    implementation("com.guolindev.permissionx:permissionx:1.6.3")
+    implementation("com.guolindev.permissionx:permissionx:1.6.4")
     implementation("androidx.paging:paging-runtime-ktx:3.1.1")
     implementation("com.github.jenly1314:zxing-lite:2.1.1")
     implementation("com.github.qiushui95:AndroidInitializer:1.0.9")
@@ -70,7 +70,7 @@ dependencies {
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
     implementation("com.kyleduo.switchbutton:library:2.1.0")
     implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")
-    implementation("com.github.angcyo.DslTablayout:TabLayout:3.2.1")
+    implementation("com.github.angcyo.DslTablayout:TabLayout:3.2.3")
     implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.2.1")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.0-beta01")
 

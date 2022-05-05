@@ -49,7 +49,7 @@
 >>implementation("com.tencent:mmkv-static:1.2.13")  
   
 >[PermissionX](https://github.com/guolindev/PermissionX)(权限请求)  
->>implementation("com.guolindev.permissionx:permissionx:1.6.3")  
+>>implementation("com.guolindev.permissionx:permissionx:1.6.4")  
   
 >[Paging](https://developer.android.com/jetpack/androidx/releases/paging)(分页请求)  
 >>implementation("androidx.paging:paging-runtime-ktx:3.1.1")  
@@ -147,7 +147,7 @@
 >>implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")  
   
 >[TabLayout](https://github.com/angcyo/DslTabLayout)  
->>implementation("com.github.angcyo.DslTablayout:TabLayout:3.2.1")  
+>>implementation("com.github.angcyo.DslTablayout:TabLayout:3.2.3")  
   
 >[TabLayoutVp2](https://github.com/angcyo/DslTabLayout)  
 >>implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.2.1")  
