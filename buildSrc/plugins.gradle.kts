@@ -6,5 +6,5 @@ rootProject.extra.apply {
     set("rocketX", "io.github.trycatchx:rocketx:1.1.0")
     set("asm.common", "org.ow2.asm:asm-commons:9.2")
     set("asm.util", "org.ow2.asm:asm-util:9.2")
-    set("libDependency", "com.github.qiushui95:LibDependency:1.2.25")
+    set("libDependency", "com.github.qiushui95:LibDependency:1.2.26")
 }

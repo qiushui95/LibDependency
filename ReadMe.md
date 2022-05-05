@@ -117,7 +117,7 @@
 >>implementation("com.airbnb.android:lottie:5.1.1")  
   
 >[Material](https://github.com/material-components/material-components-android)  
->>implementation("com.google.android.material:material:1.5.0")  
+>>implementation("com.google.android.material:material:1.6.0")  
   
 >[PdfViewer](https://github.com/barteksc/AndroidPdfViewer)(pdf查看)  
 >>implementation("com.github.mhiew:android-pdf-viewer:3.2.0-beta.2")  
