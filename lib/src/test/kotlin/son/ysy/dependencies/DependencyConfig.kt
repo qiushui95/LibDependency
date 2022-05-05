@@ -191,7 +191,7 @@ sealed class DependencyConfig(
         object PermissionX : DependencyConfig(
             group = "com.guolindev.permissionx",
             name = "permissionx",
-            version = "1.6.3",
+            version = "1.6.4",
             remark = "权限请求",
             link = "https://github.com/guolindev/PermissionX",
             dependencyMethod = DependencyMethod.Implementation,
@@ -540,7 +540,7 @@ sealed class DependencyConfig(
         object TabLayout : DependencyConfig(
             group = "com.github.angcyo.DslTablayout",
             name = "TabLayout",
-            version = "3.2.1",
+            version = "3.2.3",
             remark = "",
             link = "https://github.com/angcyo/DslTabLayout",
             dependencyMethod = DependencyMethod.Implementation,
