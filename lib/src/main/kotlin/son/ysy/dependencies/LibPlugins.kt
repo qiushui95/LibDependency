@@ -26,7 +26,7 @@ sealed class LibPlugins(
   }
 
   object Navigation : LibPlugins("androidx.navigation", "navigation-safe-args-gradle-plugin",
-      "2.5.0-beta01") {
+      "2.5.0-rc01") {
     object Plugin : LibPluginId("androidx.navigation.safeargs.kotlin")
   }
 

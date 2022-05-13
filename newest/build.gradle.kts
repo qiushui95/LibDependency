@@ -147,10 +147,8 @@ dependencies {
     implementation("androidx.fragment:fragment-ktx:+")
     testImplementation("androidx.fragment:fragment-testing:+")
 
-    implementation("io.insert-koin:koin-android:+")
-    implementation("io.insert-koin:koin-core:+")
-    implementation("io.insert-koin:koin-androidx-workmanager:+")
-    testImplementation("io.insert-koin:koin-test-junit5:+")
+    implementation("com.github.bumptech.glide:glide:+")
+    kapt("com.github.bumptech.glide:compiler:+")
 
     implementation("io.insert-koin:koin-android:+")
     implementation("io.insert-koin:koin-core:+")

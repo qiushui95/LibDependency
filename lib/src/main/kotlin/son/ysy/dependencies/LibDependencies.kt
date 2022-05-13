@@ -183,7 +183,7 @@ sealed class LibDependencies(
      * https://github.com/Kotlin/kotlinx.serialization
      */
     object Serialization : LibDependencies("org.jetbrains.kotlinx",
-        "kotlinx-serialization-json", "1.3.2", DependencyMethod.Implementation)
+        "kotlinx-serialization-json", "1.3.3", DependencyMethod.Implementation)
 
     /**
      * zip压缩相关
@@ -335,19 +335,19 @@ sealed class LibDependencies(
      * https://github.com/angcyo/DslTabLayout
      */
     object TabLayout : LibDependencies("com.github.angcyo.DslTablayout", "TabLayout",
-        "3.2.3", DependencyMethod.Implementation)
+        "3.2.4", DependencyMethod.Implementation)
 
     /**
      * https://github.com/angcyo/DslTabLayout
      */
     object TabLayoutVp2 : LibDependencies("com.github.angcyo.DslTablayout",
-        "ViewPager2Delegate", "3.2.1", DependencyMethod.Implementation)
+        "ViewPager2Delegate", "3.2.4", DependencyMethod.Implementation)
 
     /**
      * https://developer.android.com/jetpack/androidx/releases/lifecycle
      */
     object ViewModel : LibDependencies("androidx.lifecycle", "lifecycle-viewmodel-compose",
-        "2.5.0-beta01", DependencyMethod.Implementation)
+        "2.5.0-rc01", DependencyMethod.Implementation)
   }
 
   interface Test {
@@ -392,7 +392,7 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/lifecycle
      */
     object ViewModel : LibDependencies("androidx.lifecycle", "lifecycle-viewmodel-compose",
-        "2.5.0-beta01", DependencyMethod.Implementation)
+        "2.5.0-rc01", DependencyMethod.Implementation)
 
     /**
      * https://github.com/google/accompanist
@@ -440,37 +440,37 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/compose
      */
     interface Official {
-      object Animation : LibDependencies("androidx.compose.animation", "animation", "1.1.1",
-          DependencyMethod.Implementation)
+      object Animation : LibDependencies("androidx.compose.animation", "animation",
+          "1.2.0-beta01", DependencyMethod.Implementation)
 
-      object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.1.1",
-          DependencyMethod.Implementation)
+      object Compiler : LibDependencies("androidx.compose.compiler", "compiler",
+          "1.2.0-beta01", DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
-          "1.1.1", DependencyMethod.Implementation)
+          "1.2.0-beta01", DependencyMethod.Implementation)
 
       object LiveData : LibDependencies("androidx.compose.runtime", "runtime-livedata",
-          "1.1.1", DependencyMethod.Implementation)
+          "1.2.0-beta01", DependencyMethod.Implementation)
 
-      object Material : LibDependencies("androidx.compose.material", "material", "1.1.1",
-          DependencyMethod.Implementation)
+      object Material : LibDependencies("androidx.compose.material", "material",
+          "1.2.0-beta01", DependencyMethod.Implementation)
 
       object MaterialIcon : LibDependencies("androidx.compose.material",
-          "material-icons-core", "1.1.1", DependencyMethod.Implementation)
+          "material-icons-core", "1.2.0-beta01", DependencyMethod.Implementation)
 
       object MaterialIconExtended : LibDependencies("androidx.compose.material",
-          "material-icons-extended", "1.1.1", DependencyMethod.Implementation)
+          "material-icons-extended", "1.2.0-beta01", DependencyMethod.Implementation)
 
-      object Preview : LibDependencies("androidx.compose.ui", "ui-tooling-preview", "1.1.1",
-          DependencyMethod.Implementation)
+      object Preview : LibDependencies("androidx.compose.ui", "ui-tooling-preview",
+          "1.2.0-beta01", DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.1.1",
+      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.2.0-beta01",
           DependencyMethod.AndroidTest.Implementation)
 
-      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.1.1",
+      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.2.0-beta01",
           DependencyMethod.Implementation)
 
-      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.1.1",
+      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.2.0-beta01",
           DependencyMethod.Implementation)
     }
   }
@@ -480,11 +480,11 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/activity
      */
     interface Activity {
-      object Core : LibDependencies("androidx.activity", "activity-ktx", "1.5.0-beta01",
+      object Core : LibDependencies("androidx.activity", "activity-ktx", "1.5.0-rc01",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("androidx.activity", "activity-compose",
-          "1.5.0-beta01", DependencyMethod.Implementation)
+      object Compose : LibDependencies("androidx.activity", "activity-compose", "1.5.0-rc01",
+          DependencyMethod.Implementation)
     }
 
     /**
@@ -492,23 +492,23 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/camera
      */
     interface CameraX {
-      object Camera2 : LibDependencies("androidx.camera", "camera-camera2", "1.1.0-beta03",
+      object Camera2 : LibDependencies("androidx.camera", "camera-camera2", "1.1.0-rc01",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("androidx.camera", "camera-core", "1.1.0-beta03",
+      object Core : LibDependencies("androidx.camera", "camera-core", "1.1.0-rc01",
           DependencyMethod.Implementation)
 
-      object Lifecycle : LibDependencies("androidx.camera", "camera-lifecycle",
-          "1.1.0-beta03", DependencyMethod.Implementation)
-
-      object Video : LibDependencies("androidx.camera", "camera-video", "1.1.0-beta03",
+      object Lifecycle : LibDependencies("androidx.camera", "camera-lifecycle", "1.1.0-rc01",
           DependencyMethod.Implementation)
 
-      object View : LibDependencies("androidx.camera", "camera-view", "1.1.0-beta03",
+      object Video : LibDependencies("androidx.camera", "camera-video", "1.1.0-rc01",
+          DependencyMethod.Implementation)
+
+      object View : LibDependencies("androidx.camera", "camera-view", "1.1.0-rc01",
           DependencyMethod.Implementation)
 
       object Extensions : LibDependencies("androidx.camera", "camera-extensions",
-          "1.1.0-beta03", DependencyMethod.Implementation)
+          "1.1.0-rc01", DependencyMethod.Implementation)
     }
 
     /**
@@ -528,19 +528,19 @@ sealed class LibDependencies(
      * https://coil-kt.github.io/coil/README-zh/
      */
     interface Coil {
-      object Core : LibDependencies("io.coil-kt", "coil", "2.0.0-rc03",
+      object Core : LibDependencies("io.coil-kt", "coil", "2.0.0",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("io.coil-kt", "coil-compose", "2.0.0-rc03",
+      object Compose : LibDependencies("io.coil-kt", "coil-compose", "2.0.0",
           DependencyMethod.Implementation)
 
-      object Svg : LibDependencies("io.coil-kt", "coil-svg", "2.0.0-rc03",
+      object Svg : LibDependencies("io.coil-kt", "coil-svg", "2.0.0",
           DependencyMethod.Implementation)
 
-      object Gif : LibDependencies("io.coil-kt", "coil-gif", "2.0.0-rc03",
+      object Gif : LibDependencies("io.coil-kt", "coil-gif", "2.0.0",
           DependencyMethod.Implementation)
 
-      object Video : LibDependencies("io.coil-kt", "coil-video", "2.0.0-rc03",
+      object Video : LibDependencies("io.coil-kt", "coil-video", "2.0.0",
           DependencyMethod.Implementation)
     }
 
@@ -609,11 +609,23 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/fragment
      */
     interface Fragment {
-      object Core : LibDependencies("androidx.fragment", "fragment-ktx", "1.5.0-beta01",
+      object Core : LibDependencies("androidx.fragment", "fragment-ktx", "1.5.0-rc01",
           DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.fragment", "fragment-testing", "1.5.0-beta01",
+      object Test : LibDependencies("androidx.fragment", "fragment-testing", "1.5.0-rc01",
           DependencyMethod.Test.Implementation)
+    }
+
+    /**
+     * 图片加载
+     * https://github.com/bumptech/glide
+     */
+    interface Glide {
+      object Core : LibDependencies("com.github.bumptech.glide", "glide", "4.13.2",
+          DependencyMethod.Implementation)
+
+      object Compiler : LibDependencies("com.github.bumptech.glide", "compiler", "4.13.2",
+          DependencyMethod.Kapt)
     }
 
     /**
@@ -621,40 +633,22 @@ sealed class LibDependencies(
      * https://github.com/InsertKoinIO/koin
      */
     interface Koin {
-      object Android : LibDependencies("io.insert-koin", "koin-android", "3.1.5",
+      object Android : LibDependencies("io.insert-koin", "koin-android", "3.2.0",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("io.insert-koin", "koin-core", "3.1.5",
-          DependencyMethod.Implementation)
-
-      object WorkManager : LibDependencies("io.insert-koin", "koin-androidx-workmanager",
-          "3.1.5", DependencyMethod.Implementation)
-
-      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.1.5",
-          DependencyMethod.Test.Implementation)
-    }
-
-    /**
-     * 依赖注入库
-     * https://github.com/InsertKoinIO/koin
-     */
-    interface KoinBeta {
-      object Android : LibDependencies("io.insert-koin", "koin-android", "3.2.0-beta-1",
-          DependencyMethod.Implementation)
-
-      object Core : LibDependencies("io.insert-koin", "koin-core", "3.2.0-beta-1",
+      object Core : LibDependencies("io.insert-koin", "koin-core", "3.2.0",
           DependencyMethod.Implementation)
 
       object WorkManager : LibDependencies("io.insert-koin", "koin-androidx-workmanager",
-          "3.2.0-beta-1", DependencyMethod.Implementation)
+          "3.2.0", DependencyMethod.Implementation)
 
       object Navigation : LibDependencies("io.insert-koin", "koin-androidx-navigation",
-          "3.2.0-beta-1", DependencyMethod.Implementation)
+          "3.2.0", DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("io.insert-koin", "koin-androidx-compose",
-          "3.2.0-beta-1", DependencyMethod.Implementation)
+      object Compose : LibDependencies("io.insert-koin", "koin-androidx-compose", "3.2.0",
+          DependencyMethod.Implementation)
 
-      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.2.0-beta-1",
+      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.2.0",
           DependencyMethod.Test.Implementation)
 
       object Annotations : LibDependencies("io.insert-koin", "koin-annotations",
@@ -682,26 +676,26 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/lifecycle
      */
     interface Lifecycle {
-      object Common : LibDependencies("androidx.lifecycle", "lifecycle-common",
-          "2.5.0-beta01", DependencyMethod.Implementation)
+      object Common : LibDependencies("androidx.lifecycle", "lifecycle-common", "2.5.0-rc01",
+          DependencyMethod.Implementation)
 
       object LiveData : LibDependencies("androidx.lifecycle", "lifecycle-livedata-ktx",
-          "2.5.0-beta01", DependencyMethod.Implementation)
+          "2.5.0-rc01", DependencyMethod.Implementation)
 
       object Process : LibDependencies("androidx.lifecycle", "lifecycle-process",
-          "2.5.0-beta01", DependencyMethod.Implementation)
+          "2.5.0-rc01", DependencyMethod.Implementation)
 
       object Runtime : LibDependencies("androidx.lifecycle", "lifecycle-runtime-ktx",
-          "2.5.0-beta01", DependencyMethod.Implementation)
+          "2.5.0-rc01", DependencyMethod.Implementation)
 
       object SavedState : LibDependencies("androidx.lifecycle",
-          "lifecycle-viewmodel-savedstate", "2.5.0-beta01", DependencyMethod.Implementation)
+          "lifecycle-viewmodel-savedstate", "2.5.0-rc01", DependencyMethod.Implementation)
 
       object Service : LibDependencies("androidx.lifecycle", "lifecycle-service",
-          "2.5.0-beta01", DependencyMethod.Implementation)
+          "2.5.0-rc01", DependencyMethod.Implementation)
 
       object ViewModel : LibDependencies("androidx.lifecycle", "lifecycle-viewmodel-ktx",
-          "2.5.0-beta01", DependencyMethod.Implementation)
+          "2.5.0-rc01", DependencyMethod.Implementation)
     }
 
     /**
@@ -737,16 +731,16 @@ sealed class LibDependencies(
      */
     interface Navigation {
       object Fragment : LibDependencies("androidx.navigation", "navigation-fragment-ktx",
-          "2.5.0-beta01", DependencyMethod.Implementation)
+          "2.5.0-rc01", DependencyMethod.Implementation)
 
-      object Ui : LibDependencies("androidx.navigation", "navigation-ui-ktx", "2.5.0-beta01",
+      object Ui : LibDependencies("androidx.navigation", "navigation-ui-ktx", "2.5.0-rc01",
           DependencyMethod.Implementation)
 
       object Compose : LibDependencies("androidx.navigation", "navigation-compose",
-          "2.5.0-beta01", DependencyMethod.Implementation)
+          "2.5.0-rc01", DependencyMethod.Implementation)
 
       object Test : LibDependencies("androidx.navigation", "navigation-testing",
-          "2.5.0-beta01", DependencyMethod.Test.Implementation)
+          "2.5.0-rc01", DependencyMethod.Test.Implementation)
     }
 
     /**
