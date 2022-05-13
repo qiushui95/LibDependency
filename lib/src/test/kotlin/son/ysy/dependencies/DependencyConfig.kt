@@ -292,7 +292,7 @@ sealed class DependencyConfig(
         object Serialization : DependencyConfig(
             group = "org.jetbrains.kotlinx",
             name = "kotlinx-serialization-json",
-            version = "1.3.2",
+            version = "1.3.3",
             remark = "Json序列化",
             link = "https://github.com/Kotlin/kotlinx.serialization",
             dependencyMethod = DependencyMethod.Implementation,
@@ -540,7 +540,7 @@ sealed class DependencyConfig(
         object TabLayout : DependencyConfig(
             group = "com.github.angcyo.DslTablayout",
             name = "TabLayout",
-            version = "3.2.3",
+            version = "3.2.4",
             remark = "",
             link = "https://github.com/angcyo/DslTabLayout",
             dependencyMethod = DependencyMethod.Implementation,
@@ -549,7 +549,7 @@ sealed class DependencyConfig(
         object TabLayoutVp2 : DependencyConfig(
             group = "com.github.angcyo.DslTablayout",
             name = "ViewPager2Delegate",
-            version = "3.2.1",
+            version = "3.2.4",
             remark = "",
             link = "https://github.com/angcyo/DslTabLayout",
             dependencyMethod = DependencyMethod.Implementation,
@@ -647,7 +647,7 @@ sealed class DependencyConfig(
         sealed class Official(
             group: String,
             name: String,
-            version: String = "1.1.1",
+            version: String = "1.2.0-beta01",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : DependencyConfig(
             group = group,
@@ -732,7 +732,7 @@ sealed class DependencyConfig(
         sealed class Activity(name: String) : DependencyConfig(
             group = "androidx.activity",
             name = name,
-            version = "1.5.0-beta01",
+            version = "1.5.0-rc01",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/activity",
             dependencyMethod = DependencyMethod.Implementation,
@@ -743,25 +743,21 @@ sealed class DependencyConfig(
 
         //endregion
         //region CameraX(相机相关)
-        sealed class CameraX(name: String, version: Version) : DependencyConfig(
+        sealed class CameraX(name: String) : DependencyConfig(
             group = "androidx.camera",
             name = name,
-            version = version.version,
+            version = "1.1.0-rc01",
             remark = "相机相关",
             link = "https://developer.android.com/jetpack/androidx/releases/camera",
             dependencyMethod = DependencyMethod.Implementation,
         ) {
-            sealed class Version(val version: String) {
-                object Core : Version("1.1.0-beta03")
-                object Extends : Version("1.1.0-beta03")
-            }
 
-            object Camera2 : CameraX("camera-camera2", Version.Core)
-            object Core : CameraX("camera-core", Version.Core)
-            object Lifecycle : CameraX("camera-lifecycle", Version.Core)
-            object Video : CameraX("camera-video", Version.Core)
-            object View : CameraX("camera-view", Version.Extends)
-            object Extensions : CameraX("camera-extensions", Version.Extends)
+            object Camera2 : CameraX("camera-camera2")
+            object Core : CameraX("camera-core")
+            object Lifecycle : CameraX("camera-lifecycle")
+            object Video : CameraX("camera-video")
+            object View : CameraX("camera-view")
+            object Extensions : CameraX("camera-extensions")
         }
 
         //endregion
@@ -783,7 +779,7 @@ sealed class DependencyConfig(
         sealed class Coil(name: String) : DependencyConfig(
             group = "io.coil-kt",
             name = name,
-            version = "2.0.0-rc03",
+            version = "2.0.0",
             remark = "图片加载",
             link = "https://coil-kt.github.io/coil/README-zh/",
             dependencyMethod = DependencyMethod.Implementation,
@@ -873,7 +869,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "androidx.fragment",
             name = name,
-            version = "1.5.0-beta01",
+            version = "1.5.0-rc01",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/fragment",
             dependencyMethod = dependencyMethod,
@@ -883,27 +879,26 @@ sealed class DependencyConfig(
         }
 
         //endregion
-        //region Koin(依赖注入库)
-        sealed class Koin(
+        //region Glide(图片加载)
+        sealed class Glide(
             name: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : DependencyConfig(
-            group = "io.insert-koin",
+            group = "com.github.bumptech.glide",
             name = name,
-            version = "3.1.5",
-            remark = "依赖注入库",
-            link = "https://github.com/InsertKoinIO/koin",
+            version = "4.13.2",
+            remark = "图片加载",
+            link = "https://github.com/bumptech/glide",
             dependencyMethod = dependencyMethod,
         ) {
-            object Android : Koin("koin-android")
-            object Core : Koin("koin-core")
-            object WorkManager : Koin("koin-androidx-workmanager")
-            object Test : Koin("koin-test-junit5", DependencyMethod.Test.Implementation)
+            object Core : Glide("glide")
+            object Compiler : Glide("compiler", DependencyMethod.Kapt)
         }
 
         //endregion
+
         //region Koin(依赖注入库)
-        sealed class KoinBeta(
+        sealed class Koin(
             name: String,
             version: Version,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
@@ -917,21 +912,21 @@ sealed class DependencyConfig(
         ) {
             sealed class Version(val value: String) {
                 object Version1 : Version("1.0.0-beta-1")
-                object Version2 : Version("3.2.0-beta-1")
+                object Version2 : Version("3.2.0")
             }
 
-            object Android : KoinBeta("koin-android", Version.Version2)
-            object Core : KoinBeta("koin-core", Version.Version2)
-            object WorkManager : KoinBeta("koin-androidx-workmanager", Version.Version2)
-            object Navigation : KoinBeta("koin-androidx-navigation", Version.Version2)
-            object Compose : KoinBeta("koin-androidx-compose", Version.Version2)
-            object Test : KoinBeta(
+            object Android : Koin("koin-android", Version.Version2)
+            object Core : Koin("koin-core", Version.Version2)
+            object WorkManager : Koin("koin-androidx-workmanager", Version.Version2)
+            object Navigation : Koin("koin-androidx-navigation", Version.Version2)
+            object Compose : Koin("koin-androidx-compose", Version.Version2)
+            object Test : Koin(
                 "koin-test-junit5",
                 Version.Version2, DependencyMethod.Test.Implementation
             )
 
-            object Annotations : KoinBeta("koin-annotations", Version.Version1)
-            object Compiler : KoinBeta("koin-ksp-compiler", Version.Version1)
+            object Annotations : Koin("koin-annotations", Version.Version1)
+            object Compiler : Koin("koin-ksp-compiler", Version.Version1)
         }
 
         //endregion
@@ -960,7 +955,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "androidx.lifecycle",
             name = name,
-            version = "2.5.0-beta01",
+            version = "2.5.0-rc01",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/lifecycle",
             dependencyMethod = dependencyMethod,
@@ -1014,7 +1009,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "androidx.navigation",
             name = name,
-            version = "2.5.0-beta01",
+            version = "2.5.0-rc01",
             remark = "导航库",
             link = "https://developer.android.com/jetpack/androidx/releases/navigation",
             dependencyMethod = dependencyMethod,
