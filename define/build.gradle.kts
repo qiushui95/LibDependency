@@ -121,11 +121,11 @@ dependencies {
     debugImplementation("com.github.chuckerteam.chucker:library:3.5.2")
     releaseImplementation("com.github.chuckerteam.chucker:library-no-op:3.5.2")
 
-    implementation("io.coil-kt:coil:2.0.0")
-    implementation("io.coil-kt:coil-compose:2.0.0")
-    implementation("io.coil-kt:coil-svg:2.0.0")
-    implementation("io.coil-kt:coil-gif:2.0.0")
-    implementation("io.coil-kt:coil-video:2.0.0")
+    implementation("io.coil-kt:coil:2.1.0")
+    implementation("io.coil-kt:coil-compose:2.1.0")
+    implementation("io.coil-kt:coil-svg:2.1.0")
+    implementation("io.coil-kt:coil-gif:2.1.0")
+    implementation("io.coil-kt:coil-video:2.1.0")
 
     implementation("androidx.core:core-ktx:1.8.0-beta01")
     implementation("androidx.core:core-splashscreen:1.0.0-beta02")
@@ -148,6 +148,7 @@ dependencies {
     testImplementation("androidx.fragment:fragment-testing:1.5.0-rc01")
 
     implementation("com.github.bumptech.glide:glide:4.13.2")
+    implementation("com.github.bumptech.glide:okhttp3-integration:4.13.2")
     kapt("com.github.bumptech.glide:compiler:4.13.2")
 
     implementation("io.insert-koin:koin-android:3.2.0")

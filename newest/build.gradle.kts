@@ -148,6 +148,7 @@ dependencies {
     testImplementation("androidx.fragment:fragment-testing:+")
 
     implementation("com.github.bumptech.glide:glide:+")
+    implementation("com.github.bumptech.glide:okhttp3-integration:+")
     kapt("com.github.bumptech.glide:compiler:+")
 
     implementation("io.insert-koin:koin-android:+")

@@ -229,11 +229,11 @@
 >>releaseImplementation("com.github.chuckerteam.chucker:library-no-op:3.5.2")  
   
 >[Coil](https://coil-kt.github.io/coil/README-zh/)(图片加载)  
->>implementation("io.coil-kt:coil:2.0.0")  
->>implementation("io.coil-kt:coil-compose:2.0.0")  
->>implementation("io.coil-kt:coil-svg:2.0.0")  
->>implementation("io.coil-kt:coil-gif:2.0.0")  
->>implementation("io.coil-kt:coil-video:2.0.0")  
+>>implementation("io.coil-kt:coil:2.1.0")  
+>>implementation("io.coil-kt:coil-compose:2.1.0")  
+>>implementation("io.coil-kt:coil-svg:2.1.0")  
+>>implementation("io.coil-kt:coil-gif:2.1.0")  
+>>implementation("io.coil-kt:coil-video:2.1.0")  
   
 >[Core](https://developer.android.com/jetpack/androidx/releases/core)  
 >>implementation("androidx.core:core-ktx:1.8.0-beta01")  
@@ -262,6 +262,7 @@
   
 >[Glide](https://github.com/bumptech/glide)(图片加载)  
 >>implementation("com.github.bumptech.glide:glide:4.13.2")  
+>>implementation("com.github.bumptech.glide:okhttp3-integration:4.13.2")  
 >>kapt("com.github.bumptech.glide:compiler:4.13.2")  
   
 >[Koin](https://github.com/InsertKoinIO/koin)(依赖注入库)  

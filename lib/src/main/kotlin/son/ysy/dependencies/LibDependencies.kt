@@ -528,19 +528,19 @@ sealed class LibDependencies(
      * https://coil-kt.github.io/coil/README-zh/
      */
     interface Coil {
-      object Core : LibDependencies("io.coil-kt", "coil", "2.0.0",
+      object Core : LibDependencies("io.coil-kt", "coil", "2.1.0",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("io.coil-kt", "coil-compose", "2.0.0",
+      object Compose : LibDependencies("io.coil-kt", "coil-compose", "2.1.0",
           DependencyMethod.Implementation)
 
-      object Svg : LibDependencies("io.coil-kt", "coil-svg", "2.0.0",
+      object Svg : LibDependencies("io.coil-kt", "coil-svg", "2.1.0",
           DependencyMethod.Implementation)
 
-      object Gif : LibDependencies("io.coil-kt", "coil-gif", "2.0.0",
+      object Gif : LibDependencies("io.coil-kt", "coil-gif", "2.1.0",
           DependencyMethod.Implementation)
 
-      object Video : LibDependencies("io.coil-kt", "coil-video", "2.0.0",
+      object Video : LibDependencies("io.coil-kt", "coil-video", "2.1.0",
           DependencyMethod.Implementation)
     }
 
@@ -623,6 +623,9 @@ sealed class LibDependencies(
     interface Glide {
       object Core : LibDependencies("com.github.bumptech.glide", "glide", "4.13.2",
           DependencyMethod.Implementation)
+
+      object OkHttp : LibDependencies("com.github.bumptech.glide", "okhttp3-integration",
+          "4.13.2", DependencyMethod.Implementation)
 
       object Compiler : LibDependencies("com.github.bumptech.glide", "compiler", "4.13.2",
           DependencyMethod.Kapt)
