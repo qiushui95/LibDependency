@@ -779,7 +779,7 @@ sealed class DependencyConfig(
         sealed class Coil(name: String) : DependencyConfig(
             group = "io.coil-kt",
             name = name,
-            version = "2.0.0",
+            version = "2.1.0",
             remark = "图片加载",
             link = "https://coil-kt.github.io/coil/README-zh/",
             dependencyMethod = DependencyMethod.Implementation,
@@ -892,11 +892,11 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
             object Core : Glide("glide")
+            object OkHttp : Glide("okhttp3-integration")
             object Compiler : Glide("compiler", DependencyMethod.Kapt)
         }
 
         //endregion
-
         //region Koin(依赖注入库)
         sealed class Koin(
             name: String,
