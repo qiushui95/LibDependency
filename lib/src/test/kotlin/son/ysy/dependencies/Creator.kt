@@ -326,6 +326,10 @@ class Creator {
             .map { clz ->
                 val children = clz.sealedSubclasses.mapNotNull { it.objectInstance }
 
+                if (children.isEmpty()) {
+                    throw RuntimeException("children is empty,${clz.simpleName}")
+                }
+
                 val containerBuilder = TypeSpec.interfaceBuilder(clz.simpleName!!)
                     .addKdoc(children.first())
 

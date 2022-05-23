@@ -132,6 +132,17 @@ sealed class DependencyConfig(
         )
 
         //endregion
+        //region 图片信息
+        object Exif : DependencyConfig(
+            group = "androidx.exifinterface",
+            name = "exifinterface",
+            version = "1.3.3",
+            remark = "图片信息",
+            link = "https://developer.android.com/jetpack/androidx/releases/exifinterface",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
+
+        //endregion
         //region ImagePicker(多媒体选择库)
         object ImagePicker : DependencyConfig(
             group = "com.ypx.yimagepicker",
@@ -205,6 +216,17 @@ sealed class DependencyConfig(
             version = "3.1.1",
             remark = "分页请求",
             link = "https://developer.android.com/jetpack/androidx/releases/paging",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
+
+        //endregion
+        //region PanelSwitchHelper(聊天键盘优化)
+        object PanelSwitch : DependencyConfig(
+            group = "com.github.YummyLau",
+            name = "PanelSwitchHelper",
+            version = "1.4.0",
+            remark = "聊天键盘优化",
+            link = "https://github.com/DSAppTeam/PanelSwitchHelper",
             dependencyMethod = DependencyMethod.Implementation,
         )
 
@@ -741,6 +763,19 @@ sealed class DependencyConfig(
             object Compose : Activity("activity-compose")
         }
 
+        //region Bugly
+        sealed class Bugly(name: String, version: String) : DependencyConfig(
+            group = "com.tencent.bugly",
+            name = name,
+            version = version,
+            remark = "",
+            link = "https://bugly.qq.com/docs/user-guide/instruction-manual-android/?v=1.0.0",
+            dependencyMethod = DependencyMethod.Implementation,
+        ) {
+            object Crash : Bugly("crashreport","4.0.4")
+            object Upgrade : Bugly("crashreport_upgrade","1.5.23")
+        }
+
         //endregion
         //region CameraX(相机相关)
         sealed class CameraX(name: String) : DependencyConfig(
@@ -862,6 +897,32 @@ sealed class DependencyConfig(
         }
 
         //endregion
+        //region FlowBinding
+        sealed class FlowBinding(
+            name: String,
+            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
+        ) : DependencyConfig(
+            group = "io.github.reactivecircus.flowbinding",
+            name = name,
+            version = "1.2.0",
+            remark = "FlowBinding",
+            link = "https://github.com/ReactiveCircus/FlowBinding",
+            dependencyMethod = dependencyMethod,
+        ) {
+            object Activity : FlowBinding("flowbinding-activity")
+            object AppCompat : FlowBinding("flowbinding-appcompat")
+            object Core : FlowBinding("flowbinding-core")
+            object DrawerLayout : FlowBinding("flowbinding-drawerlayout")
+            object Lifecycle : FlowBinding("flowbinding-lifecycle")
+            object Navigation : FlowBinding("flowbinding-navigation")
+            object Preference : FlowBinding("flowbinding-preference")
+            object RecyclerView : FlowBinding("flowbinding-recyclerview")
+            object SwipeRefreshLayout : FlowBinding("flowbinding-swiperefreshlayout")
+            object ViewPager : FlowBinding("flowbinding-viewpager")
+            object ViewPager2 : FlowBinding("flowbinding-viewpager2")
+        }
+
+        //endregion
         //region Fragment
         sealed class Fragment(
             name: String,
@@ -894,6 +955,23 @@ sealed class DependencyConfig(
             object Core : Glide("glide")
             object OkHttp : Glide("okhttp3-integration")
             object Compiler : Glide("compiler", DependencyMethod.Kapt)
+        }
+
+        //endregion
+        //region ImmersionBar(状态栏)
+        sealed class ImmersionBar(
+            name: String,
+            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
+        ) : DependencyConfig(
+            group = "com.geyifeng.immersionbar",
+            name = name,
+            version = "3.2.2",
+            remark = "状态栏",
+            link = "https://github.com/gyf-dev/ImmersionBar",
+            dependencyMethod = dependencyMethod,
+        ) {
+            object Core : ImmersionBar("immersionbar")
+            object Ktx : ImmersionBar("immersionbar-ktx")
         }
 
         //endregion
@@ -1089,6 +1167,40 @@ sealed class DependencyConfig(
             object Ktx : Room("room-ktx")
             object Compiler : Room("room-compiler", DependencyMethod.Kapt)
             object Test : Room("room-testing", DependencyMethod.Test.Implementation)
+        }
+
+        //endregion
+        //region Stetho(调试工具)
+        sealed class Stetho(
+            name: String,
+            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
+        ) : DependencyConfig(
+            group = "com.facebook.stetho",
+            name = name,
+            version = "1.6.0",
+            remark = "调试工具",
+            link = "https://github.com/facebook/stetho",
+            dependencyMethod = dependencyMethod,
+        ) {
+            object Core : Stetho("stetho")
+            object OkHttp : Stetho("stetho-okhttp3")
+        }
+
+        //endregion
+        //region S3(亚马逊云存储)
+        sealed class S3(
+            name: String,
+            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
+        ) : DependencyConfig(
+            group = "com.amazonaws",
+            name = name,
+            version = "2.46.0",
+            remark = "亚马逊云存储",
+            link = "https://github.com/aws-amplify/aws-sdk-android",
+            dependencyMethod = dependencyMethod,
+        ) {
+            object Core : S3("aws-android-sdk-s3")
+            object Client : S3("aws-android-sdk-mobile-client")
         }
 
         //endregion
