@@ -33,6 +33,9 @@
 >[EasyFloat](https://github.com/princekin-f/EasyFloat)(悬浮窗)  
 >>implementation("com.github.princekin-f:EasyFloat:2.0.4")  
   
+>[Exif](https://developer.android.com/jetpack/androidx/releases/exifinterface)(图片信息)  
+>>implementation("androidx.exifinterface:exifinterface:1.3.3")  
+  
 >[ImagePicker](https://github.com/yangpeixing/YImagePicker)(多媒体选择库)  
 >>implementation("com.ypx.yimagepicker:androidx:3.1.4")  
   
@@ -53,6 +56,9 @@
   
 >[Paging](https://developer.android.com/jetpack/androidx/releases/paging)(分页请求)  
 >>implementation("androidx.paging:paging-runtime-ktx:3.1.1")  
+  
+>[PanelSwitch](https://github.com/DSAppTeam/PanelSwitchHelper)(聊天键盘优化)  
+>>implementation("com.github.YummyLau:PanelSwitchHelper:1.4.0")  
   
 >[QrScanner](https://github.com/jenly1314/ZXingLite)(二维码扫描)  
 >>implementation("com.github.jenly1314:zxing-lite:2.1.1")  
@@ -216,6 +222,10 @@
 >>implementation("androidx.activity:activity-ktx:1.5.0-rc01")  
 >>implementation("androidx.activity:activity-compose:1.5.0-rc01")  
   
+>[Bugly](https://bugly.qq.com/docs/user-guide/instruction-manual-android/?v=1.0.0)  
+>>implementation("com.tencent.bugly:crashreport:4.0.4")  
+>>implementation("com.tencent.bugly:crashreport_upgrade:1.5.23")  
+  
 >[CameraX](https://developer.android.com/jetpack/androidx/releases/camera)(相机相关)  
 >>implementation("androidx.camera:camera-camera2:1.1.0-rc01")  
 >>implementation("androidx.camera:camera-core:1.1.0-rc01")  
@@ -256,6 +266,19 @@
 >>implementation("com.airbnb.android:epoxy-compose:5.0.0-beta05")  
 >>implementation("com.airbnb.android:epoxy-glide-preloading:5.0.0-beta05")  
   
+>[FlowBinding](https://github.com/ReactiveCircus/FlowBinding)(FlowBinding)  
+>>implementation("io.github.reactivecircus.flowbinding:flowbinding-activity:1.2.0")  
+>>implementation("io.github.reactivecircus.flowbinding:flowbinding-appcompat:1.2.0")  
+>>implementation("io.github.reactivecircus.flowbinding:flowbinding-core:1.2.0")  
+>>implementation("io.github.reactivecircus.flowbinding:flowbinding-drawerlayout:1.2.0")  
+>>implementation("io.github.reactivecircus.flowbinding:flowbinding-lifecycle:1.2.0")  
+>>implementation("io.github.reactivecircus.flowbinding:flowbinding-navigation:1.2.0")  
+>>implementation("io.github.reactivecircus.flowbinding:flowbinding-preference:1.2.0")  
+>>implementation("io.github.reactivecircus.flowbinding:flowbinding-recyclerview:1.2.0")  
+>>implementation("io.github.reactivecircus.flowbinding:flowbinding-swiperefreshlayout:1.2.0")  
+>>implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager:1.2.0")  
+>>implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager2:1.2.0")  
+  
 >[Fragment](https://developer.android.com/jetpack/androidx/releases/fragment)  
 >>implementation("androidx.fragment:fragment-ktx:1.5.0-rc01")  
 >>testImplementation("androidx.fragment:fragment-testing:1.5.0-rc01")  
@@ -264,6 +287,10 @@
 >>implementation("com.github.bumptech.glide:glide:4.13.2")  
 >>implementation("com.github.bumptech.glide:okhttp3-integration:4.13.2")  
 >>kapt("com.github.bumptech.glide:compiler:4.13.2")  
+  
+>[ImmersionBar](https://github.com/gyf-dev/ImmersionBar)(状态栏)  
+>>implementation("com.geyifeng.immersionbar:immersionbar:3.2.2")  
+>>implementation("com.geyifeng.immersionbar:immersionbar-ktx:3.2.2")  
   
 >[Koin](https://github.com/InsertKoinIO/koin)(依赖注入库)  
 >>implementation("io.insert-koin:koin-android:3.2.0")  
@@ -322,6 +349,14 @@
 >>implementation("androidx.room:room-ktx:2.4.2")  
 >>kapt("androidx.room:room-compiler:2.4.2")  
 >>testImplementation("androidx.room:room-testing:2.4.2")  
+  
+>[Stetho](https://github.com/facebook/stetho)(调试工具)  
+>>implementation("com.facebook.stetho:stetho:1.6.0")  
+>>implementation("com.facebook.stetho:stetho-okhttp3:1.6.0")  
+  
+>[S3](https://github.com/aws-amplify/aws-sdk-android)(亚马逊云存储)  
+>>implementation("com.amazonaws:aws-android-sdk-s3:2.46.0")  
+>>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.46.0")  
   
 >[Transformer](https://github.com/wasabeef/transformers)(图片裁剪器)  
 >>implementation("jp.wasabeef.transformers:core:1.0.6")  

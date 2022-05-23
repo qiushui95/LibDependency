@@ -81,6 +81,13 @@ sealed class LibDependencies(
         DependencyMethod.Implementation)
 
     /**
+     * 图片信息
+     * https://developer.android.com/jetpack/androidx/releases/exifinterface
+     */
+    object Exif : LibDependencies("androidx.exifinterface", "exifinterface", "1.3.3",
+        DependencyMethod.Implementation)
+
+    /**
      * 多媒体选择库
      * https://github.com/yangpeixing/YImagePicker
      */
@@ -127,6 +134,13 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/paging
      */
     object Paging : LibDependencies("androidx.paging", "paging-runtime-ktx", "3.1.1",
+        DependencyMethod.Implementation)
+
+    /**
+     * 聊天键盘优化
+     * https://github.com/DSAppTeam/PanelSwitchHelper
+     */
+    object PanelSwitch : LibDependencies("com.github.YummyLau", "PanelSwitchHelper", "1.4.0",
         DependencyMethod.Implementation)
 
     /**
@@ -488,6 +502,17 @@ sealed class LibDependencies(
     }
 
     /**
+     * https://bugly.qq.com/docs/user-guide/instruction-manual-android/?v=1.0.0
+     */
+    interface Bugly {
+      object Crash : LibDependencies("com.tencent.bugly", "crashreport", "4.0.4",
+          DependencyMethod.Implementation)
+
+      object Upgrade : LibDependencies("com.tencent.bugly", "crashreport_upgrade", "1.5.23",
+          DependencyMethod.Implementation)
+    }
+
+    /**
      * 相机相关
      * https://developer.android.com/jetpack/androidx/releases/camera
      */
@@ -606,6 +631,45 @@ sealed class LibDependencies(
     }
 
     /**
+     * FlowBinding
+     * https://github.com/ReactiveCircus/FlowBinding
+     */
+    interface FlowBinding {
+      object Activity : LibDependencies("io.github.reactivecircus.flowbinding",
+          "flowbinding-activity", "1.2.0", DependencyMethod.Implementation)
+
+      object AppCompat : LibDependencies("io.github.reactivecircus.flowbinding",
+          "flowbinding-appcompat", "1.2.0", DependencyMethod.Implementation)
+
+      object Core : LibDependencies("io.github.reactivecircus.flowbinding",
+          "flowbinding-core", "1.2.0", DependencyMethod.Implementation)
+
+      object DrawerLayout : LibDependencies("io.github.reactivecircus.flowbinding",
+          "flowbinding-drawerlayout", "1.2.0", DependencyMethod.Implementation)
+
+      object Lifecycle : LibDependencies("io.github.reactivecircus.flowbinding",
+          "flowbinding-lifecycle", "1.2.0", DependencyMethod.Implementation)
+
+      object Navigation : LibDependencies("io.github.reactivecircus.flowbinding",
+          "flowbinding-navigation", "1.2.0", DependencyMethod.Implementation)
+
+      object Preference : LibDependencies("io.github.reactivecircus.flowbinding",
+          "flowbinding-preference", "1.2.0", DependencyMethod.Implementation)
+
+      object RecyclerView : LibDependencies("io.github.reactivecircus.flowbinding",
+          "flowbinding-recyclerview", "1.2.0", DependencyMethod.Implementation)
+
+      object SwipeRefreshLayout : LibDependencies("io.github.reactivecircus.flowbinding",
+          "flowbinding-swiperefreshlayout", "1.2.0", DependencyMethod.Implementation)
+
+      object ViewPager : LibDependencies("io.github.reactivecircus.flowbinding",
+          "flowbinding-viewpager", "1.2.0", DependencyMethod.Implementation)
+
+      object ViewPager2 : LibDependencies("io.github.reactivecircus.flowbinding",
+          "flowbinding-viewpager2", "1.2.0", DependencyMethod.Implementation)
+    }
+
+    /**
      * https://developer.android.com/jetpack/androidx/releases/fragment
      */
     interface Fragment {
@@ -629,6 +693,18 @@ sealed class LibDependencies(
 
       object Compiler : LibDependencies("com.github.bumptech.glide", "compiler", "4.13.2",
           DependencyMethod.Kapt)
+    }
+
+    /**
+     * 状态栏
+     * https://github.com/gyf-dev/ImmersionBar
+     */
+    interface ImmersionBar {
+      object Core : LibDependencies("com.geyifeng.immersionbar", "immersionbar", "3.2.2",
+          DependencyMethod.Implementation)
+
+      object Ktx : LibDependencies("com.geyifeng.immersionbar", "immersionbar-ktx", "3.2.2",
+          DependencyMethod.Implementation)
     }
 
     /**
@@ -799,6 +875,30 @@ sealed class LibDependencies(
 
       object Test : LibDependencies("androidx.room", "room-testing", "2.4.2",
           DependencyMethod.Test.Implementation)
+    }
+
+    /**
+     * 调试工具
+     * https://github.com/facebook/stetho
+     */
+    interface Stetho {
+      object Core : LibDependencies("com.facebook.stetho", "stetho", "1.6.0",
+          DependencyMethod.Implementation)
+
+      object OkHttp : LibDependencies("com.facebook.stetho", "stetho-okhttp3", "1.6.0",
+          DependencyMethod.Implementation)
+    }
+
+    /**
+     * 亚马逊云存储
+     * https://github.com/aws-amplify/aws-sdk-android
+     */
+    interface S3 {
+      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.46.0",
+          DependencyMethod.Implementation)
+
+      object Client : LibDependencies("com.amazonaws", "aws-android-sdk-mobile-client",
+          "2.46.0", DependencyMethod.Implementation)
     }
 
     /**

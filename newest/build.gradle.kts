@@ -33,6 +33,7 @@ dependencies {
     implementation("me.jorgecastillo:androidcolorx:+")
     implementation("com.github.loperSeven:DateTimePicker:+")
     implementation("com.github.princekin-f:EasyFloat:+")
+    implementation("androidx.exifinterface:exifinterface:+")
     implementation("com.ypx.yimagepicker:androidx:+")
     implementation("com.github.iielse:imageviewer:+")
     implementation("joda-time:joda-time:+")
@@ -40,6 +41,7 @@ dependencies {
     implementation("com.tencent:mmkv-static:+")
     implementation("com.guolindev.permissionx:permissionx:+")
     implementation("androidx.paging:paging-runtime-ktx:+")
+    implementation("com.github.YummyLau:PanelSwitchHelper:+")
     implementation("com.github.jenly1314:zxing-lite:+")
     implementation("com.github.qiushui95:AndroidInitializer:+")
     implementation("com.dropbox.mobile.store:store4:+")
@@ -111,6 +113,9 @@ dependencies {
     implementation("androidx.activity:activity-ktx:+")
     implementation("androidx.activity:activity-compose:+")
 
+    implementation("com.tencent.bugly:crashreport:+")
+    implementation("com.tencent.bugly:crashreport_upgrade:+")
+
     implementation("androidx.camera:camera-camera2:+")
     implementation("androidx.camera:camera-core:+")
     implementation("androidx.camera:camera-lifecycle:+")
@@ -144,12 +149,27 @@ dependencies {
     implementation("com.airbnb.android:epoxy-compose:+")
     implementation("com.airbnb.android:epoxy-glide-preloading:+")
 
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-activity:+")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-appcompat:+")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-core:+")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-drawerlayout:+")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-lifecycle:+")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-navigation:+")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-preference:+")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-recyclerview:+")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-swiperefreshlayout:+")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager:+")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager2:+")
+
     implementation("androidx.fragment:fragment-ktx:+")
     testImplementation("androidx.fragment:fragment-testing:+")
 
     implementation("com.github.bumptech.glide:glide:+")
     implementation("com.github.bumptech.glide:okhttp3-integration:+")
     kapt("com.github.bumptech.glide:compiler:+")
+
+    implementation("com.geyifeng.immersionbar:immersionbar:+")
+    implementation("com.geyifeng.immersionbar:immersionbar-ktx:+")
 
     implementation("io.insert-koin:koin-android:+")
     implementation("io.insert-koin:koin-core:+")
@@ -198,6 +218,12 @@ dependencies {
     implementation("androidx.room:room-ktx:+")
     kapt("androidx.room:room-compiler:+")
     testImplementation("androidx.room:room-testing:+")
+
+    implementation("com.facebook.stetho:stetho:+")
+    implementation("com.facebook.stetho:stetho-okhttp3:+")
+
+    implementation("com.amazonaws:aws-android-sdk-s3:+")
+    implementation("com.amazonaws:aws-android-sdk-mobile-client:+")
 
     implementation("jp.wasabeef.transformers:core:+")
     implementation("jp.wasabeef.transformers:coil:+")
