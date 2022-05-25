@@ -51,6 +51,15 @@ sealed class PluginConfig(
         object Plugin : LibPluginId("com.rocketx")
     }
 
+    object VasDolly : PluginConfig(
+        "com.tencent.vasdolly",
+        "plugin",
+        DependencyConfig.Single.VasDolly.version,
+        "vasDolly"
+    ){
+        object Plugin : LibPluginId("com.tencent.vasdolly")
+    }
+
     sealed class Asm(name: String, key: String) : PluginConfig(
         "org.ow2.asm",
         name,

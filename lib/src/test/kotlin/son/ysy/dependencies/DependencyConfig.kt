@@ -286,6 +286,17 @@ sealed class DependencyConfig(
         )
 
         //endregion
+        //region XPopup(弹窗)
+        object XPopup : DependencyConfig(
+            group = "com.github.li-xiaojun",
+            name = "XPopup",
+            version = "2.8.0",
+            remark = "弹窗",
+            link = "https://github.com/li-xiaojun/XPopup",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
+
+        //endregion
         //region Profiler(AS OkHttp 拦截器)
         object Profiler : DependencyConfig(
             group = "com.localebro",
@@ -317,6 +328,19 @@ sealed class DependencyConfig(
             version = "1.3.3",
             remark = "Json序列化",
             link = "https://github.com/Kotlin/kotlinx.serialization",
+            dependencyMethod = DependencyMethod.Implementation,
+        ) {
+            const val PLUGIN_ID = "plugin.serialization"
+        }
+
+        //endregion
+        //region VasDolly(多渠道打包)
+        object VasDolly : DependencyConfig(
+            group = "com.tencent.vasdolly",
+            name = "helper",
+            version = "3.0.4",
+            remark = "多渠道打包",
+            link = "https://github.com/Tencent/VasDolly",
             dependencyMethod = DependencyMethod.Implementation,
         ) {
             const val PLUGIN_ID = "plugin.serialization"
@@ -772,8 +796,8 @@ sealed class DependencyConfig(
             link = "https://bugly.qq.com/docs/user-guide/instruction-manual-android/?v=1.0.0",
             dependencyMethod = DependencyMethod.Implementation,
         ) {
-            object Crash : Bugly("crashreport","4.0.4")
-            object Upgrade : Bugly("crashreport_upgrade","1.5.23")
+            object Crash : Bugly("crashreport", "4.0.4")
+            object Upgrade : Bugly("crashreport_upgrade", "1.5.23")
         }
 
         //endregion
@@ -909,6 +933,7 @@ sealed class DependencyConfig(
             link = "https://github.com/ReactiveCircus/FlowBinding",
             dependencyMethod = dependencyMethod,
         ) {
+            object Android : FlowBinding("flowbinding-android")
             object Activity : FlowBinding("flowbinding-activity")
             object AppCompat : FlowBinding("flowbinding-appcompat")
             object Core : FlowBinding("flowbinding-core")
@@ -920,6 +945,7 @@ sealed class DependencyConfig(
             object SwipeRefreshLayout : FlowBinding("flowbinding-swiperefreshlayout")
             object ViewPager : FlowBinding("flowbinding-viewpager")
             object ViewPager2 : FlowBinding("flowbinding-viewpager2")
+            object Material : FlowBinding("flowbinding-material")
         }
 
         //endregion
@@ -1221,6 +1247,24 @@ sealed class DependencyConfig(
             object CoilGpu : Transformer("coil-gpu")
             object Glide : Transformer("glide")
             object GlideGpu : Transformer("glide-gpu")
+        }
+
+        //endregion
+        //region 友盟
+        sealed class UMeng(
+            name: String,
+            version: String,
+            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
+        ) : DependencyConfig(
+            group = "com.umeng.umsdk",
+            name = name,
+            version = version,
+            remark = "友盟",
+            link = "https://developer.umeng.com/docs/119267/detail/118584",
+            dependencyMethod = dependencyMethod,
+        ) {
+            object Asms : UMeng("asms", "1.6.3")
+            object Common : UMeng("common", "9.5.0")
         }
 
         //endregion
