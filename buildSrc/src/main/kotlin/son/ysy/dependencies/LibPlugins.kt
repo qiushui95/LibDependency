@@ -33,4 +33,8 @@ sealed class LibPlugins(
   object RocketX : LibPlugins("io.github.trycatchx", "rocketx", "1.1.0") {
     object Plugin : LibPluginId("com.rocketx")
   }
+
+  object VasDolly : LibPlugins("com.tencent.vasdolly", "plugin", "3.0.4") {
+    object Plugin : LibPluginId("com.tencent.vasdolly")
+  }
 }

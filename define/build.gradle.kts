@@ -47,9 +47,11 @@ dependencies {
     implementation("com.dropbox.mobile.store:store4:4.0.5")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")
+    implementation("com.github.li-xiaojun:XPopup:2.8.0")
     implementation("com.localebro:okhttpprofiler:1.0.8")
     implementation("com.vanniktech:gradle-maven-publish-plugin:0.19.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.3")
+    implementation("com.tencent.vasdolly:helper:3.0.4")
     implementation("net.lingala.zip4j:zip4j:2.10.0")
 
     implementation("com.github.Justson.AgentWeb:agentweb-core:v4.1.9-androidx")
@@ -149,6 +151,7 @@ dependencies {
     implementation("com.airbnb.android:epoxy-compose:5.0.0-beta05")
     implementation("com.airbnb.android:epoxy-glide-preloading:5.0.0-beta05")
 
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-android:1.2.0")
     implementation("io.github.reactivecircus.flowbinding:flowbinding-activity:1.2.0")
     implementation("io.github.reactivecircus.flowbinding:flowbinding-appcompat:1.2.0")
     implementation("io.github.reactivecircus.flowbinding:flowbinding-core:1.2.0")
@@ -160,6 +163,7 @@ dependencies {
     implementation("io.github.reactivecircus.flowbinding:flowbinding-swiperefreshlayout:1.2.0")
     implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager:1.2.0")
     implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager2:1.2.0")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-material:1.2.0")
 
     implementation("androidx.fragment:fragment-ktx:1.5.0-rc01")
     testImplementation("androidx.fragment:fragment-testing:1.5.0-rc01")
@@ -230,6 +234,9 @@ dependencies {
     implementation("jp.wasabeef.transformers:coil-gpu:1.0.6")
     implementation("jp.wasabeef.transformers:glide:1.0.6")
     implementation("jp.wasabeef.transformers:glide-gpu:1.0.6")
+
+    implementation("com.umeng.umsdk:asms:1.6.3")
+    implementation("com.umeng.umsdk:common:9.5.0")
 
     implementation("androidx.work:work-runtime-ktx:2.7.1")
     testImplementation("androidx.work:work-testing:2.7.1")

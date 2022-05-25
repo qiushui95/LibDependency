@@ -179,6 +179,13 @@ sealed class LibDependencies(
         DependencyMethod.Implementation)
 
     /**
+     * 弹窗
+     * https://github.com/li-xiaojun/XPopup
+     */
+    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.8.0",
+        DependencyMethod.Implementation)
+
+    /**
      * AS OkHttp 拦截器
      * https://github.com/itkacher/OkHttpProfiler
      */
@@ -198,6 +205,13 @@ sealed class LibDependencies(
      */
     object Serialization : LibDependencies("org.jetbrains.kotlinx",
         "kotlinx-serialization-json", "1.3.3", DependencyMethod.Implementation)
+
+    /**
+     * 多渠道打包
+     * https://github.com/Tencent/VasDolly
+     */
+    object VasDolly : LibDependencies("com.tencent.vasdolly", "helper", "3.0.4",
+        DependencyMethod.Implementation)
 
     /**
      * zip压缩相关
@@ -635,6 +649,9 @@ sealed class LibDependencies(
      * https://github.com/ReactiveCircus/FlowBinding
      */
     interface FlowBinding {
+      object Android : LibDependencies("io.github.reactivecircus.flowbinding",
+          "flowbinding-android", "1.2.0", DependencyMethod.Implementation)
+
       object Activity : LibDependencies("io.github.reactivecircus.flowbinding",
           "flowbinding-activity", "1.2.0", DependencyMethod.Implementation)
 
@@ -667,6 +684,9 @@ sealed class LibDependencies(
 
       object ViewPager2 : LibDependencies("io.github.reactivecircus.flowbinding",
           "flowbinding-viewpager2", "1.2.0", DependencyMethod.Implementation)
+
+      object Material : LibDependencies("io.github.reactivecircus.flowbinding",
+          "flowbinding-material", "1.2.0", DependencyMethod.Implementation)
     }
 
     /**
@@ -919,6 +939,18 @@ sealed class LibDependencies(
           DependencyMethod.Implementation)
 
       object GlideGpu : LibDependencies("jp.wasabeef.transformers", "glide-gpu", "1.0.6",
+          DependencyMethod.Implementation)
+    }
+
+    /**
+     * 友盟
+     * https://developer.umeng.com/docs/119267/detail/118584
+     */
+    interface UMeng {
+      object Asms : LibDependencies("com.umeng.umsdk", "asms", "1.6.3",
+          DependencyMethod.Implementation)
+
+      object Common : LibDependencies("com.umeng.umsdk", "common", "9.5.0",
           DependencyMethod.Implementation)
     }
 

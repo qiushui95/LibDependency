@@ -47,9 +47,11 @@ dependencies {
     implementation("com.dropbox.mobile.store:store4:+")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:+")
+    implementation("com.github.li-xiaojun:XPopup:+")
     implementation("com.localebro:okhttpprofiler:+")
     implementation("com.vanniktech:gradle-maven-publish-plugin:+")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:+")
+    implementation("com.tencent.vasdolly:helper:+")
     implementation("net.lingala.zip4j:zip4j:+")
 
     implementation("com.github.Justson.AgentWeb:agentweb-core:+")
@@ -149,6 +151,7 @@ dependencies {
     implementation("com.airbnb.android:epoxy-compose:+")
     implementation("com.airbnb.android:epoxy-glide-preloading:+")
 
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-android:+")
     implementation("io.github.reactivecircus.flowbinding:flowbinding-activity:+")
     implementation("io.github.reactivecircus.flowbinding:flowbinding-appcompat:+")
     implementation("io.github.reactivecircus.flowbinding:flowbinding-core:+")
@@ -160,6 +163,7 @@ dependencies {
     implementation("io.github.reactivecircus.flowbinding:flowbinding-swiperefreshlayout:+")
     implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager:+")
     implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager2:+")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-material:+")
 
     implementation("androidx.fragment:fragment-ktx:+")
     testImplementation("androidx.fragment:fragment-testing:+")
@@ -230,6 +234,9 @@ dependencies {
     implementation("jp.wasabeef.transformers:coil-gpu:+")
     implementation("jp.wasabeef.transformers:glide:+")
     implementation("jp.wasabeef.transformers:glide-gpu:+")
+
+    implementation("com.umeng.umsdk:asms:+")
+    implementation("com.umeng.umsdk:common:+")
 
     implementation("androidx.work:work-runtime-ktx:+")
     testImplementation("androidx.work:work-testing:+")

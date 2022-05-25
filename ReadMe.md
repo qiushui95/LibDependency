@@ -75,6 +75,9 @@
 >[XCrash](https://github.com/iqiyi/xCrash/blob/master/README.zh-CN.md)(奔溃日志收集)  
 >>implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")  
   
+>[XPopup](https://github.com/li-xiaojun/XPopup)(弹窗)  
+>>implementation("com.github.li-xiaojun:XPopup:2.8.0")  
+  
 >[Profiler](https://github.com/itkacher/OkHttpProfiler)(AS OkHttp 拦截器)  
 >>implementation("com.localebro:okhttpprofiler:1.0.8")  
   
@@ -83,6 +86,9 @@
   
 >[Serialization](https://github.com/Kotlin/kotlinx.serialization)(Json序列化)  
 >>implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.3")  
+  
+>[VasDolly](https://github.com/Tencent/VasDolly)(多渠道打包)  
+>>implementation("com.tencent.vasdolly:helper:3.0.4")  
   
 >[Zip4J](https://github.com/srikanth-lingala/zip4j)(zip压缩相关)  
 >>implementation("net.lingala.zip4j:zip4j:2.10.0")  
@@ -267,6 +273,7 @@
 >>implementation("com.airbnb.android:epoxy-glide-preloading:5.0.0-beta05")  
   
 >[FlowBinding](https://github.com/ReactiveCircus/FlowBinding)(FlowBinding)  
+>>implementation("io.github.reactivecircus.flowbinding:flowbinding-android:1.2.0")  
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-activity:1.2.0")  
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-appcompat:1.2.0")  
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-core:1.2.0")  
@@ -278,6 +285,7 @@
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-swiperefreshlayout:1.2.0")  
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager:1.2.0")  
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager2:1.2.0")  
+>>implementation("io.github.reactivecircus.flowbinding:flowbinding-material:1.2.0")  
   
 >[Fragment](https://developer.android.com/jetpack/androidx/releases/fragment)  
 >>implementation("androidx.fragment:fragment-ktx:1.5.0-rc01")  
@@ -364,6 +372,10 @@
 >>implementation("jp.wasabeef.transformers:coil-gpu:1.0.6")  
 >>implementation("jp.wasabeef.transformers:glide:1.0.6")  
 >>implementation("jp.wasabeef.transformers:glide-gpu:1.0.6")  
+  
+>[UMeng](https://developer.umeng.com/docs/119267/detail/118584)(友盟)  
+>>implementation("com.umeng.umsdk:asms:1.6.3")  
+>>implementation("com.umeng.umsdk:common:9.5.0")  
   
 >[WorkManager](https://developer.android.com/jetpack/androidx/releases/work)(任务管理器)  
 >>implementation("androidx.work:work-runtime-ktx:2.7.1")  
