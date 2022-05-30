@@ -114,7 +114,7 @@ sealed class DependencyConfig(
         object DateTimePicker : DependencyConfig(
             group = "com.github.loperSeven",
             name = "DateTimePicker",
-            version = "0.5.7",
+            version = "0.5.8",
             remark = "时间选择器",
             link = "https://github.com/loperSeven/DateTimePicker",
             dependencyMethod = DependencyMethod.Implementation,
@@ -421,7 +421,7 @@ sealed class DependencyConfig(
         object ConstraintLayout : DependencyConfig(
             group = "androidx.constraintlayout",
             name = "constraintlayout",
-            version = "2.1.3",
+            version = "2.1.4",
             remark = "约束布局",
             link = "https://developer.android.com/jetpack/androidx/releases/constraintlayout",
             dependencyMethod = DependencyMethod.Implementation,
@@ -487,7 +487,7 @@ sealed class DependencyConfig(
         object PdfViewer : DependencyConfig(
             group = "com.github.mhiew",
             name = "android-pdf-viewer",
-            version = "3.2.0-beta.2",
+            version = "3.2.0-beta.3",
             remark = "pdf查看",
             link = "https://github.com/barteksc/AndroidPdfViewer",
             dependencyMethod = DependencyMethod.Implementation,
@@ -671,7 +671,7 @@ sealed class DependencyConfig(
         object ConstraintLayout : DependencyConfig(
             group = "androidx.constraintlayout",
             name = "constraintlayout-compose",
-            version = "1.0.0",
+            version = "1.0.1",
             remark = "Compose约束布局",
             link = "https://developer.android.com/jetpack/androidx/releases/constraintlayout",
             dependencyMethod = DependencyMethod.Implementation,
@@ -693,7 +693,7 @@ sealed class DependencyConfig(
         sealed class Official(
             group: String,
             name: String,
-            version: String = "1.2.0-beta01",
+            version: String = "1.2.0-beta02",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : DependencyConfig(
             group = group,
@@ -870,7 +870,7 @@ sealed class DependencyConfig(
             DependencyConfig(
                 group = "org.jetbrains.kotlinx",
                 name = name,
-                version = "1.6.1",
+                version = "1.6.2",
                 remark = "协程",
                 link = "https://github.com/Kotlin/kotlinx.coroutines",
                 dependencyMethod = dependencyMethod,
@@ -1220,7 +1220,7 @@ sealed class DependencyConfig(
         ) : DependencyConfig(
             group = "com.amazonaws",
             name = name,
-            version = "2.46.0",
+            version = "2.47.0",
             remark = "亚马逊云存储",
             link = "https://github.com/aws-amplify/aws-sdk-android",
             dependencyMethod = dependencyMethod,
