@@ -28,7 +28,7 @@
 >>implementation("me.jorgecastillo:androidcolorx:0.2.0")  
   
 >[DateTimePicker](https://github.com/loperSeven/DateTimePicker)(时间选择器)  
->>implementation("com.github.loperSeven:DateTimePicker:0.5.7")  
+>>implementation("com.github.loperSeven:DateTimePicker:0.5.8")  
   
 >[EasyFloat](https://github.com/princekin-f/EasyFloat)(悬浮窗)  
 >>implementation("com.github.princekin-f:EasyFloat:2.0.4")  
@@ -114,7 +114,7 @@
 >>implementation("me.majiajie:pager-bottom-tab-strip:2.4.0")  
   
 >[ConstraintLayout](https://developer.android.com/jetpack/androidx/releases/constraintlayout)(约束布局)  
->>implementation("androidx.constraintlayout:constraintlayout:2.1.3")  
+>>implementation("androidx.constraintlayout:constraintlayout:2.1.4")  
   
 >[CornerView](https://github.com/csdn-mobile/RoundView)(圆角控件)  
 >>implementation("io.github.csdn-mobile:RoundView:1.7.1")  
@@ -132,7 +132,7 @@
 >>implementation("com.google.android.material:material:1.6.0")  
   
 >[PdfViewer](https://github.com/barteksc/AndroidPdfViewer)(pdf查看)  
->>implementation("com.github.mhiew:android-pdf-viewer:3.2.0-beta.2")  
+>>implementation("com.github.mhiew:android-pdf-viewer:3.2.0-beta.3")  
   
 >[PhotoView](https://github.com/Baseflow/PhotoView)(图片预览)  
 >>implementation("com.github.chrisbanes:PhotoView:2.3.0")  
@@ -184,7 +184,7 @@
 <summary>Compose</summary>  
   
 >[ConstraintLayout](https://developer.android.com/jetpack/androidx/releases/constraintlayout)(Compose约束布局)  
->>implementation(androidx.constraintlayout:constraintlayout-compose:1.0.0)  
+>>implementation(androidx.constraintlayout:constraintlayout-compose:1.0.1)  
   
 >[NavigationAnimation](https://github.com/fornewid/material-motion-compose)(Compose导航动画)  
 >>implementation(com.github.fornewid:material-motion-compose:0.8.1)  
@@ -207,17 +207,17 @@
 >>implementation("com.google.accompanist:accompanist-systemuicontroller:0.23.1")  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
->>implementation("androidx.compose.animation:animation:1.2.0-beta01")  
->>implementation("androidx.compose.compiler:compiler:1.2.0-beta01")  
->>implementation("androidx.compose.foundation:foundation:1.2.0-beta01")  
->>implementation("androidx.compose.runtime:runtime-livedata:1.2.0-beta01")  
->>implementation("androidx.compose.material:material:1.2.0-beta01")  
->>implementation("androidx.compose.material:material-icons-core:1.2.0-beta01")  
->>implementation("androidx.compose.material:material-icons-extended:1.2.0-beta01")  
->>implementation("androidx.compose.ui:ui-tooling-preview:1.2.0-beta01")  
->>androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.2.0-beta01")  
->>implementation("androidx.compose.ui:ui:1.2.0-beta01")  
->>implementation("androidx.compose.ui:ui-tooling:1.2.0-beta01")  
+>>implementation("androidx.compose.animation:animation:1.2.0-beta02")  
+>>implementation("androidx.compose.compiler:compiler:1.2.0-beta02")  
+>>implementation("androidx.compose.foundation:foundation:1.2.0-beta02")  
+>>implementation("androidx.compose.runtime:runtime-livedata:1.2.0-beta02")  
+>>implementation("androidx.compose.material:material:1.2.0-beta02")  
+>>implementation("androidx.compose.material:material-icons-core:1.2.0-beta02")  
+>>implementation("androidx.compose.material:material-icons-extended:1.2.0-beta02")  
+>>implementation("androidx.compose.ui:ui-tooling-preview:1.2.0-beta02")  
+>>androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.2.0-beta02")  
+>>implementation("androidx.compose.ui:ui:1.2.0-beta02")  
+>>implementation("androidx.compose.ui:ui-tooling:1.2.0-beta02")  
   
 </details>  
   
@@ -256,8 +256,8 @@
 >>implementation("androidx.core:core-splashscreen:1.0.0-beta02")  
   
 >[Coroutines](https://github.com/Kotlin/kotlinx.coroutines)(协程)  
->>implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1")  
->>testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.1")  
+>>implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.2")  
+>>testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.2")  
   
 >[Download](https://github.com/AriaLyy/Aria)(下载)  
 >>implementation("me.laoyuyu.aria:core:3.8.16")  
@@ -363,8 +363,8 @@
 >>implementation("com.facebook.stetho:stetho-okhttp3:1.6.0")  
   
 >[S3](https://github.com/aws-amplify/aws-sdk-android)(亚马逊云存储)  
->>implementation("com.amazonaws:aws-android-sdk-s3:2.46.0")  
->>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.46.0")  
+>>implementation("com.amazonaws:aws-android-sdk-s3:2.47.0")  
+>>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.47.0")  
   
 >[Transformer](https://github.com/wasabeef/transformers)(图片裁剪器)  
 >>implementation("jp.wasabeef.transformers:core:1.0.6")  

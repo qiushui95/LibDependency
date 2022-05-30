@@ -71,7 +71,7 @@ sealed class LibDependencies(
      * https://github.com/loperSeven/DateTimePicker
      */
     object DateTimePicker : LibDependencies("com.github.loperSeven", "DateTimePicker",
-        "0.5.7", DependencyMethod.Implementation)
+        "0.5.8", DependencyMethod.Implementation)
 
     /**
      * 悬浮窗
@@ -262,7 +262,7 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/constraintlayout
      */
     object ConstraintLayout : LibDependencies("androidx.constraintlayout",
-        "constraintlayout", "2.1.3", DependencyMethod.Implementation)
+        "constraintlayout", "2.1.4", DependencyMethod.Implementation)
 
     /**
      * 圆角控件
@@ -303,7 +303,7 @@ sealed class LibDependencies(
      * https://github.com/barteksc/AndroidPdfViewer
      */
     object PdfViewer : LibDependencies("com.github.mhiew", "android-pdf-viewer",
-        "3.2.0-beta.2", DependencyMethod.Implementation)
+        "3.2.0-beta.3", DependencyMethod.Implementation)
 
     /**
      * 图片预览
@@ -407,7 +407,7 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/constraintlayout
      */
     object ConstraintLayout : LibDependencies("androidx.constraintlayout",
-        "constraintlayout-compose", "1.0.0", DependencyMethod.Implementation)
+        "constraintlayout-compose", "1.0.1", DependencyMethod.Implementation)
 
     /**
      * Compose导航动画
@@ -469,36 +469,36 @@ sealed class LibDependencies(
      */
     interface Official {
       object Animation : LibDependencies("androidx.compose.animation", "animation",
-          "1.2.0-beta01", DependencyMethod.Implementation)
+          "1.2.0-beta02", DependencyMethod.Implementation)
 
       object Compiler : LibDependencies("androidx.compose.compiler", "compiler",
-          "1.2.0-beta01", DependencyMethod.Implementation)
+          "1.2.0-beta02", DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
-          "1.2.0-beta01", DependencyMethod.Implementation)
+          "1.2.0-beta02", DependencyMethod.Implementation)
 
       object LiveData : LibDependencies("androidx.compose.runtime", "runtime-livedata",
-          "1.2.0-beta01", DependencyMethod.Implementation)
+          "1.2.0-beta02", DependencyMethod.Implementation)
 
       object Material : LibDependencies("androidx.compose.material", "material",
-          "1.2.0-beta01", DependencyMethod.Implementation)
+          "1.2.0-beta02", DependencyMethod.Implementation)
 
       object MaterialIcon : LibDependencies("androidx.compose.material",
-          "material-icons-core", "1.2.0-beta01", DependencyMethod.Implementation)
+          "material-icons-core", "1.2.0-beta02", DependencyMethod.Implementation)
 
       object MaterialIconExtended : LibDependencies("androidx.compose.material",
-          "material-icons-extended", "1.2.0-beta01", DependencyMethod.Implementation)
+          "material-icons-extended", "1.2.0-beta02", DependencyMethod.Implementation)
 
       object Preview : LibDependencies("androidx.compose.ui", "ui-tooling-preview",
-          "1.2.0-beta01", DependencyMethod.Implementation)
+          "1.2.0-beta02", DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.2.0-beta01",
+      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.2.0-beta02",
           DependencyMethod.AndroidTest.Implementation)
 
-      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.2.0-beta01",
+      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.2.0-beta02",
           DependencyMethod.Implementation)
 
-      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.2.0-beta01",
+      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.2.0-beta02",
           DependencyMethod.Implementation)
     }
   }
@@ -600,10 +600,10 @@ sealed class LibDependencies(
      */
     interface Coroutines {
       object Core : LibDependencies("org.jetbrains.kotlinx", "kotlinx-coroutines-android",
-          "1.6.1", DependencyMethod.Implementation)
+          "1.6.2", DependencyMethod.Implementation)
 
       object Test : LibDependencies("org.jetbrains.kotlinx", "kotlinx-coroutines-test",
-          "1.6.1", DependencyMethod.Test.Implementation)
+          "1.6.2", DependencyMethod.Test.Implementation)
     }
 
     /**
@@ -914,11 +914,11 @@ sealed class LibDependencies(
      * https://github.com/aws-amplify/aws-sdk-android
      */
     interface S3 {
-      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.46.0",
+      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.47.0",
           DependencyMethod.Implementation)
 
       object Client : LibDependencies("com.amazonaws", "aws-android-sdk-mobile-client",
-          "2.46.0", DependencyMethod.Implementation)
+          "2.47.0", DependencyMethod.Implementation)
     }
 
     /**
