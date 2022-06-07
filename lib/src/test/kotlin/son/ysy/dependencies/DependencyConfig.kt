@@ -26,7 +26,7 @@ sealed class DependencyConfig(
         object AliOss : DependencyConfig(
             group = "com.aliyun.dpa",
             name = "oss-android-sdk",
-            version = "2.9.11",
+            version = "2.9.12",
             remark = "阿里云存储",
             link = "https://help.aliyun.com/document_detail/32043.html",
             dependencyMethod = DependencyMethod.Implementation,
@@ -235,7 +235,7 @@ sealed class DependencyConfig(
         object QrScanner : DependencyConfig(
             group = "com.github.jenly1314",
             name = "zxing-lite",
-            version = "2.1.1",
+            version = "2.2.0",
             remark = "二维码扫描",
             link = "https://github.com/jenly1314/ZXingLite",
             dependencyMethod = DependencyMethod.Implementation,
@@ -290,7 +290,7 @@ sealed class DependencyConfig(
         object XPopup : DependencyConfig(
             group = "com.github.li-xiaojun",
             name = "XPopup",
-            version = "2.8.0",
+            version = "2.8.2",
             remark = "弹窗",
             link = "https://github.com/li-xiaojun/XPopup",
             dependencyMethod = DependencyMethod.Implementation,
@@ -312,7 +312,7 @@ sealed class DependencyConfig(
         object MavenPublish : DependencyConfig(
             group = "com.vanniktech",
             name = "gradle-maven-publish-plugin",
-            version = "0.19.0",
+            version = "0.20.0",
             remark = "Maven上传",
             link = "https://github.com/vanniktech/gradle-maven-publish-plugin",
             dependencyMethod = DependencyMethod.Implementation,
@@ -465,7 +465,7 @@ sealed class DependencyConfig(
         object LottieView : DependencyConfig(
             group = "com.airbnb.android",
             name = "lottie",
-            version = "5.1.1",
+            version = "5.2.0",
             remark = "动画框架",
             link = "https://github.com/airbnb/lottie-android",
             dependencyMethod = DependencyMethod.Implementation,
@@ -476,7 +476,7 @@ sealed class DependencyConfig(
         object Material : DependencyConfig(
             group = "com.google.android.material",
             name = "material",
-            version = "1.6.0",
+            version = "1.6.1",
             remark = "",
             link = "https://github.com/material-components/material-components-android",
             dependencyMethod = DependencyMethod.Implementation,
@@ -693,7 +693,7 @@ sealed class DependencyConfig(
         sealed class Official(
             group: String,
             name: String,
-            version: String = "1.2.0-beta02",
+            version: String = "1.2.0-beta03",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : DependencyConfig(
             group = group,
@@ -861,7 +861,7 @@ sealed class DependencyConfig(
             dependencyMethod = DependencyMethod.Implementation,
         ) {
             object Ktx : Core("core-ktx", "1.8.0-beta01")
-            object Splash : Core("core-splashscreen", "1.0.0-beta02")
+            object Splash : Core("core-splashscreen", "1.0.0-rc01")
         }
 
         //endregion
