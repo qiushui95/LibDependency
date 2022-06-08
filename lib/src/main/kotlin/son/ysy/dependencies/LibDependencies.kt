@@ -15,7 +15,7 @@ sealed class LibDependencies(
      * 阿里云存储
      * https://help.aliyun.com/document_detail/32043.html
      */
-    object AliOss : LibDependencies("com.aliyun.dpa", "oss-android-sdk", "2.9.11",
+    object AliOss : LibDependencies("com.aliyun.dpa", "oss-android-sdk", "2.9.12",
         DependencyMethod.Implementation)
 
     /**
@@ -147,7 +147,7 @@ sealed class LibDependencies(
      * 二维码扫描
      * https://github.com/jenly1314/ZXingLite
      */
-    object QrScanner : LibDependencies("com.github.jenly1314", "zxing-lite", "2.1.1",
+    object QrScanner : LibDependencies("com.github.jenly1314", "zxing-lite", "2.2.0",
         DependencyMethod.Implementation)
 
     /**
@@ -182,7 +182,7 @@ sealed class LibDependencies(
      * 弹窗
      * https://github.com/li-xiaojun/XPopup
      */
-    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.8.0",
+    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.8.2",
         DependencyMethod.Implementation)
 
     /**
@@ -197,7 +197,7 @@ sealed class LibDependencies(
      * https://github.com/vanniktech/gradle-maven-publish-plugin
      */
     object MavenPublish : LibDependencies("com.vanniktech", "gradle-maven-publish-plugin",
-        "0.19.0", DependencyMethod.Implementation)
+        "0.20.0", DependencyMethod.Implementation)
 
     /**
      * Json序列化
@@ -289,13 +289,13 @@ sealed class LibDependencies(
      * 动画框架
      * https://github.com/airbnb/lottie-android
      */
-    object LottieView : LibDependencies("com.airbnb.android", "lottie", "5.1.1",
+    object LottieView : LibDependencies("com.airbnb.android", "lottie", "5.2.0",
         DependencyMethod.Implementation)
 
     /**
      * https://github.com/material-components/material-components-android
      */
-    object Material : LibDependencies("com.google.android.material", "material", "1.6.0",
+    object Material : LibDependencies("com.google.android.material", "material", "1.6.1",
         DependencyMethod.Implementation)
 
     /**
@@ -469,36 +469,36 @@ sealed class LibDependencies(
      */
     interface Official {
       object Animation : LibDependencies("androidx.compose.animation", "animation",
-          "1.2.0-beta02", DependencyMethod.Implementation)
+          "1.2.0-beta03", DependencyMethod.Implementation)
 
       object Compiler : LibDependencies("androidx.compose.compiler", "compiler",
-          "1.2.0-beta02", DependencyMethod.Implementation)
+          "1.2.0-beta03", DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
-          "1.2.0-beta02", DependencyMethod.Implementation)
+          "1.2.0-beta03", DependencyMethod.Implementation)
 
       object LiveData : LibDependencies("androidx.compose.runtime", "runtime-livedata",
-          "1.2.0-beta02", DependencyMethod.Implementation)
+          "1.2.0-beta03", DependencyMethod.Implementation)
 
       object Material : LibDependencies("androidx.compose.material", "material",
-          "1.2.0-beta02", DependencyMethod.Implementation)
+          "1.2.0-beta03", DependencyMethod.Implementation)
 
       object MaterialIcon : LibDependencies("androidx.compose.material",
-          "material-icons-core", "1.2.0-beta02", DependencyMethod.Implementation)
+          "material-icons-core", "1.2.0-beta03", DependencyMethod.Implementation)
 
       object MaterialIconExtended : LibDependencies("androidx.compose.material",
-          "material-icons-extended", "1.2.0-beta02", DependencyMethod.Implementation)
+          "material-icons-extended", "1.2.0-beta03", DependencyMethod.Implementation)
 
       object Preview : LibDependencies("androidx.compose.ui", "ui-tooling-preview",
-          "1.2.0-beta02", DependencyMethod.Implementation)
+          "1.2.0-beta03", DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.2.0-beta02",
+      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.2.0-beta03",
           DependencyMethod.AndroidTest.Implementation)
 
-      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.2.0-beta02",
+      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.2.0-beta03",
           DependencyMethod.Implementation)
 
-      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.2.0-beta02",
+      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.2.0-beta03",
           DependencyMethod.Implementation)
     }
   }
@@ -590,7 +590,7 @@ sealed class LibDependencies(
       object Ktx : LibDependencies("androidx.core", "core-ktx", "1.8.0-beta01",
           DependencyMethod.Implementation)
 
-      object Splash : LibDependencies("androidx.core", "core-splashscreen", "1.0.0-beta02",
+      object Splash : LibDependencies("androidx.core", "core-splashscreen", "1.0.0-rc01",
           DependencyMethod.Implementation)
     }
 

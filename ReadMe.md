@@ -4,7 +4,7 @@
 <summary>Single</summary>  
   
 >[AliOss](https://help.aliyun.com/document_detail/32043.html)(阿里云存储)  
->>implementation("com.aliyun.dpa:oss-android-sdk:2.9.11")  
+>>implementation("com.aliyun.dpa:oss-android-sdk:2.9.12")  
   
 >[AliPush](https://help.aliyun.com/document_detail/190009.html?spm=a2c4g.11174283.3.2.52eb6d163QVxjG)(阿里推送)  
 >>implementation("com.aliyun.ams:alicloud-android-push:3.7.4")  
@@ -61,7 +61,7 @@
 >>implementation("com.github.YummyLau:PanelSwitchHelper:1.4.0")  
   
 >[QrScanner](https://github.com/jenly1314/ZXingLite)(二维码扫描)  
->>implementation("com.github.jenly1314:zxing-lite:2.1.1")  
+>>implementation("com.github.jenly1314:zxing-lite:2.2.0")  
   
 >[Startup](https://github.com/qiushui95/AndroidInitializer)(app启动初始化)  
 >>implementation("com.github.qiushui95:AndroidInitializer:1.0.9")  
@@ -76,13 +76,13 @@
 >>implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")  
   
 >[XPopup](https://github.com/li-xiaojun/XPopup)(弹窗)  
->>implementation("com.github.li-xiaojun:XPopup:2.8.0")  
+>>implementation("com.github.li-xiaojun:XPopup:2.8.2")  
   
 >[Profiler](https://github.com/itkacher/OkHttpProfiler)(AS OkHttp 拦截器)  
 >>implementation("com.localebro:okhttpprofiler:1.0.8")  
   
 >[MavenPublish](https://github.com/vanniktech/gradle-maven-publish-plugin)(Maven上传)  
->>implementation("com.vanniktech:gradle-maven-publish-plugin:0.19.0")  
+>>implementation("com.vanniktech:gradle-maven-publish-plugin:0.20.0")  
   
 >[Serialization](https://github.com/Kotlin/kotlinx.serialization)(Json序列化)  
 >>implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.3")  
@@ -126,10 +126,10 @@
 >>implementation("com.github.dkzwm:fet-core:0.2.1")  
   
 >[LottieView](https://github.com/airbnb/lottie-android)(动画框架)  
->>implementation("com.airbnb.android:lottie:5.1.1")  
+>>implementation("com.airbnb.android:lottie:5.2.0")  
   
 >[Material](https://github.com/material-components/material-components-android)  
->>implementation("com.google.android.material:material:1.6.0")  
+>>implementation("com.google.android.material:material:1.6.1")  
   
 >[PdfViewer](https://github.com/barteksc/AndroidPdfViewer)(pdf查看)  
 >>implementation("com.github.mhiew:android-pdf-viewer:3.2.0-beta.3")  
@@ -207,17 +207,17 @@
 >>implementation("com.google.accompanist:accompanist-systemuicontroller:0.23.1")  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
->>implementation("androidx.compose.animation:animation:1.2.0-beta02")  
->>implementation("androidx.compose.compiler:compiler:1.2.0-beta02")  
->>implementation("androidx.compose.foundation:foundation:1.2.0-beta02")  
->>implementation("androidx.compose.runtime:runtime-livedata:1.2.0-beta02")  
->>implementation("androidx.compose.material:material:1.2.0-beta02")  
->>implementation("androidx.compose.material:material-icons-core:1.2.0-beta02")  
->>implementation("androidx.compose.material:material-icons-extended:1.2.0-beta02")  
->>implementation("androidx.compose.ui:ui-tooling-preview:1.2.0-beta02")  
->>androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.2.0-beta02")  
->>implementation("androidx.compose.ui:ui:1.2.0-beta02")  
->>implementation("androidx.compose.ui:ui-tooling:1.2.0-beta02")  
+>>implementation("androidx.compose.animation:animation:1.2.0-beta03")  
+>>implementation("androidx.compose.compiler:compiler:1.2.0-beta03")  
+>>implementation("androidx.compose.foundation:foundation:1.2.0-beta03")  
+>>implementation("androidx.compose.runtime:runtime-livedata:1.2.0-beta03")  
+>>implementation("androidx.compose.material:material:1.2.0-beta03")  
+>>implementation("androidx.compose.material:material-icons-core:1.2.0-beta03")  
+>>implementation("androidx.compose.material:material-icons-extended:1.2.0-beta03")  
+>>implementation("androidx.compose.ui:ui-tooling-preview:1.2.0-beta03")  
+>>androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.2.0-beta03")  
+>>implementation("androidx.compose.ui:ui:1.2.0-beta03")  
+>>implementation("androidx.compose.ui:ui-tooling:1.2.0-beta03")  
   
 </details>  
   
@@ -253,7 +253,7 @@
   
 >[Core](https://developer.android.com/jetpack/androidx/releases/core)  
 >>implementation("androidx.core:core-ktx:1.8.0-beta01")  
->>implementation("androidx.core:core-splashscreen:1.0.0-beta02")  
+>>implementation("androidx.core:core-splashscreen:1.0.0-rc01")  
   
 >[Coroutines](https://github.com/Kotlin/kotlinx.coroutines)(协程)  
 >>implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.2")  
