@@ -8,11 +8,10 @@ sealed class DependencyConfig(
     val remark: String,
     val link: String,
     val dependencyMethod: DependencyMethod,
-    val sort: Int = 0,
 ) {
 
     override fun toString(): String {
-        return "son.ysy.dependencies.DependencyConfig( group='$group', name='$name', version='$version', remark='$remark', link='$link', dependencyMethod=$dependencyMethod, sort=$sort)"
+        return "son.ysy.dependencies.DependencyConfig( group='$group', name='$name', version='$version', remark='$remark', link='$link', dependencyMethod=$dependencyMethod)"
     }
 
     private fun getKDoc(remark: String?, link: String?) = listOf(remark, link)
@@ -21,9 +20,16 @@ sealed class DependencyConfig(
         .ifBlank { null }
 
     //region Single
-    interface Single {
+    sealed class Single(
+        group: String,
+        name: String,
+        version: String,
+        remark: String,
+        link: String,
+        dependencyMethod: DependencyMethod,
+    ) : DependencyConfig(group, name, version, remark, link, dependencyMethod) {
         //region AliOss(阿里云存储)
-        object AliOss : DependencyConfig(
+        object AliOss : Single(
             group = "com.aliyun.dpa",
             name = "oss-android-sdk",
             version = "2.9.12",
@@ -34,7 +40,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region AliPush(阿里推送)
-        object AliPush : DependencyConfig(
+        object AliPush : Single(
             group = "com.aliyun.ams",
             name = "alicloud-android-push",
             version = "3.7.4",
@@ -45,7 +51,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region AndroidUtil(多功能工具包)
-        object AndroidUtil : DependencyConfig(
+        object AndroidUtil : Single(
             group = "com.blankj",
             name = "utilcodex",
             version = "1.31.0",
@@ -56,7 +62,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region Annotation
-        object Annotation : DependencyConfig(
+        object Annotation : Single(
             group = "androidx.annotation",
             name = "annotation",
             version = "1.3.0",
@@ -67,10 +73,10 @@ sealed class DependencyConfig(
 
         //endregion
         //region Appcompat
-        object Appcompat : DependencyConfig(
+        object Appcompat : Single(
             group = "androidx.appcompat",
             name = "appcompat",
-            version = "1.4.1",
+            version = "1.4.2",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/appcompat",
             dependencyMethod = DependencyMethod.Implementation,
@@ -78,7 +84,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region Background(背景生成工具库)
-        object Background : DependencyConfig(
+        object Background : Single(
             group = "com.github.JavaNoober.BackgroundLibrary",
             name = "libraryx",
             version = "1.7.4",
@@ -89,7 +95,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region BasePopup(弹窗)
-        object BasePopup : DependencyConfig(
+        object BasePopup : Single(
             group = "io.github.razerdp",
             name = "BasePopup",
             version = "3.2.0",
@@ -100,7 +106,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region ColorKtx(颜色帮助库)
-        object ColorKtx : DependencyConfig(
+        object ColorKtx : Single(
             group = "me.jorgecastillo",
             name = "androidcolorx",
             version = "0.2.0",
@@ -111,7 +117,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region DateTimePicker(时间选择器)
-        object DateTimePicker : DependencyConfig(
+        object DateTimePicker : Single(
             group = "com.github.loperSeven",
             name = "DateTimePicker",
             version = "0.5.8",
@@ -122,7 +128,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region EasyFloat(悬浮窗)
-        object EasyFloat : DependencyConfig(
+        object EasyFloat : Single(
             group = "com.github.princekin-f",
             name = "EasyFloat",
             version = "2.0.4",
@@ -133,7 +139,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region 图片信息
-        object Exif : DependencyConfig(
+        object Exif : Single(
             group = "androidx.exifinterface",
             name = "exifinterface",
             version = "1.3.3",
@@ -144,7 +150,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region ImagePicker(多媒体选择库)
-        object ImagePicker : DependencyConfig(
+        object ImagePicker : Single(
             group = "com.ypx.yimagepicker",
             name = "androidx",
             version = "3.1.4",
@@ -155,10 +161,10 @@ sealed class DependencyConfig(
 
         //endregion
         //region ImageWatcher(图片预览框架)
-        object ImageWatcher : DependencyConfig(
+        object ImageWatcher : Single(
             group = "com.github.iielse",
             name = "imageviewer",
-            version = "2.1.11",
+            version = "2.1.13",
             remark = "图片预览框架",
             link = "https://github.com/iielse/imageviewer",
             dependencyMethod = DependencyMethod.Implementation,
@@ -166,7 +172,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region JodaTime(时间处理库)
-        object JodaTime : DependencyConfig(
+        object JodaTime : Single(
             group = "joda-time",
             name = "joda-time",
             version = "2.10.14",
@@ -177,7 +183,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region LeakCanary(内存泄露监控)
-        object LeakCanary : DependencyConfig(
+        object LeakCanary : Single(
             group = "com.squareup.leakcanary",
             name = "leakcanary-android",
             version = "2.9.1",
@@ -188,7 +194,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region Mmkv(持久KV数据存储)
-        object Mmkv : DependencyConfig(
+        object Mmkv : Single(
             group = "com.tencent",
             name = "mmkv-static",
             version = "1.2.13",
@@ -199,7 +205,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region PermissionX(权限请求)
-        object PermissionX : DependencyConfig(
+        object PermissionX : Single(
             group = "com.guolindev.permissionx",
             name = "permissionx",
             version = "1.6.4",
@@ -210,7 +216,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region Paging(分页请求)
-        object Paging : DependencyConfig(
+        object Paging : Single(
             group = "androidx.paging",
             name = "paging-runtime-ktx",
             version = "3.1.1",
@@ -221,7 +227,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region PanelSwitchHelper(聊天键盘优化)
-        object PanelSwitch : DependencyConfig(
+        object PanelSwitch : Single(
             group = "com.github.YummyLau",
             name = "PanelSwitchHelper",
             version = "1.4.0",
@@ -232,7 +238,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region QrScanner(二维码扫描)
-        object QrScanner : DependencyConfig(
+        object QrScanner : Single(
             group = "com.github.jenly1314",
             name = "zxing-lite",
             version = "2.2.0",
@@ -243,7 +249,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region Startup(app启动初始化)
-        object Startup : DependencyConfig(
+        object Startup : Single(
             group = "com.github.qiushui95",
             name = "AndroidInitializer",
             version = "1.0.9",
@@ -254,7 +260,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region Store(多数据源)
-        object Store : DependencyConfig(
+        object Store : Single(
             group = "com.dropbox.mobile.store",
             name = "store4",
             version = "4.0.5",
@@ -265,7 +271,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region WeChat(微信开发Sdk)
-        object WeChat : DependencyConfig(
+        object WeChat : Single(
             group = "com.tencent.mm.opensdk",
             name = "wechat-sdk-android-without-mta",
             version = "6.8.0",
@@ -276,7 +282,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region XCrash(奔溃日志收集)
-        object XCrash : DependencyConfig(
+        object XCrash : Single(
             group = "com.iqiyi.xcrash",
             name = "xcrash-android-lib",
             version = "3.1.0",
@@ -287,7 +293,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region XPopup(弹窗)
-        object XPopup : DependencyConfig(
+        object XPopup : Single(
             group = "com.github.li-xiaojun",
             name = "XPopup",
             version = "2.8.2",
@@ -298,7 +304,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region Profiler(AS OkHttp 拦截器)
-        object Profiler : DependencyConfig(
+        object Profiler : Single(
             group = "com.localebro",
             name = "okhttpprofiler",
             version = "1.0.8",
@@ -309,7 +315,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region MavenPublish(Maven上传)
-        object MavenPublish : DependencyConfig(
+        object MavenPublish : Single(
             group = "com.vanniktech",
             name = "gradle-maven-publish-plugin",
             version = "0.20.0",
@@ -322,7 +328,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region Json序列化
-        object Serialization : DependencyConfig(
+        object Serialization : Single(
             group = "org.jetbrains.kotlinx",
             name = "kotlinx-serialization-json",
             version = "1.3.3",
@@ -335,7 +341,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region VasDolly(多渠道打包)
-        object VasDolly : DependencyConfig(
+        object VasDolly : Single(
             group = "com.tencent.vasdolly",
             name = "helper",
             version = "3.0.4",
@@ -348,7 +354,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region zip压缩相关
-        object Zip4J : DependencyConfig(
+        object Zip4J : Single(
             group = "net.lingala.zip4j",
             name = "zip4j",
             version = "2.10.0",
@@ -361,9 +367,16 @@ sealed class DependencyConfig(
 
     //endregion
     //region View
-    interface View {
+    sealed class View(
+        group: String,
+        name: String,
+        version: String,
+        remark: String,
+        link: String,
+        dependencyMethod: DependencyMethod,
+    ) : DependencyConfig(group, name, version, remark, link, dependencyMethod) {
         //region AgentWeb(浏览器)
-        object AgentWeb : DependencyConfig(
+        object AgentWeb : View(
             group = "com.github.Justson.AgentWeb",
             name = "agentweb-core",
             version = "v4.1.9-androidx",
@@ -374,7 +387,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region BannerView(轮播控件)
-        object BannerView : DependencyConfig(
+        object BannerView : View(
             group = "com.github.xiaohaibin",
             name = "XBanner",
             version = "androidx_v1.2.8",
@@ -385,7 +398,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region BlurView(高斯模糊)
-        object BlurView : DependencyConfig(
+        object BlurView : View(
             group = "com.github.Dimezis",
             name = "BlurView",
             version = "version-2.0.0",
@@ -396,7 +409,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region BottomNavigation(底部导航)
-        object BottomNavigation : DependencyConfig(
+        object BottomNavigation : View(
             group = "com.ashokvarma.android",
             name = "bottom-navigation-bar",
             version = "2.2.0",
@@ -407,7 +420,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region BottomTab(底部导航)
-        object BottomTab : DependencyConfig(
+        object BottomTab : View(
             group = "me.majiajie",
             name = "pager-bottom-tab-strip",
             version = "2.4.0",
@@ -418,7 +431,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region ConstraintLayout(约束布局)
-        object ConstraintLayout : DependencyConfig(
+        object ConstraintLayout : View(
             group = "androidx.constraintlayout",
             name = "constraintlayout",
             version = "2.1.4",
@@ -429,7 +442,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region CornerView(圆角控件)
-        object CornerView : DependencyConfig(
+        object CornerView : View(
             group = "io.github.csdn-mobile",
             name = "RoundView",
             version = "1.7.1",
@@ -440,7 +453,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region FlexBox(流式布局)
-        object FlexBox : DependencyConfig(
+        object FlexBox : View(
             group = "com.google.android.flexbox",
             name = "flexbox",
             version = "3.0.0",
@@ -451,7 +464,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region FormatterEdit(输入格式化控件)
-        object FormatterEdit : DependencyConfig(
+        object FormatterEdit : View(
             group = "com.github.dkzwm",
             name = "fet-core",
             version = "0.2.1",
@@ -462,7 +475,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region LottieView(动画框架)
-        object LottieView : DependencyConfig(
+        object LottieView : View(
             group = "com.airbnb.android",
             name = "lottie",
             version = "5.2.0",
@@ -473,7 +486,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region Material
-        object Material : DependencyConfig(
+        object Material : View(
             group = "com.google.android.material",
             name = "material",
             version = "1.6.1",
@@ -484,7 +497,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region PdfViewer(pdf查看)
-        object PdfViewer : DependencyConfig(
+        object PdfViewer : View(
             group = "com.github.mhiew",
             name = "android-pdf-viewer",
             version = "3.2.0-beta.3",
@@ -495,7 +508,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region PhotoView(图片预览)
-        object PhotoView : DependencyConfig(
+        object PhotoView : View(
             group = "com.github.chrisbanes",
             name = "PhotoView",
             version = "2.3.0",
@@ -506,7 +519,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region PinView(密码输入框)
-        object PinView : DependencyConfig(
+        object PinView : View(
             group = "io.github.chaosleung",
             name = "pinview",
             version = "1.4.4",
@@ -517,7 +530,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region RecyclerView
-        object RecyclerView : DependencyConfig(
+        object RecyclerView : View(
             group = "androidx.recyclerview",
             name = "recyclerview",
             version = "1.2.1",
@@ -528,7 +541,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region RecyclerView分割线
-        object RecyclerViewDivider : DependencyConfig(
+        object RecyclerViewDivider : View(
             group = "com.github.fondesa",
             name = "recycler-view-divider",
             version = "3.5.0",
@@ -539,7 +552,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region RecyclerView页面滑动效果
-        object RecyclerViewSnap : DependencyConfig(
+        object RecyclerViewSnap : View(
             group = "com.github.rubensousa",
             name = "gravitysnaphelper",
             version = "2.2.2",
@@ -550,7 +563,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region SwipeRefreshLayout(下拉刷新控件)
-        object SwipeRefreshLayout : DependencyConfig(
+        object SwipeRefreshLayout : View(
             group = "androidx.swiperefreshlayout",
             name = "swiperefreshlayout",
             version = "1.2.0-alpha01",
@@ -559,9 +572,24 @@ sealed class DependencyConfig(
             dependencyMethod = DependencyMethod.Implementation,
         )
 
+        //region SmartRefreshLayout(下拉刷新控件)
+        sealed class SmartRefreshLayout(name: String) : View(
+            group = "io.github.scwang90",
+            name = name,
+            version = "2.0.5",
+            remark = "下拉刷新控件",
+            link = "https://github.com/scwang90/SmartRefreshLayout",
+            dependencyMethod = DependencyMethod.Implementation,
+        ) {
+            object Core : SmartRefreshLayout("refresh-layout-kernel")
+            object ClassicsHeader : SmartRefreshLayout("refresh-header-classics")
+            object TwoLevelHeader : SmartRefreshLayout("refresh-header-two-level")
+            object ClassicsFooter : SmartRefreshLayout("refresh-footer-classics")
+        }
+
         //endregion
         //region SwitchButton(开关按钮)
-        object SwitchButton : DependencyConfig(
+        object SwitchButton : View(
             group = "com.kyleduo.switchbutton",
             name = "library",
             version = "2.1.0",
@@ -572,7 +600,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region ViewPager2
-        object ViewPager2 : DependencyConfig(
+        object ViewPager2 : View(
             group = "androidx.viewpager2",
             name = "viewpager2",
             version = "1.1.0-beta01",
@@ -583,31 +611,32 @@ sealed class DependencyConfig(
 
         //endregion
         //region TabLayout
-        object TabLayout : DependencyConfig(
+        sealed class TabLayout(name: String) : View(
             group = "com.github.angcyo.DslTablayout",
-            name = "TabLayout",
+            name = name,
             version = "3.2.4",
             remark = "",
             link = "https://github.com/angcyo/DslTabLayout",
             dependencyMethod = DependencyMethod.Implementation,
-        )
-
-        object TabLayoutVp2 : DependencyConfig(
-            group = "com.github.angcyo.DslTablayout",
-            name = "ViewPager2Delegate",
-            version = "3.2.4",
-            remark = "",
-            link = "https://github.com/angcyo/DslTabLayout",
-            dependencyMethod = DependencyMethod.Implementation,
-        )
+        ) {
+            object Core : TabLayout("TabLayout")
+            object VP2 : TabLayout("ViewPager2Delegate")
+        }
         //endregion
     }
 
     //endregion
     //region Test
-    interface Test {
+    sealed class Test(
+        group: String,
+        name: String,
+        version: String,
+        remark: String,
+        link: String,
+        dependencyMethod: DependencyMethod,
+    ) : DependencyConfig(group, name, version, remark, link, dependencyMethod) {
         //region Espresso(UI自动化测试)
-        object Espresso : DependencyConfig(
+        object Espresso : Test(
             group = "androidx.test.espresso",
             name = "espresso-core",
             version = "3.4.0",
@@ -618,7 +647,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region Junit(单元测试)
-        object Junit : DependencyConfig(
+        object Junit : Test(
             group = "org.junit.jupiter",
             name = "junit-jupiter",
             version = "5.8.2",
@@ -629,7 +658,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region JunitExt(单元测试扩展)
-        object JunitExt : DependencyConfig(
+        object JunitExt : Test(
             group = "androidx.test.ext",
             name = "junit-ktx",
             version = "1.1.3",
@@ -642,9 +671,16 @@ sealed class DependencyConfig(
 
     //endregion
     //region Compose
-    interface Compose {
+    sealed class Compose(
+        group: String,
+        name: String,
+        version: String,
+        remark: String,
+        link: String,
+        dependencyMethod: DependencyMethod,
+    ) : DependencyConfig(group, name, version, remark, link, dependencyMethod) {
         //region Accompanist
-        sealed class Accompanist(name: String) : DependencyConfig(
+        sealed class Accompanist(name: String) : Compose(
             group = "com.google.accompanist",
             name = name,
             version = "0.23.1",
@@ -668,7 +704,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region ConstraintLayout
-        object ConstraintLayout : DependencyConfig(
+        object ConstraintLayout : Compose(
             group = "androidx.constraintlayout",
             name = "constraintlayout-compose",
             version = "1.0.1",
@@ -679,7 +715,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region NavigationAnimation
-        object NavigationAnimation : DependencyConfig(
+        object NavigationAnimation : Compose(
             group = "com.github.fornewid",
             name = "material-motion-compose",
             version = "0.8.1",
@@ -695,7 +731,7 @@ sealed class DependencyConfig(
             name: String,
             version: String = "1.2.0-beta03",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Compose(
             group = group,
             name = name,
             version = version,
@@ -760,7 +796,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region ViewModel
-        object ViewModel : DependencyConfig(
+        object ViewModel : Compose(
             group = "androidx.lifecycle",
             name = "lifecycle-viewmodel-compose",
             version = Group.Lifecycle.ViewModel.version,
@@ -773,9 +809,16 @@ sealed class DependencyConfig(
 
     //endregion
     //region Group
-    interface Group {
+    sealed class Group(
+        group: String,
+        name: String,
+        version: String,
+        remark: String,
+        link: String,
+        dependencyMethod: DependencyMethod,
+    ) : DependencyConfig(group, name, version, remark, link, dependencyMethod) {
         //region Activity
-        sealed class Activity(name: String) : DependencyConfig(
+        sealed class Activity(name: String) : Group(
             group = "androidx.activity",
             name = name,
             version = "1.5.0-rc01",
@@ -788,7 +831,7 @@ sealed class DependencyConfig(
         }
 
         //region Bugly
-        sealed class Bugly(name: String, version: String) : DependencyConfig(
+        sealed class Bugly(name: String, version: String) : Group(
             group = "com.tencent.bugly",
             name = name,
             version = version,
@@ -802,7 +845,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region CameraX(相机相关)
-        sealed class CameraX(name: String) : DependencyConfig(
+        sealed class CameraX(name: String) : Group(
             group = "androidx.camera",
             name = name,
             version = "1.1.0-rc01",
@@ -821,7 +864,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region Chucker(网络请求监控)
-        sealed class Chucker(name: String, dependencyMethod: DependencyMethod) : DependencyConfig(
+        sealed class Chucker(name: String, dependencyMethod: DependencyMethod) : Group(
             group = "com.github.chuckerteam.chucker",
             name = name,
             version = "3.5.2",
@@ -835,7 +878,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region Coil(图片加载)
-        sealed class Coil(name: String) : DependencyConfig(
+        sealed class Coil(name: String) : Group(
             group = "io.coil-kt",
             name = name,
             version = "2.1.0",
@@ -852,7 +895,7 @@ sealed class DependencyConfig(
 
         //endregion
         //region Core
-        sealed class Core(name: String, version: String) : DependencyConfig(
+        sealed class Core(name: String, version: String) : Group(
             group = "androidx.core",
             name = name,
             version = version,
@@ -866,15 +909,14 @@ sealed class DependencyConfig(
 
         //endregion
         //region Coroutines(协程)
-        sealed class Coroutines(name: String, dependencyMethod: DependencyMethod) :
-            DependencyConfig(
-                group = "org.jetbrains.kotlinx",
-                name = name,
-                version = "1.6.2",
-                remark = "协程",
-                link = "https://github.com/Kotlin/kotlinx.coroutines",
-                dependencyMethod = dependencyMethod,
-            ) {
+        sealed class Coroutines(name: String, dependencyMethod: DependencyMethod) : Group(
+            group = "org.jetbrains.kotlinx",
+            name = name,
+            version = "1.6.2",
+            remark = "协程",
+            link = "https://github.com/Kotlin/kotlinx.coroutines",
+            dependencyMethod = dependencyMethod,
+        ) {
             object Core : Coroutines("kotlinx-coroutines-android", DependencyMethod.Implementation)
             object Test :
                 Coroutines("kotlinx-coroutines-test", DependencyMethod.Test.Implementation)
@@ -882,15 +924,14 @@ sealed class DependencyConfig(
 
         //endregion
         //region Download(下载)
-        sealed class Download(name: String, dependencyMethod: DependencyMethod) :
-            DependencyConfig(
-                group = "me.laoyuyu.aria",
-                name = name,
-                version = "3.8.16",
-                remark = "下载",
-                link = "https://github.com/AriaLyy/Aria",
-                dependencyMethod = dependencyMethod,
-            ) {
+        sealed class Download(name: String, dependencyMethod: DependencyMethod) : Group(
+            group = "me.laoyuyu.aria",
+            name = name,
+            version = "3.8.16",
+            remark = "下载",
+            link = "https://github.com/AriaLyy/Aria",
+            dependencyMethod = dependencyMethod,
+        ) {
             object Core : Download("core", DependencyMethod.Implementation)
             object Ftp : Download("ftp", DependencyMethod.Implementation)
             object Sftp : Download("sftp", DependencyMethod.Implementation)
@@ -906,7 +947,7 @@ sealed class DependencyConfig(
         sealed class Epoxy(
             name: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "com.airbnb.android",
             name = name,
             version = "5.0.0-beta05",
@@ -925,7 +966,7 @@ sealed class DependencyConfig(
         sealed class FlowBinding(
             name: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "io.github.reactivecircus.flowbinding",
             name = name,
             version = "1.2.0",
@@ -953,7 +994,7 @@ sealed class DependencyConfig(
         sealed class Fragment(
             name: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "androidx.fragment",
             name = name,
             version = "1.5.0-rc01",
@@ -970,7 +1011,7 @@ sealed class DependencyConfig(
         sealed class Glide(
             name: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "com.github.bumptech.glide",
             name = name,
             version = "4.13.2",
@@ -988,7 +1029,7 @@ sealed class DependencyConfig(
         sealed class ImmersionBar(
             name: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "com.geyifeng.immersionbar",
             name = name,
             version = "3.2.2",
@@ -1006,7 +1047,7 @@ sealed class DependencyConfig(
             name: String,
             version: Version,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "io.insert-koin",
             name = name,
             version = version.value,
@@ -1015,7 +1056,7 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
             sealed class Version(val value: String) {
-                object Version1 : Version("1.0.0-beta-1")
+                object Version1 : Version("1.0.0")
                 object Version2 : Version("3.2.0")
             }
 
@@ -1038,7 +1079,7 @@ sealed class DependencyConfig(
         sealed class Kotlin(
             name: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "org.jetbrains.kotlin",
             name = name,
             version = "1.6.21",
@@ -1056,7 +1097,7 @@ sealed class DependencyConfig(
         sealed class Lifecycle(
             name: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "androidx.lifecycle",
             name = name,
             version = "2.5.0-rc01",
@@ -1075,10 +1116,10 @@ sealed class DependencyConfig(
 
         //endregion
         //region Mavericks架构
-        sealed class Mavericks(name: String) : DependencyConfig(
+        sealed class Mavericks(name: String) : Group(
             group = "com.airbnb.android",
             name = name,
-            version = "2.6.1",
+            version = "2.7.0",
             remark = "Mavericks架构",
             link = "https://github.com/airbnb/mavericks",
             dependencyMethod = DependencyMethod.Implementation,
@@ -1093,7 +1134,7 @@ sealed class DependencyConfig(
         sealed class MoShi(
             name: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "com.squareup.moshi",
             name = name,
             version = "1.13.0",
@@ -1110,7 +1151,7 @@ sealed class DependencyConfig(
         sealed class Navigation(
             name: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "androidx.navigation",
             name = name,
             version = "2.5.0-rc01",
@@ -1129,7 +1170,7 @@ sealed class DependencyConfig(
         sealed class OkHttp(
             name: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "com.squareup.okhttp3",
             name = name,
             version = "4.9.3",
@@ -1146,7 +1187,7 @@ sealed class DependencyConfig(
         sealed class Paris(
             name: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "com.airbnb.android",
             name = name,
             version = "2.0.1",
@@ -1163,7 +1204,7 @@ sealed class DependencyConfig(
         sealed class Retrofit(
             name: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "com.squareup.retrofit2",
             name = name,
             version = "2.9.0",
@@ -1181,7 +1222,7 @@ sealed class DependencyConfig(
         sealed class Room(
             name: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "androidx.room",
             name = name,
             version = "2.4.2",
@@ -1200,7 +1241,7 @@ sealed class DependencyConfig(
         sealed class Stetho(
             name: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "com.facebook.stetho",
             name = name,
             version = "1.6.0",
@@ -1217,7 +1258,7 @@ sealed class DependencyConfig(
         sealed class S3(
             name: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "com.amazonaws",
             name = name,
             version = "2.47.0",
@@ -1234,7 +1275,7 @@ sealed class DependencyConfig(
         sealed class Transformer(
             name: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "jp.wasabeef.transformers",
             name = name,
             version = "1.0.6",
@@ -1255,7 +1296,7 @@ sealed class DependencyConfig(
             name: String,
             version: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "com.umeng.umsdk",
             name = name,
             version = version,
@@ -1272,7 +1313,7 @@ sealed class DependencyConfig(
         sealed class WorkManager(
             name: String,
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
-        ) : DependencyConfig(
+        ) : Group(
             group = "androidx.work",
             name = name,
             version = "2.7.1",

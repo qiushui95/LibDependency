@@ -195,9 +195,9 @@ class Creator {
                     .build()
             )
 
-        libDependenciesBuilder.addType(buildSingleTypeSpec(LibConstants.CLASS_NAME_SINGLE))
-        libDependenciesBuilder.addType(buildSingleTypeSpec(LibConstants.CLASS_NAME_VIEW))
-        libDependenciesBuilder.addType(buildSingleTypeSpec(LibConstants.CLASS_NAME_TEST))
+        libDependenciesBuilder.addType(buildGroupTypeSpec(LibConstants.CLASS_NAME_SINGLE))
+        libDependenciesBuilder.addType(buildGroupTypeSpec(LibConstants.CLASS_NAME_VIEW))
+        libDependenciesBuilder.addType(buildGroupTypeSpec(LibConstants.CLASS_NAME_TEST))
 
         libDependenciesBuilder.addType(buildGroupTypeSpec(LibConstants.CLASS_NAME_COMPOSE))
         libDependenciesBuilder.addType(buildGroupTypeSpec(LibConstants.CLASS_NAME_GROUP))
@@ -289,7 +289,6 @@ class Creator {
             .sealedSubclasses
             .filter { it.qualifiedName?.contains(title) == true }
             .mapNotNull { it.objectInstance }
-            .sortedBy { it.sort }
             .map { it.buildObjectTypeSpec() }
             .forEach(interfaceBuilder::addType)
 
@@ -302,41 +301,27 @@ class Creator {
 
         DependencyConfig::class
             .sealedSubclasses
-            .filter { it.qualifiedName?.contains(title) == true }
-            .mapNotNull { it.objectInstance }
-            .sortedBy { it.sort }
-            .map {
+            .filter { it.simpleName == title && it.isSealed }
+            .flatMap { it.sealedSubclasses }
+            .mapNotNull { clz ->
+                if (clz.isFinal) {
+                    clz.objectInstance?.buildObjectTypeSpec()
+                } else {
 
-                TypeSpec.objectBuilder(it::class.simpleName!!)
-                    .superclass(ClassName("", LibConstants.CLASS_NAME_DEPENDENCIES_OUTER))
-                    .addKdoc(it)
-                    .addSuperclassConstructorParameter("%S", it.group)
-                    .addSuperclassConstructorParameter("%S", it.name)
-                    .addSuperclassConstructorParameter("%S", it.version)
-                    .addSuperclassConstructorParameter("%T", it.dependencyMethod.javaClass)
-                    .build()
-            }.forEach(interfaceBuilder::addType)
+                    val children = clz.sealedSubclasses.mapNotNull { it.objectInstance }
 
-        DependencyConfig::class
-            .sealedSubclasses
-            .filter { it.qualifiedName?.contains(title) == true }
-            .filter {
-                it.isSealed
-            }
-            .map { clz ->
-                val children = clz.sealedSubclasses.mapNotNull { it.objectInstance }
+                    if (children.isEmpty()) {
+                        throw RuntimeException("children is empty,${clz.simpleName}")
+                    }
 
-                if (children.isEmpty()) {
-                    throw RuntimeException("children is empty,${clz.simpleName}")
+                    val containerBuilder = TypeSpec.interfaceBuilder(clz.simpleName!!)
+                        .addKdoc(children.first())
+
+                    children.map { it.buildObjectTypeSpec(false) }
+                        .forEach(containerBuilder::addType)
+
+                    containerBuilder.build()
                 }
-
-                val containerBuilder = TypeSpec.interfaceBuilder(clz.simpleName!!)
-                    .addKdoc(children.first())
-
-                children.map { it.buildObjectTypeSpec(false) }
-                    .forEach(containerBuilder::addType)
-
-                containerBuilder.build()
             }.forEach(interfaceBuilder::addType)
 
         return interfaceBuilder.build()
@@ -348,9 +333,9 @@ class Creator {
 
         list.addMdLine("# 三方依赖库版本管理[![](https://jitpack.io/v/qiushui95/LibDependency.svg)](https://jitpack.io/#qiushui95/LibDependency)\n")
 
-        list.buildMdSingle(LibConstants.CLASS_NAME_SINGLE)
-        list.buildMdSingle(LibConstants.CLASS_NAME_VIEW)
-        list.buildMdSingle(LibConstants.CLASS_NAME_TEST)
+        list.buildMdGroup(LibConstants.CLASS_NAME_SINGLE)
+        list.buildMdGroup(LibConstants.CLASS_NAME_VIEW)
+        list.buildMdGroup(LibConstants.CLASS_NAME_TEST)
 
         list.buildMdGroup(LibConstants.CLASS_NAME_COMPOSE)
         list.buildMdGroup(LibConstants.CLASS_NAME_GROUP)
@@ -399,47 +384,33 @@ class Creator {
         addMdLine(sb.toString())
     }
 
-    private fun MutableList<String>.buildMdSingle(title: String) {
-        buildMdTitle(title) {
-            DependencyConfig::class
-                .sealedSubclasses
-                .filter { it.java.canonicalName.split(".").dropLast(1).last() == title }
-                .mapNotNull { it.objectInstance }
-                .sortedBy { it.sort }
-                .forEach { config ->
-                    buildMdTitle(config)
-                    addMdLine(">>${config.dependencyMethod.method}(\"${config.group}:${config.name}:${config.version}\")")
-                    addMdLine("")
-                }
-        }
-    }
-
     private fun MutableList<String>.buildMdGroup(title: String) {
         buildMdTitle(title) {
             val clzList = DependencyConfig::class
                 .sealedSubclasses
-                .filter { it.qualifiedName?.contains(title) == true }
+                .filter { it.simpleName == title && it.isSealed }
 
-            clzList
-                .mapNotNull { it.objectInstance }
-                .sortedBy { it.sort }
-                .forEach { config ->
-                    buildMdTitle(config)
-                    addMdLine(">>${config.dependencyMethod.method}(${config.group}:${config.name}:${config.version})")
-                    addMdLine("")
+            clzList.flatMap { it.sealedSubclasses }
+                .map {
+                    (it.simpleName ?: "") to if (it.isFinal) {
+                        listOf(it)
+                    } else if (it.isSealed) {
+                        it.sealedSubclasses
+                    } else emptyList()
                 }
+                .forEach { pair ->
+                    val groupTitle = pair.first
+                    val groupList = pair.second
 
-            clzList.filter { it.isSealed }
-                .forEach { parentClz ->
-                    val subObjects = parentClz.sealedSubclasses
+                    val subObjects = groupList
                         .mapNotNull { it.objectInstance }
-                        .sortedBy { it.sort }
 
-                    buildMdTitle(subObjects.first(), parentClz.java.simpleName)
+                    buildMdTitle(subObjects.first(), groupTitle)
 
                     subObjects.forEach { config ->
                         addMdLine(">>${config.dependencyMethod.method}(\"${config.group}:${config.name}:${config.version}\")")
                     }
+
                     addMdLine("")
                 }
         }
@@ -498,42 +469,43 @@ dependencies {
             )
         }
 
+        DependencyConfig::class
+            .sealedSubclasses
+            .filter { it.simpleName in titles && it.isSealed }
+            .forEachIndexed { index, kClass ->
+                buildGroupGradle(index==0,kClass, newestFile, defineFile)
+            }
 
+        doInAllFile(newestFile, defineFile) { it.appendText("}") }
+    }
 
-        titles.forEach { title ->
+    private fun buildGroupGradle(
+        isFirst: Boolean,
+        clz: KClass<out DependencyConfig>,
+        newestFile: File,
+        defineFile: File
+    ) {
+        clz.sealedSubclasses.map {
+            if (it.isFinal) {
+                listOf(it)
+            } else if (it.isSealed) {
+                it.sealedSubclasses
+            } else emptyList()
+        }.forEachIndexed { index, list ->
+            if (index == 0 && !isFirst) {
+                doInAllFile(newestFile, defineFile) { it.appendText("\n\n\n") }
+            }
 
+            if (index > 0 && list.size > 1) {
+                doInAllFile(newestFile, defineFile) { it.appendText("\n") }
+            }
 
-            val clzList = DependencyConfig::class
-                .sealedSubclasses
-                .filter { it.qualifiedName?.contains(title) == true }
-
-            clzList
-                .mapNotNull { it.objectInstance }
-                .sortedBy { it.sort }
+            list.mapNotNull { it.objectInstance }
                 .forEach { config ->
                     newestFile.appendText(getDependency(config, "+"))
                     defineFile.appendText(getDependency(config))
                 }
-
-            clzList.filter { it.isSealed }
-                .forEach { parentClz ->
-                    doInAllFile(newestFile, defineFile) { it.appendText("\n") }
-
-
-                    parentClz.sealedSubclasses
-                        .mapNotNull { it.objectInstance }
-                        .sortedBy { it.sort }
-                        .forEach { config ->
-
-                            newestFile.appendText(getDependency(config, "+"))
-                            defineFile.appendText(getDependency(config))
-                        }
-
-                }
-            doInAllFile(newestFile, defineFile) { it.appendText("\n") }
         }
-
-        doInAllFile(newestFile, defineFile) { it.appendText("}") }
     }
 
     private fun doInAllFile(vararg files: File, block: (File) -> Unit) {
