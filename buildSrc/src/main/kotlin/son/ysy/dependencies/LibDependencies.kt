@@ -42,7 +42,7 @@ sealed class LibDependencies(
     /**
      * https://developer.android.com/jetpack/androidx/releases/appcompat
      */
-    object Appcompat : LibDependencies("androidx.appcompat", "appcompat", "1.4.1",
+    object Appcompat : LibDependencies("androidx.appcompat", "appcompat", "1.4.2",
         DependencyMethod.Implementation)
 
     /**
@@ -98,7 +98,7 @@ sealed class LibDependencies(
      * 图片预览框架
      * https://github.com/iielse/imageviewer
      */
-    object ImageWatcher : LibDependencies("com.github.iielse", "imageviewer", "2.1.11",
+    object ImageWatcher : LibDependencies("com.github.iielse", "imageviewer", "2.1.13",
         DependencyMethod.Implementation)
 
     /**
@@ -347,6 +347,24 @@ sealed class LibDependencies(
         "swiperefreshlayout", "1.2.0-alpha01", DependencyMethod.Implementation)
 
     /**
+     * 下拉刷新控件
+     * https://github.com/scwang90/SmartRefreshLayout
+     */
+    interface SmartRefreshLayout {
+      object Core : LibDependencies("io.github.scwang90", "refresh-layout-kernel", "2.0.5",
+          DependencyMethod.Implementation)
+
+      object ClassicsHeader : LibDependencies("io.github.scwang90",
+          "refresh-header-classics", "2.0.5", DependencyMethod.Implementation)
+
+      object TwoLevelHeader : LibDependencies("io.github.scwang90",
+          "refresh-header-two-level", "2.0.5", DependencyMethod.Implementation)
+
+      object ClassicsFooter : LibDependencies("io.github.scwang90",
+          "refresh-footer-classics", "2.0.5", DependencyMethod.Implementation)
+    }
+
+    /**
      * 开关按钮
      * https://github.com/kyleduo/SwitchButton
      */
@@ -362,20 +380,13 @@ sealed class LibDependencies(
     /**
      * https://github.com/angcyo/DslTabLayout
      */
-    object TabLayout : LibDependencies("com.github.angcyo.DslTablayout", "TabLayout",
-        "3.2.4", DependencyMethod.Implementation)
+    interface TabLayout {
+      object Core : LibDependencies("com.github.angcyo.DslTablayout", "TabLayout", "3.2.4",
+          DependencyMethod.Implementation)
 
-    /**
-     * https://github.com/angcyo/DslTabLayout
-     */
-    object TabLayoutVp2 : LibDependencies("com.github.angcyo.DslTablayout",
-        "ViewPager2Delegate", "3.2.4", DependencyMethod.Implementation)
-
-    /**
-     * https://developer.android.com/jetpack/androidx/releases/lifecycle
-     */
-    object ViewModel : LibDependencies("androidx.lifecycle", "lifecycle-viewmodel-compose",
-        "2.5.0-rc01", DependencyMethod.Implementation)
+      object VP2 : LibDependencies("com.github.angcyo.DslTablayout", "ViewPager2Delegate",
+          "3.2.4", DependencyMethod.Implementation)
+    }
   }
 
   interface Test {
@@ -402,26 +413,6 @@ sealed class LibDependencies(
   }
 
   interface Compose {
-    /**
-     * Compose约束布局
-     * https://developer.android.com/jetpack/androidx/releases/constraintlayout
-     */
-    object ConstraintLayout : LibDependencies("androidx.constraintlayout",
-        "constraintlayout-compose", "1.0.1", DependencyMethod.Implementation)
-
-    /**
-     * Compose导航动画
-     * https://github.com/fornewid/material-motion-compose
-     */
-    object NavigationAnimation : LibDependencies("com.github.fornewid",
-        "material-motion-compose", "0.8.1", DependencyMethod.Implementation)
-
-    /**
-     * https://developer.android.com/jetpack/androidx/releases/lifecycle
-     */
-    object ViewModel : LibDependencies("androidx.lifecycle", "lifecycle-viewmodel-compose",
-        "2.5.0-rc01", DependencyMethod.Implementation)
-
     /**
      * https://github.com/google/accompanist
      */
@@ -464,6 +455,20 @@ sealed class LibDependencies(
     }
 
     /**
+     * Compose约束布局
+     * https://developer.android.com/jetpack/androidx/releases/constraintlayout
+     */
+    object ConstraintLayout : LibDependencies("androidx.constraintlayout",
+        "constraintlayout-compose", "1.0.1", DependencyMethod.Implementation)
+
+    /**
+     * Compose导航动画
+     * https://github.com/fornewid/material-motion-compose
+     */
+    object NavigationAnimation : LibDependencies("com.github.fornewid",
+        "material-motion-compose", "0.8.1", DependencyMethod.Implementation)
+
+    /**
      * Compose官方
      * https://developer.android.com/jetpack/androidx/releases/compose
      */
@@ -501,6 +506,12 @@ sealed class LibDependencies(
       object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.2.0-beta03",
           DependencyMethod.Implementation)
     }
+
+    /**
+     * https://developer.android.com/jetpack/androidx/releases/lifecycle
+     */
+    object ViewModel : LibDependencies("androidx.lifecycle", "lifecycle-viewmodel-compose",
+        "2.5.0-rc01", DependencyMethod.Implementation)
   }
 
   interface Group {
@@ -750,11 +761,11 @@ sealed class LibDependencies(
       object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.2.0",
           DependencyMethod.Test.Implementation)
 
-      object Annotations : LibDependencies("io.insert-koin", "koin-annotations",
-          "1.0.0-beta-1", DependencyMethod.Implementation)
+      object Annotations : LibDependencies("io.insert-koin", "koin-annotations", "1.0.0",
+          DependencyMethod.Implementation)
 
-      object Compiler : LibDependencies("io.insert-koin", "koin-ksp-compiler",
-          "1.0.0-beta-1", DependencyMethod.Implementation)
+      object Compiler : LibDependencies("io.insert-koin", "koin-ksp-compiler", "1.0.0",
+          DependencyMethod.Implementation)
     }
 
     /**
@@ -802,14 +813,14 @@ sealed class LibDependencies(
      * https://github.com/airbnb/mavericks
      */
     interface Mavericks {
-      object Core : LibDependencies("com.airbnb.android", "mavericks", "2.6.1",
+      object Core : LibDependencies("com.airbnb.android", "mavericks", "2.7.0",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("com.airbnb.android", "mavericks-compose", "2.6.1",
+      object Compose : LibDependencies("com.airbnb.android", "mavericks-compose", "2.7.0",
           DependencyMethod.Implementation)
 
       object Navigation : LibDependencies("com.airbnb.android", "mavericks-navigation",
-          "2.6.1", DependencyMethod.Implementation)
+          "2.7.0", DependencyMethod.Implementation)
     }
 
     /**

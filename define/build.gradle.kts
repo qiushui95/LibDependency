@@ -27,7 +27,7 @@ dependencies {
     implementation("com.aliyun.ams:alicloud-android-push:3.7.4")
     implementation("com.blankj:utilcodex:1.31.0")
     implementation("androidx.annotation:annotation:1.3.0")
-    implementation("androidx.appcompat:appcompat:1.4.1")
+    implementation("androidx.appcompat:appcompat:1.4.2")
     implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.4")
     implementation("io.github.razerdp:BasePopup:3.2.0")
     implementation("me.jorgecastillo:androidcolorx:0.2.0")
@@ -35,7 +35,7 @@ dependencies {
     implementation("com.github.princekin-f:EasyFloat:2.0.4")
     implementation("androidx.exifinterface:exifinterface:1.3.3")
     implementation("com.ypx.yimagepicker:androidx:3.1.4")
-    implementation("com.github.iielse:imageviewer:2.1.11")
+    implementation("com.github.iielse:imageviewer:2.1.13")
     implementation("joda-time:joda-time:2.10.14")
     implementation("com.squareup.leakcanary:leakcanary-android:2.9.1")
     implementation("com.tencent:mmkv-static:1.2.13")
@@ -53,6 +53,8 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.3")
     implementation("com.tencent.vasdolly:helper:3.0.4")
     implementation("net.lingala.zip4j:zip4j:2.10.0")
+
+
 
     implementation("com.github.Justson.AgentWeb:agentweb-core:v4.1.9-androidx")
     implementation("com.github.xiaohaibin:XBanner:androidx_v1.2.8")
@@ -72,19 +74,24 @@ dependencies {
     implementation("com.github.fondesa:recycler-view-divider:3.5.0")
     implementation("com.github.rubensousa:gravitysnaphelper:2.2.2")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
+
+    implementation("io.github.scwang90:refresh-layout-kernel:2.0.5")
+    implementation("io.github.scwang90:refresh-header-classics:2.0.5")
+    implementation("io.github.scwang90:refresh-header-two-level:2.0.5")
+    implementation("io.github.scwang90:refresh-footer-classics:2.0.5")
     implementation("com.kyleduo.switchbutton:library:2.1.0")
     implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")
+
     implementation("com.github.angcyo.DslTablayout:TabLayout:3.2.4")
     implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.2.4")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.0-rc01")
+
+
 
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
     testImplementation("androidx.test.ext:junit-ktx:1.1.3")
 
-    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
-    implementation("com.github.fornewid:material-motion-compose:0.8.1")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.0-rc01")
+
 
     implementation("com.google.accompanist:accompanist-appcompat-theme:0.23.1")
     implementation("com.google.accompanist:accompanist-drawablepainter:0.23.1")
@@ -98,6 +105,8 @@ dependencies {
     implementation("com.google.accompanist:accompanist-placeholder-material:0.23.1")
     implementation("com.google.accompanist:accompanist-swiperefresh:0.23.1")
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.23.1")
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
+    implementation("com.github.fornewid:material-motion-compose:0.8.1")
 
     implementation("androidx.compose.animation:animation:1.2.0-beta03")
     implementation("androidx.compose.compiler:compiler:1.2.0-beta03")
@@ -110,6 +119,8 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.2.0-beta03")
     implementation("androidx.compose.ui:ui:1.2.0-beta03")
     implementation("androidx.compose.ui:ui-tooling:1.2.0-beta03")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.0-rc01")
+
 
 
     implementation("androidx.activity:activity-ktx:1.5.0-rc01")
@@ -181,8 +192,8 @@ dependencies {
     implementation("io.insert-koin:koin-androidx-navigation:3.2.0")
     implementation("io.insert-koin:koin-androidx-compose:3.2.0")
     testImplementation("io.insert-koin:koin-test-junit5:3.2.0")
-    implementation("io.insert-koin:koin-annotations:1.0.0-beta-1")
-    implementation("io.insert-koin:koin-ksp-compiler:1.0.0-beta-1")
+    implementation("io.insert-koin:koin-annotations:1.0.0")
+    implementation("io.insert-koin:koin-ksp-compiler:1.0.0")
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.21")
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.21")
@@ -196,9 +207,9 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-service:2.5.0-rc01")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc01")
 
-    implementation("com.airbnb.android:mavericks:2.6.1")
-    implementation("com.airbnb.android:mavericks-compose:2.6.1")
-    implementation("com.airbnb.android:mavericks-navigation:2.6.1")
+    implementation("com.airbnb.android:mavericks:2.7.0")
+    implementation("com.airbnb.android:mavericks-compose:2.7.0")
+    implementation("com.airbnb.android:mavericks-navigation:2.7.0")
 
     implementation("com.squareup.moshi:moshi:1.13.0")
     ksp("com.squareup.moshi:moshi-kotlin-codegen:1.13.0")
@@ -240,5 +251,4 @@ dependencies {
 
     implementation("androidx.work:work-runtime-ktx:2.7.1")
     testImplementation("androidx.work:work-testing:2.7.1")
-
 }

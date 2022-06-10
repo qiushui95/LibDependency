@@ -7,5 +7,5 @@ rootProject.extra.apply {
     set("vasDolly", "com.tencent.vasdolly:plugin:3.0.4")
     set("asm.common", "org.ow2.asm:asm-commons:9.2")
     set("asm.util", "org.ow2.asm:asm-util:9.2")
-    set("libDependency", "com.github.qiushui95:LibDependency:1.2.32")
+    set("libDependency", "com.github.qiushui95:LibDependency:1.2.33")
 }

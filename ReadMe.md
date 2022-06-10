@@ -16,7 +16,7 @@
 >>implementation("androidx.annotation:annotation:1.3.0")  
   
 >[Appcompat](https://developer.android.com/jetpack/androidx/releases/appcompat)  
->>implementation("androidx.appcompat:appcompat:1.4.1")  
+>>implementation("androidx.appcompat:appcompat:1.4.2")  
   
 >[Background](https://github.com/JavaNoober/BackgroundLibrary)(背景生成工具库)  
 >>implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.4")  
@@ -40,7 +40,7 @@
 >>implementation("com.ypx.yimagepicker:androidx:3.1.4")  
   
 >[ImageWatcher](https://github.com/iielse/imageviewer)(图片预览框架)  
->>implementation("com.github.iielse:imageviewer:2.1.11")  
+>>implementation("com.github.iielse:imageviewer:2.1.13")  
   
 >[JodaTime](https://github.com/JodaOrg/joda-time)(时间处理库)  
 >>implementation("joda-time:joda-time:2.10.14")  
@@ -152,6 +152,12 @@
 >[SwipeRefreshLayout](https://developer.android.com/jetpack/androidx/releases/swiperefreshlayout)(下拉刷新控件)  
 >>implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")  
   
+>[SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)(下拉刷新控件)  
+>>implementation("io.github.scwang90:refresh-layout-kernel:2.0.5")  
+>>implementation("io.github.scwang90:refresh-header-classics:2.0.5")  
+>>implementation("io.github.scwang90:refresh-header-two-level:2.0.5")  
+>>implementation("io.github.scwang90:refresh-footer-classics:2.0.5")  
+  
 >[SwitchButton](https://github.com/kyleduo/SwitchButton)(开关按钮)  
 >>implementation("com.kyleduo.switchbutton:library:2.1.0")  
   
@@ -160,8 +166,6 @@
   
 >[TabLayout](https://github.com/angcyo/DslTabLayout)  
 >>implementation("com.github.angcyo.DslTablayout:TabLayout:3.2.4")  
-  
->[TabLayoutVp2](https://github.com/angcyo/DslTabLayout)  
 >>implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.2.4")  
   
 </details>  
@@ -183,15 +187,6 @@
 <details>  
 <summary>Compose</summary>  
   
->[ConstraintLayout](https://developer.android.com/jetpack/androidx/releases/constraintlayout)(Compose约束布局)  
->>implementation(androidx.constraintlayout:constraintlayout-compose:1.0.1)  
-  
->[NavigationAnimation](https://github.com/fornewid/material-motion-compose)(Compose导航动画)  
->>implementation(com.github.fornewid:material-motion-compose:0.8.1)  
-  
->[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
->>implementation(androidx.lifecycle:lifecycle-viewmodel-compose:2.5.0-rc01)  
-  
 >[Accompanist](https://github.com/google/accompanist)  
 >>implementation("com.google.accompanist:accompanist-appcompat-theme:0.23.1")  
 >>implementation("com.google.accompanist:accompanist-drawablepainter:0.23.1")  
@@ -206,6 +201,12 @@
 >>implementation("com.google.accompanist:accompanist-swiperefresh:0.23.1")  
 >>implementation("com.google.accompanist:accompanist-systemuicontroller:0.23.1")  
   
+>[ConstraintLayout](https://developer.android.com/jetpack/androidx/releases/constraintlayout)(Compose约束布局)  
+>>implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")  
+  
+>[NavigationAnimation](https://github.com/fornewid/material-motion-compose)(Compose导航动画)  
+>>implementation("com.github.fornewid:material-motion-compose:0.8.1")  
+  
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
 >>implementation("androidx.compose.animation:animation:1.2.0-beta03")  
 >>implementation("androidx.compose.compiler:compiler:1.2.0-beta03")  
@@ -218,6 +219,9 @@
 >>androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.2.0-beta03")  
 >>implementation("androidx.compose.ui:ui:1.2.0-beta03")  
 >>implementation("androidx.compose.ui:ui-tooling:1.2.0-beta03")  
+  
+>[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
+>>implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.0-rc01")  
   
 </details>  
   
@@ -307,8 +311,8 @@
 >>implementation("io.insert-koin:koin-androidx-navigation:3.2.0")  
 >>implementation("io.insert-koin:koin-androidx-compose:3.2.0")  
 >>testImplementation("io.insert-koin:koin-test-junit5:3.2.0")  
->>implementation("io.insert-koin:koin-annotations:1.0.0-beta-1")  
->>implementation("io.insert-koin:koin-ksp-compiler:1.0.0-beta-1")  
+>>implementation("io.insert-koin:koin-annotations:1.0.0")  
+>>implementation("io.insert-koin:koin-ksp-compiler:1.0.0")  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
 >>implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.21")  
@@ -325,9 +329,9 @@
 >>implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc01")  
   
 >[Mavericks](https://github.com/airbnb/mavericks)(Mavericks架构)  
->>implementation("com.airbnb.android:mavericks:2.6.1")  
->>implementation("com.airbnb.android:mavericks-compose:2.6.1")  
->>implementation("com.airbnb.android:mavericks-navigation:2.6.1")  
+>>implementation("com.airbnb.android:mavericks:2.7.0")  
+>>implementation("com.airbnb.android:mavericks-compose:2.7.0")  
+>>implementation("com.airbnb.android:mavericks-navigation:2.7.0")  
   
 >[MoShi](https://github.com/square/moshi)(json解析库)  
 >>implementation("com.squareup.moshi:moshi:1.13.0")  

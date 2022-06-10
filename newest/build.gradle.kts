@@ -54,6 +54,8 @@ dependencies {
     implementation("com.tencent.vasdolly:helper:+")
     implementation("net.lingala.zip4j:zip4j:+")
 
+
+
     implementation("com.github.Justson.AgentWeb:agentweb-core:+")
     implementation("com.github.xiaohaibin:XBanner:+")
     implementation("com.github.Dimezis:BlurView:+")
@@ -72,19 +74,24 @@ dependencies {
     implementation("com.github.fondesa:recycler-view-divider:+")
     implementation("com.github.rubensousa:gravitysnaphelper:+")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:+")
+
+    implementation("io.github.scwang90:refresh-layout-kernel:+")
+    implementation("io.github.scwang90:refresh-header-classics:+")
+    implementation("io.github.scwang90:refresh-header-two-level:+")
+    implementation("io.github.scwang90:refresh-footer-classics:+")
     implementation("com.kyleduo.switchbutton:library:+")
     implementation("androidx.viewpager2:viewpager2:+")
+
     implementation("com.github.angcyo.DslTablayout:TabLayout:+")
     implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:+")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:+")
+
+
 
     androidTestImplementation("androidx.test.espresso:espresso-core:+")
     testImplementation("org.junit.jupiter:junit-jupiter:+")
     testImplementation("androidx.test.ext:junit-ktx:+")
 
-    implementation("androidx.constraintlayout:constraintlayout-compose:+")
-    implementation("com.github.fornewid:material-motion-compose:+")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:+")
+
 
     implementation("com.google.accompanist:accompanist-appcompat-theme:+")
     implementation("com.google.accompanist:accompanist-drawablepainter:+")
@@ -98,6 +105,8 @@ dependencies {
     implementation("com.google.accompanist:accompanist-placeholder-material:+")
     implementation("com.google.accompanist:accompanist-swiperefresh:+")
     implementation("com.google.accompanist:accompanist-systemuicontroller:+")
+    implementation("androidx.constraintlayout:constraintlayout-compose:+")
+    implementation("com.github.fornewid:material-motion-compose:+")
 
     implementation("androidx.compose.animation:animation:+")
     implementation("androidx.compose.compiler:compiler:+")
@@ -110,6 +119,8 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:+")
     implementation("androidx.compose.ui:ui:+")
     implementation("androidx.compose.ui:ui-tooling:+")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:+")
+
 
 
     implementation("androidx.activity:activity-ktx:+")
@@ -240,5 +251,4 @@ dependencies {
 
     implementation("androidx.work:work-runtime-ktx:+")
     testImplementation("androidx.work:work-testing:+")
-
 }
