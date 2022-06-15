@@ -296,7 +296,7 @@ sealed class DependencyConfig(
         object XPopup : Single(
             group = "com.github.li-xiaojun",
             name = "XPopup",
-            version = "2.8.2",
+            version = "2.8.3",
             remark = "弹窗",
             link = "https://github.com/li-xiaojun/XPopup",
             dependencyMethod = DependencyMethod.Implementation,
@@ -1007,6 +1007,24 @@ sealed class DependencyConfig(
         }
 
         //endregion
+        //region Fetch
+        sealed class Fetch(
+            group: String,
+            name: String,
+            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
+        ) : Group(
+            group = group,
+            name = name,
+            version = "3.1.6",
+            remark = "下载框架",
+            link = "https://github.com/tonyofrancis/Fetch",
+            dependencyMethod = dependencyMethod,
+        ) {
+            object Core : Fetch("androidx.tonyodev.fetch2", "xfetch2")
+            object OkHttp : Fetch("androidx.tonyodev.fetch2okhttp", "xfetch2okhttp")
+        }
+
+        //endregion
         //region Glide(图片加载)
         sealed class Glide(
             name: String,
@@ -1056,7 +1074,7 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
             sealed class Version(val value: String) {
-                object Version1 : Version("1.0.0")
+                object Version1 : Version("1.0.1")
                 object Version2 : Version("3.2.0")
             }
 
@@ -1261,7 +1279,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "com.amazonaws",
             name = name,
-            version = "2.47.0",
+            version = "2.48.0",
             remark = "亚马逊云存储",
             link = "https://github.com/aws-amplify/aws-sdk-android",
             dependencyMethod = dependencyMethod,

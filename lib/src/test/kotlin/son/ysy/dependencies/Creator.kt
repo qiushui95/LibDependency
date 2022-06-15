@@ -282,19 +282,6 @@ class Creator {
             .build()
     }
 
-    private fun buildSingleTypeSpec(title: String): TypeSpec {
-        val interfaceBuilder = TypeSpec.interfaceBuilder(title)
-
-        DependencyConfig::class
-            .sealedSubclasses
-            .filter { it.qualifiedName?.contains(title) == true }
-            .mapNotNull { it.objectInstance }
-            .map { it.buildObjectTypeSpec() }
-            .forEach(interfaceBuilder::addType)
-
-        return interfaceBuilder.build()
-    }
-
 
     private fun buildGroupTypeSpec(title: String): TypeSpec {
         val interfaceBuilder = TypeSpec.interfaceBuilder(title)
@@ -473,7 +460,7 @@ dependencies {
             .sealedSubclasses
             .filter { it.simpleName in titles && it.isSealed }
             .forEachIndexed { index, kClass ->
-                buildGroupGradle(index==0,kClass, newestFile, defineFile)
+                buildGroupGradle(index == 0, kClass, newestFile, defineFile)
             }
 
         doInAllFile(newestFile, defineFile) { it.appendText("}") }
