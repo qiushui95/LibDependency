@@ -179,6 +179,9 @@ dependencies {
     implementation("androidx.fragment:fragment-ktx:+")
     testImplementation("androidx.fragment:fragment-testing:+")
 
+    implementation("androidx.tonyodev.fetch2:xfetch2:+")
+    implementation("androidx.tonyodev.fetch2okhttp:xfetch2okhttp:+")
+
     implementation("com.github.bumptech.glide:glide:+")
     implementation("com.github.bumptech.glide:okhttp3-integration:+")
     kapt("com.github.bumptech.glide:compiler:+")

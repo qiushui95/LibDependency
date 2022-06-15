@@ -47,7 +47,7 @@ dependencies {
     implementation("com.dropbox.mobile.store:store4:4.0.5")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")
-    implementation("com.github.li-xiaojun:XPopup:2.8.2")
+    implementation("com.github.li-xiaojun:XPopup:2.8.3")
     implementation("com.localebro:okhttpprofiler:1.0.8")
     implementation("com.vanniktech:gradle-maven-publish-plugin:0.20.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.3")
@@ -179,6 +179,9 @@ dependencies {
     implementation("androidx.fragment:fragment-ktx:1.5.0-rc01")
     testImplementation("androidx.fragment:fragment-testing:1.5.0-rc01")
 
+    implementation("androidx.tonyodev.fetch2:xfetch2:3.1.6")
+    implementation("androidx.tonyodev.fetch2okhttp:xfetch2okhttp:3.1.6")
+
     implementation("com.github.bumptech.glide:glide:4.13.2")
     implementation("com.github.bumptech.glide:okhttp3-integration:4.13.2")
     kapt("com.github.bumptech.glide:compiler:4.13.2")
@@ -192,8 +195,8 @@ dependencies {
     implementation("io.insert-koin:koin-androidx-navigation:3.2.0")
     implementation("io.insert-koin:koin-androidx-compose:3.2.0")
     testImplementation("io.insert-koin:koin-test-junit5:3.2.0")
-    implementation("io.insert-koin:koin-annotations:1.0.0")
-    implementation("io.insert-koin:koin-ksp-compiler:1.0.0")
+    implementation("io.insert-koin:koin-annotations:1.0.1")
+    implementation("io.insert-koin:koin-ksp-compiler:1.0.1")
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.21")
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.21")
@@ -237,8 +240,8 @@ dependencies {
     implementation("com.facebook.stetho:stetho:1.6.0")
     implementation("com.facebook.stetho:stetho-okhttp3:1.6.0")
 
-    implementation("com.amazonaws:aws-android-sdk-s3:2.47.0")
-    implementation("com.amazonaws:aws-android-sdk-mobile-client:2.47.0")
+    implementation("com.amazonaws:aws-android-sdk-s3:2.48.0")
+    implementation("com.amazonaws:aws-android-sdk-mobile-client:2.48.0")
 
     implementation("jp.wasabeef.transformers:core:1.0.6")
     implementation("jp.wasabeef.transformers:coil:1.0.6")

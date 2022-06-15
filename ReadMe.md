@@ -76,7 +76,7 @@
 >>implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")  
   
 >[XPopup](https://github.com/li-xiaojun/XPopup)(弹窗)  
->>implementation("com.github.li-xiaojun:XPopup:2.8.2")  
+>>implementation("com.github.li-xiaojun:XPopup:2.8.3")  
   
 >[Profiler](https://github.com/itkacher/OkHttpProfiler)(AS OkHttp 拦截器)  
 >>implementation("com.localebro:okhttpprofiler:1.0.8")  
@@ -295,6 +295,10 @@
 >>implementation("androidx.fragment:fragment-ktx:1.5.0-rc01")  
 >>testImplementation("androidx.fragment:fragment-testing:1.5.0-rc01")  
   
+>[Fetch](https://github.com/tonyofrancis/Fetch)(下载框架)  
+>>implementation("androidx.tonyodev.fetch2:xfetch2:3.1.6")  
+>>implementation("androidx.tonyodev.fetch2okhttp:xfetch2okhttp:3.1.6")  
+  
 >[Glide](https://github.com/bumptech/glide)(图片加载)  
 >>implementation("com.github.bumptech.glide:glide:4.13.2")  
 >>implementation("com.github.bumptech.glide:okhttp3-integration:4.13.2")  
@@ -311,8 +315,8 @@
 >>implementation("io.insert-koin:koin-androidx-navigation:3.2.0")  
 >>implementation("io.insert-koin:koin-androidx-compose:3.2.0")  
 >>testImplementation("io.insert-koin:koin-test-junit5:3.2.0")  
->>implementation("io.insert-koin:koin-annotations:1.0.0")  
->>implementation("io.insert-koin:koin-ksp-compiler:1.0.0")  
+>>implementation("io.insert-koin:koin-annotations:1.0.1")  
+>>implementation("io.insert-koin:koin-ksp-compiler:1.0.1")  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
 >>implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.21")  
@@ -367,8 +371,8 @@
 >>implementation("com.facebook.stetho:stetho-okhttp3:1.6.0")  
   
 >[S3](https://github.com/aws-amplify/aws-sdk-android)(亚马逊云存储)  
->>implementation("com.amazonaws:aws-android-sdk-s3:2.47.0")  
->>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.47.0")  
+>>implementation("com.amazonaws:aws-android-sdk-s3:2.48.0")  
+>>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.48.0")  
   
 >[Transformer](https://github.com/wasabeef/transformers)(图片裁剪器)  
 >>implementation("jp.wasabeef.transformers:core:1.0.6")  

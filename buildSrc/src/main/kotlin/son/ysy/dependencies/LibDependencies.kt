@@ -182,7 +182,7 @@ sealed class LibDependencies(
      * 弹窗
      * https://github.com/li-xiaojun/XPopup
      */
-    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.8.2",
+    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.8.3",
         DependencyMethod.Implementation)
 
     /**
@@ -712,6 +712,18 @@ sealed class LibDependencies(
     }
 
     /**
+     * 下载框架
+     * https://github.com/tonyofrancis/Fetch
+     */
+    interface Fetch {
+      object Core : LibDependencies("androidx.tonyodev.fetch2", "xfetch2", "3.1.6",
+          DependencyMethod.Implementation)
+
+      object OkHttp : LibDependencies("androidx.tonyodev.fetch2okhttp", "xfetch2okhttp",
+          "3.1.6", DependencyMethod.Implementation)
+    }
+
+    /**
      * 图片加载
      * https://github.com/bumptech/glide
      */
@@ -761,10 +773,10 @@ sealed class LibDependencies(
       object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.2.0",
           DependencyMethod.Test.Implementation)
 
-      object Annotations : LibDependencies("io.insert-koin", "koin-annotations", "1.0.0",
+      object Annotations : LibDependencies("io.insert-koin", "koin-annotations", "1.0.1",
           DependencyMethod.Implementation)
 
-      object Compiler : LibDependencies("io.insert-koin", "koin-ksp-compiler", "1.0.0",
+      object Compiler : LibDependencies("io.insert-koin", "koin-ksp-compiler", "1.0.1",
           DependencyMethod.Implementation)
     }
 
@@ -925,11 +937,11 @@ sealed class LibDependencies(
      * https://github.com/aws-amplify/aws-sdk-android
      */
     interface S3 {
-      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.47.0",
+      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.48.0",
           DependencyMethod.Implementation)
 
       object Client : LibDependencies("com.amazonaws", "aws-android-sdk-mobile-client",
-          "2.47.0", DependencyMethod.Implementation)
+          "2.48.0", DependencyMethod.Implementation)
     }
 
     /**
