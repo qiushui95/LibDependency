@@ -34,6 +34,7 @@ dependencies {
     implementation("com.github.loperSeven:DateTimePicker:+")
     implementation("com.github.princekin-f:EasyFloat:+")
     implementation("androidx.exifinterface:exifinterface:+")
+    implementation("io.github.hoc081098:FlowExt-jvm:+")
     implementation("com.ypx.yimagepicker:androidx:+")
     implementation("com.github.iielse:imageviewer:+")
     implementation("joda-time:joda-time:+")
@@ -63,6 +64,7 @@ dependencies {
     implementation("me.majiajie:pager-bottom-tab-strip:+")
     implementation("androidx.constraintlayout:constraintlayout:+")
     implementation("io.github.csdn-mobile:RoundView:+")
+    implementation("com.tbuonomo:dotsindicator:+")
     implementation("com.google.android.flexbox:flexbox:+")
     implementation("com.github.dkzwm:fet-core:+")
     implementation("com.airbnb.android:lottie:+")
@@ -224,6 +226,12 @@ dependencies {
 
     implementation("com.squareup.okhttp3:okhttp:+")
     androidTestImplementation("com.squareup.okhttp3:mockwebserver:+")
+
+    implementation("com.liulishuo.okdownload:okdownload:+")
+    implementation("com.liulishuo.okdownload:sqlite:+")
+    implementation("com.liulishuo.okdownload:okhttp:+")
+    implementation("com.liulishuo.okdownload:filedownloader:+")
+    implementation("com.liulishuo.okdownload:ktx:+")
 
     implementation("com.airbnb.android:paris:+")
     ksp("com.airbnb.android:paris-processor:+")

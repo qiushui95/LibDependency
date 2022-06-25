@@ -13,7 +13,7 @@
 >>implementation("com.blankj:utilcodex:1.31.0")  
   
 >[Annotation](https://developer.android.com/jetpack/androidx/releases/annotation)(Annotation)  
->>implementation("androidx.annotation:annotation:1.3.0")  
+>>implementation("androidx.annotation:annotation:1.4.0")  
   
 >[Appcompat](https://developer.android.com/jetpack/androidx/releases/appcompat)  
 >>implementation("androidx.appcompat:appcompat:1.4.2")  
@@ -35,6 +35,9 @@
   
 >[Exif](https://developer.android.com/jetpack/androidx/releases/exifinterface)(图片信息)  
 >>implementation("androidx.exifinterface:exifinterface:1.3.3")  
+  
+>[FlowExt](https://github.com/hoc081098/FlowExt)(Flow扩展)  
+>>implementation("io.github.hoc081098:FlowExt-jvm:0.3.0")  
   
 >[ImagePicker](https://github.com/yangpeixing/YImagePicker)(多媒体选择库)  
 >>implementation("com.ypx.yimagepicker:androidx:3.1.4")  
@@ -61,7 +64,7 @@
 >>implementation("com.github.YummyLau:PanelSwitchHelper:1.4.0")  
   
 >[QrScanner](https://github.com/jenly1314/ZXingLite)(二维码扫描)  
->>implementation("com.github.jenly1314:zxing-lite:2.2.0")  
+>>implementation("com.github.jenly1314:zxing-lite:2.2.1")  
   
 >[Startup](https://github.com/qiushui95/AndroidInitializer)(app启动初始化)  
 >>implementation("com.github.qiushui95:AndroidInitializer:1.0.9")  
@@ -76,7 +79,7 @@
 >>implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")  
   
 >[XPopup](https://github.com/li-xiaojun/XPopup)(弹窗)  
->>implementation("com.github.li-xiaojun:XPopup:2.8.3")  
+>>implementation("com.github.li-xiaojun:XPopup:2.8.6")  
   
 >[Profiler](https://github.com/itkacher/OkHttpProfiler)(AS OkHttp 拦截器)  
 >>implementation("com.localebro:okhttpprofiler:1.0.8")  
@@ -91,7 +94,7 @@
 >>implementation("com.tencent.vasdolly:helper:3.0.4")  
   
 >[Zip4J](https://github.com/srikanth-lingala/zip4j)(zip压缩相关)  
->>implementation("net.lingala.zip4j:zip4j:2.10.0")  
+>>implementation("net.lingala.zip4j:zip4j:2.11.1")  
   
 </details>  
   
@@ -117,7 +120,10 @@
 >>implementation("androidx.constraintlayout:constraintlayout:2.1.4")  
   
 >[CornerView](https://github.com/csdn-mobile/RoundView)(圆角控件)  
->>implementation("io.github.csdn-mobile:RoundView:1.7.1")  
+>>implementation("io.github.csdn-mobile:RoundView:1.8.0")  
+  
+>[DotsIndicator](https://github.com/tommybuonomo/dotsindicator)(指示器控件)  
+>>implementation("com.tbuonomo:dotsindicator:4.3")  
   
 >[FlexBox](https://github.com/google/flexbox-layout)(流式布局)  
 >>implementation("com.google.android.flexbox:flexbox:3.0.0")  
@@ -208,20 +214,20 @@
 >>implementation("com.github.fornewid:material-motion-compose:0.8.1")  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
->>implementation("androidx.compose.animation:animation:1.2.0-beta03")  
->>implementation("androidx.compose.compiler:compiler:1.2.0-beta03")  
->>implementation("androidx.compose.foundation:foundation:1.2.0-beta03")  
->>implementation("androidx.compose.runtime:runtime-livedata:1.2.0-beta03")  
->>implementation("androidx.compose.material:material:1.2.0-beta03")  
->>implementation("androidx.compose.material:material-icons-core:1.2.0-beta03")  
->>implementation("androidx.compose.material:material-icons-extended:1.2.0-beta03")  
->>implementation("androidx.compose.ui:ui-tooling-preview:1.2.0-beta03")  
->>androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.2.0-beta03")  
->>implementation("androidx.compose.ui:ui:1.2.0-beta03")  
->>implementation("androidx.compose.ui:ui-tooling:1.2.0-beta03")  
+>>implementation("androidx.compose.animation:animation:1.2.0-rc02")  
+>>implementation("androidx.compose.compiler:compiler:1.2.0-rc02")  
+>>implementation("androidx.compose.foundation:foundation:1.2.0-rc02")  
+>>implementation("androidx.compose.runtime:runtime-livedata:1.2.0-rc02")  
+>>implementation("androidx.compose.material:material:1.2.0-rc02")  
+>>implementation("androidx.compose.material:material-icons-core:1.2.0-rc02")  
+>>implementation("androidx.compose.material:material-icons-extended:1.2.0-rc02")  
+>>implementation("androidx.compose.ui:ui-tooling-preview:1.2.0-rc02")  
+>>androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.2.0-rc02")  
+>>implementation("androidx.compose.ui:ui:1.2.0-rc02")  
+>>implementation("androidx.compose.ui:ui-tooling:1.2.0-rc02")  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
->>implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.0-rc01")  
+>>implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.0-rc02")  
   
 </details>  
   
@@ -237,12 +243,12 @@
 >>implementation("com.tencent.bugly:crashreport_upgrade:1.5.23")  
   
 >[CameraX](https://developer.android.com/jetpack/androidx/releases/camera)(相机相关)  
->>implementation("androidx.camera:camera-camera2:1.1.0-rc01")  
->>implementation("androidx.camera:camera-core:1.1.0-rc01")  
->>implementation("androidx.camera:camera-lifecycle:1.1.0-rc01")  
->>implementation("androidx.camera:camera-video:1.1.0-rc01")  
->>implementation("androidx.camera:camera-view:1.1.0-rc01")  
->>implementation("androidx.camera:camera-extensions:1.1.0-rc01")  
+>>implementation("androidx.camera:camera-camera2:1.1.0-rc02")  
+>>implementation("androidx.camera:camera-core:1.1.0-rc02")  
+>>implementation("androidx.camera:camera-lifecycle:1.1.0-rc02")  
+>>implementation("androidx.camera:camera-video:1.1.0-rc02")  
+>>implementation("androidx.camera:camera-view:1.1.0-rc02")  
+>>implementation("androidx.camera:camera-extensions:1.1.0-rc02")  
   
 >[Chucker](https://github.com/ChuckerTeam/chucker)(网络请求监控)  
 >>debugImplementation("com.github.chuckerteam.chucker:library:3.5.2")  
@@ -256,12 +262,12 @@
 >>implementation("io.coil-kt:coil-video:2.1.0")  
   
 >[Core](https://developer.android.com/jetpack/androidx/releases/core)  
->>implementation("androidx.core:core-ktx:1.8.0-beta01")  
+>>implementation("androidx.core:core-ktx:1.8.0")  
 >>implementation("androidx.core:core-splashscreen:1.0.0-rc01")  
   
 >[Coroutines](https://github.com/Kotlin/kotlinx.coroutines)(协程)  
->>implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.2")  
->>testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.2")  
+>>implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.3")  
+>>testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.3")  
   
 >[Download](https://github.com/AriaLyy/Aria)(下载)  
 >>implementation("me.laoyuyu.aria:core:3.8.16")  
@@ -324,13 +330,13 @@
 >>implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21")  
   
 >[Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
->>implementation("androidx.lifecycle:lifecycle-common:2.5.0-rc01")  
->>implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.0-rc01")  
->>implementation("androidx.lifecycle:lifecycle-process:2.5.0-rc01")  
->>implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.0-rc01")  
->>implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.0-rc01")  
->>implementation("androidx.lifecycle:lifecycle-service:2.5.0-rc01")  
->>implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc01")  
+>>implementation("androidx.lifecycle:lifecycle-common:2.5.0-rc02")  
+>>implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.0-rc02")  
+>>implementation("androidx.lifecycle:lifecycle-process:2.5.0-rc02")  
+>>implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.0-rc02")  
+>>implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.0-rc02")  
+>>implementation("androidx.lifecycle:lifecycle-service:2.5.0-rc02")  
+>>implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc02")  
   
 >[Mavericks](https://github.com/airbnb/mavericks)(Mavericks架构)  
 >>implementation("com.airbnb.android:mavericks:2.7.0")  
@@ -342,14 +348,21 @@
 >>ksp("com.squareup.moshi:moshi-kotlin-codegen:1.13.0")  
   
 >[Navigation](https://developer.android.com/jetpack/androidx/releases/navigation)(导航库)  
->>implementation("androidx.navigation:navigation-fragment-ktx:2.5.0-rc01")  
->>implementation("androidx.navigation:navigation-ui-ktx:2.5.0-rc01")  
->>implementation("androidx.navigation:navigation-compose:2.5.0-rc01")  
->>testImplementation("androidx.navigation:navigation-testing:2.5.0-rc01")  
+>>implementation("androidx.navigation:navigation-fragment-ktx:2.5.0-rc02")  
+>>implementation("androidx.navigation:navigation-ui-ktx:2.5.0-rc02")  
+>>implementation("androidx.navigation:navigation-compose:2.5.0-rc02")  
+>>testImplementation("androidx.navigation:navigation-testing:2.5.0-rc02")  
   
 >[OkHttp](https://github.com/square/okhttp)  
->>implementation("com.squareup.okhttp3:okhttp:4.9.3")  
->>androidTestImplementation("com.squareup.okhttp3:mockwebserver:4.9.3")  
+>>implementation("com.squareup.okhttp3:okhttp:4.10.0")  
+>>androidTestImplementation("com.squareup.okhttp3:mockwebserver:4.10.0")  
+  
+>[OkDownload](https://github.com/lingochamp/okdownload)  
+>>implementation("com.liulishuo.okdownload:okdownload:1.0.7")  
+>>implementation("com.liulishuo.okdownload:sqlite:1.0.7")  
+>>implementation("com.liulishuo.okdownload:okhttp:1.0.7")  
+>>implementation("com.liulishuo.okdownload:filedownloader:1.0.7")  
+>>implementation("com.liulishuo.okdownload:ktx:1.0.7")  
   
 >[Paris](https://github.com/airbnb/paris)  
 >>implementation("com.airbnb.android:paris:2.0.1")  
@@ -371,8 +384,8 @@
 >>implementation("com.facebook.stetho:stetho-okhttp3:1.6.0")  
   
 >[S3](https://github.com/aws-amplify/aws-sdk-android)(亚马逊云存储)  
->>implementation("com.amazonaws:aws-android-sdk-s3:2.48.0")  
->>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.48.0")  
+>>implementation("com.amazonaws:aws-android-sdk-s3:2.49.0")  
+>>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.49.0")  
   
 >[Transformer](https://github.com/wasabeef/transformers)(图片裁剪器)  
 >>implementation("jp.wasabeef.transformers:core:1.0.6")  
