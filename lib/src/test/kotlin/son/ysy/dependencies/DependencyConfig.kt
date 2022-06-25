@@ -65,7 +65,7 @@ sealed class DependencyConfig(
         object Annotation : Single(
             group = "androidx.annotation",
             name = "annotation",
-            version = "1.3.0",
+            version = "1.4.0",
             remark = "Annotation",
             link = "https://developer.android.com/jetpack/androidx/releases/annotation",
             dependencyMethod = DependencyMethod.Implementation,
@@ -138,13 +138,24 @@ sealed class DependencyConfig(
         )
 
         //endregion
-        //region 图片信息
+        //region Exif图片信息
         object Exif : Single(
             group = "androidx.exifinterface",
             name = "exifinterface",
             version = "1.3.3",
             remark = "图片信息",
             link = "https://developer.android.com/jetpack/androidx/releases/exifinterface",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
+
+        //endregion
+        //region Flow扩展
+        object FlowExt : Single(
+            group = "io.github.hoc081098",
+            name = "FlowExt-jvm",
+            version = "0.3.0",
+            remark = "Flow扩展",
+            link = "https://github.com/hoc081098/FlowExt",
             dependencyMethod = DependencyMethod.Implementation,
         )
 
@@ -241,7 +252,7 @@ sealed class DependencyConfig(
         object QrScanner : Single(
             group = "com.github.jenly1314",
             name = "zxing-lite",
-            version = "2.2.0",
+            version = "2.2.1",
             remark = "二维码扫描",
             link = "https://github.com/jenly1314/ZXingLite",
             dependencyMethod = DependencyMethod.Implementation,
@@ -296,7 +307,7 @@ sealed class DependencyConfig(
         object XPopup : Single(
             group = "com.github.li-xiaojun",
             name = "XPopup",
-            version = "2.8.3",
+            version = "2.8.6",
             remark = "弹窗",
             link = "https://github.com/li-xiaojun/XPopup",
             dependencyMethod = DependencyMethod.Implementation,
@@ -357,7 +368,7 @@ sealed class DependencyConfig(
         object Zip4J : Single(
             group = "net.lingala.zip4j",
             name = "zip4j",
-            version = "2.10.0",
+            version = "2.11.1",
             remark = "zip压缩相关",
             link = "https://github.com/srikanth-lingala/zip4j",
             dependencyMethod = DependencyMethod.Implementation,
@@ -445,9 +456,20 @@ sealed class DependencyConfig(
         object CornerView : View(
             group = "io.github.csdn-mobile",
             name = "RoundView",
-            version = "1.7.1",
+            version = "1.8.0",
             remark = "圆角控件",
             link = "https://github.com/csdn-mobile/RoundView",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
+
+        //endregion
+        //region DotsIndicator(指示器控件)
+        object DotsIndicator : View(
+            group = "com.tbuonomo",
+            name = "dotsindicator",
+            version = "4.3",
+            remark = "指示器控件",
+            link = "https://github.com/tommybuonomo/dotsindicator",
             dependencyMethod = DependencyMethod.Implementation,
         )
 
@@ -572,6 +594,7 @@ sealed class DependencyConfig(
             dependencyMethod = DependencyMethod.Implementation,
         )
 
+        //endregion
         //region SmartRefreshLayout(下拉刷新控件)
         sealed class SmartRefreshLayout(name: String) : View(
             group = "io.github.scwang90",
@@ -729,7 +752,7 @@ sealed class DependencyConfig(
         sealed class Official(
             group: String,
             name: String,
-            version: String = "1.2.0-beta03",
+            version: String = "1.2.0-rc02",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : Compose(
             group = group,
@@ -830,6 +853,7 @@ sealed class DependencyConfig(
             object Compose : Activity("activity-compose")
         }
 
+        //endregion
         //region Bugly
         sealed class Bugly(name: String, version: String) : Group(
             group = "com.tencent.bugly",
@@ -848,7 +872,7 @@ sealed class DependencyConfig(
         sealed class CameraX(name: String) : Group(
             group = "androidx.camera",
             name = name,
-            version = "1.1.0-rc01",
+            version = "1.1.0-rc02",
             remark = "相机相关",
             link = "https://developer.android.com/jetpack/androidx/releases/camera",
             dependencyMethod = DependencyMethod.Implementation,
@@ -903,7 +927,7 @@ sealed class DependencyConfig(
             link = "https://developer.android.com/jetpack/androidx/releases/core",
             dependencyMethod = DependencyMethod.Implementation,
         ) {
-            object Ktx : Core("core-ktx", "1.8.0-beta01")
+            object Ktx : Core("core-ktx", "1.8.0")
             object Splash : Core("core-splashscreen", "1.0.0-rc01")
         }
 
@@ -912,7 +936,7 @@ sealed class DependencyConfig(
         sealed class Coroutines(name: String, dependencyMethod: DependencyMethod) : Group(
             group = "org.jetbrains.kotlinx",
             name = name,
-            version = "1.6.2",
+            version = "1.6.3",
             remark = "协程",
             link = "https://github.com/Kotlin/kotlinx.coroutines",
             dependencyMethod = dependencyMethod,
@@ -1118,7 +1142,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.lifecycle",
             name = name,
-            version = "2.5.0-rc01",
+            version = "2.5.0-rc02",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/lifecycle",
             dependencyMethod = dependencyMethod,
@@ -1172,7 +1196,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.navigation",
             name = name,
-            version = "2.5.0-rc01",
+            version = "2.5.0-rc02",
             remark = "导航库",
             link = "https://developer.android.com/jetpack/androidx/releases/navigation",
             dependencyMethod = dependencyMethod,
@@ -1191,13 +1215,33 @@ sealed class DependencyConfig(
         ) : Group(
             group = "com.squareup.okhttp3",
             name = name,
-            version = "4.9.3",
+            version = "4.10.0",
             remark = "",
             link = "https://github.com/square/okhttp",
             dependencyMethod = dependencyMethod,
         ) {
             object Core : OkHttp("okhttp")
             object Mock : OkHttp("mockwebserver", DependencyMethod.AndroidTest.Implementation)
+        }
+
+        //endregion
+        //region OkDownload
+        sealed class OkDownload(
+            name: String,
+            dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
+        ) : Group(
+            group = "com.liulishuo.okdownload",
+            name = name,
+            version = "1.0.7",
+            remark = "",
+            link = "https://github.com/lingochamp/okdownload",
+            dependencyMethod = dependencyMethod,
+        ) {
+            object Core : OkDownload("okdownload")
+            object Sqlite : OkDownload("sqlite")
+            object OkHttp : OkDownload("okhttp")
+            object FileDownloader : OkDownload("filedownloader")
+            object Ktx : OkDownload("ktx")
         }
 
         //endregion
@@ -1279,7 +1323,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "com.amazonaws",
             name = name,
-            version = "2.48.0",
+            version = "2.49.0",
             remark = "亚马逊云存储",
             link = "https://github.com/aws-amplify/aws-sdk-android",
             dependencyMethod = dependencyMethod,
