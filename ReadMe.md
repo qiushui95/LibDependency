@@ -79,7 +79,7 @@
 >>implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")  
   
 >[XPopup](https://github.com/li-xiaojun/XPopup)(弹窗)  
->>implementation("com.github.li-xiaojun:XPopup:2.8.6")  
+>>implementation("com.github.li-xiaojun:XPopup:2.8.10")  
   
 >[Profiler](https://github.com/itkacher/OkHttpProfiler)(AS OkHttp 拦截器)  
 >>implementation("com.localebro:okhttpprofiler:1.0.8")  
@@ -214,20 +214,20 @@
 >>implementation("com.github.fornewid:material-motion-compose:0.8.1")  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
->>implementation("androidx.compose.animation:animation:1.2.0-rc02")  
->>implementation("androidx.compose.compiler:compiler:1.2.0-rc02")  
->>implementation("androidx.compose.foundation:foundation:1.2.0-rc02")  
->>implementation("androidx.compose.runtime:runtime-livedata:1.2.0-rc02")  
->>implementation("androidx.compose.material:material:1.2.0-rc02")  
->>implementation("androidx.compose.material:material-icons-core:1.2.0-rc02")  
->>implementation("androidx.compose.material:material-icons-extended:1.2.0-rc02")  
->>implementation("androidx.compose.ui:ui-tooling-preview:1.2.0-rc02")  
->>androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.2.0-rc02")  
->>implementation("androidx.compose.ui:ui:1.2.0-rc02")  
->>implementation("androidx.compose.ui:ui-tooling:1.2.0-rc02")  
+>>implementation("androidx.compose.animation:animation:1.2.0-rc03")  
+>>implementation("androidx.compose.compiler:compiler:1.2.0-rc03")  
+>>implementation("androidx.compose.foundation:foundation:1.2.0-rc03")  
+>>implementation("androidx.compose.runtime:runtime-livedata:1.2.0-rc03")  
+>>implementation("androidx.compose.material:material:1.2.0-rc03")  
+>>implementation("androidx.compose.material:material-icons-core:1.2.0-rc03")  
+>>implementation("androidx.compose.material:material-icons-extended:1.2.0-rc03")  
+>>implementation("androidx.compose.ui:ui-tooling-preview:1.2.0-rc03")  
+>>androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.2.0-rc03")  
+>>implementation("androidx.compose.ui:ui:1.2.0-rc03")  
+>>implementation("androidx.compose.ui:ui-tooling:1.2.0-rc03")  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
->>implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.0-rc02")  
+>>implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.0")  
   
 </details>  
   
@@ -235,20 +235,20 @@
 <summary>Group</summary>  
   
 >[Activity](https://developer.android.com/jetpack/androidx/releases/activity)  
->>implementation("androidx.activity:activity-ktx:1.5.0-rc01")  
->>implementation("androidx.activity:activity-compose:1.5.0-rc01")  
+>>implementation("androidx.activity:activity-ktx:1.5.0")  
+>>implementation("androidx.activity:activity-compose:1.5.0")  
   
 >[Bugly](https://bugly.qq.com/docs/user-guide/instruction-manual-android/?v=1.0.0)  
 >>implementation("com.tencent.bugly:crashreport:4.0.4")  
->>implementation("com.tencent.bugly:crashreport_upgrade:1.5.23")  
+>>implementation("com.tencent.bugly:crashreport_upgrade:1.6.1")  
   
 >[CameraX](https://developer.android.com/jetpack/androidx/releases/camera)(相机相关)  
->>implementation("androidx.camera:camera-camera2:1.1.0-rc02")  
->>implementation("androidx.camera:camera-core:1.1.0-rc02")  
->>implementation("androidx.camera:camera-lifecycle:1.1.0-rc02")  
->>implementation("androidx.camera:camera-video:1.1.0-rc02")  
->>implementation("androidx.camera:camera-view:1.1.0-rc02")  
->>implementation("androidx.camera:camera-extensions:1.1.0-rc02")  
+>>implementation("androidx.camera:camera-camera2:1.1.0")  
+>>implementation("androidx.camera:camera-core:1.1.0")  
+>>implementation("androidx.camera:camera-lifecycle:1.1.0")  
+>>implementation("androidx.camera:camera-video:1.1.0")  
+>>implementation("androidx.camera:camera-view:1.1.0")  
+>>implementation("androidx.camera:camera-extensions:1.1.0")  
   
 >[Chucker](https://github.com/ChuckerTeam/chucker)(网络请求监控)  
 >>debugImplementation("com.github.chuckerteam.chucker:library:3.5.2")  
@@ -298,8 +298,8 @@
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-material:1.2.0")  
   
 >[Fragment](https://developer.android.com/jetpack/androidx/releases/fragment)  
->>implementation("androidx.fragment:fragment-ktx:1.5.0-rc01")  
->>testImplementation("androidx.fragment:fragment-testing:1.5.0-rc01")  
+>>implementation("androidx.fragment:fragment-ktx:1.5.0")  
+>>testImplementation("androidx.fragment:fragment-testing:1.5.0")  
   
 >[Fetch](https://github.com/tonyofrancis/Fetch)(下载框架)  
 >>implementation("androidx.tonyodev.fetch2:xfetch2:3.1.6")  
@@ -330,13 +330,13 @@
 >>implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21")  
   
 >[Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
->>implementation("androidx.lifecycle:lifecycle-common:2.5.0-rc02")  
->>implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.0-rc02")  
->>implementation("androidx.lifecycle:lifecycle-process:2.5.0-rc02")  
->>implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.0-rc02")  
->>implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.0-rc02")  
->>implementation("androidx.lifecycle:lifecycle-service:2.5.0-rc02")  
->>implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc02")  
+>>implementation("androidx.lifecycle:lifecycle-common:2.5.0")  
+>>implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.0")  
+>>implementation("androidx.lifecycle:lifecycle-process:2.5.0")  
+>>implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.0")  
+>>implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.0")  
+>>implementation("androidx.lifecycle:lifecycle-service:2.5.0")  
+>>implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0")  
   
 >[Mavericks](https://github.com/airbnb/mavericks)(Mavericks架构)  
 >>implementation("com.airbnb.android:mavericks:2.7.0")  
@@ -348,10 +348,10 @@
 >>ksp("com.squareup.moshi:moshi-kotlin-codegen:1.13.0")  
   
 >[Navigation](https://developer.android.com/jetpack/androidx/releases/navigation)(导航库)  
->>implementation("androidx.navigation:navigation-fragment-ktx:2.5.0-rc02")  
->>implementation("androidx.navigation:navigation-ui-ktx:2.5.0-rc02")  
->>implementation("androidx.navigation:navigation-compose:2.5.0-rc02")  
->>testImplementation("androidx.navigation:navigation-testing:2.5.0-rc02")  
+>>implementation("androidx.navigation:navigation-fragment-ktx:2.5.0")  
+>>implementation("androidx.navigation:navigation-ui-ktx:2.5.0")  
+>>implementation("androidx.navigation:navigation-compose:2.5.0")  
+>>testImplementation("androidx.navigation:navigation-testing:2.5.0")  
   
 >[OkHttp](https://github.com/square/okhttp)  
 >>implementation("com.squareup.okhttp3:okhttp:4.10.0")  

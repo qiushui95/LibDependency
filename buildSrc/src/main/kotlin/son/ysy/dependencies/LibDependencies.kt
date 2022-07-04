@@ -189,7 +189,7 @@ sealed class LibDependencies(
      * 弹窗
      * https://github.com/li-xiaojun/XPopup
      */
-    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.8.6",
+    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.8.10",
         DependencyMethod.Implementation)
 
     /**
@@ -488,36 +488,36 @@ sealed class LibDependencies(
      */
     interface Official {
       object Animation : LibDependencies("androidx.compose.animation", "animation",
-          "1.2.0-rc02", DependencyMethod.Implementation)
+          "1.2.0-rc03", DependencyMethod.Implementation)
 
       object Compiler : LibDependencies("androidx.compose.compiler", "compiler",
-          "1.2.0-rc02", DependencyMethod.Implementation)
+          "1.2.0-rc03", DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
-          "1.2.0-rc02", DependencyMethod.Implementation)
+          "1.2.0-rc03", DependencyMethod.Implementation)
 
       object LiveData : LibDependencies("androidx.compose.runtime", "runtime-livedata",
-          "1.2.0-rc02", DependencyMethod.Implementation)
+          "1.2.0-rc03", DependencyMethod.Implementation)
 
       object Material : LibDependencies("androidx.compose.material", "material",
-          "1.2.0-rc02", DependencyMethod.Implementation)
+          "1.2.0-rc03", DependencyMethod.Implementation)
 
       object MaterialIcon : LibDependencies("androidx.compose.material",
-          "material-icons-core", "1.2.0-rc02", DependencyMethod.Implementation)
+          "material-icons-core", "1.2.0-rc03", DependencyMethod.Implementation)
 
       object MaterialIconExtended : LibDependencies("androidx.compose.material",
-          "material-icons-extended", "1.2.0-rc02", DependencyMethod.Implementation)
+          "material-icons-extended", "1.2.0-rc03", DependencyMethod.Implementation)
 
       object Preview : LibDependencies("androidx.compose.ui", "ui-tooling-preview",
-          "1.2.0-rc02", DependencyMethod.Implementation)
+          "1.2.0-rc03", DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.2.0-rc02",
+      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.2.0-rc03",
           DependencyMethod.AndroidTest.Implementation)
 
-      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.2.0-rc02",
+      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.2.0-rc03",
           DependencyMethod.Implementation)
 
-      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.2.0-rc02",
+      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.2.0-rc03",
           DependencyMethod.Implementation)
     }
 
@@ -525,7 +525,7 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/lifecycle
      */
     object ViewModel : LibDependencies("androidx.lifecycle", "lifecycle-viewmodel-compose",
-        "2.5.0-rc02", DependencyMethod.Implementation)
+        "2.5.0", DependencyMethod.Implementation)
   }
 
   interface Group {
@@ -533,10 +533,10 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/activity
      */
     interface Activity {
-      object Core : LibDependencies("androidx.activity", "activity-ktx", "1.5.0-rc01",
+      object Core : LibDependencies("androidx.activity", "activity-ktx", "1.5.0",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("androidx.activity", "activity-compose", "1.5.0-rc01",
+      object Compose : LibDependencies("androidx.activity", "activity-compose", "1.5.0",
           DependencyMethod.Implementation)
     }
 
@@ -547,7 +547,7 @@ sealed class LibDependencies(
       object Crash : LibDependencies("com.tencent.bugly", "crashreport", "4.0.4",
           DependencyMethod.Implementation)
 
-      object Upgrade : LibDependencies("com.tencent.bugly", "crashreport_upgrade", "1.5.23",
+      object Upgrade : LibDependencies("com.tencent.bugly", "crashreport_upgrade", "1.6.1",
           DependencyMethod.Implementation)
     }
 
@@ -556,23 +556,23 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/camera
      */
     interface CameraX {
-      object Camera2 : LibDependencies("androidx.camera", "camera-camera2", "1.1.0-rc02",
+      object Camera2 : LibDependencies("androidx.camera", "camera-camera2", "1.1.0",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("androidx.camera", "camera-core", "1.1.0-rc02",
+      object Core : LibDependencies("androidx.camera", "camera-core", "1.1.0",
           DependencyMethod.Implementation)
 
-      object Lifecycle : LibDependencies("androidx.camera", "camera-lifecycle", "1.1.0-rc02",
+      object Lifecycle : LibDependencies("androidx.camera", "camera-lifecycle", "1.1.0",
           DependencyMethod.Implementation)
 
-      object Video : LibDependencies("androidx.camera", "camera-video", "1.1.0-rc02",
+      object Video : LibDependencies("androidx.camera", "camera-video", "1.1.0",
           DependencyMethod.Implementation)
 
-      object View : LibDependencies("androidx.camera", "camera-view", "1.1.0-rc02",
+      object View : LibDependencies("androidx.camera", "camera-view", "1.1.0",
           DependencyMethod.Implementation)
 
-      object Extensions : LibDependencies("androidx.camera", "camera-extensions",
-          "1.1.0-rc02", DependencyMethod.Implementation)
+      object Extensions : LibDependencies("androidx.camera", "camera-extensions", "1.1.0",
+          DependencyMethod.Implementation)
     }
 
     /**
@@ -718,10 +718,10 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/fragment
      */
     interface Fragment {
-      object Core : LibDependencies("androidx.fragment", "fragment-ktx", "1.5.0-rc01",
+      object Core : LibDependencies("androidx.fragment", "fragment-ktx", "1.5.0",
           DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.fragment", "fragment-testing", "1.5.0-rc01",
+      object Test : LibDependencies("androidx.fragment", "fragment-testing", "1.5.0",
           DependencyMethod.Test.Implementation)
     }
 
@@ -812,26 +812,26 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/lifecycle
      */
     interface Lifecycle {
-      object Common : LibDependencies("androidx.lifecycle", "lifecycle-common", "2.5.0-rc02",
+      object Common : LibDependencies("androidx.lifecycle", "lifecycle-common", "2.5.0",
           DependencyMethod.Implementation)
 
       object LiveData : LibDependencies("androidx.lifecycle", "lifecycle-livedata-ktx",
-          "2.5.0-rc02", DependencyMethod.Implementation)
+          "2.5.0", DependencyMethod.Implementation)
 
-      object Process : LibDependencies("androidx.lifecycle", "lifecycle-process",
-          "2.5.0-rc02", DependencyMethod.Implementation)
+      object Process : LibDependencies("androidx.lifecycle", "lifecycle-process", "2.5.0",
+          DependencyMethod.Implementation)
 
       object Runtime : LibDependencies("androidx.lifecycle", "lifecycle-runtime-ktx",
-          "2.5.0-rc02", DependencyMethod.Implementation)
+          "2.5.0", DependencyMethod.Implementation)
 
       object SavedState : LibDependencies("androidx.lifecycle",
-          "lifecycle-viewmodel-savedstate", "2.5.0-rc02", DependencyMethod.Implementation)
+          "lifecycle-viewmodel-savedstate", "2.5.0", DependencyMethod.Implementation)
 
-      object Service : LibDependencies("androidx.lifecycle", "lifecycle-service",
-          "2.5.0-rc02", DependencyMethod.Implementation)
+      object Service : LibDependencies("androidx.lifecycle", "lifecycle-service", "2.5.0",
+          DependencyMethod.Implementation)
 
       object ViewModel : LibDependencies("androidx.lifecycle", "lifecycle-viewmodel-ktx",
-          "2.5.0-rc02", DependencyMethod.Implementation)
+          "2.5.0", DependencyMethod.Implementation)
     }
 
     /**
@@ -867,16 +867,16 @@ sealed class LibDependencies(
      */
     interface Navigation {
       object Fragment : LibDependencies("androidx.navigation", "navigation-fragment-ktx",
-          "2.5.0-rc02", DependencyMethod.Implementation)
+          "2.5.0", DependencyMethod.Implementation)
 
-      object Ui : LibDependencies("androidx.navigation", "navigation-ui-ktx", "2.5.0-rc02",
+      object Ui : LibDependencies("androidx.navigation", "navigation-ui-ktx", "2.5.0",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("androidx.navigation", "navigation-compose",
-          "2.5.0-rc02", DependencyMethod.Implementation)
+      object Compose : LibDependencies("androidx.navigation", "navigation-compose", "2.5.0",
+          DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.navigation", "navigation-testing",
-          "2.5.0-rc02", DependencyMethod.Test.Implementation)
+      object Test : LibDependencies("androidx.navigation", "navigation-testing", "2.5.0",
+          DependencyMethod.Test.Implementation)
     }
 
     /**
