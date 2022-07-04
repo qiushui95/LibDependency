@@ -307,7 +307,7 @@ sealed class DependencyConfig(
         object XPopup : Single(
             group = "com.github.li-xiaojun",
             name = "XPopup",
-            version = "2.8.6",
+            version = "2.8.10",
             remark = "弹窗",
             link = "https://github.com/li-xiaojun/XPopup",
             dependencyMethod = DependencyMethod.Implementation,
@@ -752,7 +752,7 @@ sealed class DependencyConfig(
         sealed class Official(
             group: String,
             name: String,
-            version: String = "1.2.0-rc02",
+            version: String = "1.2.0-rc03",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : Compose(
             group = group,
@@ -844,7 +844,7 @@ sealed class DependencyConfig(
         sealed class Activity(name: String) : Group(
             group = "androidx.activity",
             name = name,
-            version = "1.5.0-rc01",
+            version = "1.5.0",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/activity",
             dependencyMethod = DependencyMethod.Implementation,
@@ -864,7 +864,7 @@ sealed class DependencyConfig(
             dependencyMethod = DependencyMethod.Implementation,
         ) {
             object Crash : Bugly("crashreport", "4.0.4")
-            object Upgrade : Bugly("crashreport_upgrade", "1.5.23")
+            object Upgrade : Bugly("crashreport_upgrade", "1.6.1")
         }
 
         //endregion
@@ -872,7 +872,7 @@ sealed class DependencyConfig(
         sealed class CameraX(name: String) : Group(
             group = "androidx.camera",
             name = name,
-            version = "1.1.0-rc02",
+            version = "1.1.0",
             remark = "相机相关",
             link = "https://developer.android.com/jetpack/androidx/releases/camera",
             dependencyMethod = DependencyMethod.Implementation,
@@ -1021,7 +1021,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.fragment",
             name = name,
-            version = "1.5.0-rc01",
+            version = "1.5.0",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/fragment",
             dependencyMethod = dependencyMethod,
@@ -1142,7 +1142,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.lifecycle",
             name = name,
-            version = "2.5.0-rc02",
+            version = "2.5.0",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/lifecycle",
             dependencyMethod = dependencyMethod,
@@ -1196,7 +1196,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.navigation",
             name = name,
-            version = "2.5.0-rc02",
+            version = "2.5.0",
             remark = "导航库",
             link = "https://developer.android.com/jetpack/androidx/releases/navigation",
             dependencyMethod = dependencyMethod,
