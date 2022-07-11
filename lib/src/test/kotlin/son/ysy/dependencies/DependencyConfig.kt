@@ -116,6 +116,17 @@ sealed class DependencyConfig(
         )
 
         //endregion
+        //region Compressor(图片压缩库)
+        object Compressor : Single(
+            group = "id.zelory",
+            name = "compressor",
+            version = "3.0.1",
+            remark = "图片压缩库",
+            link = "https://github.com/zetbaitsu/Compressor",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
+
+        //endregion
         //region DateTimePicker(时间选择器)
         object DateTimePicker : Single(
             group = "com.github.loperSeven",
@@ -307,7 +318,7 @@ sealed class DependencyConfig(
         object XPopup : Single(
             group = "com.github.li-xiaojun",
             name = "XPopup",
-            version = "2.8.10",
+            version = "2.8.11",
             remark = "弹窗",
             link = "https://github.com/li-xiaojun/XPopup",
             dependencyMethod = DependencyMethod.Implementation,
