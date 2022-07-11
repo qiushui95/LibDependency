@@ -31,6 +31,7 @@ dependencies {
     implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:+")
     implementation("io.github.razerdp:BasePopup:+")
     implementation("me.jorgecastillo:androidcolorx:+")
+    implementation("id.zelory:compressor:+")
     implementation("com.github.loperSeven:DateTimePicker:+")
     implementation("com.github.princekin-f:EasyFloat:+")
     implementation("androidx.exifinterface:exifinterface:+")

@@ -27,6 +27,9 @@
 >[ColorKtx](https://github.com/JorgeCastilloPrz/AndroidColorX)(颜色帮助库)  
 >>implementation("me.jorgecastillo:androidcolorx:0.2.0")  
   
+>[Compressor](https://github.com/zetbaitsu/Compressor)(图片压缩库)  
+>>implementation("id.zelory:compressor:3.0.1")  
+  
 >[DateTimePicker](https://github.com/loperSeven/DateTimePicker)(时间选择器)  
 >>implementation("com.github.loperSeven:DateTimePicker:0.5.8")  
   
@@ -79,7 +82,7 @@
 >>implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")  
   
 >[XPopup](https://github.com/li-xiaojun/XPopup)(弹窗)  
->>implementation("com.github.li-xiaojun:XPopup:2.8.10")  
+>>implementation("com.github.li-xiaojun:XPopup:2.8.11")  
   
 >[Profiler](https://github.com/itkacher/OkHttpProfiler)(AS OkHttp 拦截器)  
 >>implementation("com.localebro:okhttpprofiler:1.0.8")  

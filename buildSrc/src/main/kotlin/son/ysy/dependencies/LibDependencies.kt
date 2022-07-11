@@ -67,6 +67,13 @@ sealed class LibDependencies(
         DependencyMethod.Implementation)
 
     /**
+     * 图片压缩库
+     * https://github.com/zetbaitsu/Compressor
+     */
+    object Compressor : LibDependencies("id.zelory", "compressor", "3.0.1",
+        DependencyMethod.Implementation)
+
+    /**
      * 时间选择器
      * https://github.com/loperSeven/DateTimePicker
      */
@@ -189,7 +196,7 @@ sealed class LibDependencies(
      * 弹窗
      * https://github.com/li-xiaojun/XPopup
      */
-    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.8.10",
+    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.8.11",
         DependencyMethod.Implementation)
 
     /**
