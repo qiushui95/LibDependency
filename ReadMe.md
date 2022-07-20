@@ -82,13 +82,13 @@
 >>implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")  
   
 >[XPopup](https://github.com/li-xiaojun/XPopup)(弹窗)  
->>implementation("com.github.li-xiaojun:XPopup:2.8.11")  
+>>implementation("com.github.li-xiaojun:XPopup:2.8.13")  
   
 >[Profiler](https://github.com/itkacher/OkHttpProfiler)(AS OkHttp 拦截器)  
 >>implementation("com.localebro:okhttpprofiler:1.0.8")  
   
 >[MavenPublish](https://github.com/vanniktech/gradle-maven-publish-plugin)(Maven上传)  
->>implementation("com.vanniktech:gradle-maven-publish-plugin:0.20.0")  
+>>implementation("com.vanniktech:gradle-maven-publish-plugin:0.21.0")  
   
 >[Serialization](https://github.com/Kotlin/kotlinx.serialization)(Json序列化)  
 >>implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.3")  
@@ -269,8 +269,8 @@
 >>implementation("androidx.core:core-splashscreen:1.0.0-rc01")  
   
 >[Coroutines](https://github.com/Kotlin/kotlinx.coroutines)(协程)  
->>implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.3")  
->>testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.3")  
+>>implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")  
+>>testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")  
   
 >[Download](https://github.com/AriaLyy/Aria)(下载)  
 >>implementation("me.laoyuyu.aria:core:3.8.16")  
@@ -358,6 +358,7 @@
   
 >[OkHttp](https://github.com/square/okhttp)  
 >>implementation("com.squareup.okhttp3:okhttp:4.10.0")  
+>>implementation("com.squareup.okhttp3:okhttp-interceptor:4.10.0")  
 >>androidTestImplementation("com.squareup.okhttp3:mockwebserver:4.10.0")  
   
 >[OkDownload](https://github.com/lingochamp/okdownload)  

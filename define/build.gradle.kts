@@ -49,9 +49,9 @@ dependencies {
     implementation("com.dropbox.mobile.store:store4:4.0.5")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")
-    implementation("com.github.li-xiaojun:XPopup:2.8.11")
+    implementation("com.github.li-xiaojun:XPopup:2.8.13")
     implementation("com.localebro:okhttpprofiler:1.0.8")
-    implementation("com.vanniktech:gradle-maven-publish-plugin:0.20.0")
+    implementation("com.vanniktech:gradle-maven-publish-plugin:0.21.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.3")
     implementation("com.tencent.vasdolly:helper:3.0.4")
     implementation("net.lingala.zip4j:zip4j:2.11.1")
@@ -151,8 +151,8 @@ dependencies {
     implementation("androidx.core:core-ktx:1.8.0")
     implementation("androidx.core:core-splashscreen:1.0.0-rc01")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.3")
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
 
     implementation("me.laoyuyu.aria:core:3.8.16")
     implementation("me.laoyuyu.aria:ftp:3.8.16")
@@ -226,6 +226,7 @@ dependencies {
     testImplementation("androidx.navigation:navigation-testing:2.5.0")
 
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
+    implementation("com.squareup.okhttp3:okhttp-interceptor:4.10.0")
     androidTestImplementation("com.squareup.okhttp3:mockwebserver:4.10.0")
 
     implementation("com.liulishuo.okdownload:okdownload:1.0.7")

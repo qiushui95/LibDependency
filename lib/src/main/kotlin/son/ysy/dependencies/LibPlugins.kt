@@ -16,12 +16,12 @@ sealed class LibPlugins(
 
     object Kapt : LibPluginId("kotlin-kapt")
 
-    object Ksp : LibPluginId("com.google.devtools.ksp", "1.6.21-1.0.5")
+    object Ksp : LibPluginId("com.google.devtools.ksp", "1.6.21-1.0.6")
 
     object Reflect : LibPluginId("kotlin-reflect")
   }
 
-  object Maven : LibPlugins("com.vanniktech", "gradle-maven-publish-plugin", "0.20.0") {
+  object Maven : LibPlugins("com.vanniktech", "gradle-maven-publish-plugin", "0.21.0") {
     object Plugin : LibPluginId("com.vanniktech.maven.publish")
   }
 

@@ -196,7 +196,7 @@ sealed class LibDependencies(
      * 弹窗
      * https://github.com/li-xiaojun/XPopup
      */
-    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.8.11",
+    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.8.13",
         DependencyMethod.Implementation)
 
     /**
@@ -211,7 +211,7 @@ sealed class LibDependencies(
      * https://github.com/vanniktech/gradle-maven-publish-plugin
      */
     object MavenPublish : LibDependencies("com.vanniktech", "gradle-maven-publish-plugin",
-        "0.20.0", DependencyMethod.Implementation)
+        "0.21.0", DependencyMethod.Implementation)
 
     /**
      * Json序列化
@@ -632,10 +632,10 @@ sealed class LibDependencies(
      */
     interface Coroutines {
       object Core : LibDependencies("org.jetbrains.kotlinx", "kotlinx-coroutines-android",
-          "1.6.3", DependencyMethod.Implementation)
+          "1.6.4", DependencyMethod.Implementation)
 
       object Test : LibDependencies("org.jetbrains.kotlinx", "kotlinx-coroutines-test",
-          "1.6.3", DependencyMethod.Test.Implementation)
+          "1.6.4", DependencyMethod.Test.Implementation)
     }
 
     /**
@@ -892,6 +892,9 @@ sealed class LibDependencies(
     interface OkHttp {
       object Core : LibDependencies("com.squareup.okhttp3", "okhttp", "4.10.0",
           DependencyMethod.Implementation)
+
+      object Logging : LibDependencies("com.squareup.okhttp3", "okhttp-interceptor",
+          "4.10.0", DependencyMethod.Implementation)
 
       object Mock : LibDependencies("com.squareup.okhttp3", "mockwebserver", "4.10.0",
           DependencyMethod.AndroidTest.Implementation)
