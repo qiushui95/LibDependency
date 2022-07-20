@@ -226,7 +226,7 @@ dependencies {
     testImplementation("androidx.navigation:navigation-testing:2.5.0")
 
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
-    implementation("com.squareup.okhttp3:okhttp-interceptor:4.10.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
     androidTestImplementation("com.squareup.okhttp3:mockwebserver:4.10.0")
 
     implementation("com.liulishuo.okdownload:okdownload:1.0.7")

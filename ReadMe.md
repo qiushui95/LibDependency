@@ -358,7 +358,7 @@
   
 >[OkHttp](https://github.com/square/okhttp)  
 >>implementation("com.squareup.okhttp3:okhttp:4.10.0")  
->>implementation("com.squareup.okhttp3:okhttp-interceptor:4.10.0")  
+>>implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")  
 >>androidTestImplementation("com.squareup.okhttp3:mockwebserver:4.10.0")  
   
 >[OkDownload](https://github.com/lingochamp/okdownload)  

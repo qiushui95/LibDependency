@@ -893,7 +893,7 @@ sealed class LibDependencies(
       object Core : LibDependencies("com.squareup.okhttp3", "okhttp", "4.10.0",
           DependencyMethod.Implementation)
 
-      object Logging : LibDependencies("com.squareup.okhttp3", "okhttp-interceptor",
+      object Logging : LibDependencies("com.squareup.okhttp3", "logging-interceptor",
           "4.10.0", DependencyMethod.Implementation)
 
       object Mock : LibDependencies("com.squareup.okhttp3", "mockwebserver", "4.10.0",
