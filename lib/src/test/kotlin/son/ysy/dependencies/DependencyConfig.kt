@@ -318,7 +318,7 @@ sealed class DependencyConfig(
         object XPopup : Single(
             group = "com.github.li-xiaojun",
             name = "XPopup",
-            version = "2.8.11",
+            version = "2.8.13",
             remark = "弹窗",
             link = "https://github.com/li-xiaojun/XPopup",
             dependencyMethod = DependencyMethod.Implementation,
@@ -340,7 +340,7 @@ sealed class DependencyConfig(
         object MavenPublish : Single(
             group = "com.vanniktech",
             name = "gradle-maven-publish-plugin",
-            version = "0.20.0",
+            version = "0.21.0",
             remark = "Maven上传",
             link = "https://github.com/vanniktech/gradle-maven-publish-plugin",
             dependencyMethod = DependencyMethod.Implementation,
@@ -947,7 +947,7 @@ sealed class DependencyConfig(
         sealed class Coroutines(name: String, dependencyMethod: DependencyMethod) : Group(
             group = "org.jetbrains.kotlinx",
             name = name,
-            version = "1.6.3",
+            version = "1.6.4",
             remark = "协程",
             link = "https://github.com/Kotlin/kotlinx.coroutines",
             dependencyMethod = dependencyMethod,
@@ -1232,6 +1232,7 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
             object Core : OkHttp("okhttp")
+            object Logging : OkHttp("okhttp-interceptor")
             object Mock : OkHttp("mockwebserver", DependencyMethod.AndroidTest.Implementation)
         }
 
