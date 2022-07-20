@@ -1232,7 +1232,7 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
             object Core : OkHttp("okhttp")
-            object Logging : OkHttp("okhttp-interceptor")
+            object Logging : OkHttp("logging-interceptor")
             object Mock : OkHttp("mockwebserver", DependencyMethod.AndroidTest.Implementation)
         }
 
