@@ -43,7 +43,7 @@ dependencies {
     implementation("com.tencent:mmkv-static:+")
     implementation("com.guolindev.permissionx:permissionx:+")
     implementation("androidx.paging:paging-runtime-ktx:+")
-    implementation("com.github.YummyLau:PanelSwitchHelper:+")
+    implementation("com.github.DSAppTeam:PanelSwitchHelper:+")
     implementation("com.github.jenly1314:zxing-lite:+")
     implementation("com.github.qiushui95:AndroidInitializer:+")
     implementation("com.dropbox.mobile.store:store4:+")
