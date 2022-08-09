@@ -164,7 +164,7 @@ sealed class DependencyConfig(
         object FlowExt : Single(
             group = "io.github.hoc081098",
             name = "FlowExt-jvm",
-            version = "0.3.0",
+            version = "0.4.0",
             remark = "Flow扩展",
             link = "https://github.com/hoc081098/FlowExt",
             dependencyMethod = DependencyMethod.Implementation,
@@ -186,7 +186,7 @@ sealed class DependencyConfig(
         object ImageWatcher : Single(
             group = "com.github.iielse",
             name = "imageviewer",
-            version = "2.1.13",
+            version = "2.1.17",
             remark = "图片预览框架",
             link = "https://github.com/iielse/imageviewer",
             dependencyMethod = DependencyMethod.Implementation,
@@ -250,9 +250,9 @@ sealed class DependencyConfig(
         //endregion
         //region PanelSwitchHelper(聊天键盘优化)
         object PanelSwitch : Single(
-            group = "com.github.YummyLau",
+            group = "com.github.DSAppTeam",
             name = "PanelSwitchHelper",
-            version = "1.4.0",
+            version = "v1.4.0",
             remark = "聊天键盘优化",
             link = "https://github.com/DSAppTeam/PanelSwitchHelper",
             dependencyMethod = DependencyMethod.Implementation,
@@ -318,7 +318,7 @@ sealed class DependencyConfig(
         object XPopup : Single(
             group = "com.github.li-xiaojun",
             name = "XPopup",
-            version = "2.8.13",
+            version = "2.8.14",
             remark = "弹窗",
             link = "https://github.com/li-xiaojun/XPopup",
             dependencyMethod = DependencyMethod.Implementation,
@@ -684,7 +684,7 @@ sealed class DependencyConfig(
         object Junit : Test(
             group = "org.junit.jupiter",
             name = "junit-jupiter",
-            version = "5.8.2",
+            version = "5.9.0",
             remark = "单元测试",
             link = "https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter",
             dependencyMethod = DependencyMethod.Test.Implementation,
@@ -717,7 +717,7 @@ sealed class DependencyConfig(
         sealed class Accompanist(name: String) : Compose(
             group = "com.google.accompanist",
             name = name,
-            version = "0.23.1",
+            version = "0.25.0",
             remark = "",
             link = "https://github.com/google/accompanist",
             dependencyMethod = DependencyMethod.Implementation,
@@ -763,7 +763,7 @@ sealed class DependencyConfig(
         sealed class Official(
             group: String,
             name: String,
-            version: String = "1.2.0-rc03",
+            version: String = "1.2.0",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : Compose(
             group = group,
@@ -855,7 +855,7 @@ sealed class DependencyConfig(
         sealed class Activity(name: String) : Group(
             group = "androidx.activity",
             name = name,
-            version = "1.5.0",
+            version = "1.5.1",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/activity",
             dependencyMethod = DependencyMethod.Implementation,
@@ -939,7 +939,7 @@ sealed class DependencyConfig(
             dependencyMethod = DependencyMethod.Implementation,
         ) {
             object Ktx : Core("core-ktx", "1.8.0")
-            object Splash : Core("core-splashscreen", "1.0.0-rc01")
+            object Splash : Core("core-splashscreen", "1.0.0")
         }
 
         //endregion
@@ -1032,7 +1032,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.fragment",
             name = name,
-            version = "1.5.0",
+            version = "1.5.1",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/fragment",
             dependencyMethod = dependencyMethod,
@@ -1153,7 +1153,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.lifecycle",
             name = name,
-            version = "2.5.0",
+            version = "2.5.1",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/lifecycle",
             dependencyMethod = dependencyMethod,
@@ -1207,7 +1207,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.navigation",
             name = name,
-            version = "2.5.0",
+            version = "2.5.1",
             remark = "导航库",
             link = "https://developer.android.com/jetpack/androidx/releases/navigation",
             dependencyMethod = dependencyMethod,
@@ -1299,7 +1299,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.room",
             name = name,
-            version = "2.4.2",
+            version = "2.4.3",
             remark = "Sqlite数据库",
             link = "https://developer.android.com/jetpack/androidx/releases/room",
             dependencyMethod = dependencyMethod,
@@ -1335,7 +1335,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "com.amazonaws",
             name = name,
-            version = "2.49.0",
+            version = "2.50.1",
             remark = "亚马逊云存储",
             link = "https://github.com/aws-amplify/aws-sdk-android",
             dependencyMethod = dependencyMethod,
@@ -1379,7 +1379,7 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
             object Asms : UMeng("asms", "1.6.3")
-            object Common : UMeng("common", "9.5.0")
+            object Common : UMeng("common", "9.5.1")
         }
 
         //endregion

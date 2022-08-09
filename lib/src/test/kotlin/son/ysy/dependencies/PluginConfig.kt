@@ -7,7 +7,7 @@ sealed class PluginConfig(
     val key: String
 ) {
 
-    object Android : PluginConfig("com.android.tools.build", "gradle", "7.2.1", "androidPlugin")
+    object Android : PluginConfig("com.android.tools.build", "gradle", "7.2.2", "androidPlugin")
 
     object Kotlin : PluginConfig(
         DependencyConfig.Group.Kotlin.Stdlib.group,
@@ -45,7 +45,7 @@ sealed class PluginConfig(
     object RocketX : PluginConfig(
         "io.github.trycatchx",
         "rocketx",
-        "1.1.0",
+        "1.1.1",
         "rocketX"
     ){
         object Plugin : LibPluginId("com.rocketx")
