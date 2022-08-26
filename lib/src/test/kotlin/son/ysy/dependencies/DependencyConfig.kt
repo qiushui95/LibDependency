@@ -76,7 +76,7 @@ sealed class DependencyConfig(
         object Appcompat : Single(
             group = "androidx.appcompat",
             name = "appcompat",
-            version = "1.4.2",
+            version = "1.5.0",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/appcompat",
             dependencyMethod = DependencyMethod.Implementation,
@@ -87,7 +87,7 @@ sealed class DependencyConfig(
         object Background : Single(
             group = "com.github.JavaNoober.BackgroundLibrary",
             name = "libraryx",
-            version = "1.7.4",
+            version = "1.7.5",
             remark = "背景生成工具库",
             link = "https://github.com/JavaNoober/BackgroundLibrary",
             dependencyMethod = DependencyMethod.Implementation,
@@ -197,7 +197,7 @@ sealed class DependencyConfig(
         object JodaTime : Single(
             group = "joda-time",
             name = "joda-time",
-            version = "2.10.14",
+            version = "2.11.1",
             remark = "时间处理库",
             link = "https://github.com/JodaOrg/joda-time",
             dependencyMethod = DependencyMethod.Implementation,
@@ -219,7 +219,7 @@ sealed class DependencyConfig(
         object Mmkv : Single(
             group = "com.tencent",
             name = "mmkv-static",
-            version = "1.2.13",
+            version = "1.2.14",
             remark = "持久KV数据存储",
             link = "https://github.com/Tencent/MMKV/blob/master/README_CN.md",
             dependencyMethod = DependencyMethod.Implementation,
@@ -252,7 +252,7 @@ sealed class DependencyConfig(
         object PanelSwitch : Single(
             group = "com.github.DSAppTeam",
             name = "PanelSwitchHelper",
-            version = "v1.4.0",
+            version = "1.4.0",
             remark = "聊天键盘优化",
             link = "https://github.com/DSAppTeam/PanelSwitchHelper",
             dependencyMethod = DependencyMethod.Implementation,
@@ -318,7 +318,7 @@ sealed class DependencyConfig(
         object XPopup : Single(
             group = "com.github.li-xiaojun",
             name = "XPopup",
-            version = "2.8.14",
+            version = "2.8.15",
             remark = "弹窗",
             link = "https://github.com/li-xiaojun/XPopup",
             dependencyMethod = DependencyMethod.Implementation,
@@ -353,7 +353,7 @@ sealed class DependencyConfig(
         object Serialization : Single(
             group = "org.jetbrains.kotlinx",
             name = "kotlinx-serialization-json",
-            version = "1.3.3",
+            version = "1.4.0",
             remark = "Json序列化",
             link = "https://github.com/Kotlin/kotlinx.serialization",
             dependencyMethod = DependencyMethod.Implementation,
@@ -633,6 +633,17 @@ sealed class DependencyConfig(
         )
 
         //endregion
+        //region ScrollContainer(嵌套滑动组件)
+        object ScrollContainer : View(
+            group = "com.github.donkingliang",
+            name = "ConsecutiveScroller",
+            version = "4.6.3",
+            remark = "嵌套滑动组件",
+            link = "https://github.com/donkingliang/ConsecutiveScroller",
+            dependencyMethod = DependencyMethod.Implementation,
+        )
+
+        //endregion
         //region ViewPager2
         object ViewPager2 : View(
             group = "androidx.viewpager2",
@@ -717,7 +728,7 @@ sealed class DependencyConfig(
         sealed class Accompanist(name: String) : Compose(
             group = "com.google.accompanist",
             name = name,
-            version = "0.25.0",
+            version = "0.25.1",
             remark = "",
             link = "https://github.com/google/accompanist",
             dependencyMethod = DependencyMethod.Implementation,
@@ -763,7 +774,7 @@ sealed class DependencyConfig(
         sealed class Official(
             group: String,
             name: String,
-            version: String = "1.2.0",
+            version: String = "1.2.1",
             dependencyMethod: DependencyMethod = DependencyMethod.Implementation,
         ) : Compose(
             group = group,
@@ -781,6 +792,7 @@ sealed class DependencyConfig(
             object Compiler : Official(
                 group = "androidx.compose.compiler",
                 name = "compiler",
+                version = "1.3.0"
             )
             //endregion
 
@@ -916,7 +928,7 @@ sealed class DependencyConfig(
         sealed class Coil(name: String) : Group(
             group = "io.coil-kt",
             name = name,
-            version = "2.1.0",
+            version = "2.2.0",
             remark = "图片加载",
             link = "https://coil-kt.github.io/coil/README-zh/",
             dependencyMethod = DependencyMethod.Implementation,
@@ -1032,7 +1044,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.fragment",
             name = name,
-            version = "1.5.1",
+            version = "1.5.2",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/fragment",
             dependencyMethod = dependencyMethod,
@@ -1379,7 +1391,7 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
             object Asms : UMeng("asms", "1.6.3")
-            object Common : UMeng("common", "9.5.1")
+            object Common : UMeng("common", "9.5.2")
         }
 
         //endregion
