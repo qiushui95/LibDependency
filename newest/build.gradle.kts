@@ -83,6 +83,7 @@ dependencies {
     implementation("io.github.scwang90:refresh-header-two-level:+")
     implementation("io.github.scwang90:refresh-footer-classics:+")
     implementation("com.kyleduo.switchbutton:library:+")
+    implementation("com.github.donkingliang:ConsecutiveScroller:+")
     implementation("androidx.viewpager2:viewpager2:+")
 
     implementation("com.github.angcyo.DslTablayout:TabLayout:+")

@@ -16,10 +16,10 @@
 >>implementation("androidx.annotation:annotation:1.4.0")  
   
 >[Appcompat](https://developer.android.com/jetpack/androidx/releases/appcompat)  
->>implementation("androidx.appcompat:appcompat:1.4.2")  
+>>implementation("androidx.appcompat:appcompat:1.5.0")  
   
 >[Background](https://github.com/JavaNoober/BackgroundLibrary)(背景生成工具库)  
->>implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.4")  
+>>implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.5")  
   
 >[BasePopup](https://github.com/razerdp/BasePopup)(弹窗)  
 >>implementation("io.github.razerdp:BasePopup:3.2.0")  
@@ -49,13 +49,13 @@
 >>implementation("com.github.iielse:imageviewer:2.1.17")  
   
 >[JodaTime](https://github.com/JodaOrg/joda-time)(时间处理库)  
->>implementation("joda-time:joda-time:2.10.14")  
+>>implementation("joda-time:joda-time:2.11.1")  
   
 >[LeakCanary](https://square.github.io/leakcanary/getting_started/)(内存泄露监控)  
 >>implementation("com.squareup.leakcanary:leakcanary-android:2.9.1")  
   
 >[Mmkv](https://github.com/Tencent/MMKV/blob/master/README_CN.md)(持久KV数据存储)  
->>implementation("com.tencent:mmkv-static:1.2.13")  
+>>implementation("com.tencent:mmkv-static:1.2.14")  
   
 >[PermissionX](https://github.com/guolindev/PermissionX)(权限请求)  
 >>implementation("com.guolindev.permissionx:permissionx:1.6.4")  
@@ -64,7 +64,7 @@
 >>implementation("androidx.paging:paging-runtime-ktx:3.1.1")  
   
 >[PanelSwitch](https://github.com/DSAppTeam/PanelSwitchHelper)(聊天键盘优化)  
->>implementation("com.github.DSAppTeam:PanelSwitchHelper:v1.4.0")  
+>>implementation("com.github.DSAppTeam:PanelSwitchHelper:1.4.0")  
   
 >[QrScanner](https://github.com/jenly1314/ZXingLite)(二维码扫描)  
 >>implementation("com.github.jenly1314:zxing-lite:2.2.1")  
@@ -82,7 +82,7 @@
 >>implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")  
   
 >[XPopup](https://github.com/li-xiaojun/XPopup)(弹窗)  
->>implementation("com.github.li-xiaojun:XPopup:2.8.14")  
+>>implementation("com.github.li-xiaojun:XPopup:2.8.15")  
   
 >[Profiler](https://github.com/itkacher/OkHttpProfiler)(AS OkHttp 拦截器)  
 >>implementation("com.localebro:okhttpprofiler:1.0.8")  
@@ -91,7 +91,7 @@
 >>implementation("com.vanniktech:gradle-maven-publish-plugin:0.21.0")  
   
 >[Serialization](https://github.com/Kotlin/kotlinx.serialization)(Json序列化)  
->>implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.3")  
+>>implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0")  
   
 >[VasDolly](https://github.com/Tencent/VasDolly)(多渠道打包)  
 >>implementation("com.tencent.vasdolly:helper:3.0.4")  
@@ -170,6 +170,9 @@
 >[SwitchButton](https://github.com/kyleduo/SwitchButton)(开关按钮)  
 >>implementation("com.kyleduo.switchbutton:library:2.1.0")  
   
+>[ScrollContainer](https://github.com/donkingliang/ConsecutiveScroller)(嵌套滑动组件)  
+>>implementation("com.github.donkingliang:ConsecutiveScroller:4.6.3")  
+  
 >[ViewPager2](https://developer.android.com/jetpack/androidx/releases/viewpager2)  
 >>implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")  
   
@@ -197,18 +200,18 @@
 <summary>Compose</summary>  
   
 >[Accompanist](https://github.com/google/accompanist)  
->>implementation("com.google.accompanist:accompanist-appcompat-theme:0.25.0")  
->>implementation("com.google.accompanist:accompanist-drawablepainter:0.25.0")  
->>implementation("com.google.accompanist:accompanist-flowlayout:0.25.0")  
->>implementation("com.google.accompanist:accompanist-insets:0.25.0")  
->>implementation("com.google.accompanist:accompanist-navigation-animation:0.25.0")  
->>implementation("com.google.accompanist:accompanist-navigation-material:0.25.0")  
->>implementation("com.google.accompanist:accompanist-pager:0.25.0")  
->>implementation("com.google.accompanist:accompanist-permissions:0.25.0")  
->>implementation("com.google.accompanist:accompanist-placeholder:0.25.0")  
->>implementation("com.google.accompanist:accompanist-placeholder-material:0.25.0")  
->>implementation("com.google.accompanist:accompanist-swiperefresh:0.25.0")  
->>implementation("com.google.accompanist:accompanist-systemuicontroller:0.25.0")  
+>>implementation("com.google.accompanist:accompanist-appcompat-theme:0.25.1")  
+>>implementation("com.google.accompanist:accompanist-drawablepainter:0.25.1")  
+>>implementation("com.google.accompanist:accompanist-flowlayout:0.25.1")  
+>>implementation("com.google.accompanist:accompanist-insets:0.25.1")  
+>>implementation("com.google.accompanist:accompanist-navigation-animation:0.25.1")  
+>>implementation("com.google.accompanist:accompanist-navigation-material:0.25.1")  
+>>implementation("com.google.accompanist:accompanist-pager:0.25.1")  
+>>implementation("com.google.accompanist:accompanist-permissions:0.25.1")  
+>>implementation("com.google.accompanist:accompanist-placeholder:0.25.1")  
+>>implementation("com.google.accompanist:accompanist-placeholder-material:0.25.1")  
+>>implementation("com.google.accompanist:accompanist-swiperefresh:0.25.1")  
+>>implementation("com.google.accompanist:accompanist-systemuicontroller:0.25.1")  
   
 >[ConstraintLayout](https://developer.android.com/jetpack/androidx/releases/constraintlayout)(Compose约束布局)  
 >>implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")  
@@ -217,17 +220,17 @@
 >>implementation("com.github.fornewid:material-motion-compose:0.8.1")  
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
->>implementation("androidx.compose.animation:animation:1.2.0")  
->>implementation("androidx.compose.compiler:compiler:1.2.0")  
->>implementation("androidx.compose.foundation:foundation:1.2.0")  
->>implementation("androidx.compose.runtime:runtime-livedata:1.2.0")  
->>implementation("androidx.compose.material:material:1.2.0")  
->>implementation("androidx.compose.material:material-icons-core:1.2.0")  
->>implementation("androidx.compose.material:material-icons-extended:1.2.0")  
->>implementation("androidx.compose.ui:ui-tooling-preview:1.2.0")  
->>androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.2.0")  
->>implementation("androidx.compose.ui:ui:1.2.0")  
->>implementation("androidx.compose.ui:ui-tooling:1.2.0")  
+>>implementation("androidx.compose.animation:animation:1.2.1")  
+>>implementation("androidx.compose.compiler:compiler:1.3.0")  
+>>implementation("androidx.compose.foundation:foundation:1.2.1")  
+>>implementation("androidx.compose.runtime:runtime-livedata:1.2.1")  
+>>implementation("androidx.compose.material:material:1.2.1")  
+>>implementation("androidx.compose.material:material-icons-core:1.2.1")  
+>>implementation("androidx.compose.material:material-icons-extended:1.2.1")  
+>>implementation("androidx.compose.ui:ui-tooling-preview:1.2.1")  
+>>androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.2.1")  
+>>implementation("androidx.compose.ui:ui:1.2.1")  
+>>implementation("androidx.compose.ui:ui-tooling:1.2.1")  
   
 >[ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")  
@@ -258,11 +261,11 @@
 >>releaseImplementation("com.github.chuckerteam.chucker:library-no-op:3.5.2")  
   
 >[Coil](https://coil-kt.github.io/coil/README-zh/)(图片加载)  
->>implementation("io.coil-kt:coil:2.1.0")  
->>implementation("io.coil-kt:coil-compose:2.1.0")  
->>implementation("io.coil-kt:coil-svg:2.1.0")  
->>implementation("io.coil-kt:coil-gif:2.1.0")  
->>implementation("io.coil-kt:coil-video:2.1.0")  
+>>implementation("io.coil-kt:coil:2.2.0")  
+>>implementation("io.coil-kt:coil-compose:2.2.0")  
+>>implementation("io.coil-kt:coil-svg:2.2.0")  
+>>implementation("io.coil-kt:coil-gif:2.2.0")  
+>>implementation("io.coil-kt:coil-video:2.2.0")  
   
 >[Core](https://developer.android.com/jetpack/androidx/releases/core)  
 >>implementation("androidx.core:core-ktx:1.8.0")  
@@ -301,8 +304,8 @@
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-material:1.2.0")  
   
 >[Fragment](https://developer.android.com/jetpack/androidx/releases/fragment)  
->>implementation("androidx.fragment:fragment-ktx:1.5.1")  
->>testImplementation("androidx.fragment:fragment-testing:1.5.1")  
+>>implementation("androidx.fragment:fragment-ktx:1.5.2")  
+>>testImplementation("androidx.fragment:fragment-testing:1.5.2")  
   
 >[Fetch](https://github.com/tonyofrancis/Fetch)(下载框架)  
 >>implementation("androidx.tonyodev.fetch2:xfetch2:3.1.6")  
@@ -400,7 +403,7 @@
   
 >[UMeng](https://developer.umeng.com/docs/119267/detail/118584)(友盟)  
 >>implementation("com.umeng.umsdk:asms:1.6.3")  
->>implementation("com.umeng.umsdk:common:9.5.1")  
+>>implementation("com.umeng.umsdk:common:9.5.2")  
   
 >[WorkManager](https://developer.android.com/jetpack/androidx/releases/work)(任务管理器)  
 >>implementation("androidx.work:work-runtime-ktx:2.7.1")  

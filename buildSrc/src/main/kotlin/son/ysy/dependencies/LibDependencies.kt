@@ -42,7 +42,7 @@ sealed class LibDependencies(
     /**
      * https://developer.android.com/jetpack/androidx/releases/appcompat
      */
-    object Appcompat : LibDependencies("androidx.appcompat", "appcompat", "1.4.2",
+    object Appcompat : LibDependencies("androidx.appcompat", "appcompat", "1.5.0",
         DependencyMethod.Implementation)
 
     /**
@@ -50,7 +50,7 @@ sealed class LibDependencies(
      * https://github.com/JavaNoober/BackgroundLibrary
      */
     object Background : LibDependencies("com.github.JavaNoober.BackgroundLibrary",
-        "libraryx", "1.7.4", DependencyMethod.Implementation)
+        "libraryx", "1.7.5", DependencyMethod.Implementation)
 
     /**
      * 弹窗
@@ -119,7 +119,7 @@ sealed class LibDependencies(
      * 时间处理库
      * https://github.com/JodaOrg/joda-time
      */
-    object JodaTime : LibDependencies("joda-time", "joda-time", "2.10.14",
+    object JodaTime : LibDependencies("joda-time", "joda-time", "2.11.1",
         DependencyMethod.Implementation)
 
     /**
@@ -133,7 +133,7 @@ sealed class LibDependencies(
      * 持久KV数据存储
      * https://github.com/Tencent/MMKV/blob/master/README_CN.md
      */
-    object Mmkv : LibDependencies("com.tencent", "mmkv-static", "1.2.13",
+    object Mmkv : LibDependencies("com.tencent", "mmkv-static", "1.2.14",
         DependencyMethod.Implementation)
 
     /**
@@ -155,7 +155,7 @@ sealed class LibDependencies(
      * https://github.com/DSAppTeam/PanelSwitchHelper
      */
     object PanelSwitch : LibDependencies("com.github.DSAppTeam", "PanelSwitchHelper",
-        "v1.4.0", DependencyMethod.Implementation)
+        "1.4.0", DependencyMethod.Implementation)
 
     /**
      * 二维码扫描
@@ -196,7 +196,7 @@ sealed class LibDependencies(
      * 弹窗
      * https://github.com/li-xiaojun/XPopup
      */
-    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.8.14",
+    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.8.15",
         DependencyMethod.Implementation)
 
     /**
@@ -218,7 +218,7 @@ sealed class LibDependencies(
      * https://github.com/Kotlin/kotlinx.serialization
      */
     object Serialization : LibDependencies("org.jetbrains.kotlinx",
-        "kotlinx-serialization-json", "1.3.3", DependencyMethod.Implementation)
+        "kotlinx-serialization-json", "1.4.0", DependencyMethod.Implementation)
 
     /**
      * 多渠道打包
@@ -393,6 +393,13 @@ sealed class LibDependencies(
         DependencyMethod.Implementation)
 
     /**
+     * 嵌套滑动组件
+     * https://github.com/donkingliang/ConsecutiveScroller
+     */
+    object ScrollContainer : LibDependencies("com.github.donkingliang",
+        "ConsecutiveScroller", "4.6.3", DependencyMethod.Implementation)
+
+    /**
      * https://developer.android.com/jetpack/androidx/releases/viewpager2
      */
     object ViewPager2 : LibDependencies("androidx.viewpager2", "viewpager2", "1.1.0-beta01",
@@ -439,40 +446,40 @@ sealed class LibDependencies(
      */
     interface Accompanist {
       object AppcompatTheme : LibDependencies("com.google.accompanist",
-          "accompanist-appcompat-theme", "0.25.0", DependencyMethod.Implementation)
+          "accompanist-appcompat-theme", "0.25.1", DependencyMethod.Implementation)
 
       object DrawablePainter : LibDependencies("com.google.accompanist",
-          "accompanist-drawablepainter", "0.25.0", DependencyMethod.Implementation)
+          "accompanist-drawablepainter", "0.25.1", DependencyMethod.Implementation)
 
       object FlowLayout : LibDependencies("com.google.accompanist", "accompanist-flowlayout",
-          "0.25.0", DependencyMethod.Implementation)
+          "0.25.1", DependencyMethod.Implementation)
 
       object Insets : LibDependencies("com.google.accompanist", "accompanist-insets",
-          "0.25.0", DependencyMethod.Implementation)
+          "0.25.1", DependencyMethod.Implementation)
 
       object NavigationAnimation : LibDependencies("com.google.accompanist",
-          "accompanist-navigation-animation", "0.25.0", DependencyMethod.Implementation)
+          "accompanist-navigation-animation", "0.25.1", DependencyMethod.Implementation)
 
       object NavigationMaterial : LibDependencies("com.google.accompanist",
-          "accompanist-navigation-material", "0.25.0", DependencyMethod.Implementation)
+          "accompanist-navigation-material", "0.25.1", DependencyMethod.Implementation)
 
-      object Pager : LibDependencies("com.google.accompanist", "accompanist-pager", "0.25.0",
+      object Pager : LibDependencies("com.google.accompanist", "accompanist-pager", "0.25.1",
           DependencyMethod.Implementation)
 
       object Permissions : LibDependencies("com.google.accompanist",
-          "accompanist-permissions", "0.25.0", DependencyMethod.Implementation)
+          "accompanist-permissions", "0.25.1", DependencyMethod.Implementation)
 
       object PlaceHolder : LibDependencies("com.google.accompanist",
-          "accompanist-placeholder", "0.25.0", DependencyMethod.Implementation)
+          "accompanist-placeholder", "0.25.1", DependencyMethod.Implementation)
 
       object PlaceHolderMaterial : LibDependencies("com.google.accompanist",
-          "accompanist-placeholder-material", "0.25.0", DependencyMethod.Implementation)
+          "accompanist-placeholder-material", "0.25.1", DependencyMethod.Implementation)
 
       object SwipeRefresh : LibDependencies("com.google.accompanist",
-          "accompanist-swiperefresh", "0.25.0", DependencyMethod.Implementation)
+          "accompanist-swiperefresh", "0.25.1", DependencyMethod.Implementation)
 
       object SystemUiController : LibDependencies("com.google.accompanist",
-          "accompanist-systemuicontroller", "0.25.0", DependencyMethod.Implementation)
+          "accompanist-systemuicontroller", "0.25.1", DependencyMethod.Implementation)
     }
 
     /**
@@ -494,37 +501,37 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/compose
      */
     interface Official {
-      object Animation : LibDependencies("androidx.compose.animation", "animation", "1.2.0",
+      object Animation : LibDependencies("androidx.compose.animation", "animation", "1.2.1",
           DependencyMethod.Implementation)
 
-      object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.2.0",
+      object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.3.0",
           DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
-          "1.2.0", DependencyMethod.Implementation)
+          "1.2.1", DependencyMethod.Implementation)
 
       object LiveData : LibDependencies("androidx.compose.runtime", "runtime-livedata",
-          "1.2.0", DependencyMethod.Implementation)
+          "1.2.1", DependencyMethod.Implementation)
 
-      object Material : LibDependencies("androidx.compose.material", "material", "1.2.0",
+      object Material : LibDependencies("androidx.compose.material", "material", "1.2.1",
           DependencyMethod.Implementation)
 
       object MaterialIcon : LibDependencies("androidx.compose.material",
-          "material-icons-core", "1.2.0", DependencyMethod.Implementation)
+          "material-icons-core", "1.2.1", DependencyMethod.Implementation)
 
       object MaterialIconExtended : LibDependencies("androidx.compose.material",
-          "material-icons-extended", "1.2.0", DependencyMethod.Implementation)
+          "material-icons-extended", "1.2.1", DependencyMethod.Implementation)
 
-      object Preview : LibDependencies("androidx.compose.ui", "ui-tooling-preview", "1.2.0",
+      object Preview : LibDependencies("androidx.compose.ui", "ui-tooling-preview", "1.2.1",
           DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.2.0",
+      object Test : LibDependencies("androidx.compose.ui", "ui-test-junit4", "1.2.1",
           DependencyMethod.AndroidTest.Implementation)
 
-      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.2.0",
+      object Ui : LibDependencies("androidx.compose.ui", "ui", "1.2.1",
           DependencyMethod.Implementation)
 
-      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.2.0",
+      object UiTooling : LibDependencies("androidx.compose.ui", "ui-tooling", "1.2.1",
           DependencyMethod.Implementation)
     }
 
@@ -599,19 +606,19 @@ sealed class LibDependencies(
      * https://coil-kt.github.io/coil/README-zh/
      */
     interface Coil {
-      object Core : LibDependencies("io.coil-kt", "coil", "2.1.0",
+      object Core : LibDependencies("io.coil-kt", "coil", "2.2.0",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("io.coil-kt", "coil-compose", "2.1.0",
+      object Compose : LibDependencies("io.coil-kt", "coil-compose", "2.2.0",
           DependencyMethod.Implementation)
 
-      object Svg : LibDependencies("io.coil-kt", "coil-svg", "2.1.0",
+      object Svg : LibDependencies("io.coil-kt", "coil-svg", "2.2.0",
           DependencyMethod.Implementation)
 
-      object Gif : LibDependencies("io.coil-kt", "coil-gif", "2.1.0",
+      object Gif : LibDependencies("io.coil-kt", "coil-gif", "2.2.0",
           DependencyMethod.Implementation)
 
-      object Video : LibDependencies("io.coil-kt", "coil-video", "2.1.0",
+      object Video : LibDependencies("io.coil-kt", "coil-video", "2.2.0",
           DependencyMethod.Implementation)
     }
 
@@ -725,10 +732,10 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/fragment
      */
     interface Fragment {
-      object Core : LibDependencies("androidx.fragment", "fragment-ktx", "1.5.1",
+      object Core : LibDependencies("androidx.fragment", "fragment-ktx", "1.5.2",
           DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.fragment", "fragment-testing", "1.5.1",
+      object Test : LibDependencies("androidx.fragment", "fragment-testing", "1.5.2",
           DependencyMethod.Test.Implementation)
     }
 
@@ -1017,7 +1024,7 @@ sealed class LibDependencies(
       object Asms : LibDependencies("com.umeng.umsdk", "asms", "1.6.3",
           DependencyMethod.Implementation)
 
-      object Common : LibDependencies("com.umeng.umsdk", "common", "9.5.1",
+      object Common : LibDependencies("com.umeng.umsdk", "common", "9.5.2",
           DependencyMethod.Implementation)
     }
 
