@@ -16,8 +16,6 @@ sealed class LibPlugins(
 
     object Kapt : LibPluginId("kotlin-kapt")
 
-    object Ksp : LibPluginId("com.google.devtools.ksp", "1.7.10-1.0.6")
-
     object Reflect : LibPluginId("kotlin-reflect")
   }
 

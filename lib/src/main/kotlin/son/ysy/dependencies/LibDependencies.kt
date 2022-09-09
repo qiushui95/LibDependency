@@ -130,17 +130,17 @@ sealed class LibDependencies(
         "2.9.1", DependencyMethod.Implementation)
 
     /**
+     * Maven上传
+     * https://github.com/vanniktech/gradle-maven-publish-plugin
+     */
+    object MavenPublish : LibDependencies("com.vanniktech", "gradle-maven-publish-plugin",
+        "0.21.0", DependencyMethod.Implementation)
+
+    /**
      * 持久KV数据存储
      * https://github.com/Tencent/MMKV/blob/master/README_CN.md
      */
     object Mmkv : LibDependencies("com.tencent", "mmkv-static", "1.2.14",
-        DependencyMethod.Implementation)
-
-    /**
-     * 权限请求
-     * https://github.com/guolindev/PermissionX
-     */
-    object PermissionX : LibDependencies("com.guolindev.permissionx", "permissionx", "1.6.4",
         DependencyMethod.Implementation)
 
     /**
@@ -158,11 +158,32 @@ sealed class LibDependencies(
         "v1.5.0", DependencyMethod.Implementation)
 
     /**
+     * 权限请求
+     * https://github.com/guolindev/PermissionX
+     */
+    object PermissionX : LibDependencies("com.guolindev.permissionx", "permissionx", "1.6.4",
+        DependencyMethod.Implementation)
+
+    /**
+     * AS OkHttp 拦截器
+     * https://github.com/itkacher/OkHttpProfiler
+     */
+    object Profiler : LibDependencies("com.localebro", "okhttpprofiler", "1.0.8",
+        DependencyMethod.Implementation)
+
+    /**
      * 二维码扫描
      * https://github.com/jenly1314/ZXingLite
      */
     object QrScanner : LibDependencies("com.github.jenly1314", "zxing-lite", "2.2.1",
         DependencyMethod.Implementation)
+
+    /**
+     * Json序列化
+     * https://github.com/Kotlin/kotlinx.serialization
+     */
+    object Serialization : LibDependencies("org.jetbrains.kotlinx",
+        "kotlinx-serialization-json", "1.4.0", DependencyMethod.Implementation)
 
     /**
      * app启动初始化
@@ -176,6 +197,13 @@ sealed class LibDependencies(
      * https://github.com/dropbox/Store
      */
     object Store : LibDependencies("com.dropbox.mobile.store", "store4", "4.0.5",
+        DependencyMethod.Implementation)
+
+    /**
+     * 多渠道打包
+     * https://github.com/Tencent/VasDolly
+     */
+    object VasDolly : LibDependencies("com.tencent.vasdolly", "helper", "3.0.4",
         DependencyMethod.Implementation)
 
     /**
@@ -197,34 +225,6 @@ sealed class LibDependencies(
      * https://github.com/li-xiaojun/XPopup
      */
     object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.9.0",
-        DependencyMethod.Implementation)
-
-    /**
-     * AS OkHttp 拦截器
-     * https://github.com/itkacher/OkHttpProfiler
-     */
-    object Profiler : LibDependencies("com.localebro", "okhttpprofiler", "1.0.8",
-        DependencyMethod.Implementation)
-
-    /**
-     * Maven上传
-     * https://github.com/vanniktech/gradle-maven-publish-plugin
-     */
-    object MavenPublish : LibDependencies("com.vanniktech", "gradle-maven-publish-plugin",
-        "0.21.0", DependencyMethod.Implementation)
-
-    /**
-     * Json序列化
-     * https://github.com/Kotlin/kotlinx.serialization
-     */
-    object Serialization : LibDependencies("org.jetbrains.kotlinx",
-        "kotlinx-serialization-json", "1.4.0", DependencyMethod.Implementation)
-
-    /**
-     * 多渠道打包
-     * https://github.com/Tencent/VasDolly
-     */
-    object VasDolly : LibDependencies("com.tencent.vasdolly", "helper", "3.0.4",
         DependencyMethod.Implementation)
 
     /**
@@ -361,38 +361,6 @@ sealed class LibDependencies(
         "2.2.2", DependencyMethod.Implementation)
 
     /**
-     * 下拉刷新控件
-     * https://developer.android.com/jetpack/androidx/releases/swiperefreshlayout
-     */
-    object SwipeRefreshLayout : LibDependencies("androidx.swiperefreshlayout",
-        "swiperefreshlayout", "1.2.0-alpha01", DependencyMethod.Implementation)
-
-    /**
-     * 下拉刷新控件
-     * https://github.com/scwang90/SmartRefreshLayout
-     */
-    interface SmartRefreshLayout {
-      object Core : LibDependencies("io.github.scwang90", "refresh-layout-kernel", "2.0.5",
-          DependencyMethod.Implementation)
-
-      object ClassicsHeader : LibDependencies("io.github.scwang90",
-          "refresh-header-classics", "2.0.5", DependencyMethod.Implementation)
-
-      object TwoLevelHeader : LibDependencies("io.github.scwang90",
-          "refresh-header-two-level", "2.0.5", DependencyMethod.Implementation)
-
-      object ClassicsFooter : LibDependencies("io.github.scwang90",
-          "refresh-footer-classics", "2.0.5", DependencyMethod.Implementation)
-    }
-
-    /**
-     * 开关按钮
-     * https://github.com/kyleduo/SwitchButton
-     */
-    object SwitchButton : LibDependencies("com.kyleduo.switchbutton", "library", "2.1.0",
-        DependencyMethod.Implementation)
-
-    /**
      * 嵌套滑动组件
      * https://github.com/donkingliang/ConsecutiveScroller
      */
@@ -400,9 +368,35 @@ sealed class LibDependencies(
         "ConsecutiveScroller", "4.6.3", DependencyMethod.Implementation)
 
     /**
-     * https://developer.android.com/jetpack/androidx/releases/viewpager2
+     * 下拉刷新控件
+     * https://github.com/scwang90/SmartRefreshLayout
      */
-    object ViewPager2 : LibDependencies("androidx.viewpager2", "viewpager2", "1.1.0-beta01",
+    interface SmartRefreshLayout {
+      object ClassicsFooter : LibDependencies("io.github.scwang90",
+          "refresh-footer-classics", "2.0.5", DependencyMethod.Implementation)
+
+      object ClassicsHeader : LibDependencies("io.github.scwang90",
+          "refresh-header-classics", "2.0.5", DependencyMethod.Implementation)
+
+      object Core : LibDependencies("io.github.scwang90", "refresh-layout-kernel", "2.0.5",
+          DependencyMethod.Implementation)
+
+      object TwoLevelHeader : LibDependencies("io.github.scwang90",
+          "refresh-header-two-level", "2.0.5", DependencyMethod.Implementation)
+    }
+
+    /**
+     * 下拉刷新控件
+     * https://developer.android.com/jetpack/androidx/releases/swiperefreshlayout
+     */
+    object SwipeRefreshLayout : LibDependencies("androidx.swiperefreshlayout",
+        "swiperefreshlayout", "1.2.0-alpha01", DependencyMethod.Implementation)
+
+    /**
+     * 开关按钮
+     * https://github.com/kyleduo/SwitchButton
+     */
+    object SwitchButton : LibDependencies("com.kyleduo.switchbutton", "library", "2.1.0",
         DependencyMethod.Implementation)
 
     /**
@@ -415,6 +409,12 @@ sealed class LibDependencies(
       object VP2 : LibDependencies("com.github.angcyo.DslTablayout", "ViewPager2Delegate",
           "3.2.4", DependencyMethod.Implementation)
     }
+
+    /**
+     * https://developer.android.com/jetpack/androidx/releases/viewpager2
+     */
+    object ViewPager2 : LibDependencies("androidx.viewpager2", "viewpager2", "1.1.0-beta01",
+        DependencyMethod.Implementation)
   }
 
   interface Test {
@@ -547,10 +547,10 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/activity
      */
     interface Activity {
-      object Core : LibDependencies("androidx.activity", "activity-ktx", "1.5.1",
+      object Compose : LibDependencies("androidx.activity", "activity-compose", "1.5.1",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("androidx.activity", "activity-compose", "1.5.1",
+      object Core : LibDependencies("androidx.activity", "activity-ktx", "1.5.1",
           DependencyMethod.Implementation)
     }
 
@@ -576,6 +576,9 @@ sealed class LibDependencies(
       object Core : LibDependencies("androidx.camera", "camera-core", "1.1.0",
           DependencyMethod.Implementation)
 
+      object Extensions : LibDependencies("androidx.camera", "camera-extensions", "1.1.0",
+          DependencyMethod.Implementation)
+
       object Lifecycle : LibDependencies("androidx.camera", "camera-lifecycle", "1.1.0",
           DependencyMethod.Implementation)
 
@@ -583,9 +586,6 @@ sealed class LibDependencies(
           DependencyMethod.Implementation)
 
       object View : LibDependencies("androidx.camera", "camera-view", "1.1.0",
-          DependencyMethod.Implementation)
-
-      object Extensions : LibDependencies("androidx.camera", "camera-extensions", "1.1.0",
           DependencyMethod.Implementation)
     }
 
@@ -629,33 +629,33 @@ sealed class LibDependencies(
      * https://github.com/AriaLyy/Aria
      */
     interface Download {
+      object Compiler : LibDependencies("me.laoyuyu.aria", "compiler", "3.8.16",
+          DependencyMethod.Kapt)
+
       object Core : LibDependencies("me.laoyuyu.aria", "core", "3.8.16",
           DependencyMethod.Implementation)
 
       object Ftp : LibDependencies("me.laoyuyu.aria", "ftp", "3.8.16",
           DependencyMethod.Implementation)
 
-      object Sftp : LibDependencies("me.laoyuyu.aria", "sftp", "3.8.16",
-          DependencyMethod.Implementation)
-
       object M3u8 : LibDependencies("me.laoyuyu.aria", "m3u8", "3.8.16",
           DependencyMethod.Implementation)
 
-      object Compiler : LibDependencies("me.laoyuyu.aria", "compiler", "3.8.16",
-          DependencyMethod.Kapt)
+      object Sftp : LibDependencies("me.laoyuyu.aria", "sftp", "3.8.16",
+          DependencyMethod.Implementation)
     }
 
     /**
      * https://github.com/airbnb/epoxy
      */
     interface Epoxy {
-      object Core : LibDependencies("com.airbnb.android", "epoxy", "5.0.0-beta05",
-          DependencyMethod.Implementation)
-
       object Compiler : LibDependencies("com.airbnb.android", "epoxy-processor",
-          "5.0.0-beta05", DependencyMethod.Ksp)
+          "5.0.0-beta05", DependencyMethod.Kapt)
 
       object Compose : LibDependencies("com.airbnb.android", "epoxy-compose", "5.0.0-beta05",
+          DependencyMethod.Implementation)
+
+      object Core : LibDependencies("com.airbnb.android", "epoxy", "5.0.0-beta05",
           DependencyMethod.Implementation)
 
       object Glide : LibDependencies("com.airbnb.android", "epoxy-glide-preloading",
@@ -663,15 +663,27 @@ sealed class LibDependencies(
     }
 
     /**
+     * 下载框架
+     * https://github.com/tonyofrancis/Fetch
+     */
+    interface Fetch {
+      object Core : LibDependencies("androidx.tonyodev.fetch2", "xfetch2", "3.1.6",
+          DependencyMethod.Implementation)
+
+      object OkHttp : LibDependencies("androidx.tonyodev.fetch2okhttp", "xfetch2okhttp",
+          "3.1.6", DependencyMethod.Implementation)
+    }
+
+    /**
      * FlowBinding
      * https://github.com/ReactiveCircus/FlowBinding
      */
     interface FlowBinding {
-      object Android : LibDependencies("io.github.reactivecircus.flowbinding",
-          "flowbinding-android", "1.2.0", DependencyMethod.Implementation)
-
       object Activity : LibDependencies("io.github.reactivecircus.flowbinding",
           "flowbinding-activity", "1.2.0", DependencyMethod.Implementation)
+
+      object Android : LibDependencies("io.github.reactivecircus.flowbinding",
+          "flowbinding-android", "1.2.0", DependencyMethod.Implementation)
 
       object AppCompat : LibDependencies("io.github.reactivecircus.flowbinding",
           "flowbinding-appcompat", "1.2.0", DependencyMethod.Implementation)
@@ -684,6 +696,9 @@ sealed class LibDependencies(
 
       object Lifecycle : LibDependencies("io.github.reactivecircus.flowbinding",
           "flowbinding-lifecycle", "1.2.0", DependencyMethod.Implementation)
+
+      object Material : LibDependencies("io.github.reactivecircus.flowbinding",
+          "flowbinding-material", "1.2.0", DependencyMethod.Implementation)
 
       object Navigation : LibDependencies("io.github.reactivecircus.flowbinding",
           "flowbinding-navigation", "1.2.0", DependencyMethod.Implementation)
@@ -702,9 +717,6 @@ sealed class LibDependencies(
 
       object ViewPager2 : LibDependencies("io.github.reactivecircus.flowbinding",
           "flowbinding-viewpager2", "1.2.0", DependencyMethod.Implementation)
-
-      object Material : LibDependencies("io.github.reactivecircus.flowbinding",
-          "flowbinding-material", "1.2.0", DependencyMethod.Implementation)
     }
 
     /**
@@ -719,30 +731,18 @@ sealed class LibDependencies(
     }
 
     /**
-     * 下载框架
-     * https://github.com/tonyofrancis/Fetch
-     */
-    interface Fetch {
-      object Core : LibDependencies("androidx.tonyodev.fetch2", "xfetch2", "3.1.6",
-          DependencyMethod.Implementation)
-
-      object OkHttp : LibDependencies("androidx.tonyodev.fetch2okhttp", "xfetch2okhttp",
-          "3.1.6", DependencyMethod.Implementation)
-    }
-
-    /**
      * 图片加载
      * https://github.com/bumptech/glide
      */
     interface Glide {
+      object Compiler : LibDependencies("com.github.bumptech.glide", "compiler", "4.13.2",
+          DependencyMethod.Kapt)
+
       object Core : LibDependencies("com.github.bumptech.glide", "glide", "4.13.2",
           DependencyMethod.Implementation)
 
       object OkHttp : LibDependencies("com.github.bumptech.glide", "okhttp3-integration",
           "4.13.2", DependencyMethod.Implementation)
-
-      object Compiler : LibDependencies("com.github.bumptech.glide", "compiler", "4.13.2",
-          DependencyMethod.Kapt)
     }
 
     /**
@@ -765,40 +765,40 @@ sealed class LibDependencies(
       object Android : LibDependencies("io.insert-koin", "koin-android", "3.2.0",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("io.insert-koin", "koin-core", "3.2.0",
-          DependencyMethod.Implementation)
-
-      object WorkManager : LibDependencies("io.insert-koin", "koin-androidx-workmanager",
-          "3.2.0", DependencyMethod.Implementation)
-
-      object Navigation : LibDependencies("io.insert-koin", "koin-androidx-navigation",
-          "3.2.0", DependencyMethod.Implementation)
-
-      object Compose : LibDependencies("io.insert-koin", "koin-androidx-compose", "3.2.0",
-          DependencyMethod.Implementation)
-
-      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.2.0",
-          DependencyMethod.Test.Implementation)
-
       object Annotations : LibDependencies("io.insert-koin", "koin-annotations", "1.0.1",
           DependencyMethod.Implementation)
 
       object Compiler : LibDependencies("io.insert-koin", "koin-ksp-compiler", "1.0.1",
           DependencyMethod.Implementation)
+
+      object Compose : LibDependencies("io.insert-koin", "koin-androidx-compose", "3.2.0",
+          DependencyMethod.Implementation)
+
+      object Core : LibDependencies("io.insert-koin", "koin-core", "3.2.0",
+          DependencyMethod.Implementation)
+
+      object Navigation : LibDependencies("io.insert-koin", "koin-androidx-navigation",
+          "3.2.0", DependencyMethod.Implementation)
+
+      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.2.0",
+          DependencyMethod.Test.Implementation)
+
+      object WorkManager : LibDependencies("io.insert-koin", "koin-androidx-workmanager",
+          "3.2.0", DependencyMethod.Implementation)
     }
 
     /**
      * https://github.com/JetBrains/kotlin
      */
     interface Kotlin {
-      object Stdlib : LibDependencies("org.jetbrains.kotlin", "kotlin-stdlib", "1.7.10",
-          DependencyMethod.Implementation)
+      object Plugin : LibDependencies("org.jetbrains.kotlin", "kotlin-gradle-plugin",
+          "1.7.10", DependencyMethod.Implementation)
 
       object Reflect : LibDependencies("org.jetbrains.kotlin", "kotlin-reflect", "1.7.10",
           DependencyMethod.Implementation)
 
-      object Plugin : LibDependencies("org.jetbrains.kotlin", "kotlin-gradle-plugin",
-          "1.7.10", DependencyMethod.Implementation)
+      object Stdlib : LibDependencies("org.jetbrains.kotlin", "kotlin-stdlib", "1.7.10",
+          DependencyMethod.Implementation)
     }
 
     /**
@@ -832,10 +832,10 @@ sealed class LibDependencies(
      * https://github.com/airbnb/mavericks
      */
     interface Mavericks {
-      object Core : LibDependencies("com.airbnb.android", "mavericks", "2.7.0",
+      object Compose : LibDependencies("com.airbnb.android", "mavericks-compose", "2.7.0",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("com.airbnb.android", "mavericks-compose", "2.7.0",
+      object Core : LibDependencies("com.airbnb.android", "mavericks", "2.7.0",
           DependencyMethod.Implementation)
 
       object Navigation : LibDependencies("com.airbnb.android", "mavericks-navigation",
@@ -847,11 +847,11 @@ sealed class LibDependencies(
      * https://github.com/square/moshi
      */
     interface MoShi {
+      object Compiler : LibDependencies("com.squareup.moshi", "moshi-kotlin-codegen",
+          "1.14.0", DependencyMethod.Kapt)
+
       object Core : LibDependencies("com.squareup.moshi", "moshi", "1.14.0",
           DependencyMethod.Implementation)
-
-      object Compiler : LibDependencies("com.squareup.moshi", "moshi-kotlin-codegen",
-          "1.14.0", DependencyMethod.Ksp)
     }
 
     /**
@@ -859,17 +859,37 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/navigation
      */
     interface Navigation {
-      object Fragment : LibDependencies("androidx.navigation", "navigation-fragment-ktx",
-          "2.5.2", DependencyMethod.Implementation)
-
-      object Ui : LibDependencies("androidx.navigation", "navigation-ui-ktx", "2.5.2",
-          DependencyMethod.Implementation)
-
       object Compose : LibDependencies("androidx.navigation", "navigation-compose", "2.5.2",
           DependencyMethod.Implementation)
 
+      object Fragment : LibDependencies("androidx.navigation", "navigation-fragment-ktx",
+          "2.5.2", DependencyMethod.Implementation)
+
       object Test : LibDependencies("androidx.navigation", "navigation-testing", "2.5.2",
           DependencyMethod.Test.Implementation)
+
+      object Ui : LibDependencies("androidx.navigation", "navigation-ui-ktx", "2.5.2",
+          DependencyMethod.Implementation)
+    }
+
+    /**
+     * https://github.com/lingochamp/okdownload
+     */
+    interface OkDownload {
+      object Core : LibDependencies("com.liulishuo.okdownload", "okdownload", "1.0.7",
+          DependencyMethod.Implementation)
+
+      object FileDownloader : LibDependencies("com.liulishuo.okdownload", "filedownloader",
+          "1.0.7", DependencyMethod.Implementation)
+
+      object Ktx : LibDependencies("com.liulishuo.okdownload", "ktx", "1.0.7",
+          DependencyMethod.Implementation)
+
+      object OkHttp : LibDependencies("com.liulishuo.okdownload", "okhttp", "1.0.7",
+          DependencyMethod.Implementation)
+
+      object Sqlite : LibDependencies("com.liulishuo.okdownload", "sqlite", "1.0.7",
+          DependencyMethod.Implementation)
     }
 
     /**
@@ -887,34 +907,14 @@ sealed class LibDependencies(
     }
 
     /**
-     * https://github.com/lingochamp/okdownload
-     */
-    interface OkDownload {
-      object Core : LibDependencies("com.liulishuo.okdownload", "okdownload", "1.0.7",
-          DependencyMethod.Implementation)
-
-      object Sqlite : LibDependencies("com.liulishuo.okdownload", "sqlite", "1.0.7",
-          DependencyMethod.Implementation)
-
-      object OkHttp : LibDependencies("com.liulishuo.okdownload", "okhttp", "1.0.7",
-          DependencyMethod.Implementation)
-
-      object FileDownloader : LibDependencies("com.liulishuo.okdownload", "filedownloader",
-          "1.0.7", DependencyMethod.Implementation)
-
-      object Ktx : LibDependencies("com.liulishuo.okdownload", "ktx", "1.0.7",
-          DependencyMethod.Implementation)
-    }
-
-    /**
      * https://github.com/airbnb/paris
      */
     interface Paris {
+      object Compiler : LibDependencies("com.airbnb.android", "paris-processor", "2.0.1",
+          DependencyMethod.Kapt)
+
       object Core : LibDependencies("com.airbnb.android", "paris", "2.0.1",
           DependencyMethod.Implementation)
-
-      object Compiler : LibDependencies("com.airbnb.android", "paris-processor", "2.0.1",
-          DependencyMethod.Ksp)
     }
 
     /**
@@ -937,17 +937,29 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/room
      */
     interface Room {
+      object Compiler : LibDependencies("androidx.room", "room-compiler", "2.4.3",
+          DependencyMethod.Kapt)
+
       object Core : LibDependencies("androidx.room", "room-runtime", "2.4.3",
           DependencyMethod.Implementation)
 
       object Ktx : LibDependencies("androidx.room", "room-ktx", "2.4.3",
           DependencyMethod.Implementation)
 
-      object Compiler : LibDependencies("androidx.room", "room-compiler", "2.4.3",
-          DependencyMethod.Kapt)
-
       object Test : LibDependencies("androidx.room", "room-testing", "2.4.3",
           DependencyMethod.Test.Implementation)
+    }
+
+    /**
+     * 亚马逊云存储
+     * https://github.com/aws-amplify/aws-sdk-android
+     */
+    interface S3 {
+      object Client : LibDependencies("com.amazonaws", "aws-android-sdk-mobile-client",
+          "2.50.1", DependencyMethod.Implementation)
+
+      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.50.1",
+          DependencyMethod.Implementation)
     }
 
     /**
@@ -963,29 +975,17 @@ sealed class LibDependencies(
     }
 
     /**
-     * 亚马逊云存储
-     * https://github.com/aws-amplify/aws-sdk-android
-     */
-    interface S3 {
-      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.50.1",
-          DependencyMethod.Implementation)
-
-      object Client : LibDependencies("com.amazonaws", "aws-android-sdk-mobile-client",
-          "2.50.1", DependencyMethod.Implementation)
-    }
-
-    /**
      * 图片裁剪器
      * https://github.com/wasabeef/transformers
      */
     interface Transformer {
-      object Core : LibDependencies("jp.wasabeef.transformers", "core", "1.0.6",
-          DependencyMethod.Implementation)
-
       object Coil : LibDependencies("jp.wasabeef.transformers", "coil", "1.0.6",
           DependencyMethod.Implementation)
 
       object CoilGpu : LibDependencies("jp.wasabeef.transformers", "coil-gpu", "1.0.6",
+          DependencyMethod.Implementation)
+
+      object Core : LibDependencies("jp.wasabeef.transformers", "core", "1.0.6",
           DependencyMethod.Implementation)
 
       object Glide : LibDependencies("jp.wasabeef.transformers", "glide", "1.0.6",

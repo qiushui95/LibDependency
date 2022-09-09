@@ -54,11 +54,11 @@
 >[LeakCanary](https://square.github.io/leakcanary/getting_started/)(内存泄露监控)  
 >>implementation("com.squareup.leakcanary:leakcanary-android:2.9.1")  
   
+>[MavenPublish](https://github.com/vanniktech/gradle-maven-publish-plugin)(Maven上传)  
+>>implementation("com.vanniktech:gradle-maven-publish-plugin:0.21.0")  
+  
 >[Mmkv](https://github.com/Tencent/MMKV/blob/master/README_CN.md)(持久KV数据存储)  
 >>implementation("com.tencent:mmkv-static:1.2.14")  
-  
->[PermissionX](https://github.com/guolindev/PermissionX)(权限请求)  
->>implementation("com.guolindev.permissionx:permissionx:1.6.4")  
   
 >[Paging](https://developer.android.com/jetpack/androidx/releases/paging)(分页请求)  
 >>implementation("androidx.paging:paging-runtime-ktx:3.1.1")  
@@ -66,14 +66,26 @@
 >[PanelSwitch](https://github.com/DSAppTeam/PanelSwitchHelper)(聊天键盘优化)  
 >>implementation("com.github.DSAppTeam:PanelSwitchHelper:v1.5.0")  
   
+>[PermissionX](https://github.com/guolindev/PermissionX)(权限请求)  
+>>implementation("com.guolindev.permissionx:permissionx:1.6.4")  
+  
+>[Profiler](https://github.com/itkacher/OkHttpProfiler)(AS OkHttp 拦截器)  
+>>implementation("com.localebro:okhttpprofiler:1.0.8")  
+  
 >[QrScanner](https://github.com/jenly1314/ZXingLite)(二维码扫描)  
 >>implementation("com.github.jenly1314:zxing-lite:2.2.1")  
+  
+>[Serialization](https://github.com/Kotlin/kotlinx.serialization)(Json序列化)  
+>>implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0")  
   
 >[Startup](https://github.com/qiushui95/AndroidInitializer)(app启动初始化)  
 >>implementation("com.github.qiushui95:AndroidInitializer:1.0.9")  
   
 >[Store](https://github.com/dropbox/Store)(多数据源)  
 >>implementation("com.dropbox.mobile.store:store4:4.0.5")  
+  
+>[VasDolly](https://github.com/Tencent/VasDolly)(多渠道打包)  
+>>implementation("com.tencent.vasdolly:helper:3.0.4")  
   
 >[WeChat](https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Resource_Center_Homepage.html)(微信开发Sdk)  
 >>implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")  
@@ -83,18 +95,6 @@
   
 >[XPopup](https://github.com/li-xiaojun/XPopup)(弹窗)  
 >>implementation("com.github.li-xiaojun:XPopup:2.9.0")  
-  
->[Profiler](https://github.com/itkacher/OkHttpProfiler)(AS OkHttp 拦截器)  
->>implementation("com.localebro:okhttpprofiler:1.0.8")  
-  
->[MavenPublish](https://github.com/vanniktech/gradle-maven-publish-plugin)(Maven上传)  
->>implementation("com.vanniktech:gradle-maven-publish-plugin:0.21.0")  
-  
->[Serialization](https://github.com/Kotlin/kotlinx.serialization)(Json序列化)  
->>implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0")  
-  
->[VasDolly](https://github.com/Tencent/VasDolly)(多渠道打包)  
->>implementation("com.tencent.vasdolly:helper:3.0.4")  
   
 >[Zip4J](https://github.com/srikanth-lingala/zip4j)(zip压缩相关)  
 >>implementation("net.lingala.zip4j:zip4j:2.11.1")  
@@ -158,27 +158,27 @@
 >[RecyclerViewSnap](https://github.com/rubensousa/GravitySnapHelper)(RecyclerView分割线)  
 >>implementation("com.github.rubensousa:gravitysnaphelper:2.2.2")  
   
->[SwipeRefreshLayout](https://developer.android.com/jetpack/androidx/releases/swiperefreshlayout)(下拉刷新控件)  
->>implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")  
+>[ScrollContainer](https://github.com/donkingliang/ConsecutiveScroller)(嵌套滑动组件)  
+>>implementation("com.github.donkingliang:ConsecutiveScroller:4.6.3")  
   
 >[SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)(下拉刷新控件)  
->>implementation("io.github.scwang90:refresh-layout-kernel:2.0.5")  
->>implementation("io.github.scwang90:refresh-header-classics:2.0.5")  
->>implementation("io.github.scwang90:refresh-header-two-level:2.0.5")  
 >>implementation("io.github.scwang90:refresh-footer-classics:2.0.5")  
+>>implementation("io.github.scwang90:refresh-header-classics:2.0.5")  
+>>implementation("io.github.scwang90:refresh-layout-kernel:2.0.5")  
+>>implementation("io.github.scwang90:refresh-header-two-level:2.0.5")  
+  
+>[SwipeRefreshLayout](https://developer.android.com/jetpack/androidx/releases/swiperefreshlayout)(下拉刷新控件)  
+>>implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")  
   
 >[SwitchButton](https://github.com/kyleduo/SwitchButton)(开关按钮)  
 >>implementation("com.kyleduo.switchbutton:library:2.1.0")  
   
->[ScrollContainer](https://github.com/donkingliang/ConsecutiveScroller)(嵌套滑动组件)  
->>implementation("com.github.donkingliang:ConsecutiveScroller:4.6.3")  
-  
->[ViewPager2](https://developer.android.com/jetpack/androidx/releases/viewpager2)  
->>implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")  
-  
 >[TabLayout](https://github.com/angcyo/DslTabLayout)  
 >>implementation("com.github.angcyo.DslTablayout:TabLayout:3.2.4")  
 >>implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.2.4")  
+  
+>[ViewPager2](https://developer.android.com/jetpack/androidx/releases/viewpager2)  
+>>implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")  
   
 </details>  
   
@@ -241,8 +241,8 @@
 <summary>Group</summary>  
   
 >[Activity](https://developer.android.com/jetpack/androidx/releases/activity)  
->>implementation("androidx.activity:activity-ktx:1.5.1")  
 >>implementation("androidx.activity:activity-compose:1.5.1")  
+>>implementation("androidx.activity:activity-ktx:1.5.1")  
   
 >[Bugly](https://bugly.qq.com/docs/user-guide/instruction-manual-android/?v=1.0.0)  
 >>implementation("com.tencent.bugly:crashreport:4.1.9")  
@@ -251,10 +251,10 @@
 >[CameraX](https://developer.android.com/jetpack/androidx/releases/camera)(相机相关)  
 >>implementation("androidx.camera:camera-camera2:1.1.0")  
 >>implementation("androidx.camera:camera-core:1.1.0")  
+>>implementation("androidx.camera:camera-extensions:1.1.0")  
 >>implementation("androidx.camera:camera-lifecycle:1.1.0")  
 >>implementation("androidx.camera:camera-video:1.1.0")  
 >>implementation("androidx.camera:camera-view:1.1.0")  
->>implementation("androidx.camera:camera-extensions:1.1.0")  
   
 >[Chucker](https://github.com/ChuckerTeam/chucker)(网络请求监控)  
 >>debugImplementation("com.github.chuckerteam.chucker:library:3.5.2")  
@@ -269,45 +269,45 @@
 >>testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")  
   
 >[Download](https://github.com/AriaLyy/Aria)(下载)  
+>>kapt("me.laoyuyu.aria:compiler:3.8.16")  
 >>implementation("me.laoyuyu.aria:core:3.8.16")  
 >>implementation("me.laoyuyu.aria:ftp:3.8.16")  
->>implementation("me.laoyuyu.aria:sftp:3.8.16")  
 >>implementation("me.laoyuyu.aria:m3u8:3.8.16")  
->>kapt("me.laoyuyu.aria:compiler:3.8.16")  
+>>implementation("me.laoyuyu.aria:sftp:3.8.16")  
   
 >[Epoxy](https://github.com/airbnb/epoxy)  
->>implementation("com.airbnb.android:epoxy:5.0.0-beta05")  
->>ksp("com.airbnb.android:epoxy-processor:5.0.0-beta05")  
+>>kapt("com.airbnb.android:epoxy-processor:5.0.0-beta05")  
 >>implementation("com.airbnb.android:epoxy-compose:5.0.0-beta05")  
+>>implementation("com.airbnb.android:epoxy:5.0.0-beta05")  
 >>implementation("com.airbnb.android:epoxy-glide-preloading:5.0.0-beta05")  
   
+>[Fetch](https://github.com/tonyofrancis/Fetch)(下载框架)  
+>>implementation("androidx.tonyodev.fetch2:xfetch2:3.1.6")  
+>>implementation("androidx.tonyodev.fetch2okhttp:xfetch2okhttp:3.1.6")  
+  
 >[FlowBinding](https://github.com/ReactiveCircus/FlowBinding)(FlowBinding)  
->>implementation("io.github.reactivecircus.flowbinding:flowbinding-android:1.2.0")  
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-activity:1.2.0")  
+>>implementation("io.github.reactivecircus.flowbinding:flowbinding-android:1.2.0")  
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-appcompat:1.2.0")  
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-core:1.2.0")  
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-drawerlayout:1.2.0")  
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-lifecycle:1.2.0")  
+>>implementation("io.github.reactivecircus.flowbinding:flowbinding-material:1.2.0")  
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-navigation:1.2.0")  
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-preference:1.2.0")  
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-recyclerview:1.2.0")  
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-swiperefreshlayout:1.2.0")  
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager:1.2.0")  
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager2:1.2.0")  
->>implementation("io.github.reactivecircus.flowbinding:flowbinding-material:1.2.0")  
   
 >[Fragment](https://developer.android.com/jetpack/androidx/releases/fragment)  
 >>implementation("androidx.fragment:fragment-ktx:1.5.2")  
 >>testImplementation("androidx.fragment:fragment-testing:1.5.2")  
   
->[Fetch](https://github.com/tonyofrancis/Fetch)(下载框架)  
->>implementation("androidx.tonyodev.fetch2:xfetch2:3.1.6")  
->>implementation("androidx.tonyodev.fetch2okhttp:xfetch2okhttp:3.1.6")  
-  
 >[Glide](https://github.com/bumptech/glide)(图片加载)  
+>>kapt("com.github.bumptech.glide:compiler:4.13.2")  
 >>implementation("com.github.bumptech.glide:glide:4.13.2")  
 >>implementation("com.github.bumptech.glide:okhttp3-integration:4.13.2")  
->>kapt("com.github.bumptech.glide:compiler:4.13.2")  
   
 >[ImmersionBar](https://github.com/gyf-dev/ImmersionBar)(状态栏)  
 >>implementation("com.geyifeng.immersionbar:immersionbar:3.2.2")  
@@ -315,18 +315,18 @@
   
 >[Koin](https://github.com/InsertKoinIO/koin)(依赖注入库)  
 >>implementation("io.insert-koin:koin-android:3.2.0")  
->>implementation("io.insert-koin:koin-core:3.2.0")  
->>implementation("io.insert-koin:koin-androidx-workmanager:3.2.0")  
->>implementation("io.insert-koin:koin-androidx-navigation:3.2.0")  
->>implementation("io.insert-koin:koin-androidx-compose:3.2.0")  
->>testImplementation("io.insert-koin:koin-test-junit5:3.2.0")  
 >>implementation("io.insert-koin:koin-annotations:1.0.1")  
 >>implementation("io.insert-koin:koin-ksp-compiler:1.0.1")  
+>>implementation("io.insert-koin:koin-androidx-compose:3.2.0")  
+>>implementation("io.insert-koin:koin-core:3.2.0")  
+>>implementation("io.insert-koin:koin-androidx-navigation:3.2.0")  
+>>testImplementation("io.insert-koin:koin-test-junit5:3.2.0")  
+>>implementation("io.insert-koin:koin-androidx-workmanager:3.2.0")  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
->>implementation("org.jetbrains.kotlin:kotlin-stdlib:1.7.10")  
->>implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.10")  
 >>implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")  
+>>implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.10")  
+>>implementation("org.jetbrains.kotlin:kotlin-stdlib:1.7.10")  
   
 >[Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation("androidx.lifecycle:lifecycle-common:2.5.1")  
@@ -338,35 +338,35 @@
 >>implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")  
   
 >[Mavericks](https://github.com/airbnb/mavericks)(Mavericks架构)  
->>implementation("com.airbnb.android:mavericks:2.7.0")  
 >>implementation("com.airbnb.android:mavericks-compose:2.7.0")  
+>>implementation("com.airbnb.android:mavericks:2.7.0")  
 >>implementation("com.airbnb.android:mavericks-navigation:2.7.0")  
   
 >[MoShi](https://github.com/square/moshi)(json解析库)  
+>>kapt("com.squareup.moshi:moshi-kotlin-codegen:1.14.0")  
 >>implementation("com.squareup.moshi:moshi:1.14.0")  
->>ksp("com.squareup.moshi:moshi-kotlin-codegen:1.14.0")  
   
 >[Navigation](https://developer.android.com/jetpack/androidx/releases/navigation)(导航库)  
->>implementation("androidx.navigation:navigation-fragment-ktx:2.5.2")  
->>implementation("androidx.navigation:navigation-ui-ktx:2.5.2")  
 >>implementation("androidx.navigation:navigation-compose:2.5.2")  
+>>implementation("androidx.navigation:navigation-fragment-ktx:2.5.2")  
 >>testImplementation("androidx.navigation:navigation-testing:2.5.2")  
+>>implementation("androidx.navigation:navigation-ui-ktx:2.5.2")  
+  
+>[OkDownload](https://github.com/lingochamp/okdownload)  
+>>implementation("com.liulishuo.okdownload:okdownload:1.0.7")  
+>>implementation("com.liulishuo.okdownload:filedownloader:1.0.7")  
+>>implementation("com.liulishuo.okdownload:ktx:1.0.7")  
+>>implementation("com.liulishuo.okdownload:okhttp:1.0.7")  
+>>implementation("com.liulishuo.okdownload:sqlite:1.0.7")  
   
 >[OkHttp](https://github.com/square/okhttp)  
 >>implementation("com.squareup.okhttp3:okhttp:4.10.0")  
 >>implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")  
 >>androidTestImplementation("com.squareup.okhttp3:mockwebserver:4.10.0")  
   
->[OkDownload](https://github.com/lingochamp/okdownload)  
->>implementation("com.liulishuo.okdownload:okdownload:1.0.7")  
->>implementation("com.liulishuo.okdownload:sqlite:1.0.7")  
->>implementation("com.liulishuo.okdownload:okhttp:1.0.7")  
->>implementation("com.liulishuo.okdownload:filedownloader:1.0.7")  
->>implementation("com.liulishuo.okdownload:ktx:1.0.7")  
-  
 >[Paris](https://github.com/airbnb/paris)  
+>>kapt("com.airbnb.android:paris-processor:2.0.1")  
 >>implementation("com.airbnb.android:paris:2.0.1")  
->>ksp("com.airbnb.android:paris-processor:2.0.1")  
   
 >[Retrofit](https://github.com/square/retrofit)(网络请求)  
 >>implementation("com.squareup.retrofit2:retrofit:2.9.0")  
@@ -374,23 +374,23 @@
 >>implementation("com.squareup.retrofit2:converter-scalars:2.9.0")  
   
 >[Room](https://developer.android.com/jetpack/androidx/releases/room)(Sqlite数据库)  
+>>kapt("androidx.room:room-compiler:2.4.3")  
 >>implementation("androidx.room:room-runtime:2.4.3")  
 >>implementation("androidx.room:room-ktx:2.4.3")  
->>kapt("androidx.room:room-compiler:2.4.3")  
 >>testImplementation("androidx.room:room-testing:2.4.3")  
+  
+>[S3](https://github.com/aws-amplify/aws-sdk-android)(亚马逊云存储)  
+>>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.50.1")  
+>>implementation("com.amazonaws:aws-android-sdk-s3:2.50.1")  
   
 >[Stetho](https://github.com/facebook/stetho)(调试工具)  
 >>implementation("com.facebook.stetho:stetho:1.6.0")  
 >>implementation("com.facebook.stetho:stetho-okhttp3:1.6.0")  
   
->[S3](https://github.com/aws-amplify/aws-sdk-android)(亚马逊云存储)  
->>implementation("com.amazonaws:aws-android-sdk-s3:2.50.1")  
->>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.50.1")  
-  
 >[Transformer](https://github.com/wasabeef/transformers)(图片裁剪器)  
->>implementation("jp.wasabeef.transformers:core:1.0.6")  
 >>implementation("jp.wasabeef.transformers:coil:1.0.6")  
 >>implementation("jp.wasabeef.transformers:coil-gpu:1.0.6")  
+>>implementation("jp.wasabeef.transformers:core:1.0.6")  
 >>implementation("jp.wasabeef.transformers:glide:1.0.6")  
 >>implementation("jp.wasabeef.transformers:glide-gpu:1.0.6")  
   
