@@ -21,7 +21,7 @@ sealed class PluginConfig(
 
         object Kapt : LibPluginId("kotlin-kapt")
 
-        object Ksp : LibPluginId("com.google.devtools.ksp", "1.6.21-1.0.6")
+        object Ksp : LibPluginId("com.google.devtools.ksp", "1.7.10-1.0.6")
     }
 
     object Maven : PluginConfig(

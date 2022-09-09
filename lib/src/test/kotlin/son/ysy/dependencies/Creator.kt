@@ -431,7 +431,7 @@ class Creator {
     id("com.android.library")
     id("kotlin-android")
     id("kotlin-kapt")
-    id("com.google.devtools.ksp") version "1.6.21-1.0.5"
+    id("com.google.devtools.ksp") version "1.7.10-1.0.6"
 }
 
 android {

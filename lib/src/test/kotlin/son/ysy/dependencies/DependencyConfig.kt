@@ -76,7 +76,7 @@ sealed class DependencyConfig(
         object Appcompat : Single(
             group = "androidx.appcompat",
             name = "appcompat",
-            version = "1.5.0",
+            version = "1.5.1",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/appcompat",
             dependencyMethod = DependencyMethod.Implementation,
@@ -186,7 +186,7 @@ sealed class DependencyConfig(
         object ImageWatcher : Single(
             group = "com.github.iielse",
             name = "imageviewer",
-            version = "2.1.17",
+            version = "2.1.19",
             remark = "图片预览框架",
             link = "https://github.com/iielse/imageviewer",
             dependencyMethod = DependencyMethod.Implementation,
@@ -252,7 +252,7 @@ sealed class DependencyConfig(
         object PanelSwitch : Single(
             group = "com.github.DSAppTeam",
             name = "PanelSwitchHelper",
-            version = "1.4.0",
+            version = "v1.5.0",
             remark = "聊天键盘优化",
             link = "https://github.com/DSAppTeam/PanelSwitchHelper",
             dependencyMethod = DependencyMethod.Implementation,
@@ -318,7 +318,7 @@ sealed class DependencyConfig(
         object XPopup : Single(
             group = "com.github.li-xiaojun",
             name = "XPopup",
-            version = "2.8.15",
+            version = "2.9.0",
             remark = "弹窗",
             link = "https://github.com/li-xiaojun/XPopup",
             dependencyMethod = DependencyMethod.Implementation,
@@ -792,7 +792,7 @@ sealed class DependencyConfig(
             object Compiler : Official(
                 group = "androidx.compose.compiler",
                 name = "compiler",
-                version = "1.3.0"
+                version = "1.3.1"
             )
             //endregion
 
@@ -886,7 +886,7 @@ sealed class DependencyConfig(
             link = "https://bugly.qq.com/docs/user-guide/instruction-manual-android/?v=1.0.0",
             dependencyMethod = DependencyMethod.Implementation,
         ) {
-            object Crash : Bugly("crashreport", "4.0.4")
+            object Crash : Bugly("crashreport", "4.1.9")
             object Upgrade : Bugly("crashreport_upgrade", "1.6.1")
         }
 
@@ -924,23 +924,6 @@ sealed class DependencyConfig(
         }
 
         //endregion
-        //region Coil(图片加载)
-        sealed class Coil(name: String) : Group(
-            group = "io.coil-kt",
-            name = name,
-            version = "2.2.0",
-            remark = "图片加载",
-            link = "https://coil-kt.github.io/coil/README-zh/",
-            dependencyMethod = DependencyMethod.Implementation,
-        ) {
-            object Core : Coil("coil")
-            object Compose : Coil("coil-compose")
-            object Svg : Coil("coil-svg")
-            object Gif : Coil("coil-gif")
-            object Video : Coil("coil-video")
-        }
-
-        //endregion
         //region Core
         sealed class Core(name: String, version: String) : Group(
             group = "androidx.core",
@@ -950,7 +933,7 @@ sealed class DependencyConfig(
             link = "https://developer.android.com/jetpack/androidx/releases/core",
             dependencyMethod = DependencyMethod.Implementation,
         ) {
-            object Ktx : Core("core-ktx", "1.8.0")
+            object Ktx : Core("core-ktx", "1.9.0")
             object Splash : Core("core-splashscreen", "1.0.0")
         }
 
@@ -1147,7 +1130,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "org.jetbrains.kotlin",
             name = name,
-            version = "1.6.21",
+            version = "1.7.10",
             remark = "",
             link = "https://github.com/JetBrains/kotlin",
             dependencyMethod = dependencyMethod,
@@ -1202,7 +1185,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "com.squareup.moshi",
             name = name,
-            version = "1.13.0",
+            version = "1.14.0",
             remark = "json解析库",
             link = "https://github.com/square/moshi",
             dependencyMethod = dependencyMethod,
@@ -1219,7 +1202,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.navigation",
             name = name,
-            version = "2.5.1",
+            version = "2.5.2",
             remark = "导航库",
             link = "https://developer.android.com/jetpack/androidx/releases/navigation",
             dependencyMethod = dependencyMethod,
