@@ -11,12 +11,12 @@ sealed class LibPlugins(
 ) {
   object Android : LibPlugins("com.android.tools.build", "gradle", "7.2.2")
 
-  object Kotlin : LibPlugins("org.jetbrains.kotlin", "kotlin-gradle-plugin", "1.6.21") {
+  object Kotlin : LibPlugins("org.jetbrains.kotlin", "kotlin-gradle-plugin", "1.7.10") {
     object Android : LibPluginId("kotlin-android")
 
     object Kapt : LibPluginId("kotlin-kapt")
 
-    object Ksp : LibPluginId("com.google.devtools.ksp", "1.6.21-1.0.6")
+    object Ksp : LibPluginId("com.google.devtools.ksp", "1.7.10-1.0.6")
 
     object Reflect : LibPluginId("kotlin-reflect")
   }
@@ -26,7 +26,7 @@ sealed class LibPlugins(
   }
 
   object Navigation : LibPlugins("androidx.navigation", "navigation-safe-args-gradle-plugin",
-      "2.5.1") {
+      "2.5.2") {
     object Plugin : LibPluginId("androidx.navigation.safeargs.kotlin")
   }
 

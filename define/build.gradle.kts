@@ -2,7 +2,7 @@ plugins {
     id("com.android.library")
     id("kotlin-android")
     id("kotlin-kapt")
-    id("com.google.devtools.ksp") version "1.6.21-1.0.5"
+    id("com.google.devtools.ksp") version "1.7.10-1.0.6"
 }
 
 android {
@@ -27,7 +27,7 @@ dependencies {
     implementation("com.aliyun.ams:alicloud-android-push:3.7.4")
     implementation("com.blankj:utilcodex:1.31.0")
     implementation("androidx.annotation:annotation:1.4.0")
-    implementation("androidx.appcompat:appcompat:1.5.0")
+    implementation("androidx.appcompat:appcompat:1.5.1")
     implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.5")
     implementation("io.github.razerdp:BasePopup:3.2.0")
     implementation("me.jorgecastillo:androidcolorx:0.2.0")
@@ -37,19 +37,19 @@ dependencies {
     implementation("androidx.exifinterface:exifinterface:1.3.3")
     implementation("io.github.hoc081098:FlowExt-jvm:0.4.0")
     implementation("com.ypx.yimagepicker:androidx:3.1.4")
-    implementation("com.github.iielse:imageviewer:2.1.17")
+    implementation("com.github.iielse:imageviewer:2.1.19")
     implementation("joda-time:joda-time:2.11.1")
     implementation("com.squareup.leakcanary:leakcanary-android:2.9.1")
     implementation("com.tencent:mmkv-static:1.2.14")
     implementation("com.guolindev.permissionx:permissionx:1.6.4")
     implementation("androidx.paging:paging-runtime-ktx:3.1.1")
-    implementation("com.github.DSAppTeam:PanelSwitchHelper:1.4.0")
+    implementation("com.github.DSAppTeam:PanelSwitchHelper:v1.5.0")
     implementation("com.github.jenly1314:zxing-lite:2.2.1")
     implementation("com.github.qiushui95:AndroidInitializer:1.0.9")
     implementation("com.dropbox.mobile.store:store4:4.0.5")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")
-    implementation("com.github.li-xiaojun:XPopup:2.8.15")
+    implementation("com.github.li-xiaojun:XPopup:2.9.0")
     implementation("com.localebro:okhttpprofiler:1.0.8")
     implementation("com.vanniktech:gradle-maven-publish-plugin:0.21.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0")
@@ -113,7 +113,7 @@ dependencies {
     implementation("com.github.fornewid:material-motion-compose:0.8.1")
 
     implementation("androidx.compose.animation:animation:1.2.1")
-    implementation("androidx.compose.compiler:compiler:1.3.0")
+    implementation("androidx.compose.compiler:compiler:1.3.1")
     implementation("androidx.compose.foundation:foundation:1.2.1")
     implementation("androidx.compose.runtime:runtime-livedata:1.2.1")
     implementation("androidx.compose.material:material:1.2.1")
@@ -130,7 +130,7 @@ dependencies {
     implementation("androidx.activity:activity-ktx:1.5.1")
     implementation("androidx.activity:activity-compose:1.5.1")
 
-    implementation("com.tencent.bugly:crashreport:4.0.4")
+    implementation("com.tencent.bugly:crashreport:4.1.9")
     implementation("com.tencent.bugly:crashreport_upgrade:1.6.1")
 
     implementation("androidx.camera:camera-camera2:1.1.0")
@@ -143,13 +143,7 @@ dependencies {
     debugImplementation("com.github.chuckerteam.chucker:library:3.5.2")
     releaseImplementation("com.github.chuckerteam.chucker:library-no-op:3.5.2")
 
-    implementation("io.coil-kt:coil:2.2.0")
-    implementation("io.coil-kt:coil-compose:2.2.0")
-    implementation("io.coil-kt:coil-svg:2.2.0")
-    implementation("io.coil-kt:coil-gif:2.2.0")
-    implementation("io.coil-kt:coil-video:2.2.0")
-
-    implementation("androidx.core:core-ktx:1.8.0")
+    implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.core:core-splashscreen:1.0.0")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
@@ -202,9 +196,9 @@ dependencies {
     implementation("io.insert-koin:koin-annotations:1.0.1")
     implementation("io.insert-koin:koin-ksp-compiler:1.0.1")
 
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.21")
-    implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.21")
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.7.10")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.10")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")
 
     implementation("androidx.lifecycle:lifecycle-common:2.5.1")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
@@ -218,13 +212,13 @@ dependencies {
     implementation("com.airbnb.android:mavericks-compose:2.7.0")
     implementation("com.airbnb.android:mavericks-navigation:2.7.0")
 
-    implementation("com.squareup.moshi:moshi:1.13.0")
-    ksp("com.squareup.moshi:moshi-kotlin-codegen:1.13.0")
+    implementation("com.squareup.moshi:moshi:1.14.0")
+    ksp("com.squareup.moshi:moshi-kotlin-codegen:1.14.0")
 
-    implementation("androidx.navigation:navigation-fragment-ktx:2.5.1")
-    implementation("androidx.navigation:navigation-ui-ktx:2.5.1")
-    implementation("androidx.navigation:navigation-compose:2.5.1")
-    testImplementation("androidx.navigation:navigation-testing:2.5.1")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.2")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.2")
+    implementation("androidx.navigation:navigation-compose:2.5.2")
+    testImplementation("androidx.navigation:navigation-testing:2.5.2")
 
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")

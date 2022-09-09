@@ -16,7 +16,7 @@
 >>implementation("androidx.annotation:annotation:1.4.0")  
   
 >[Appcompat](https://developer.android.com/jetpack/androidx/releases/appcompat)  
->>implementation("androidx.appcompat:appcompat:1.5.0")  
+>>implementation("androidx.appcompat:appcompat:1.5.1")  
   
 >[Background](https://github.com/JavaNoober/BackgroundLibrary)(背景生成工具库)  
 >>implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.5")  
@@ -46,7 +46,7 @@
 >>implementation("com.ypx.yimagepicker:androidx:3.1.4")  
   
 >[ImageWatcher](https://github.com/iielse/imageviewer)(图片预览框架)  
->>implementation("com.github.iielse:imageviewer:2.1.17")  
+>>implementation("com.github.iielse:imageviewer:2.1.19")  
   
 >[JodaTime](https://github.com/JodaOrg/joda-time)(时间处理库)  
 >>implementation("joda-time:joda-time:2.11.1")  
@@ -64,7 +64,7 @@
 >>implementation("androidx.paging:paging-runtime-ktx:3.1.1")  
   
 >[PanelSwitch](https://github.com/DSAppTeam/PanelSwitchHelper)(聊天键盘优化)  
->>implementation("com.github.DSAppTeam:PanelSwitchHelper:1.4.0")  
+>>implementation("com.github.DSAppTeam:PanelSwitchHelper:v1.5.0")  
   
 >[QrScanner](https://github.com/jenly1314/ZXingLite)(二维码扫描)  
 >>implementation("com.github.jenly1314:zxing-lite:2.2.1")  
@@ -82,7 +82,7 @@
 >>implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")  
   
 >[XPopup](https://github.com/li-xiaojun/XPopup)(弹窗)  
->>implementation("com.github.li-xiaojun:XPopup:2.8.15")  
+>>implementation("com.github.li-xiaojun:XPopup:2.9.0")  
   
 >[Profiler](https://github.com/itkacher/OkHttpProfiler)(AS OkHttp 拦截器)  
 >>implementation("com.localebro:okhttpprofiler:1.0.8")  
@@ -221,7 +221,7 @@
   
 >[Official](https://developer.android.com/jetpack/androidx/releases/compose)(Compose官方)  
 >>implementation("androidx.compose.animation:animation:1.2.1")  
->>implementation("androidx.compose.compiler:compiler:1.3.0")  
+>>implementation("androidx.compose.compiler:compiler:1.3.1")  
 >>implementation("androidx.compose.foundation:foundation:1.2.1")  
 >>implementation("androidx.compose.runtime:runtime-livedata:1.2.1")  
 >>implementation("androidx.compose.material:material:1.2.1")  
@@ -245,7 +245,7 @@
 >>implementation("androidx.activity:activity-compose:1.5.1")  
   
 >[Bugly](https://bugly.qq.com/docs/user-guide/instruction-manual-android/?v=1.0.0)  
->>implementation("com.tencent.bugly:crashreport:4.0.4")  
+>>implementation("com.tencent.bugly:crashreport:4.1.9")  
 >>implementation("com.tencent.bugly:crashreport_upgrade:1.6.1")  
   
 >[CameraX](https://developer.android.com/jetpack/androidx/releases/camera)(相机相关)  
@@ -260,15 +260,8 @@
 >>debugImplementation("com.github.chuckerteam.chucker:library:3.5.2")  
 >>releaseImplementation("com.github.chuckerteam.chucker:library-no-op:3.5.2")  
   
->[Coil](https://coil-kt.github.io/coil/README-zh/)(图片加载)  
->>implementation("io.coil-kt:coil:2.2.0")  
->>implementation("io.coil-kt:coil-compose:2.2.0")  
->>implementation("io.coil-kt:coil-svg:2.2.0")  
->>implementation("io.coil-kt:coil-gif:2.2.0")  
->>implementation("io.coil-kt:coil-video:2.2.0")  
-  
 >[Core](https://developer.android.com/jetpack/androidx/releases/core)  
->>implementation("androidx.core:core-ktx:1.8.0")  
+>>implementation("androidx.core:core-ktx:1.9.0")  
 >>implementation("androidx.core:core-splashscreen:1.0.0")  
   
 >[Coroutines](https://github.com/Kotlin/kotlinx.coroutines)(协程)  
@@ -331,9 +324,9 @@
 >>implementation("io.insert-koin:koin-ksp-compiler:1.0.1")  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
->>implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.21")  
->>implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.21")  
->>implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21")  
+>>implementation("org.jetbrains.kotlin:kotlin-stdlib:1.7.10")  
+>>implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.10")  
+>>implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")  
   
 >[Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)  
 >>implementation("androidx.lifecycle:lifecycle-common:2.5.1")  
@@ -350,14 +343,14 @@
 >>implementation("com.airbnb.android:mavericks-navigation:2.7.0")  
   
 >[MoShi](https://github.com/square/moshi)(json解析库)  
->>implementation("com.squareup.moshi:moshi:1.13.0")  
->>ksp("com.squareup.moshi:moshi-kotlin-codegen:1.13.0")  
+>>implementation("com.squareup.moshi:moshi:1.14.0")  
+>>ksp("com.squareup.moshi:moshi-kotlin-codegen:1.14.0")  
   
 >[Navigation](https://developer.android.com/jetpack/androidx/releases/navigation)(导航库)  
->>implementation("androidx.navigation:navigation-fragment-ktx:2.5.1")  
->>implementation("androidx.navigation:navigation-ui-ktx:2.5.1")  
->>implementation("androidx.navigation:navigation-compose:2.5.1")  
->>testImplementation("androidx.navigation:navigation-testing:2.5.1")  
+>>implementation("androidx.navigation:navigation-fragment-ktx:2.5.2")  
+>>implementation("androidx.navigation:navigation-ui-ktx:2.5.2")  
+>>implementation("androidx.navigation:navigation-compose:2.5.2")  
+>>testImplementation("androidx.navigation:navigation-testing:2.5.2")  
   
 >[OkHttp](https://github.com/square/okhttp)  
 >>implementation("com.squareup.okhttp3:okhttp:4.10.0")  

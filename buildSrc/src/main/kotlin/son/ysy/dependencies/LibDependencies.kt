@@ -42,7 +42,7 @@ sealed class LibDependencies(
     /**
      * https://developer.android.com/jetpack/androidx/releases/appcompat
      */
-    object Appcompat : LibDependencies("androidx.appcompat", "appcompat", "1.5.0",
+    object Appcompat : LibDependencies("androidx.appcompat", "appcompat", "1.5.1",
         DependencyMethod.Implementation)
 
     /**
@@ -112,7 +112,7 @@ sealed class LibDependencies(
      * 图片预览框架
      * https://github.com/iielse/imageviewer
      */
-    object ImageWatcher : LibDependencies("com.github.iielse", "imageviewer", "2.1.17",
+    object ImageWatcher : LibDependencies("com.github.iielse", "imageviewer", "2.1.19",
         DependencyMethod.Implementation)
 
     /**
@@ -155,7 +155,7 @@ sealed class LibDependencies(
      * https://github.com/DSAppTeam/PanelSwitchHelper
      */
     object PanelSwitch : LibDependencies("com.github.DSAppTeam", "PanelSwitchHelper",
-        "1.4.0", DependencyMethod.Implementation)
+        "v1.5.0", DependencyMethod.Implementation)
 
     /**
      * 二维码扫描
@@ -196,7 +196,7 @@ sealed class LibDependencies(
      * 弹窗
      * https://github.com/li-xiaojun/XPopup
      */
-    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.8.15",
+    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.9.0",
         DependencyMethod.Implementation)
 
     /**
@@ -504,7 +504,7 @@ sealed class LibDependencies(
       object Animation : LibDependencies("androidx.compose.animation", "animation", "1.2.1",
           DependencyMethod.Implementation)
 
-      object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.3.0",
+      object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.3.1",
           DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
@@ -558,7 +558,7 @@ sealed class LibDependencies(
      * https://bugly.qq.com/docs/user-guide/instruction-manual-android/?v=1.0.0
      */
     interface Bugly {
-      object Crash : LibDependencies("com.tencent.bugly", "crashreport", "4.0.4",
+      object Crash : LibDependencies("com.tencent.bugly", "crashreport", "4.1.9",
           DependencyMethod.Implementation)
 
       object Upgrade : LibDependencies("com.tencent.bugly", "crashreport_upgrade", "1.6.1",
@@ -602,31 +602,10 @@ sealed class LibDependencies(
     }
 
     /**
-     * 图片加载
-     * https://coil-kt.github.io/coil/README-zh/
-     */
-    interface Coil {
-      object Core : LibDependencies("io.coil-kt", "coil", "2.2.0",
-          DependencyMethod.Implementation)
-
-      object Compose : LibDependencies("io.coil-kt", "coil-compose", "2.2.0",
-          DependencyMethod.Implementation)
-
-      object Svg : LibDependencies("io.coil-kt", "coil-svg", "2.2.0",
-          DependencyMethod.Implementation)
-
-      object Gif : LibDependencies("io.coil-kt", "coil-gif", "2.2.0",
-          DependencyMethod.Implementation)
-
-      object Video : LibDependencies("io.coil-kt", "coil-video", "2.2.0",
-          DependencyMethod.Implementation)
-    }
-
-    /**
      * https://developer.android.com/jetpack/androidx/releases/core
      */
     interface Core {
-      object Ktx : LibDependencies("androidx.core", "core-ktx", "1.8.0",
+      object Ktx : LibDependencies("androidx.core", "core-ktx", "1.9.0",
           DependencyMethod.Implementation)
 
       object Splash : LibDependencies("androidx.core", "core-splashscreen", "1.0.0",
@@ -812,14 +791,14 @@ sealed class LibDependencies(
      * https://github.com/JetBrains/kotlin
      */
     interface Kotlin {
-      object Stdlib : LibDependencies("org.jetbrains.kotlin", "kotlin-stdlib", "1.6.21",
+      object Stdlib : LibDependencies("org.jetbrains.kotlin", "kotlin-stdlib", "1.7.10",
           DependencyMethod.Implementation)
 
-      object Reflect : LibDependencies("org.jetbrains.kotlin", "kotlin-reflect", "1.6.21",
+      object Reflect : LibDependencies("org.jetbrains.kotlin", "kotlin-reflect", "1.7.10",
           DependencyMethod.Implementation)
 
       object Plugin : LibDependencies("org.jetbrains.kotlin", "kotlin-gradle-plugin",
-          "1.6.21", DependencyMethod.Implementation)
+          "1.7.10", DependencyMethod.Implementation)
     }
 
     /**
@@ -868,11 +847,11 @@ sealed class LibDependencies(
      * https://github.com/square/moshi
      */
     interface MoShi {
-      object Core : LibDependencies("com.squareup.moshi", "moshi", "1.13.0",
+      object Core : LibDependencies("com.squareup.moshi", "moshi", "1.14.0",
           DependencyMethod.Implementation)
 
       object Compiler : LibDependencies("com.squareup.moshi", "moshi-kotlin-codegen",
-          "1.13.0", DependencyMethod.Ksp)
+          "1.14.0", DependencyMethod.Ksp)
     }
 
     /**
@@ -881,15 +860,15 @@ sealed class LibDependencies(
      */
     interface Navigation {
       object Fragment : LibDependencies("androidx.navigation", "navigation-fragment-ktx",
-          "2.5.1", DependencyMethod.Implementation)
+          "2.5.2", DependencyMethod.Implementation)
 
-      object Ui : LibDependencies("androidx.navigation", "navigation-ui-ktx", "2.5.1",
+      object Ui : LibDependencies("androidx.navigation", "navigation-ui-ktx", "2.5.2",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("androidx.navigation", "navigation-compose", "2.5.1",
+      object Compose : LibDependencies("androidx.navigation", "navigation-compose", "2.5.2",
           DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.navigation", "navigation-testing", "2.5.1",
+      object Test : LibDependencies("androidx.navigation", "navigation-testing", "2.5.2",
           DependencyMethod.Test.Implementation)
     }
 

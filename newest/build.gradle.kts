@@ -2,7 +2,7 @@ plugins {
     id("com.android.library")
     id("kotlin-android")
     id("kotlin-kapt")
-    id("com.google.devtools.ksp") version "1.6.21-1.0.5"
+    id("com.google.devtools.ksp") version "1.7.10-1.0.6"
 }
 
 android {
@@ -142,12 +142,6 @@ dependencies {
 
     debugImplementation("com.github.chuckerteam.chucker:library:+")
     releaseImplementation("com.github.chuckerteam.chucker:library-no-op:+")
-
-    implementation("io.coil-kt:coil:+")
-    implementation("io.coil-kt:coil-compose:+")
-    implementation("io.coil-kt:coil-svg:+")
-    implementation("io.coil-kt:coil-gif:+")
-    implementation("io.coil-kt:coil-video:+")
 
     implementation("androidx.core:core-ktx:+")
     implementation("androidx.core:core-splashscreen:+")
