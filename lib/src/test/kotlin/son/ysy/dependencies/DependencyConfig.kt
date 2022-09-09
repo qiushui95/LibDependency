@@ -986,7 +986,7 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
             object Core : Epoxy("epoxy")
-            object Compiler : Epoxy("epoxy-processor", DependencyMethod.Ksp)
+            object Compiler : Epoxy("epoxy-processor", DependencyMethod.Kapt)
             object Compose : Epoxy("epoxy-compose")
             object Glide : Epoxy("epoxy-glide-preloading")
         }
@@ -1191,7 +1191,7 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
             object Core : MoShi("moshi")
-            object Compiler : MoShi("moshi-kotlin-codegen", DependencyMethod.Ksp)
+            object Compiler : MoShi("moshi-kotlin-codegen", DependencyMethod.Kapt)
         }
 
         //endregion
@@ -1265,7 +1265,7 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
             object Core : Paris("paris")
-            object Compiler : Paris("paris-processor", DependencyMethod.Ksp)
+            object Compiler : Paris("paris-processor", DependencyMethod.Kapt)
         }
 
         //endregion
