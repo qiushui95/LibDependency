@@ -78,7 +78,7 @@ sealed class LibDependencies(
      * https://github.com/loperSeven/DateTimePicker
      */
     object DateTimePicker : LibDependencies("com.github.loperSeven", "DateTimePicker",
-        "0.5.8", DependencyMethod.Implementation)
+        "0.6.0", DependencyMethod.Implementation)
 
     /**
      * 悬浮窗
@@ -134,7 +134,7 @@ sealed class LibDependencies(
      * https://github.com/vanniktech/gradle-maven-publish-plugin
      */
     object MavenPublish : LibDependencies("com.vanniktech", "gradle-maven-publish-plugin",
-        "0.21.0", DependencyMethod.Implementation)
+        "0.22.0", DependencyMethod.Implementation)
 
     /**
      * 持久KV数据存储
@@ -161,7 +161,7 @@ sealed class LibDependencies(
      * 权限请求
      * https://github.com/guolindev/PermissionX
      */
-    object PermissionX : LibDependencies("com.guolindev.permissionx", "permissionx", "1.6.4",
+    object PermissionX : LibDependencies("com.guolindev.permissionx", "permissionx", "1.7.1",
         DependencyMethod.Implementation)
 
     /**
@@ -231,7 +231,7 @@ sealed class LibDependencies(
      * zip压缩相关
      * https://github.com/srikanth-lingala/zip4j
      */
-    object Zip4J : LibDependencies("net.lingala.zip4j", "zip4j", "2.11.1",
+    object Zip4J : LibDependencies("net.lingala.zip4j", "zip4j", "2.11.2",
         DependencyMethod.Implementation)
   }
 
@@ -403,11 +403,11 @@ sealed class LibDependencies(
      * https://github.com/angcyo/DslTabLayout
      */
     interface TabLayout {
-      object Core : LibDependencies("com.github.angcyo.DslTablayout", "TabLayout", "3.2.4",
+      object Core : LibDependencies("com.github.angcyo.DslTablayout", "TabLayout", "3.2.5",
           DependencyMethod.Implementation)
 
       object VP2 : LibDependencies("com.github.angcyo.DslTablayout", "ViewPager2Delegate",
-          "3.2.4", DependencyMethod.Implementation)
+          "3.2.5", DependencyMethod.Implementation)
     }
 
     /**
@@ -762,29 +762,26 @@ sealed class LibDependencies(
      * https://github.com/InsertKoinIO/koin
      */
     interface Koin {
-      object Android : LibDependencies("io.insert-koin", "koin-android", "3.2.0",
+      object Android : LibDependencies("io.insert-koin", "koin-android", "3.2.1",
           DependencyMethod.Implementation)
 
-      object Annotations : LibDependencies("io.insert-koin", "koin-annotations", "1.0.1",
+      object Annotations : LibDependencies("io.insert-koin", "koin-annotations", "1.0.2",
           DependencyMethod.Implementation)
 
-      object Compiler : LibDependencies("io.insert-koin", "koin-ksp-compiler", "1.0.1",
+      object Compiler : LibDependencies("io.insert-koin", "koin-ksp-compiler", "1.0.2",
           DependencyMethod.Implementation)
 
-      object Compose : LibDependencies("io.insert-koin", "koin-androidx-compose", "3.2.0",
-          DependencyMethod.Implementation)
-
-      object Core : LibDependencies("io.insert-koin", "koin-core", "3.2.0",
+      object Core : LibDependencies("io.insert-koin", "koin-core", "3.2.1",
           DependencyMethod.Implementation)
 
       object Navigation : LibDependencies("io.insert-koin", "koin-androidx-navigation",
-          "3.2.0", DependencyMethod.Implementation)
+          "3.2.1", DependencyMethod.Implementation)
 
-      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.2.0",
+      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.2.1",
           DependencyMethod.Test.Implementation)
 
       object WorkManager : LibDependencies("io.insert-koin", "koin-androidx-workmanager",
-          "3.2.0", DependencyMethod.Implementation)
+          "3.2.1", DependencyMethod.Implementation)
     }
 
     /**

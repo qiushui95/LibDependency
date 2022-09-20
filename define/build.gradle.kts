@@ -112,14 +112,13 @@ dependencies {
     implementation("com.geyifeng.immersionbar:immersionbar:3.2.2")
     implementation("com.geyifeng.immersionbar:immersionbar-ktx:3.2.2")
 
-    implementation("io.insert-koin:koin-android:3.2.0")
-    implementation("io.insert-koin:koin-annotations:1.0.1")
-    implementation("io.insert-koin:koin-ksp-compiler:1.0.1")
-    implementation("io.insert-koin:koin-androidx-compose:3.2.0")
-    implementation("io.insert-koin:koin-core:3.2.0")
-    implementation("io.insert-koin:koin-androidx-navigation:3.2.0")
-    testImplementation("io.insert-koin:koin-test-junit5:3.2.0")
-    implementation("io.insert-koin:koin-androidx-workmanager:3.2.0")
+    implementation("io.insert-koin:koin-android:3.2.1")
+    implementation("io.insert-koin:koin-annotations:1.0.2")
+    implementation("io.insert-koin:koin-ksp-compiler:1.0.2")
+    implementation("io.insert-koin:koin-core:3.2.1")
+    implementation("io.insert-koin:koin-androidx-navigation:3.2.1")
+    testImplementation("io.insert-koin:koin-test-junit5:3.2.1")
+    implementation("io.insert-koin:koin-androidx-workmanager:3.2.1")
 
     implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.10")
@@ -196,7 +195,7 @@ dependencies {
     implementation("io.github.razerdp:BasePopup:3.2.0")
     implementation("me.jorgecastillo:androidcolorx:0.2.0")
     implementation("id.zelory:compressor:3.0.1")
-    implementation("com.github.loperSeven:DateTimePicker:0.5.8")
+    implementation("com.github.loperSeven:DateTimePicker:0.6.0")
     implementation("com.github.princekin-f:EasyFloat:2.0.4")
     implementation("androidx.exifinterface:exifinterface:1.3.3")
     implementation("io.github.hoc081098:FlowExt-jvm:0.4.0")
@@ -204,11 +203,11 @@ dependencies {
     implementation("com.github.iielse:imageviewer:2.1.19")
     implementation("joda-time:joda-time:2.11.1")
     implementation("com.squareup.leakcanary:leakcanary-android:2.9.1")
-    implementation("com.vanniktech:gradle-maven-publish-plugin:0.21.0")
+    implementation("com.vanniktech:gradle-maven-publish-plugin:0.22.0")
     implementation("com.tencent:mmkv-static:1.2.14")
     implementation("androidx.paging:paging-runtime-ktx:3.1.1")
     implementation("com.github.DSAppTeam:PanelSwitchHelper:v1.5.0")
-    implementation("com.guolindev.permissionx:permissionx:1.6.4")
+    implementation("com.guolindev.permissionx:permissionx:1.7.1")
     implementation("com.localebro:okhttpprofiler:1.0.8")
     implementation("com.github.jenly1314:zxing-lite:2.2.1")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0")
@@ -218,7 +217,7 @@ dependencies {
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")
     implementation("com.github.li-xiaojun:XPopup:2.9.0")
-    implementation("net.lingala.zip4j:zip4j:2.11.1")
+    implementation("net.lingala.zip4j:zip4j:2.11.2")
 
 
 
@@ -255,7 +254,7 @@ dependencies {
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
     implementation("com.kyleduo.switchbutton:library:2.1.0")
 
-    implementation("com.github.angcyo.DslTablayout:TabLayout:3.2.4")
-    implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.2.4")
+    implementation("com.github.angcyo.DslTablayout:TabLayout:3.2.5")
+    implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.2.5")
     implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")
 }

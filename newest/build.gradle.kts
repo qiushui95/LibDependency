@@ -115,7 +115,6 @@ dependencies {
     implementation("io.insert-koin:koin-android:+")
     implementation("io.insert-koin:koin-annotations:+")
     implementation("io.insert-koin:koin-ksp-compiler:+")
-    implementation("io.insert-koin:koin-androidx-compose:+")
     implementation("io.insert-koin:koin-core:+")
     implementation("io.insert-koin:koin-androidx-navigation:+")
     testImplementation("io.insert-koin:koin-test-junit5:+")

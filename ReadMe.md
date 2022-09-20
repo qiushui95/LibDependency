@@ -31,7 +31,7 @@
 >>implementation("id.zelory:compressor:3.0.1")  
   
 >[DateTimePicker](https://github.com/loperSeven/DateTimePicker)(时间选择器)  
->>implementation("com.github.loperSeven:DateTimePicker:0.5.8")  
+>>implementation("com.github.loperSeven:DateTimePicker:0.6.0")  
   
 >[EasyFloat](https://github.com/princekin-f/EasyFloat)(悬浮窗)  
 >>implementation("com.github.princekin-f:EasyFloat:2.0.4")  
@@ -55,7 +55,7 @@
 >>implementation("com.squareup.leakcanary:leakcanary-android:2.9.1")  
   
 >[MavenPublish](https://github.com/vanniktech/gradle-maven-publish-plugin)(Maven上传)  
->>implementation("com.vanniktech:gradle-maven-publish-plugin:0.21.0")  
+>>implementation("com.vanniktech:gradle-maven-publish-plugin:0.22.0")  
   
 >[Mmkv](https://github.com/Tencent/MMKV/blob/master/README_CN.md)(持久KV数据存储)  
 >>implementation("com.tencent:mmkv-static:1.2.14")  
@@ -67,7 +67,7 @@
 >>implementation("com.github.DSAppTeam:PanelSwitchHelper:v1.5.0")  
   
 >[PermissionX](https://github.com/guolindev/PermissionX)(权限请求)  
->>implementation("com.guolindev.permissionx:permissionx:1.6.4")  
+>>implementation("com.guolindev.permissionx:permissionx:1.7.1")  
   
 >[Profiler](https://github.com/itkacher/OkHttpProfiler)(AS OkHttp 拦截器)  
 >>implementation("com.localebro:okhttpprofiler:1.0.8")  
@@ -97,7 +97,7 @@
 >>implementation("com.github.li-xiaojun:XPopup:2.9.0")  
   
 >[Zip4J](https://github.com/srikanth-lingala/zip4j)(zip压缩相关)  
->>implementation("net.lingala.zip4j:zip4j:2.11.1")  
+>>implementation("net.lingala.zip4j:zip4j:2.11.2")  
   
 </details>  
   
@@ -174,8 +174,8 @@
 >>implementation("com.kyleduo.switchbutton:library:2.1.0")  
   
 >[TabLayout](https://github.com/angcyo/DslTabLayout)  
->>implementation("com.github.angcyo.DslTablayout:TabLayout:3.2.4")  
->>implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.2.4")  
+>>implementation("com.github.angcyo.DslTablayout:TabLayout:3.2.5")  
+>>implementation("com.github.angcyo.DslTablayout:ViewPager2Delegate:3.2.5")  
   
 >[ViewPager2](https://developer.android.com/jetpack/androidx/releases/viewpager2)  
 >>implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")  
@@ -314,14 +314,13 @@
 >>implementation("com.geyifeng.immersionbar:immersionbar-ktx:3.2.2")  
   
 >[Koin](https://github.com/InsertKoinIO/koin)(依赖注入库)  
->>implementation("io.insert-koin:koin-android:3.2.0")  
->>implementation("io.insert-koin:koin-annotations:1.0.1")  
->>implementation("io.insert-koin:koin-ksp-compiler:1.0.1")  
->>implementation("io.insert-koin:koin-androidx-compose:3.2.0")  
->>implementation("io.insert-koin:koin-core:3.2.0")  
->>implementation("io.insert-koin:koin-androidx-navigation:3.2.0")  
->>testImplementation("io.insert-koin:koin-test-junit5:3.2.0")  
->>implementation("io.insert-koin:koin-androidx-workmanager:3.2.0")  
+>>implementation("io.insert-koin:koin-android:3.2.1")  
+>>implementation("io.insert-koin:koin-annotations:1.0.2")  
+>>implementation("io.insert-koin:koin-ksp-compiler:1.0.2")  
+>>implementation("io.insert-koin:koin-core:3.2.1")  
+>>implementation("io.insert-koin:koin-androidx-navigation:3.2.1")  
+>>testImplementation("io.insert-koin:koin-test-junit5:3.2.1")  
+>>implementation("io.insert-koin:koin-androidx-workmanager:3.2.1")  
   
 >[Kotlin](https://github.com/JetBrains/kotlin)  
 >>implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")  
