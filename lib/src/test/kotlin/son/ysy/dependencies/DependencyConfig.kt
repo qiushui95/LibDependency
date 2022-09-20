@@ -131,7 +131,7 @@ sealed class DependencyConfig(
         object DateTimePicker : Single(
             group = "com.github.loperSeven",
             name = "DateTimePicker",
-            version = "0.5.8",
+            version = "0.6.0",
             remark = "时间选择器",
             link = "https://github.com/loperSeven/DateTimePicker",
             dependencyMethod = DependencyMethod.Implementation,
@@ -230,7 +230,7 @@ sealed class DependencyConfig(
         object PermissionX : Single(
             group = "com.guolindev.permissionx",
             name = "permissionx",
-            version = "1.6.4",
+            version = "1.7.1",
             remark = "权限请求",
             link = "https://github.com/guolindev/PermissionX",
             dependencyMethod = DependencyMethod.Implementation,
@@ -340,7 +340,7 @@ sealed class DependencyConfig(
         object MavenPublish : Single(
             group = "com.vanniktech",
             name = "gradle-maven-publish-plugin",
-            version = "0.21.0",
+            version = "0.22.0",
             remark = "Maven上传",
             link = "https://github.com/vanniktech/gradle-maven-publish-plugin",
             dependencyMethod = DependencyMethod.Implementation,
@@ -379,7 +379,7 @@ sealed class DependencyConfig(
         object Zip4J : Single(
             group = "net.lingala.zip4j",
             name = "zip4j",
-            version = "2.11.1",
+            version = "2.11.2",
             remark = "zip压缩相关",
             link = "https://github.com/srikanth-lingala/zip4j",
             dependencyMethod = DependencyMethod.Implementation,
@@ -659,7 +659,7 @@ sealed class DependencyConfig(
         sealed class TabLayout(name: String) : View(
             group = "com.github.angcyo.DslTablayout",
             name = name,
-            version = "3.2.4",
+            version = "3.2.5",
             remark = "",
             link = "https://github.com/angcyo/DslTabLayout",
             dependencyMethod = DependencyMethod.Implementation,
@@ -1104,15 +1104,14 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
             sealed class Version(val value: String) {
-                object Version1 : Version("1.0.1")
-                object Version2 : Version("3.2.0")
+                object Version1 : Version("1.0.2")
+                object Version2 : Version("3.2.1")
             }
 
             object Android : Koin("koin-android", Version.Version2)
             object Core : Koin("koin-core", Version.Version2)
             object WorkManager : Koin("koin-androidx-workmanager", Version.Version2)
             object Navigation : Koin("koin-androidx-navigation", Version.Version2)
-            object Compose : Koin("koin-androidx-compose", Version.Version2)
             object Test : Koin(
                 "koin-test-junit5",
                 Version.Version2, DependencyMethod.Test.Implementation
