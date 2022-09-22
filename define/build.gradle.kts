@@ -52,8 +52,8 @@ dependencies {
 
 
 
-    implementation("androidx.activity:activity-compose:1.5.1")
-    implementation("androidx.activity:activity-ktx:1.5.1")
+    implementation("androidx.activity:activity-compose:1.6.0")
+    implementation("androidx.activity:activity-ktx:1.6.0")
 
     implementation("com.tencent.bugly:crashreport:4.1.9")
     implementation("com.tencent.bugly:crashreport_upgrade:1.6.1")
@@ -102,8 +102,8 @@ dependencies {
     implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager:1.2.0")
     implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager2:1.2.0")
 
-    implementation("androidx.fragment:fragment-ktx:1.5.2")
-    testImplementation("androidx.fragment:fragment-testing:1.5.2")
+    implementation("androidx.fragment:fragment-ktx:1.5.3")
+    testImplementation("androidx.fragment:fragment-testing:1.5.3")
 
     kapt("com.github.bumptech.glide:compiler:4.13.2")
     implementation("com.github.bumptech.glide:glide:4.13.2")
@@ -189,7 +189,7 @@ dependencies {
     implementation("com.aliyun.dpa:oss-android-sdk:2.9.12")
     implementation("com.aliyun.ams:alicloud-android-push:3.7.4")
     implementation("com.blankj:utilcodex:1.31.0")
-    implementation("androidx.annotation:annotation:1.4.0")
+    implementation("androidx.annotation:annotation:1.5.0")
     implementation("androidx.appcompat:appcompat:1.5.1")
     implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.5")
     implementation("io.github.razerdp:BasePopup:3.2.0")
@@ -222,7 +222,7 @@ dependencies {
 
 
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.9.0")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.9.1")
     testImplementation("androidx.test.ext:junit-ktx:1.1.3")
 
 
@@ -242,7 +242,7 @@ dependencies {
     implementation("com.github.mhiew:android-pdf-viewer:3.2.0-beta.3")
     implementation("com.github.chrisbanes:PhotoView:2.3.0")
     implementation("io.github.chaosleung:pinview:1.4.4")
-    implementation("androidx.recyclerview:recyclerview:1.2.1")
+    implementation("androidx.recyclerview:recyclerview:1.3.0-rc01")
     implementation("com.github.fondesa:recycler-view-divider:3.5.0")
     implementation("com.github.rubensousa:gravitysnaphelper:2.2.2")
     implementation("com.github.donkingliang:ConsecutiveScroller:4.6.3")

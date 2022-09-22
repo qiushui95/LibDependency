@@ -36,7 +36,7 @@ sealed class LibDependencies(
      * Annotation
      * https://developer.android.com/jetpack/androidx/releases/annotation
      */
-    object Annotation : LibDependencies("androidx.annotation", "annotation", "1.4.0",
+    object Annotation : LibDependencies("androidx.annotation", "annotation", "1.5.0",
         DependencyMethod.Implementation)
 
     /**
@@ -343,8 +343,8 @@ sealed class LibDependencies(
     /**
      * https://developer.android.com/jetpack/androidx/releases/recyclerview
      */
-    object RecyclerView : LibDependencies("androidx.recyclerview", "recyclerview", "1.2.1",
-        DependencyMethod.Implementation)
+    object RecyclerView : LibDependencies("androidx.recyclerview", "recyclerview",
+        "1.3.0-rc01", DependencyMethod.Implementation)
 
     /**
      * RecyclerView分割线
@@ -429,7 +429,7 @@ sealed class LibDependencies(
      * 单元测试
      * https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter
      */
-    object Junit : LibDependencies("org.junit.jupiter", "junit-jupiter", "5.9.0",
+    object Junit : LibDependencies("org.junit.jupiter", "junit-jupiter", "5.9.1",
         DependencyMethod.Test.Implementation)
 
     /**
@@ -547,10 +547,10 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/activity
      */
     interface Activity {
-      object Compose : LibDependencies("androidx.activity", "activity-compose", "1.5.1",
+      object Compose : LibDependencies("androidx.activity", "activity-compose", "1.6.0",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("androidx.activity", "activity-ktx", "1.5.1",
+      object Core : LibDependencies("androidx.activity", "activity-ktx", "1.6.0",
           DependencyMethod.Implementation)
     }
 
@@ -723,10 +723,10 @@ sealed class LibDependencies(
      * https://developer.android.com/jetpack/androidx/releases/fragment
      */
     interface Fragment {
-      object Core : LibDependencies("androidx.fragment", "fragment-ktx", "1.5.2",
+      object Core : LibDependencies("androidx.fragment", "fragment-ktx", "1.5.3",
           DependencyMethod.Implementation)
 
-      object Test : LibDependencies("androidx.fragment", "fragment-testing", "1.5.2",
+      object Test : LibDependencies("androidx.fragment", "fragment-testing", "1.5.3",
           DependencyMethod.Test.Implementation)
     }
 

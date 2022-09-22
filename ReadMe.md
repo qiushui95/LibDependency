@@ -13,7 +13,7 @@
 >>implementation("com.blankj:utilcodex:1.31.0")  
   
 >[Annotation](https://developer.android.com/jetpack/androidx/releases/annotation)(Annotation)  
->>implementation("androidx.annotation:annotation:1.4.0")  
+>>implementation("androidx.annotation:annotation:1.5.0")  
   
 >[Appcompat](https://developer.android.com/jetpack/androidx/releases/appcompat)  
 >>implementation("androidx.appcompat:appcompat:1.5.1")  
@@ -150,7 +150,7 @@
 >>implementation("io.github.chaosleung:pinview:1.4.4")  
   
 >[RecyclerView](https://developer.android.com/jetpack/androidx/releases/recyclerview)  
->>implementation("androidx.recyclerview:recyclerview:1.2.1")  
+>>implementation("androidx.recyclerview:recyclerview:1.3.0-rc01")  
   
 >[RecyclerViewDivider](https://github.com/fondesa/recycler-view-divider)(RecyclerView分割线)  
 >>implementation("com.github.fondesa:recycler-view-divider:3.5.0")  
@@ -189,7 +189,7 @@
 >>androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")  
   
 >[Junit](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter)(单元测试)  
->>testImplementation("org.junit.jupiter:junit-jupiter:5.9.0")  
+>>testImplementation("org.junit.jupiter:junit-jupiter:5.9.1")  
   
 >[JunitExt](https://mvnrepository.com/artifact/androidx.test.ext/junit-ktx)(单元测试扩展)  
 >>testImplementation("androidx.test.ext:junit-ktx:1.1.3")  
@@ -241,8 +241,8 @@
 <summary>Group</summary>  
   
 >[Activity](https://developer.android.com/jetpack/androidx/releases/activity)  
->>implementation("androidx.activity:activity-compose:1.5.1")  
->>implementation("androidx.activity:activity-ktx:1.5.1")  
+>>implementation("androidx.activity:activity-compose:1.6.0")  
+>>implementation("androidx.activity:activity-ktx:1.6.0")  
   
 >[Bugly](https://bugly.qq.com/docs/user-guide/instruction-manual-android/?v=1.0.0)  
 >>implementation("com.tencent.bugly:crashreport:4.1.9")  
@@ -301,8 +301,8 @@
 >>implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager2:1.2.0")  
   
 >[Fragment](https://developer.android.com/jetpack/androidx/releases/fragment)  
->>implementation("androidx.fragment:fragment-ktx:1.5.2")  
->>testImplementation("androidx.fragment:fragment-testing:1.5.2")  
+>>implementation("androidx.fragment:fragment-ktx:1.5.3")  
+>>testImplementation("androidx.fragment:fragment-testing:1.5.3")  
   
 >[Glide](https://github.com/bumptech/glide)(图片加载)  
 >>kapt("com.github.bumptech.glide:compiler:4.13.2")  
