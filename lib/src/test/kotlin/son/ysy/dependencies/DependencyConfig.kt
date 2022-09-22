@@ -65,7 +65,7 @@ sealed class DependencyConfig(
         object Annotation : Single(
             group = "androidx.annotation",
             name = "annotation",
-            version = "1.4.0",
+            version = "1.5.0",
             remark = "Annotation",
             link = "https://developer.android.com/jetpack/androidx/releases/annotation",
             dependencyMethod = DependencyMethod.Implementation,
@@ -566,7 +566,7 @@ sealed class DependencyConfig(
         object RecyclerView : View(
             group = "androidx.recyclerview",
             name = "recyclerview",
-            version = "1.2.1",
+            version = "1.3.0-rc01",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/recyclerview",
             dependencyMethod = DependencyMethod.Implementation,
@@ -695,7 +695,7 @@ sealed class DependencyConfig(
         object Junit : Test(
             group = "org.junit.jupiter",
             name = "junit-jupiter",
-            version = "5.9.0",
+            version = "5.9.1",
             remark = "单元测试",
             link = "https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter",
             dependencyMethod = DependencyMethod.Test.Implementation,
@@ -867,7 +867,7 @@ sealed class DependencyConfig(
         sealed class Activity(name: String) : Group(
             group = "androidx.activity",
             name = name,
-            version = "1.5.1",
+            version = "1.6.0",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/activity",
             dependencyMethod = DependencyMethod.Implementation,
@@ -1027,7 +1027,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "androidx.fragment",
             name = name,
-            version = "1.5.2",
+            version = "1.5.3",
             remark = "",
             link = "https://developer.android.com/jetpack/androidx/releases/fragment",
             dependencyMethod = dependencyMethod,
