@@ -32,7 +32,7 @@ sealed class DependencyConfig(
         object AliOss : Single(
             group = "com.aliyun.dpa",
             name = "oss-android-sdk",
-            version = "2.9.12",
+            version = "2.9.13",
             remark = "阿里云存储",
             link = "https://help.aliyun.com/document_detail/32043.html",
             dependencyMethod = DependencyMethod.Implementation,
@@ -186,7 +186,7 @@ sealed class DependencyConfig(
         object ImageWatcher : Single(
             group = "com.github.iielse",
             name = "imageviewer",
-            version = "2.1.19",
+            version = "2.1.20",
             remark = "图片预览框架",
             link = "https://github.com/iielse/imageviewer",
             dependencyMethod = DependencyMethod.Implementation,
@@ -197,7 +197,7 @@ sealed class DependencyConfig(
         object JodaTime : Single(
             group = "joda-time",
             name = "joda-time",
-            version = "2.11.1",
+            version = "2.11.2",
             remark = "时间处理库",
             link = "https://github.com/JodaOrg/joda-time",
             dependencyMethod = DependencyMethod.Implementation,
@@ -252,7 +252,7 @@ sealed class DependencyConfig(
         object PanelSwitch : Single(
             group = "com.github.DSAppTeam",
             name = "PanelSwitchHelper",
-            version = "v1.5.0",
+            version = "v1.5.1",
             remark = "聊天键盘优化",
             link = "https://github.com/DSAppTeam/PanelSwitchHelper",
             dependencyMethod = DependencyMethod.Implementation,
@@ -318,7 +318,7 @@ sealed class DependencyConfig(
         object XPopup : Single(
             group = "com.github.li-xiaojun",
             name = "XPopup",
-            version = "2.9.0",
+            version = "2.9.1",
             remark = "弹窗",
             link = "https://github.com/li-xiaojun/XPopup",
             dependencyMethod = DependencyMethod.Implementation,
@@ -980,7 +980,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "com.airbnb.android",
             name = name,
-            version = "5.0.0-beta05",
+            version = "5.0.0",
             remark = "",
             link = "https://github.com/airbnb/epoxy",
             dependencyMethod = dependencyMethod,
@@ -1062,7 +1062,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "com.github.bumptech.glide",
             name = name,
-            version = "4.13.2",
+            version = "4.14.1",
             remark = "图片加载",
             link = "https://github.com/bumptech/glide",
             dependencyMethod = dependencyMethod,
@@ -1104,8 +1104,8 @@ sealed class DependencyConfig(
             dependencyMethod = dependencyMethod,
         ) {
             sealed class Version(val value: String) {
-                object Version1 : Version("1.0.2")
-                object Version2 : Version("3.2.1")
+                object Version1 : Version("1.0.3")
+                object Version2 : Version("3.2.2")
             }
 
             object Android : Koin("koin-android", Version.Version2)
@@ -1129,14 +1129,14 @@ sealed class DependencyConfig(
         ) : Group(
             group = "org.jetbrains.kotlin",
             name = name,
-            version = "1.7.10",
+            version = "1.7.20",
             remark = "",
             link = "https://github.com/JetBrains/kotlin",
             dependencyMethod = dependencyMethod,
         ) {
             object Stdlib : Kotlin("kotlin-stdlib")
             object Reflect : Kotlin("kotlin-reflect")
-            object Plugin : Kotlin("kotlin-gradle-plugin")
+//            object Plugin : Kotlin("kotlin-gradle-plugin")
         }
 
         //endregion
@@ -1166,7 +1166,7 @@ sealed class DependencyConfig(
         sealed class Mavericks(name: String) : Group(
             group = "com.airbnb.android",
             name = name,
-            version = "2.7.0",
+            version = "3.0.0",
             remark = "Mavericks架构",
             link = "https://github.com/airbnb/mavericks",
             dependencyMethod = DependencyMethod.Implementation,
@@ -1329,7 +1329,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "com.amazonaws",
             name = name,
-            version = "2.50.1",
+            version = "2.54.0",
             remark = "亚马逊云存储",
             link = "https://github.com/aws-amplify/aws-sdk-android",
             dependencyMethod = dependencyMethod,
