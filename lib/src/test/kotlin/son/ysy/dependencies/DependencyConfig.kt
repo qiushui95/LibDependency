@@ -153,7 +153,7 @@ sealed class DependencyConfig(
         object Exif : Single(
             group = "androidx.exifinterface",
             name = "exifinterface",
-            version = "1.3.3",
+            version = "1.3.4",
             remark = "图片信息",
             link = "https://developer.android.com/jetpack/androidx/releases/exifinterface",
             dependencyMethod = DependencyMethod.Implementation,
@@ -182,7 +182,7 @@ sealed class DependencyConfig(
         )
 
         //endregion
-        //region ImageWatcher(图片预览框架)
+/*        //region ImageWatcher(图片预览框架)
         object ImageWatcher : Single(
             group = "com.github.iielse",
             name = "imageviewer",
@@ -192,7 +192,7 @@ sealed class DependencyConfig(
             dependencyMethod = DependencyMethod.Implementation,
         )
 
-        //endregion
+        //endregion*/
         //region JodaTime(时间处理库)
         object JodaTime : Single(
             group = "joda-time",
@@ -792,7 +792,7 @@ sealed class DependencyConfig(
             object Compiler : Official(
                 group = "androidx.compose.compiler",
                 name = "compiler",
-                version = "1.3.1"
+                version = "1.3.2"
             )
             //endregion
 
@@ -1062,7 +1062,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "com.github.bumptech.glide",
             name = name,
-            version = "4.14.1",
+            version = "4.14.2",
             remark = "图片加载",
             link = "https://github.com/bumptech/glide",
             dependencyMethod = dependencyMethod,
@@ -1166,7 +1166,7 @@ sealed class DependencyConfig(
         sealed class Mavericks(name: String) : Group(
             group = "com.airbnb.android",
             name = name,
-            version = "3.0.0",
+            version = "3.0.1",
             remark = "Mavericks架构",
             link = "https://github.com/airbnb/mavericks",
             dependencyMethod = DependencyMethod.Implementation,
