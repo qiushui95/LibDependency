@@ -120,7 +120,6 @@ dependencies {
     testImplementation("io.insert-koin:koin-test-junit5:+")
     implementation("io.insert-koin:koin-androidx-workmanager:+")
 
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:+")
     implementation("org.jetbrains.kotlin:kotlin-reflect:+")
     implementation("org.jetbrains.kotlin:kotlin-stdlib:+")
 
@@ -200,7 +199,6 @@ dependencies {
     implementation("androidx.exifinterface:exifinterface:+")
     implementation("io.github.hoc081098:FlowExt-jvm:+")
     implementation("com.ypx.yimagepicker:androidx:+")
-    implementation("com.github.iielse:imageviewer:+")
     implementation("joda-time:joda-time:+")
     implementation("com.squareup.leakcanary:leakcanary-android:+")
     implementation("com.vanniktech:gradle-maven-publish-plugin:+")

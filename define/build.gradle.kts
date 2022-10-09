@@ -38,7 +38,7 @@ dependencies {
     implementation("com.github.fornewid:material-motion-compose:0.8.1")
 
     implementation("androidx.compose.animation:animation:1.2.1")
-    implementation("androidx.compose.compiler:compiler:1.3.1")
+    implementation("androidx.compose.compiler:compiler:1.3.2")
     implementation("androidx.compose.foundation:foundation:1.2.1")
     implementation("androidx.compose.runtime:runtime-livedata:1.2.1")
     implementation("androidx.compose.material:material:1.2.1")
@@ -80,10 +80,10 @@ dependencies {
     implementation("me.laoyuyu.aria:m3u8:3.8.16")
     implementation("me.laoyuyu.aria:sftp:3.8.16")
 
-    kapt("com.airbnb.android:epoxy-processor:5.0.0-beta05")
-    implementation("com.airbnb.android:epoxy-compose:5.0.0-beta05")
-    implementation("com.airbnb.android:epoxy:5.0.0-beta05")
-    implementation("com.airbnb.android:epoxy-glide-preloading:5.0.0-beta05")
+    kapt("com.airbnb.android:epoxy-processor:5.0.0")
+    implementation("com.airbnb.android:epoxy-compose:5.0.0")
+    implementation("com.airbnb.android:epoxy:5.0.0")
+    implementation("com.airbnb.android:epoxy-glide-preloading:5.0.0")
 
     implementation("androidx.tonyodev.fetch2:xfetch2:3.1.6")
     implementation("androidx.tonyodev.fetch2okhttp:xfetch2okhttp:3.1.6")
@@ -105,24 +105,23 @@ dependencies {
     implementation("androidx.fragment:fragment-ktx:1.5.3")
     testImplementation("androidx.fragment:fragment-testing:1.5.3")
 
-    kapt("com.github.bumptech.glide:compiler:4.13.2")
-    implementation("com.github.bumptech.glide:glide:4.13.2")
-    implementation("com.github.bumptech.glide:okhttp3-integration:4.13.2")
+    kapt("com.github.bumptech.glide:compiler:4.14.2")
+    implementation("com.github.bumptech.glide:glide:4.14.2")
+    implementation("com.github.bumptech.glide:okhttp3-integration:4.14.2")
 
     implementation("com.geyifeng.immersionbar:immersionbar:3.2.2")
     implementation("com.geyifeng.immersionbar:immersionbar-ktx:3.2.2")
 
-    implementation("io.insert-koin:koin-android:3.2.1")
-    implementation("io.insert-koin:koin-annotations:1.0.2")
-    implementation("io.insert-koin:koin-ksp-compiler:1.0.2")
-    implementation("io.insert-koin:koin-core:3.2.1")
-    implementation("io.insert-koin:koin-androidx-navigation:3.2.1")
-    testImplementation("io.insert-koin:koin-test-junit5:3.2.1")
-    implementation("io.insert-koin:koin-androidx-workmanager:3.2.1")
+    implementation("io.insert-koin:koin-android:3.2.2")
+    implementation("io.insert-koin:koin-annotations:1.0.3")
+    implementation("io.insert-koin:koin-ksp-compiler:1.0.3")
+    implementation("io.insert-koin:koin-core:3.2.2")
+    implementation("io.insert-koin:koin-androidx-navigation:3.2.2")
+    testImplementation("io.insert-koin:koin-test-junit5:3.2.2")
+    implementation("io.insert-koin:koin-androidx-workmanager:3.2.2")
 
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")
-    implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.10")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.7.10")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.20")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.7.20")
 
     implementation("androidx.lifecycle:lifecycle-common:2.5.1")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
@@ -132,9 +131,9 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-service:2.5.1")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
 
-    implementation("com.airbnb.android:mavericks-compose:2.7.0")
-    implementation("com.airbnb.android:mavericks:2.7.0")
-    implementation("com.airbnb.android:mavericks-navigation:2.7.0")
+    implementation("com.airbnb.android:mavericks-compose:3.0.1")
+    implementation("com.airbnb.android:mavericks:3.0.1")
+    implementation("com.airbnb.android:mavericks-navigation:3.0.1")
 
     kapt("com.squareup.moshi:moshi-kotlin-codegen:1.14.0")
     implementation("com.squareup.moshi:moshi:1.14.0")
@@ -166,8 +165,8 @@ dependencies {
     implementation("androidx.room:room-ktx:2.4.3")
     testImplementation("androidx.room:room-testing:2.4.3")
 
-    implementation("com.amazonaws:aws-android-sdk-mobile-client:2.50.1")
-    implementation("com.amazonaws:aws-android-sdk-s3:2.50.1")
+    implementation("com.amazonaws:aws-android-sdk-mobile-client:2.54.0")
+    implementation("com.amazonaws:aws-android-sdk-s3:2.54.0")
 
     implementation("com.facebook.stetho:stetho:1.6.0")
     implementation("com.facebook.stetho:stetho-okhttp3:1.6.0")
@@ -186,7 +185,7 @@ dependencies {
 
 
 
-    implementation("com.aliyun.dpa:oss-android-sdk:2.9.12")
+    implementation("com.aliyun.dpa:oss-android-sdk:2.9.13")
     implementation("com.aliyun.ams:alicloud-android-push:3.7.4")
     implementation("com.blankj:utilcodex:1.31.0")
     implementation("androidx.annotation:annotation:1.5.0")
@@ -197,16 +196,15 @@ dependencies {
     implementation("id.zelory:compressor:3.0.1")
     implementation("com.github.loperSeven:DateTimePicker:0.6.0")
     implementation("com.github.princekin-f:EasyFloat:2.0.4")
-    implementation("androidx.exifinterface:exifinterface:1.3.3")
+    implementation("androidx.exifinterface:exifinterface:1.3.4")
     implementation("io.github.hoc081098:FlowExt-jvm:0.4.0")
     implementation("com.ypx.yimagepicker:androidx:3.1.4")
-    implementation("com.github.iielse:imageviewer:2.1.19")
-    implementation("joda-time:joda-time:2.11.1")
+    implementation("joda-time:joda-time:2.11.2")
     implementation("com.squareup.leakcanary:leakcanary-android:2.9.1")
     implementation("com.vanniktech:gradle-maven-publish-plugin:0.22.0")
     implementation("com.tencent:mmkv-static:1.2.14")
     implementation("androidx.paging:paging-runtime-ktx:3.1.1")
-    implementation("com.github.DSAppTeam:PanelSwitchHelper:v1.5.0")
+    implementation("com.github.DSAppTeam:PanelSwitchHelper:v1.5.1")
     implementation("com.guolindev.permissionx:permissionx:1.7.1")
     implementation("com.localebro:okhttpprofiler:1.0.8")
     implementation("com.github.jenly1314:zxing-lite:2.2.1")
@@ -216,7 +214,7 @@ dependencies {
     implementation("com.tencent.vasdolly:helper:3.0.4")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")
-    implementation("com.github.li-xiaojun:XPopup:2.9.0")
+    implementation("com.github.li-xiaojun:XPopup:2.9.1")
     implementation("net.lingala.zip4j:zip4j:2.11.2")
 
 

@@ -15,7 +15,7 @@ sealed class LibDependencies(
      * 阿里云存储
      * https://help.aliyun.com/document_detail/32043.html
      */
-    object AliOss : LibDependencies("com.aliyun.dpa", "oss-android-sdk", "2.9.12",
+    object AliOss : LibDependencies("com.aliyun.dpa", "oss-android-sdk", "2.9.13",
         DependencyMethod.Implementation)
 
     /**
@@ -91,7 +91,7 @@ sealed class LibDependencies(
      * 图片信息
      * https://developer.android.com/jetpack/androidx/releases/exifinterface
      */
-    object Exif : LibDependencies("androidx.exifinterface", "exifinterface", "1.3.3",
+    object Exif : LibDependencies("androidx.exifinterface", "exifinterface", "1.3.4",
         DependencyMethod.Implementation)
 
     /**
@@ -109,17 +109,10 @@ sealed class LibDependencies(
         DependencyMethod.Implementation)
 
     /**
-     * 图片预览框架
-     * https://github.com/iielse/imageviewer
-     */
-    object ImageWatcher : LibDependencies("com.github.iielse", "imageviewer", "2.1.19",
-        DependencyMethod.Implementation)
-
-    /**
      * 时间处理库
      * https://github.com/JodaOrg/joda-time
      */
-    object JodaTime : LibDependencies("joda-time", "joda-time", "2.11.1",
+    object JodaTime : LibDependencies("joda-time", "joda-time", "2.11.2",
         DependencyMethod.Implementation)
 
     /**
@@ -155,7 +148,7 @@ sealed class LibDependencies(
      * https://github.com/DSAppTeam/PanelSwitchHelper
      */
     object PanelSwitch : LibDependencies("com.github.DSAppTeam", "PanelSwitchHelper",
-        "v1.5.0", DependencyMethod.Implementation)
+        "v1.5.1", DependencyMethod.Implementation)
 
     /**
      * 权限请求
@@ -224,7 +217,7 @@ sealed class LibDependencies(
      * 弹窗
      * https://github.com/li-xiaojun/XPopup
      */
-    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.9.0",
+    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.9.1",
         DependencyMethod.Implementation)
 
     /**
@@ -504,7 +497,7 @@ sealed class LibDependencies(
       object Animation : LibDependencies("androidx.compose.animation", "animation", "1.2.1",
           DependencyMethod.Implementation)
 
-      object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.3.1",
+      object Compiler : LibDependencies("androidx.compose.compiler", "compiler", "1.3.2",
           DependencyMethod.Implementation)
 
       object Foundation : LibDependencies("androidx.compose.foundation", "foundation",
@@ -649,17 +642,17 @@ sealed class LibDependencies(
      * https://github.com/airbnb/epoxy
      */
     interface Epoxy {
-      object Compiler : LibDependencies("com.airbnb.android", "epoxy-processor",
-          "5.0.0-beta05", DependencyMethod.Kapt)
+      object Compiler : LibDependencies("com.airbnb.android", "epoxy-processor", "5.0.0",
+          DependencyMethod.Kapt)
 
-      object Compose : LibDependencies("com.airbnb.android", "epoxy-compose", "5.0.0-beta05",
+      object Compose : LibDependencies("com.airbnb.android", "epoxy-compose", "5.0.0",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("com.airbnb.android", "epoxy", "5.0.0-beta05",
+      object Core : LibDependencies("com.airbnb.android", "epoxy", "5.0.0",
           DependencyMethod.Implementation)
 
-      object Glide : LibDependencies("com.airbnb.android", "epoxy-glide-preloading",
-          "5.0.0-beta05", DependencyMethod.Implementation)
+      object Glide : LibDependencies("com.airbnb.android", "epoxy-glide-preloading", "5.0.0",
+          DependencyMethod.Implementation)
     }
 
     /**
@@ -735,14 +728,14 @@ sealed class LibDependencies(
      * https://github.com/bumptech/glide
      */
     interface Glide {
-      object Compiler : LibDependencies("com.github.bumptech.glide", "compiler", "4.13.2",
+      object Compiler : LibDependencies("com.github.bumptech.glide", "compiler", "4.14.2",
           DependencyMethod.Kapt)
 
-      object Core : LibDependencies("com.github.bumptech.glide", "glide", "4.13.2",
+      object Core : LibDependencies("com.github.bumptech.glide", "glide", "4.14.2",
           DependencyMethod.Implementation)
 
       object OkHttp : LibDependencies("com.github.bumptech.glide", "okhttp3-integration",
-          "4.13.2", DependencyMethod.Implementation)
+          "4.14.2", DependencyMethod.Implementation)
     }
 
     /**
@@ -762,39 +755,36 @@ sealed class LibDependencies(
      * https://github.com/InsertKoinIO/koin
      */
     interface Koin {
-      object Android : LibDependencies("io.insert-koin", "koin-android", "3.2.1",
+      object Android : LibDependencies("io.insert-koin", "koin-android", "3.2.2",
           DependencyMethod.Implementation)
 
-      object Annotations : LibDependencies("io.insert-koin", "koin-annotations", "1.0.2",
+      object Annotations : LibDependencies("io.insert-koin", "koin-annotations", "1.0.3",
           DependencyMethod.Implementation)
 
-      object Compiler : LibDependencies("io.insert-koin", "koin-ksp-compiler", "1.0.2",
+      object Compiler : LibDependencies("io.insert-koin", "koin-ksp-compiler", "1.0.3",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("io.insert-koin", "koin-core", "3.2.1",
+      object Core : LibDependencies("io.insert-koin", "koin-core", "3.2.2",
           DependencyMethod.Implementation)
 
       object Navigation : LibDependencies("io.insert-koin", "koin-androidx-navigation",
-          "3.2.1", DependencyMethod.Implementation)
+          "3.2.2", DependencyMethod.Implementation)
 
-      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.2.1",
+      object Test : LibDependencies("io.insert-koin", "koin-test-junit5", "3.2.2",
           DependencyMethod.Test.Implementation)
 
       object WorkManager : LibDependencies("io.insert-koin", "koin-androidx-workmanager",
-          "3.2.1", DependencyMethod.Implementation)
+          "3.2.2", DependencyMethod.Implementation)
     }
 
     /**
      * https://github.com/JetBrains/kotlin
      */
     interface Kotlin {
-      object Plugin : LibDependencies("org.jetbrains.kotlin", "kotlin-gradle-plugin",
-          "1.7.10", DependencyMethod.Implementation)
-
-      object Reflect : LibDependencies("org.jetbrains.kotlin", "kotlin-reflect", "1.7.10",
+      object Reflect : LibDependencies("org.jetbrains.kotlin", "kotlin-reflect", "1.7.20",
           DependencyMethod.Implementation)
 
-      object Stdlib : LibDependencies("org.jetbrains.kotlin", "kotlin-stdlib", "1.7.10",
+      object Stdlib : LibDependencies("org.jetbrains.kotlin", "kotlin-stdlib", "1.7.20",
           DependencyMethod.Implementation)
     }
 
@@ -829,14 +819,14 @@ sealed class LibDependencies(
      * https://github.com/airbnb/mavericks
      */
     interface Mavericks {
-      object Compose : LibDependencies("com.airbnb.android", "mavericks-compose", "2.7.0",
+      object Compose : LibDependencies("com.airbnb.android", "mavericks-compose", "3.0.1",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("com.airbnb.android", "mavericks", "2.7.0",
+      object Core : LibDependencies("com.airbnb.android", "mavericks", "3.0.1",
           DependencyMethod.Implementation)
 
       object Navigation : LibDependencies("com.airbnb.android", "mavericks-navigation",
-          "2.7.0", DependencyMethod.Implementation)
+          "3.0.1", DependencyMethod.Implementation)
     }
 
     /**
@@ -953,9 +943,9 @@ sealed class LibDependencies(
      */
     interface S3 {
       object Client : LibDependencies("com.amazonaws", "aws-android-sdk-mobile-client",
-          "2.50.1", DependencyMethod.Implementation)
+          "2.54.0", DependencyMethod.Implementation)
 
-      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.50.1",
+      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.54.0",
           DependencyMethod.Implementation)
     }
 
