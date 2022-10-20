@@ -29,7 +29,7 @@ sealed class LibDependencies(
      * 多功能工具包
      * https://github.com/Blankj/AndroidUtilCode
      */
-    object AndroidUtil : LibDependencies("com.blankj", "utilcodex", "1.31.0",
+    object AndroidUtil : LibDependencies("com.blankj", "utilcodex", "1.31.1",
         DependencyMethod.Implementation)
 
     /**
@@ -112,7 +112,7 @@ sealed class LibDependencies(
      * 时间处理库
      * https://github.com/JodaOrg/joda-time
      */
-    object JodaTime : LibDependencies("joda-time", "joda-time", "2.11.2",
+    object JodaTime : LibDependencies("joda-time", "joda-time", "2.12.0",
         DependencyMethod.Implementation)
 
     /**
@@ -148,7 +148,7 @@ sealed class LibDependencies(
      * https://github.com/DSAppTeam/PanelSwitchHelper
      */
     object PanelSwitch : LibDependencies("com.github.DSAppTeam", "PanelSwitchHelper",
-        "v1.5.1", DependencyMethod.Implementation)
+        "1.5.2", DependencyMethod.Implementation)
 
     /**
      * 权限请求
@@ -176,7 +176,7 @@ sealed class LibDependencies(
      * https://github.com/Kotlin/kotlinx.serialization
      */
     object Serialization : LibDependencies("org.jetbrains.kotlinx",
-        "kotlinx-serialization-json", "1.4.0", DependencyMethod.Implementation)
+        "kotlinx-serialization-json", "1.4.1", DependencyMethod.Implementation)
 
     /**
      * app启动初始化
@@ -217,7 +217,7 @@ sealed class LibDependencies(
      * 弹窗
      * https://github.com/li-xiaojun/XPopup
      */
-    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.9.1",
+    object XPopup : LibDependencies("com.github.li-xiaojun", "XPopup", "2.9.3",
         DependencyMethod.Implementation)
 
     /**
@@ -234,7 +234,7 @@ sealed class LibDependencies(
      * https://github.com/Justson/AgentWeb
      */
     object AgentWeb : LibDependencies("com.github.Justson.AgentWeb", "agentweb-core",
-        "v4.1.9-androidx", DependencyMethod.Implementation)
+        "v5.0.6-androidx", DependencyMethod.Implementation)
 
     /**
      * 轮播控件

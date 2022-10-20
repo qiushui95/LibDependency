@@ -10,7 +10,7 @@
 >>implementation("com.aliyun.ams:alicloud-android-push:3.7.4")  
   
 >[AndroidUtil](https://github.com/Blankj/AndroidUtilCode)(多功能工具包)  
->>implementation("com.blankj:utilcodex:1.31.0")  
+>>implementation("com.blankj:utilcodex:1.31.1")  
   
 >[Annotation](https://developer.android.com/jetpack/androidx/releases/annotation)(Annotation)  
 >>implementation("androidx.annotation:annotation:1.5.0")  
@@ -46,7 +46,7 @@
 >>implementation("com.ypx.yimagepicker:androidx:3.1.4")  
   
 >[JodaTime](https://github.com/JodaOrg/joda-time)(时间处理库)  
->>implementation("joda-time:joda-time:2.11.2")  
+>>implementation("joda-time:joda-time:2.12.0")  
   
 >[LeakCanary](https://square.github.io/leakcanary/getting_started/)(内存泄露监控)  
 >>implementation("com.squareup.leakcanary:leakcanary-android:2.9.1")  
@@ -61,7 +61,7 @@
 >>implementation("androidx.paging:paging-runtime-ktx:3.1.1")  
   
 >[PanelSwitch](https://github.com/DSAppTeam/PanelSwitchHelper)(聊天键盘优化)  
->>implementation("com.github.DSAppTeam:PanelSwitchHelper:v1.5.1")  
+>>implementation("com.github.DSAppTeam:PanelSwitchHelper:1.5.2")  
   
 >[PermissionX](https://github.com/guolindev/PermissionX)(权限请求)  
 >>implementation("com.guolindev.permissionx:permissionx:1.7.1")  
@@ -73,7 +73,7 @@
 >>implementation("com.github.jenly1314:zxing-lite:2.2.1")  
   
 >[Serialization](https://github.com/Kotlin/kotlinx.serialization)(Json序列化)  
->>implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0")  
+>>implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")  
   
 >[Startup](https://github.com/qiushui95/AndroidInitializer)(app启动初始化)  
 >>implementation("com.github.qiushui95:AndroidInitializer:1.0.9")  
@@ -91,7 +91,7 @@
 >>implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")  
   
 >[XPopup](https://github.com/li-xiaojun/XPopup)(弹窗)  
->>implementation("com.github.li-xiaojun:XPopup:2.9.1")  
+>>implementation("com.github.li-xiaojun:XPopup:2.9.3")  
   
 >[Zip4J](https://github.com/srikanth-lingala/zip4j)(zip压缩相关)  
 >>implementation("net.lingala.zip4j:zip4j:2.11.2")  
@@ -102,7 +102,7 @@
 <summary>View</summary>  
   
 >[AgentWeb](https://github.com/Justson/AgentWeb)(浏览器)  
->>implementation("com.github.Justson.AgentWeb:agentweb-core:v4.1.9-androidx")  
+>>implementation("com.github.Justson.AgentWeb:agentweb-core:v5.0.6-androidx")  
   
 >[BannerView](https://github.com/xiaohaibin/XBanner/tree/androidX)(轮播控件)  
 >>implementation("com.github.xiaohaibin:XBanner:androidx_v1.2.8")  

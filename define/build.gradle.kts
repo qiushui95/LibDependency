@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    compileSdk = 31
+    compileSdk = 33
 
     defaultConfig {
         minSdk = 24
-        targetSdk = 31
+        targetSdk = 33
     }
 
     compileOptions {
@@ -187,7 +187,7 @@ dependencies {
 
     implementation("com.aliyun.dpa:oss-android-sdk:2.9.13")
     implementation("com.aliyun.ams:alicloud-android-push:3.7.4")
-    implementation("com.blankj:utilcodex:1.31.0")
+    implementation("com.blankj:utilcodex:1.31.1")
     implementation("androidx.annotation:annotation:1.5.0")
     implementation("androidx.appcompat:appcompat:1.5.1")
     implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.5")
@@ -199,22 +199,22 @@ dependencies {
     implementation("androidx.exifinterface:exifinterface:1.3.4")
     implementation("io.github.hoc081098:FlowExt-jvm:0.4.0")
     implementation("com.ypx.yimagepicker:androidx:3.1.4")
-    implementation("joda-time:joda-time:2.11.2")
+    implementation("joda-time:joda-time:2.12.0")
     implementation("com.squareup.leakcanary:leakcanary-android:2.9.1")
     implementation("com.vanniktech:gradle-maven-publish-plugin:0.22.0")
     implementation("com.tencent:mmkv-static:1.2.14")
     implementation("androidx.paging:paging-runtime-ktx:3.1.1")
-    implementation("com.github.DSAppTeam:PanelSwitchHelper:v1.5.1")
+    implementation("com.github.DSAppTeam:PanelSwitchHelper:1.5.2")
     implementation("com.guolindev.permissionx:permissionx:1.7.1")
     implementation("com.localebro:okhttpprofiler:1.0.8")
     implementation("com.github.jenly1314:zxing-lite:2.2.1")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
     implementation("com.github.qiushui95:AndroidInitializer:1.0.9")
     implementation("com.dropbox.mobile.store:store4:4.0.5")
     implementation("com.tencent.vasdolly:helper:3.0.4")
     implementation("com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0")
     implementation("com.iqiyi.xcrash:xcrash-android-lib:3.1.0")
-    implementation("com.github.li-xiaojun:XPopup:2.9.1")
+    implementation("com.github.li-xiaojun:XPopup:2.9.3")
     implementation("net.lingala.zip4j:zip4j:2.11.2")
 
 
@@ -225,7 +225,7 @@ dependencies {
 
 
 
-    implementation("com.github.Justson.AgentWeb:agentweb-core:v4.1.9-androidx")
+    implementation("com.github.Justson.AgentWeb:agentweb-core:v5.0.6-androidx")
     implementation("com.github.xiaohaibin:XBanner:androidx_v1.2.8")
     implementation("com.github.Dimezis:BlurView:version-2.0.0")
     implementation("com.ashokvarma.android:bottom-navigation-bar:2.2.0")
