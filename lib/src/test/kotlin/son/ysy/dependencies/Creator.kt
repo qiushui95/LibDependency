@@ -434,11 +434,11 @@ class Creator {
 }
 
 android {
-    compileSdk = 31
+    compileSdk = 33
 
     defaultConfig {
         minSdk = 24
-        targetSdk = 31
+        targetSdk = 33
     }
 
     compileOptions {

@@ -54,7 +54,7 @@ sealed class DependencyConfig(
         object AndroidUtil : Single(
             group = "com.blankj",
             name = "utilcodex",
-            version = "1.31.0",
+            version = "1.31.1",
             remark = "多功能工具包",
             link = "https://github.com/Blankj/AndroidUtilCode",
             dependencyMethod = DependencyMethod.Implementation,
@@ -197,7 +197,7 @@ sealed class DependencyConfig(
         object JodaTime : Single(
             group = "joda-time",
             name = "joda-time",
-            version = "2.11.2",
+            version = "2.12.0",
             remark = "时间处理库",
             link = "https://github.com/JodaOrg/joda-time",
             dependencyMethod = DependencyMethod.Implementation,
@@ -252,7 +252,7 @@ sealed class DependencyConfig(
         object PanelSwitch : Single(
             group = "com.github.DSAppTeam",
             name = "PanelSwitchHelper",
-            version = "v1.5.1",
+            version = "1.5.2",
             remark = "聊天键盘优化",
             link = "https://github.com/DSAppTeam/PanelSwitchHelper",
             dependencyMethod = DependencyMethod.Implementation,
@@ -318,7 +318,7 @@ sealed class DependencyConfig(
         object XPopup : Single(
             group = "com.github.li-xiaojun",
             name = "XPopup",
-            version = "2.9.1",
+            version = "2.9.3",
             remark = "弹窗",
             link = "https://github.com/li-xiaojun/XPopup",
             dependencyMethod = DependencyMethod.Implementation,
@@ -353,7 +353,7 @@ sealed class DependencyConfig(
         object Serialization : Single(
             group = "org.jetbrains.kotlinx",
             name = "kotlinx-serialization-json",
-            version = "1.4.0",
+            version = "1.4.1",
             remark = "Json序列化",
             link = "https://github.com/Kotlin/kotlinx.serialization",
             dependencyMethod = DependencyMethod.Implementation,
@@ -401,7 +401,7 @@ sealed class DependencyConfig(
         object AgentWeb : View(
             group = "com.github.Justson.AgentWeb",
             name = "agentweb-core",
-            version = "v4.1.9-androidx",
+            version = "v5.0.6-androidx",
             remark = "浏览器",
             link = "https://github.com/Justson/AgentWeb",
             dependencyMethod = DependencyMethod.Implementation,
