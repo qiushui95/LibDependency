@@ -273,10 +273,10 @@
 >>implementation("me.laoyuyu.aria:sftp:3.8.16")  
   
 >[Epoxy](https://github.com/airbnb/epoxy)  
->>kapt("com.airbnb.android:epoxy-processor:5.0.0")  
->>implementation("com.airbnb.android:epoxy-compose:5.0.0")  
->>implementation("com.airbnb.android:epoxy:5.0.0")  
->>implementation("com.airbnb.android:epoxy-glide-preloading:5.0.0")  
+>>kapt("com.airbnb.android:epoxy-processor:5.1.0")  
+>>implementation("com.airbnb.android:epoxy-compose:5.1.0")  
+>>implementation("com.airbnb.android:epoxy:5.1.0")  
+>>implementation("com.airbnb.android:epoxy-glide-preloading:5.1.0")  
   
 >[Fetch](https://github.com/tonyofrancis/Fetch)(下载框架)  
 >>implementation("androidx.tonyodev.fetch2:xfetch2:3.1.6")  
@@ -375,8 +375,8 @@
 >>testImplementation("androidx.room:room-testing:2.4.3")  
   
 >[S3](https://github.com/aws-amplify/aws-sdk-android)(亚马逊云存储)  
->>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.54.0")  
->>implementation("com.amazonaws:aws-android-sdk-s3:2.54.0")  
+>>implementation("com.amazonaws:aws-android-sdk-mobile-client:2.55.0")  
+>>implementation("com.amazonaws:aws-android-sdk-s3:2.55.0")  
   
 >[Stetho](https://github.com/facebook/stetho)(调试工具)  
 >>implementation("com.facebook.stetho:stetho:1.6.0")  

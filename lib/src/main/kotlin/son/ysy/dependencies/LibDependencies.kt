@@ -642,16 +642,16 @@ sealed class LibDependencies(
      * https://github.com/airbnb/epoxy
      */
     interface Epoxy {
-      object Compiler : LibDependencies("com.airbnb.android", "epoxy-processor", "5.0.0",
+      object Compiler : LibDependencies("com.airbnb.android", "epoxy-processor", "5.1.0",
           DependencyMethod.Kapt)
 
-      object Compose : LibDependencies("com.airbnb.android", "epoxy-compose", "5.0.0",
+      object Compose : LibDependencies("com.airbnb.android", "epoxy-compose", "5.1.0",
           DependencyMethod.Implementation)
 
-      object Core : LibDependencies("com.airbnb.android", "epoxy", "5.0.0",
+      object Core : LibDependencies("com.airbnb.android", "epoxy", "5.1.0",
           DependencyMethod.Implementation)
 
-      object Glide : LibDependencies("com.airbnb.android", "epoxy-glide-preloading", "5.0.0",
+      object Glide : LibDependencies("com.airbnb.android", "epoxy-glide-preloading", "5.1.0",
           DependencyMethod.Implementation)
     }
 
@@ -943,9 +943,9 @@ sealed class LibDependencies(
      */
     interface S3 {
       object Client : LibDependencies("com.amazonaws", "aws-android-sdk-mobile-client",
-          "2.54.0", DependencyMethod.Implementation)
+          "2.55.0", DependencyMethod.Implementation)
 
-      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.54.0",
+      object Core : LibDependencies("com.amazonaws", "aws-android-sdk-s3", "2.55.0",
           DependencyMethod.Implementation)
     }
 

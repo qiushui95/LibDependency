@@ -80,10 +80,10 @@ dependencies {
     implementation("me.laoyuyu.aria:m3u8:3.8.16")
     implementation("me.laoyuyu.aria:sftp:3.8.16")
 
-    kapt("com.airbnb.android:epoxy-processor:5.0.0")
-    implementation("com.airbnb.android:epoxy-compose:5.0.0")
-    implementation("com.airbnb.android:epoxy:5.0.0")
-    implementation("com.airbnb.android:epoxy-glide-preloading:5.0.0")
+    kapt("com.airbnb.android:epoxy-processor:5.1.0")
+    implementation("com.airbnb.android:epoxy-compose:5.1.0")
+    implementation("com.airbnb.android:epoxy:5.1.0")
+    implementation("com.airbnb.android:epoxy-glide-preloading:5.1.0")
 
     implementation("androidx.tonyodev.fetch2:xfetch2:3.1.6")
     implementation("androidx.tonyodev.fetch2okhttp:xfetch2okhttp:3.1.6")
@@ -165,8 +165,8 @@ dependencies {
     implementation("androidx.room:room-ktx:2.4.3")
     testImplementation("androidx.room:room-testing:2.4.3")
 
-    implementation("com.amazonaws:aws-android-sdk-mobile-client:2.54.0")
-    implementation("com.amazonaws:aws-android-sdk-s3:2.54.0")
+    implementation("com.amazonaws:aws-android-sdk-mobile-client:2.55.0")
+    implementation("com.amazonaws:aws-android-sdk-s3:2.55.0")
 
     implementation("com.facebook.stetho:stetho:1.6.0")
     implementation("com.facebook.stetho:stetho-okhttp3:1.6.0")

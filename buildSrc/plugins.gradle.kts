@@ -7,5 +7,5 @@ rootProject.extra.apply {
     set("navigation", "androidx.navigation:navigation-safe-args-gradle-plugin:2.5.2")
     set("rocketX", "io.github.trycatchx:rocketx:1.1.1")
     set("vasDolly", "com.tencent.vasdolly:plugin:3.0.4")
-    set("libDependency", "com.github.qiushui95:LibDependency:1.2.47")
+    set("libDependency", "com.github.qiushui95:LibDependency:1.2.48")
 }
