@@ -980,7 +980,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "com.airbnb.android",
             name = name,
-            version = "5.0.0",
+            version = "5.1.0",
             remark = "",
             link = "https://github.com/airbnb/epoxy",
             dependencyMethod = dependencyMethod,
@@ -1329,7 +1329,7 @@ sealed class DependencyConfig(
         ) : Group(
             group = "com.amazonaws",
             name = name,
-            version = "2.54.0",
+            version = "2.55.0",
             remark = "亚马逊云存储",
             link = "https://github.com/aws-amplify/aws-sdk-android",
             dependencyMethod = dependencyMethod,
